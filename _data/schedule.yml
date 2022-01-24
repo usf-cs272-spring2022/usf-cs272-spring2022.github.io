@@ -41,6 +41,10 @@ weeks:
                 icon: 'website'
                 link: '/guides/general/getting-started.html'
 
+              - text: 'Java and Eclipse Setup'
+                icon: 'website'
+                link: '/guides/eclipse/java-and-eclipse-setup.html'
+
           - <<: *assignments
             items:
               - file: 'quizzes'
@@ -84,7 +88,8 @@ weeks:
           - <<: *labs
             items:
               - text: 'Java and Eclipse Setup'
-                type: [*pending]
+                icon: 'website'
+                link: '/guides/eclipse/java-and-eclipse-setup.html'
 
               - text: 'Homework Setup'
                 type: [*pending]
