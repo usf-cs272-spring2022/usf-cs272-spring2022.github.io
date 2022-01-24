@@ -30,13 +30,17 @@
           {%- else %}
           {%- assign item = found %}
           {%- endif %}
-          {%- assign icon = site.data.icons.pending.class %}
+          {%- assign icon_class = site.data.icons.pending.class %}
+          {%- assign icon_label = site.data.icons.pending.label %}
           {%- if item.zoom %}
-          {%- assign icon = site.data.icons.stream.class %}
+          {%- assign icon_class = site.data.icons.stream.class %}
+          {%- assign icon_label = site.data.icons.stream.label %}
           {%- elsif found.icon %}
-          {%- assign icon = site.data.icons[found.icon].class %}
+          {%- assign icon_class = site.data.icons[found.icon].class %}
+          {%- assign icon_label = site.data.icons[found.icon].label %}
           {%- elsif item.icon %}
-          {%- assign icon = site.data.icons[item.icon].class %}
+          {%- assign icon_class = site.data.icons[item.icon].class %}
+          {%- assign icon_label = site.data.icons[item.icon].label %}
           {%- endif %}
           {%- assign text = "Pending" %}
           {%- if found.text %}
@@ -45,7 +49,7 @@
           {%- assign text = item.text %}
           {%- endif %}
           <li class="{{ item.type | join: " " }} {{ found.type | join: " " }}">
-            <i class="{{ icon }}"></i>
+            <i class="{{ icon_class }}" title="{{ icon_label }}"></i>
             {%- if item.show or section.dates == true and item.date %}
             {%- if item.date == day.date and item.show != true %}
             <strong>Due: </strong>
