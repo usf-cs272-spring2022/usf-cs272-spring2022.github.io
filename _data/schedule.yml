@@ -36,7 +36,10 @@ weeks:
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - text: 'Classes Begin'
+                date: 2022-01-24
+                icon: 'date'
+                type: [*pending]
 
       - date: 2022-01-27
         sections:
@@ -56,7 +59,11 @@ weeks:
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - text: 'Add Deadline'
+                date: 2022-01-28
+                icon: 'date'
+                show: true
+                type: [*pending]
 
   - week: 2
     days:
@@ -128,7 +135,11 @@ weeks:
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - text: 'Drop Deadline (Census)'
+                date: 2022-02-11
+                icon: 'date'
+                show: true
+                type: [*pending]
 
   - week: 4
     days:
@@ -180,7 +191,12 @@ weeks:
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - text: "Presidents' Day"
+                date: 2022-02-21
+                icon: 'date'
+                show: true
+                type: [*pending]
+
 
       - date: 2022-02-24
         sections:
@@ -278,37 +294,27 @@ weeks:
     days:
       - date: 2022-03-15
         sections:
-          - <<: *lectures
+          - label: 'No Class'
             items:
-              - text: Pending
-
-          - <<: *assignments
-            items:
-              - text: Pending
-
-          - <<: *deadlines
-            items:
-              - text: Pending
+              - text: 'Spring Break'
+                icon: 'spring'
+                type: [*pending]
 
       - date: 2022-03-17
         sections:
-          - <<: *lectures
+          - label: 'No Class'
             items:
-              - text: Pending
+              - text: 'Spring Break'
+                icon: 'spring'
+                type: [*pending]
 
       - date: 2022-03-18
         sections:
-          - <<: *labs
+          - label: 'No Class'
             items:
-              - text: Pending
-
-          - <<: *assignments
-            items:
-              - text: Pending
-
-          - <<: *deadlines
-            items:
-              - text: Pending
+              - text: 'Spring Break'
+                icon: 'spring'
+                type: [*pending]
 
   - week: 9
     days:
@@ -432,7 +438,10 @@ weeks:
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - text: 'Withdraw Deadline'
+                date: 2022-04-11
+                icon: 'date'
+                type: ['has-text-danger']
 
       - date: 2022-04-14
         sections:
@@ -440,19 +449,27 @@ weeks:
             items:
               - text: Pending
 
+          - <<: *deadlines
+            items:
+              - text: 'Easter Holiday @ 4pm'
+                date: 2022-04-14
+                icon: 'easter'
+                show: true
+                type: [*pending]
+
       - date: 2022-04-15
         sections:
-          - <<: *labs
+          - label: 'No Class'
             items:
-              - text: Pending
+              - text: 'Easter Holiday'
+                icon: 'easter'
+                type: [*pending]
 
           - <<: *assignments
             items:
               - text: Pending
 
-          - <<: *deadlines
-            items:
-              - text: Pending
+
 
   - week: 13
     days:
@@ -584,55 +601,47 @@ weeks:
             items:
               - text: Pending
 
+          - <<: *deadlines
+            items:
+              - text: 'Classes End'
+                date: 2022-05-12
+                icon: 'date'
+                show: true
+                type: [*pending]
+
       - date: 2022-05-13
         sections:
-          - <<: *labs
+          - label: 'No Class'
             items:
-              - text: Pending
+              - text: 'Study Day'
+                icon: 'date'
+                type: [*pending]
 
-          - <<: *assignments
-            items:
-              - text: Pending
-
-          - <<: *deadlines
+          - label: 'End of Semester Deadlines'
+            dates: true
             items:
               - text: Pending
 
   - text: 'Finals'
     days:
-      - date: 2022-05-17
+      - date: ''
         sections:
-          - <<: *lectures
+          - label: 'Sat 05/14 to Thu 05/19'
+            dates: false
             items:
-              - text: Pending
+              - text: 'Final Code Reviews'
+                icon: 'project'
 
-          - <<: *assignments
-            items:
-              - text: Pending
-
-          - <<: *deadlines
-            items:
-              - text: Pending
-
-      - date: 2022-05-19
+      - date: ''
         sections:
-          - <<: *lectures
+          - label: 'Final Project Deadlines'
+            dates: false
             items:
               - text: Pending
 
-      - date: 2022-05-20
-        sections:
-          - <<: *labs
-            items:
-              - text: Pending
+      - date: ''
+        sections: false
 
-          - <<: *assignments
-            items:
-              - text: Pending
-
-          - <<: *deadlines
-            items:
-              - text: Pending
 
 rows:
   - false # top row (usually lecture items)
