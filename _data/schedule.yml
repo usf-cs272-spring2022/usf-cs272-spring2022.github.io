@@ -28,11 +28,8 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
-
-          - <<: *assignments
-            items:
-              - text: Pending
+              - text: 'Introduction'
+                type: [*pending]
 
           - <<: *deadlines
             items:
@@ -45,13 +42,21 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Project Euler'
+                type: [*pending]
+
+              - text: 'Exception Handling'
+                type: [*pending]
 
       - date: 2022-01-28
         sections:
           - <<: *labs
             items:
-              - text: Pending
+              - text: 'Java and Eclipse Setup'
+                type: [*pending]
+
+              - text: 'Homework Setup'
+                type: [*pending]
 
           - <<: *assignments
             items:
@@ -72,27 +77,22 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
-
-          - <<: *assignments
-            items:
-              - text: Pending
-
-          - <<: *deadlines
-            items:
-              - text: Pending
+              - text: 'File IO'
+                type: [*pending]
 
       - date: 2022-02-03
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Data Structures'
+                type: [*pending]
 
       - date: 2022-02-04
         sections:
           - <<: *labs
             items:
-              - text: Pending
+              - text: 'Homework Help'
+                type: [*pending]
 
           - <<: *assignments
             items:
@@ -115,7 +115,8 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Iteration and Search'
+                type: [*pending]
 
           - <<: *assignments
             items:
@@ -123,21 +124,19 @@ weeks:
                 name: 'project1t'
                 text: 'Project 1 Inverted Index'
 
-          - <<: *deadlines
-            items:
-              - text: Pending
-
       - date: 2022-02-10
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Classes and Objects'
+                type: [*pending]
 
       - date: 2022-02-11
         sections:
           - <<: *labs
             items:
-              - text: Pending
+              - text: 'Project Setup'
+                type: [*pending]
 
           - <<: *assignments
             items:
@@ -158,36 +157,27 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
-
-          - <<: *assignments
-            items:
-              - text: Pending
-
-          - <<: *deadlines
-            items:
-              - text: Pending
+              - text: 'Mutability'
+                type: [*pending]
 
       - date: 2022-02-17
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Inheritance'
+                type: [*pending]
 
       - date: 2022-02-18
         sections:
           - <<: *labs
             items:
-              - text: Pending
+              - text: 'Project Help'
+                type: [*pending]
 
           - <<: *assignments
             items:
               - file: 'homework'
                 name: 'textfileindex'
-
-          - <<: *deadlines
-            items:
-              - text: Pending
 
   - week: 5
     days:
@@ -195,11 +185,8 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
-
-          - <<: *assignments
-            items:
-              - text: Pending
+              - text: 'Casting and Nesting'
+                type: [*pending]
 
           - <<: *deadlines
             items:
@@ -213,13 +200,18 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Lambda Expressions'
+                type: [*pending]
 
       - date: 2022-02-25
         sections:
           - <<: *labs
             items:
-              - text: Pending
+              - text: 'Homework Help'
+                icon: 'homework'
+
+              - text: 'Project Help'
+                icon: 'project'
 
           - <<: *assignments
             items:
@@ -248,7 +240,8 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Stream Pipelines'
+                type: [*pending]
 
           - <<: *assignments
             items:
@@ -265,22 +258,26 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Stream Pipelines'
+                type: [*pending]
+
+              - text: 'Exam Review'
+                type: [*pending]
 
       - date: 2022-03-04
         sections:
           - <<: *labs
             items:
-              - text: Pending
+              - text: 'Homework Help'
+                icon: 'homework'
+
+              - text: 'Project Help'
+                icon: 'project'
 
           - <<: *assignments
             items:
               - file: 'homework'
                 name: 'textfilesorter'
-
-          - <<: *deadlines
-            items:
-              - text: Pending
 
   - week: 7
     days:
@@ -292,10 +289,6 @@ weeks:
                 icon: 'exam'
                 type: ['has-text-danger']
 
-          - <<: *assignments
-            items:
-              - text: Pending
-
           - <<: *deadlines
             items:
               - file: 'projects'
@@ -305,7 +298,8 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Logging'
+                type: [*pending]
 
           - <<: *assignments
             items:
@@ -317,16 +311,16 @@ weeks:
         sections:
           - <<: *labs
             items:
-              - text: Pending
+              - text: 'Homework Help'
+                icon: 'homework'
+
+              - text: 'Project Help'
+                icon: 'project'
 
           - <<: *assignments
             items:
               - file: 'homework'
                 name: 'loggersetup'
-
-          - <<: *deadlines
-            items:
-              - text: Pending
 
   - week: 8
     days:
@@ -360,11 +354,8 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
-
-          - <<: *assignments
-            items:
-              - text: Pending
+              - text: 'Multithreading'
+                type: [*pending]
 
           - <<: *deadlines
             items:
@@ -377,13 +368,18 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Multithreading'
+                type: [*pending]
 
       - date: 2022-03-25
         sections:
           - <<: *labs
             items:
-              - text: Pending
+              - text: 'Homework Help'
+                icon: 'homework'
+
+              - text: 'Project Help'
+                icon: 'project'
 
           - <<: *assignments
             items:
@@ -409,7 +405,8 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Multithreading'
+                type: [*pending]
 
           - <<: *assignments
             items:
@@ -426,22 +423,23 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Multithreading'
+                type: [*pending]
 
       - date: 2022-04-01
         sections:
           - <<: *labs
             items:
-              - text: Pending
+              - text: 'Homework Help'
+                icon: 'homework'
+
+              - text: 'Project Help'
+                icon: 'project'
 
           - <<: *assignments
             items:
               - file: 'homework'
                 name: 'primefinder'
-
-          - <<: *deadlines
-            items:
-              - text: Pending
 
   - week: 11
     days:
@@ -449,11 +447,8 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
-
-          - <<: *assignments
-            items:
-              - text: Pending
+              - text: 'Regular Expressions'
+                type: [*pending]
 
           - <<: *deadlines
             items:
@@ -464,13 +459,21 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Regular Expressions'
+                type: [*pending]
+
+              - text: 'HTML'
+                type: [*pending]
 
       - date: 2022-04-08
         sections:
           - <<: *labs
             items:
-              - text: Pending
+              - text: 'Homework Help'
+                icon: 'homework'
+
+              - text: 'Project Help'
+                icon: 'project'
 
           - <<: *assignments
             items:
@@ -504,11 +507,11 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'HTTP'
+                type: [*pending]
 
-          - <<: *assignments
-            items:
-              - text: Pending
+              - text: 'Sockets'
+                type: [*pending]
 
           - <<: *deadlines
             items:
@@ -521,7 +524,8 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Servlets'
+                type: [*pending]
 
           - <<: *deadlines
             items:
@@ -550,7 +554,8 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Servlets'
+                type: [*pending]
 
           - <<: *assignments
             items:
@@ -567,22 +572,23 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Sessions'
+                type: [*pending]
 
       - date: 2022-04-22
         sections:
           - <<: *labs
             items:
-              - text: Pending
+              - text: 'Homework Help'
+                icon: 'homework'
+
+              - text: 'Project Help'
+                icon: 'project'
 
           - <<: *assignments
             items:
               - file: 'homework'
                 name: 'htmlfetcher'
-
-          - <<: *deadlines
-            items:
-              - text: Pending
 
   - week: 14
     days:
@@ -590,11 +596,8 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
-
-          - <<: *assignments
-            items:
-              - text: Pending
+              - text: 'SQL'
+                type: [*pending]
 
           - <<: *deadlines
             items:
@@ -605,13 +608,18 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'SQL'
+                type: [*pending]
 
       - date: 2022-04-29
         sections:
           - <<: *labs
             items:
-              - text: Pending
+              - text: 'Homework Help'
+                icon: 'homework'
+
+              - text: 'Project Help'
+                icon: 'project'
 
           - <<: *assignments
             items:
@@ -644,19 +652,12 @@ weeks:
                 icon: 'exam'
                 type: ['has-text-danger']
 
-          - <<: *assignments
-            items:
-              - text: Pending
-
-          - <<: *deadlines
-            items:
-              - text: Pending
-
       - date: 2022-05-05
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Software Testing'
+                type: [*pending]
 
           - <<: *assignments
             items:
@@ -668,11 +669,11 @@ weeks:
         sections:
           - <<: *labs
             items:
-              - text: Pending
+              - text: 'Homework Help'
+                icon: 'homework'
 
-          - <<: *assignments
-            items:
-              - text: Pending
+              - text: 'Project Help'
+                icon: 'project'
 
           - <<: *deadlines
             items:
@@ -690,11 +691,8 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
-
-          - <<: *assignments
-            items:
-              - text: Pending
+              - text: 'JDBC'
+                type: [*pending]
 
           - <<: *deadlines
             items:
@@ -705,7 +703,8 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Conclusion'
+                type: [*pending]
 
           - <<: *deadlines
             items:
