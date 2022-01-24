@@ -1,0 +1,11 @@
+<article class="message {{ include.type }}">
+  <div class="message-body">
+    {% if include.icon -%}
+    <span class="icon"><i class="{{ include.icon }}"></i></span>
+    {% endif -%}
+
+    <span markdown="1">
+      {{ include.text }}
+    </span>
+  </div>
+</article>

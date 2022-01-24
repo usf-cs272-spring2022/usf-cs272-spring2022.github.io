@@ -1,0 +1,114 @@
+# icon_label:
+#  label: '' <-- text label for legend
+#  class: '' <-- font awesome icon classes
+#  shown: true/false <-- whether to show in legend
+
+website:
+  label: 'Website'
+  class: 'far fa-link'
+  shown: true
+
+code:
+  label: 'Code'
+  class: 'far fa-code'
+  shown: true
+
+slides:
+  label: 'Slides'
+  class: 'far fa-chalkboard-teacher'
+  shown: true
+
+stream:
+  label: 'Livestream'
+  class: 'far fa-signal-stream'
+  shown: true
+
+video:
+  label: 'Video'
+  class: 'far fa-video'
+  shown: true
+
+project:
+  label: 'Project'
+  class: 'far fa-project-diagram'
+  shown: true
+
+homework:
+  label: 'Homework'
+  class: 'far fa-laptop-code'
+  shown: true
+
+participation:
+  label: 'Participation'
+  class: 'far fa-ballot-check'
+  shown: true
+
+attendance:
+  label: 'Attendance'
+  class: 'far fa-users-class'
+  shown: true
+
+quiz:
+  label: 'Quiz'
+  class: 'far fa-edit'
+  shown: true
+
+exam:
+  label: 'Exam'
+  class: 'far fa-ballot-check'
+  shown: true
+
+date:
+  label: 'Date'
+  class: 'far fa-calendar-alt'
+  shown: true
+
+# not included in legend
+
+review:
+  label: 'Code Review'
+  class: 'far fa-code-branch'
+
+warning:
+  label: 'Warning'
+  class: 'fas fa-exclamation-triangle'
+
+youtube:
+  label: 'YouTube'
+  class: 'fab fa-youtube'
+
+pending:
+  label: 'Pending'
+  class: 'far fa-question-square'
+
+evals:
+  label: 'Special'
+  class: 'far fa-users-class'
+
+presentation:
+  label: 'Presentation'
+  class: 'far fa-user-chart'
+
+officehours:
+  label: 'Office Hours'
+  class: 'far fa-user-clock'
+
+nothing:
+  label: 'Placeholder'
+  class: ''
+
+time:
+  label: 'Time'
+  class: 'far fa-alarm-clock'
+
+fall:
+  label: 'Fall Break'
+  class: 'far fa-campfire'
+
+thanksgiving:
+  label: 'Thanksgiving Holiday'
+  class: 'far fa-pumpkin'
+
+linkedin:
+  label: 'Linkedin'
+  class: 'fab fa-linkedin'

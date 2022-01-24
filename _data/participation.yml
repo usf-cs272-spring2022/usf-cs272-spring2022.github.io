@@ -1,0 +1,94 @@
+# introduction: &default
+#   text: 'Introductions'
+#   date: 2021-08-27
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7121977'
+#   icon: 'participation'
+#
+# forum_setup:
+#   <<: *default
+#   text: 'Forum Setup'
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7122544'
+#   date: 2021-08-27
+#
+# homework_setup:
+#   <<: *default
+#   text: 'Setup Homework'
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7125754'
+#   date: 2021-09-03
+#
+# github_resource:
+#   <<: *default
+#   text: 'Git/Github Resource'
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7126537'
+#   date: 2021-09-03
+#
+# lecture_setup:
+#   <<: *default
+#   text: 'Lecture Setup'
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7125755'
+#   date: 2021-09-10
+#
+# cs_event:
+#   <<: *default
+#   text: 'CS Event'
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7127389'
+#   date: 2021-12-09
+#   show: true
+#
+# piazza_post:
+#   <<: *default
+#   text: 'Piazza Post'
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7127537'
+#   date: 2021-12-09
+#   show: true
+#
+# piazza_response:
+#   <<: *default
+#   text: 'Piazza Response'
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7127539'
+#   date: 2021-12-09
+#   show: true
+#
+# intake:
+#   <<: *default
+#   text: 'Code Review Intake'
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7128352'
+#   date: 2021-09-17
+#
+# project_setup:
+#   <<: *default
+#   text: 'Project Setup'
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7129460'
+#   date: 2021-09-17
+#
+# belonging1:
+#   <<: *default
+#   text: 'CS Belonging Survey 1'
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7132274'
+#   date: 2021-09-24
+#
+# stream_benchmark:
+#   <<: *default
+#   text: 'Stream Benchmark'
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7134916'
+#   date: 2021-10-08
+#
+# midterm_survey:
+#   <<: *default
+#   text: 'Midterm Survey'
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7139677'
+#   date: 2021-11-05
+#
+# final_plan:
+#   <<: *default
+#   text: 'Final Grade Plan'
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7145001'
+#   date: 2021-12-09
+#   show: true
+#
+# belonging2:
+#   <<: *default
+#   text: 'CS Belonging Survey 2'
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7144605'
+#   date: 2021-12-09
+#   show: true

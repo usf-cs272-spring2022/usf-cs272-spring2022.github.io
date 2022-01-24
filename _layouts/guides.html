@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<!-- head -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="{{ '/favicon.ico?' | absolute_url }}" type="image/x-icon">
+
+<title>{{ site.title }}</title>
+
+<link rel="stylesheet" href="{{ '/css/main.css' | absolute_url }}">
+<link rel="stylesheet" href="{{ '/css/style.css' | absolute_url }}">
+<link rel="stylesheet" href="{{ '/css/all.min.css' | absolute_url }}">
+<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+</head>
+
+<!-- body -->
+<body>
+
+<script>
+  anchors.options.placement = 'left';
+  anchors.options.visible = 'hover';
+  anchors.options.icon = '\uf02e';
+</script>
+
+{% include header.html %}
+
+{% include navbar.html %}
+
+<section class="section">
+  <div class="container">
+
+    {%- unless page.hidecrumbs == true %}
+    {%- assign category = site.collections | where: 'label', page.collection | first -%}
+    <nav class="breadcrumb is-small" aria-label="breadcrumbs">
+      <ul>
+        <li><a href="/guides/">Guides</a></li>
+        {%- unless category.title == page.title %}
+        <li><a href="/guides/{{ category.label }}/">{{ category.title }}</a></li>
+        {%- endunless %}
+        <li class="is-active"><a href="#" aria-current="page">{{ page.title }}</a></li>
+      </ul>
+    </nav>
+    {%- endunless %}
+
+    <h2 class="title is-2">{{ page.title }}</h2>
+
+    <!-- content -->
+    <div class="content">
+      {%- if page.blurb %}
+      {{ page.blurb }}
+      {% endif -%}
+
+      {%- if page.assignments %}
+      <p>
+        <strong class="heading has-text-grey">Associated Assignments</strong>
+        {%- for item in page.assignments %}
+        {%- if item.link %}
+        <a href="{{ item.link }}">{{ item.text }}</a> {{ item.info }}
+        {% else %}
+        <span class="has-text-grey">{{ item.text }} {{ item.info }}</span>
+        {% endif -%}
+        {%- unless forloop.last %}<br/>{% endunless -%}
+        {% endfor -%}
+      </p>
+
+      <hr>
+      {% endif -%}
+
+      {{ content }}
+
+    </div>
+    <!-- end content -->
+
+  </div>
+</section>
+
+{% include footer.html %}
+
+<script>
+anchors.add().remove('.no-anchor');
+</script>
+
+<!-- end -->
+</body>
+</html>

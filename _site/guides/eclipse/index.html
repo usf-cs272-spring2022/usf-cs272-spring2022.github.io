@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<!-- head -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+<title>CS 272 Software Development</title>
+
+<link rel="stylesheet" href="http://localhost:4000/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/css/style.css">
+<link rel="stylesheet" href="http://localhost:4000/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+</head>
+
+<!-- body -->
+<body>
+
+<script>
+  anchors.options.placement = 'left';
+  anchors.options.visible = 'hover';
+  anchors.options.icon = '\uf02e';
+</script>
+
+<!-- header-->
+<section class="hero is-primary is-bold noprint">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        CS 272 Software Development
+      </h1>
+      <h2 class="subtitle">
+        CS 272-01, CS 272-02 &bullet; Spring 2022
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- end header -->
+
+
+<!-- navigation -->
+<nav class="navbar is-light noprint" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/favicon.ico" height="28" alt="USF Logo">
+        &nbsp;
+        <span class="has-text-weight-bold">
+          <span class="has-text-usf-green">CS</span> <span class="has-text-usf-gold">272</span>
+        </span>
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="main-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="main-menu" class="navbar-menu has-text-weight-medium">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/schedule.html" title="a detailed weekly schedule with links to lecture materials and assignment deadlines">
+          <span class="icon">
+            <i class="far fa-calendar-alt fa-fw"></i>
+          </span>
+          <span>Schedule</span>
+        </a>
+        <a class="navbar-item is-active" href="/guides/" title="helpful setup guides and project writeups">
+          <span class="icon">
+            <i class="far fa-book fa-fw"></i>
+          </span>
+          <span>Guides</span>
+        </a>
+        </div>
+
+      <div class="navbar-end">
+        
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            <span class="icon">
+              <i class="far fa-link fa-fw"></i>
+            </span>
+            <span>Quick Links</span>
+          </a>
+
+          <div class="navbar-dropdown is-right">
+            <a class="navbar-item" href="https://usfca.simplesyllabus.com/doc/yoiu6kild/Spring-2022-CS-272-01-Software-Development?mode=view" title="official course and university policies">
+              <span class="icon">
+                <i class="far fa-file-alt fa-fw"></i>
+              </span>
+              <span>Syllabus</span>
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="https://usfca.instructure.com/courses/1605147/" title="grades and assignment deadlines">
+              <span class="icon">
+                <i class="far fa-school fa-fw"></i>
+              </span>
+              <span>Canvas</span>
+            </a>
+            <a class="navbar-item" href="https://github.com/usf-cs272-spring2022" title="lecture code, homework templates, and project tests">
+              <span class="icon">
+                <i class="fab fa-github-alt fa-fw"></i>
+              </span>
+              <span>Github</span>
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="https://piazza.com/usfca/spring2022/cs272/home" title="course announcements, upcoming events, lecture Q&amp;A, homework help, and general discussion">
+              <span class="icon">
+                <i class="far fa-comments fa-fw"></i>
+              </span>
+              <span>Piazza</span>
+            </a>
+            <a class="navbar-item" href="https://PollEv.com/sjengle" title="live anonymous polls">
+              <span class="icon">
+                <i class="far fa-poll-people fa-fw"></i>
+              </span>
+              <span>Live Polls</span>
+            </a>
+            <a class="navbar-item" href="https://docs.google.com/forms/d/e/1FAIpQLSfCj9UrtNNz06GDqn5zeWHy57kSGjrU5tPshFGwbu8Xnm_9zQ/viewform?usp=sf_link" title="anonymous course suggestions">
+              <span class="icon">
+                <i class="far fa-box-ballot fa-fw"></i>
+              </span>
+              <span>Suggestion Box</span>
+            </a>
+            </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            <span class="icon">
+              <i class="far fa-signal-stream fa-fw"></i>
+            </span>
+            <span>Zoom</span>
+          </a>
+
+          <div class="navbar-dropdown is-right">
+            <a class="navbar-item" href="https://usfca.zoom.us/j/82462903703" title="livestreams of lecture for CS 272-01 and CS 272-02">
+              <span class="icon">
+                <i class="far fa-chalkboard-teacher fa-fw"></i>
+              </span>
+              <span>CS 272 Lectures</span>
+            </a>
+            <a class="navbar-item" href="https://usfca.zoom.us/j/82462903703" title="livestreams of lab for CS 272L-01 and CS 272L-02">
+              <span class="icon">
+                <i class="far fa-users-class fa-fw"></i>
+              </span>
+              <span>CS 272 Labs</span>
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="https://usfca.zoom.us/j/82462903703" title="instructor office hours">
+              <span class="icon">
+                <i class="far fa-user-clock fa-fw"></i>
+              </span>
+              <span>Office Hours (Instructor)</span>
+            </a>
+            <a class="navbar-item" href="https://usfca.zoom.us/j/82462903703" title="teacher assistant office hours">
+              <span class="icon">
+                <i class="far fa-user-clock fa-fw"></i>
+              </span>
+              <span>Office Hours (Teacher Assistant)</span>
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="https://usfca.zoom.us/j/88615467814" title="one-on-one project code reviews">
+              <span class="icon">
+                <i class="far fa-laptop-code fa-fw"></i>
+              </span>
+              <span>Code Reviews</span>
+            </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- end navigation -->
+
+<!-- mobile menu responsiveness -->
+<!-- https://bulma.io/documentation/components/navbar/ -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  if ($navbarBurgers.length > 0) {
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+  }
+});
+</script>
+<!-- end mobile menu responsiveness -->
+
+
+<section class="section">
+  <div class="container"><nav class="breadcrumb is-small" aria-label="breadcrumbs">
+      <ul>
+        <li><a href="/guides/">Guides</a></li>
+        <li class="is-active"><a href="#" aria-current="page">Eclipse Guides</a></li>
+      </ul>
+    </nav>
+
+    <h2 class="title is-2">Eclipse Guides</h2>
+
+    <!-- content -->
+    <div class="content"><ul></ul>
+
+
+
+    </div>
+    <!-- end content -->
+
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="footer noprint">
+  <div class="content has-text-centered is-size-7">
+    <p>
+      <a href="#top">
+        <span class="fas fa-arrow-up"></span>
+        <span class="has-text-weight-medium">Back to Top</span>
+      </a>
+    </p>
+
+    <p>
+      <a href="https://github.com/usf-cs272-spring2022/usf-cs272-spring2022.github.io" class="button is-small" style="padding-left: 1em; padding-right: 1em;">
+        <i class="fab fa-github-alt"></i>&nbsp;<strong>Github</strong>
+      </a>
+
+      <a href="https://fontawesome.com/" class="button is-small" style="padding-left: 1em; padding-right: 1em;">
+        <i class="fab fa-font-awesome"></i>&nbsp;<strong>FontAwesome</strong>
+      </a>
+
+      <a href="https://bulma.io" class="button is-small">
+        <img src="https://bulma.io/images/made-with-bulma--semiblack.png" alt="Made with Bulma" width="128" height="24">
+      </a>
+    </p>
+
+  </div>
+</footer>
+<!-- end footer -->
+
+
+<script>
+anchors.add().remove('.no-anchor');
+</script>
+
+<!-- end -->
+</body>
+</html>

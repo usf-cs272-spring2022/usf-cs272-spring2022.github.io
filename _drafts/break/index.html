@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+
+  <title>Zoom Break</title>
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/all.min.css">
+
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #left-column, #right-column {
+      flex-grow: 1;
+      flex-basis: 50%;
+    }
+
+    #right-rows {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    /* #top-right-cell {
+      flex-grow: 2;
+    }
+
+    #bottom-right-cell {
+      flex-grow: 3;
+    } */
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    div#left-column, div#right-column {
+      border: 1px solid white;
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+
+<body class="has-background-dark">
+  <div id="left-column">
+  </div>
+
+  <div id="right-column">
+    <div id="right-rows">
+      <!-- <div id="top-right-cell">
+      </div>
+
+      <div id="bottom-right-cell">
+      </div> -->
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const poll = new URL("https://www.polleverywhere.com/discourses/hfXL00Zs1U5Wzfbutyzvb?preview=true&controls=none");
+
+    // set defaults
+    if (Array.from(params.keys()).length < 1) {
+      console.log("Hello world.")
+      params.append("text", "true");
+    }
+
+    // left column
+    let url = "";
+
+    try {
+      url = new URL(params.get("url")).pathname;
+    }
+    catch(err) {
+      url = poll.pathname;
+    }
+
+    console.log("Using: " + url);
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://embed.polleverywhere.com${url}?controls=none`;
+    document.getElementById("left-column").appendChild(iframe);
+
+    // right column
+    const right = document.getElementById("right-rows");
+
+    if (params.has("timer")) {
+      let minutes = 15;
+
+      try {
+        minutes = parseInt(params.get("timer"));
+      }
+      catch(err) {
+        minutes = 15;
+      }
+
+      console.log("Timer: " + minutes);
+
+      const div = document.createElement("div");
+      div.style.flexGrow = "2";
+
+      const iframe = document.createElement("iframe");
+      iframe.src = `https://www.bigtimer.net/info?minutes=${minutes}`;
+
+      right.appendChild(div);
+      div.appendChild(iframe);
+    }
+
+    if (params.has("text")) {
+      console.log("Adding text area...");
+
+      const div = document.createElement("div");
+      div.style.flexGrow = "2";
+
+      const iframe = document.createElement("iframe");
+      iframe.src = "textarea.html";
+
+      right.appendChild(div);
+      div.appendChild(iframe);
+    }
+
+    if (params.has("poll")) {
+      console.log("Adding default poll...");
+
+      const div = document.createElement("div");
+      div.style.flexGrow = "3";
+
+      const iframe = document.createElement("iframe");
+      iframe.src = `https://embed.polleverywhere.com${poll.pathname}?controls=none`;
+
+      right.appendChild(div);
+      div.appendChild(iframe);
+    }
+  </script>
+
+</body>
+
+</html>

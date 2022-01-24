@@ -1,0 +1,227 @@
+# syllabus: &default
+#   text: 'Course Syllabus'
+#   date: 2021-08-27
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2390230'
+#   icon: 'quiz'
+#   tags: ['none']
+#
+# paths:
+#   <<: *default
+#   text: 'Paths and Files'
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2391037'
+#   date: 2021-09-07
+#   tags: ['files']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392581'
+#
+# data:
+#   <<: *default
+#   text: 'Data Structures'
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2391039'
+#   date: 2021-09-07
+#   tags: ['data']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392587'
+#
+# maps:
+#   <<: *default
+#   text: 'Using Maps'
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2391417'
+#   date: 2021-09-14
+#   tags: ['data']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392589'
+#
+# static:
+#   <<: *default
+#   text: 'Instance vs Static'
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2391540'
+#   date: 2021-09-14
+#   tags: ['objects']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392593'
+#
+# identifier:
+#   <<: *default
+#   text: 'Instance vs Identifier'
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2391542'
+#   date: 2021-09-14
+#   tags: ['objects']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392592'
+#
+# mutability1:
+#   <<: *default
+#   text: 'Mutability Part 1'
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2391749'
+#   date: 2021-09-21
+#   tags: ['objects']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392594'
+#
+# mutability2:
+#   <<: *default
+#   text: 'Mutability Part 2'
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2391750'
+#   date: 2021-09-21
+#   tags: ['objects']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392595'
+#
+# inheritance:
+#   <<: *default
+#   text: 'Inheritance Keywords'
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392015'
+#   date: 2021-10-01
+#   tags: ['inheritance']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392590'
+#
+# collections:
+#   <<: *default
+#   text: 'Collections Revisited'
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392159'
+#   date: 2021-10-01
+#   tags: ['inheritance']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392596'
+#
+# casting:
+#   <<: *default
+#   text: 'Casting'
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2391850'
+#   date: 2021-10-01
+#   tags: ['inheritance']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392597'
+#
+# nesting:
+#   <<: *default
+#   text: 'Nested Classes'
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392160'
+#   date: 2021-10-01
+#   tags: ['inheritance']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392599'
+#
+# project2:
+#   <<: *default
+#   text: 'Project 2 Writeup'
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392164'
+#   date: 2021-10-05
+#   tags: ['none']
+#
+# java:
+#   <<: *default
+#   text: 'Java Features'
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392375'
+#   date: 2021-10-05
+#   tags: ['none']
+#
+# lambdas:
+#   <<: *default
+#   text: 'Lambda Expressions'
+#   date: 2021-10-08
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392377'
+#   tags: ['lambdas']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392598'
+#
+# streams:
+#   <<: *default
+#   text: 'Stream Pipelines'
+#   date: 2021-10-08
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392378'
+#   tags: ['streams']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392600'
+#
+# regex:
+#   <<: *default
+#   text: 'Regular Expressions'
+#   date: 2021-10-22
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392759'
+#   tags: ['regexes']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394181'
+#
+# unit:
+#   <<: *default
+#   text: 'Unit Testing'
+#   date: 2021-10-22
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392935'
+#   tags: ['testing']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394175'
+#
+# asserts:
+#   <<: *default
+#   text: 'Assert Statements'
+#   date: 2021-10-29
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393222'
+#   tags: ['debugging']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394183'
+#
+# logging:
+#   <<: *default
+#   text: 'Logging'
+#   date: 2021-10-29
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393219'
+#   tags: ['debugging']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394178'
+#
+# threads:
+#   <<: *default
+#   text: 'Thread Basics'
+#   date: 2021-11-05
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393227'
+#   tags: ['threads']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394182'
+#
+# project3:
+#   <<: *default
+#   text: 'Project 3 Writeup'
+#   date: 2021-11-05
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393370'
+#   tags: ['none']
+#
+# synchronization:
+#   <<: *default
+#   text: 'Synchronization'
+#   date: 2021-11-12
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393228'
+#   tags: ['threads']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394174'
+#
+# workers:
+#   <<: *default
+#   text: 'Work Queues'
+#   date: 2021-11-12
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393220'
+#   tags: ['threads']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394173'
+#
+# http:
+#   <<: *default
+#   text: 'HTTP Basics'
+#   date: 2021-11-19
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393226'
+#   tags: ['web']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394179'
+#
+# dynamic:
+#   <<: *default
+#   text: 'Dynamic Web'
+#   date: 2021-11-19
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393224'
+#   tags: ['servlets']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394184'
+#
+# servlets:
+#   <<: *default
+#   text: 'Servlet Contexts'
+#   date: 2021-11-23
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393225'
+#   tags: ['servlets']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394180'
+#
+# joins:
+#   <<: *default
+#   text: 'SQL Joins'
+#   date: 2021-11-30
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393218'
+#   tags: ['sql']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394176'
+#
+# groups:
+#   <<: *default
+#   text: 'SQL Groups'
+#   date: 2021-11-30
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393221'
+#   tags: ['sql']
+#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394177'

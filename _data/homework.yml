@@ -1,0 +1,91 @@
+# argumentmap: &default
+#   text: 'ArgumentMap'
+#   date: 2021-09-03
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7115402'
+#   type: ''
+#   icon: 'homework'
+#   tags: ['objects', 'data']
+#
+# textfilestemmer:
+#   <<: *default
+#   text: 'TextFileStemmer'
+#   date: 2021-09-10
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7115403'
+#   tags: ['files', 'data']
+#
+# simplejsonwriter:
+#   <<: *default
+#   text: 'SimpleJsonWriter'
+#   date: 2021-09-17
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7115404'
+#   tags: ['files', 'data']
+#
+# textfileindex:
+#   <<: *default
+#   text: 'TextFileIndex'
+#   date: 2021-09-24
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7115405'
+#   tags: ['objects', 'inheritance']
+#
+# textfilesorter:
+#   <<: *default
+#   text: 'TextFileSorter'
+#   date: 2021-10-01
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7115406'
+#   tags: ['inheritance']
+#
+# textfilefinder:
+#   <<: *default
+#   text: 'TextFileFinder'
+#   date: 2021-10-08
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7115407'
+#   tags: ['lambdas', 'streams']
+#
+# linkparser:
+#   <<: *default
+#   text: 'LinkParser'
+#   date: 2021-10-22
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7115408'
+#   tags: ['web', 'regexes']
+#
+# htmlcleaner:
+#   <<: *default
+#   text: 'HtmlCleaner'
+#   date: 2021-10-22
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7115409'
+#   tags: ['web', 'regexes']
+#
+# loggingsetup:
+#   <<: *default
+#   text: 'LoggingSetup'
+#   date: 2021-10-29
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7115410'
+#   tags: ['debugging']
+#
+# readwritelock:
+#   <<: *default
+#   text: 'ReadWriteLock'
+#   date: 2021-11-12
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7115411'
+#   tags: ['threads']
+#
+# primefinder:
+#   <<: *default
+#   text: 'PrimeFinder'
+#   date: 2021-11-12
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7115412'
+#   tags: ['threads']
+#
+# htmlfetcher:
+#   <<: *default
+#   text: 'HtmlFetcher'
+#   date: 2021-11-19
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7115413'
+#   tags: ['web']
+#
+# headserver:
+#   <<: *default
+#   text: 'HeaderServer (Optional)'
+#   date: 2021-12-03
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7115414'
+#   tags: ['web', 'servlets']

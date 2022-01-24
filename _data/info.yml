@@ -1,0 +1,95 @@
+name: Software Development
+code: CS 272
+term: Spring 2022
+credits: 4
+
+blurb: |
+  This course gives students experience with advanced programming topics, including inheritance and polymorphism, multithreaded programming, networking, database programming, and web development. Students will also learn techniques for designing, debugging, refactoring, and reviewing code.
+
+links:
+  syllabus:
+    name: 'Syllabus'
+    icon: 'far fa-file-alt'
+    link: 'https://usfca.simplesyllabus.com/doc/yoiu6kild/Spring-2022-CS-272-01-Software-Development?mode=view'
+    info: 'official course and university policies'
+
+  canvas:
+    name: 'Canvas'
+    icon: 'far fa-school'
+    link: 'https://usfca.instructure.com/courses/1605147/'
+    info: 'grades and assignment deadlines'
+    line: true
+
+  github:
+    name: 'Github'
+    icon: 'fab fa-github-alt'
+    link: 'https://github.com/usf-cs272-spring2022'
+    info: 'lecture code, homework templates, and project tests'
+
+  forums:
+    name: 'Piazza'
+    icon: 'far fa-comments'
+    link: 'https://piazza.com/usfca/spring2022/cs272/home'
+    info: 'course announcements, upcoming events, lecture Q&amp;A, homework help, and general discussion'
+    line: true
+
+  polls:
+    name: 'Live Polls'
+    icon: 'far fa-poll-people'
+    link: 'https://PollEv.com/sjengle'
+    info: 'live anonymous polls'
+
+  suggestions:
+    name: 'Suggestion Box'
+    icon: 'far fa-box-ballot'
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSfCj9UrtNNz06GDqn5zeWHy57kSGjrU5tPshFGwbu8Xnm_9zQ/viewform?usp=sf_link'
+    info: 'anonymous course suggestions'
+
+streams:
+  lectures:
+    name: 'CS 272 Lectures'
+    icon: 'far fa-chalkboard-teacher'
+    room: '824 6290 3703'
+    link: 'https://usfca.zoom.us/j/82462903703'
+    info: 'livestreams of lecture for CS 272-01 and CS 272-02'
+
+  labs:
+    name: 'CS 272 Labs'
+    icon: 'far fa-users-class'
+    room: '824 6290 3703'
+    link: 'https://usfca.zoom.us/j/82462903703'
+    info: 'livestreams of lab for CS 272L-01 and CS 272L-02'
+
+  instructor:
+    name: 'Office Hours (Instructor)'
+    icon: 'far fa-user-clock'
+    info: 'instructor office hours'
+    room: '824 6290 3703'
+    link: 'https://usfca.zoom.us/j/82462903703'
+    line: true
+
+  assistants:
+    name: 'Office Hours (Teacher Assistant)'
+    icon: 'far fa-user-clock'
+    info: 'teacher assistant office hours'
+    room: '824 6290 3703'
+    link: 'https://usfca.zoom.us/j/82462903703'
+
+  reviews:
+    name: 'Code Reviews'
+    icon: 'far fa-laptop-code'
+    room: '886 1546 7814'
+    link: 'https://usfca.zoom.us/j/88615467814'
+    info: 'one-on-one project code reviews'
+    line: true
+
+pages:
+  - name: 'Schedule'
+    icon: 'far fa-calendar-alt'
+    link: '/schedule.html'
+    info: 'a detailed weekly schedule with links to lecture materials and assignment deadlines'
+
+  - name: 'Guides'
+    icon: 'far fa-book'
+    link: '/guides/'
+    info: 'helpful setup guides and project writeups'

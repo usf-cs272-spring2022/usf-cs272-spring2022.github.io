@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+
+  <title>Zoom Break</title>
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/all.min.css">
+
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      flex-direction: row;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      overflow-y: scroll;
+    }
+
+    body textarea {
+      width: 100%;
+      height: 100%;
+
+      font-family: 'Roboto Mono', monospace;
+      font-size: 22pt;
+      line-height: 1.5;
+
+      color: #E8E8E9;
+      background-color: black;
+
+      border: none;
+
+      margin: 0pt;
+      padding: 1rem;
+
+      overflow: hidden;
+    }
+
+    #left-column {
+      flex-grow: 1;
+    }
+
+    #right-column {
+      width: 40em;
+    }
+
+    div#left-column, div#right-column {
+      border: 1px solid white;
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+
+<body class="has-background-dark">
+  <div id="left-column">
+    <iframe src="/index.html"></iframe>
+  </div>
+
+  <div id="right-column">
+    <textarea>
+ANNOUNCEMENTS:
+- Pending
+- Pending
+
+AGENDA:
+- Announcements
+- Upcoming Deadlines
+
+- Pending
+- Pending
+
+- 15m Break
+- 10m Question/Answer
+  https://pollev.com/sjengle
+
+- Pending
+- Pending
+    </textarea>
+  </div>
+</body>
+
+</html>

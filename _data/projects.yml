@@ -1,0 +1,53 @@
+# project1f: &default
+#   text: 'Project 1 Inverted Index'
+#   link: '/guides/projects/project-1.html'
+#   date: 2021-09-28
+#   icon: 'project'
+#   type: 'has-text-usf-plum'
+#
+# project1d:
+#   <<: *default
+#   text: 'Project 1 First Review'
+#   link: '/guides/projects/project-1.html'
+#   icon: 'review'
+#   date: 2021-10-08
+#
+# project2f:
+#   <<: *default
+#   text: 'Project 2 Partial Search'
+#   link: '/guides/projects/project-2.html'
+#   date: 2021-10-26
+#
+# project2d:
+#   <<: *default
+#   text: 'Project 2 First Review'
+#   link: '/guides/projects/project-2.html'
+#   icon: 'review'
+#   date: 2021-11-05
+#
+# project3f:
+#   <<: *default
+#   text: 'Project 3 Multithreading'
+#   link: '/guides/projects/project-3.html'
+#   date: 2021-11-16
+#
+# project3d:
+#   <<: *default
+#   text: 'Project 3 First Review'
+#   link: '/guides/projects/project-3.html'
+#   icon: 'review'
+#   date: 2021-12-03
+#
+# project4f:
+#   <<: *default
+#   text: 'Project 4 Web Crawler'
+#   link: '/guides/projects/project-4.html'
+#   date: 2021-12-07
+#
+# project4d:
+#   <<: *default
+#   text: 'Project 4 Search Engine'
+#   link: '/guides/projects/project-4.html'
+#   icon: 'review'
+#   show: true
+#   date: 'Finals'

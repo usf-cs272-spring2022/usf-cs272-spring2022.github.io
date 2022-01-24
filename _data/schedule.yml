@@ -1,0 +1,2170 @@
+defaults:
+  pending: &pending 'has-text-grey-light'
+  lectures: &lectures
+    label: 'Livestream'
+    dates: false
+    items:
+      - text: 'CS 272 Lecture'
+        zoom: 'lectures'
+
+  labs: &labs
+    label: 'Livestream'
+    dates: false
+    items:
+      - text: 'CS 272L Lab'
+        zoom: 'labs'
+
+  recordings: &recordings
+    label: 'Recordings'
+    dates: false
+
+  assignments: &assignments
+    label: 'Assignments'
+    dates: true
+
+  deadlines: &deadlines
+    label: 'Dates and Deadlines'
+    dates: true
+
+weeks:
+  - week: 1
+    days:
+      - date: 2022-01-25
+        sections:
+          - <<: *lectures
+            items:
+              - text: Pending
+              
+  # - week: 1
+  #   days:
+  #     - date: 2021-08-24
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/TKSP2vRw3mv2yzj-56q2iPuWac9bKGX33djjq6usiF3ePPruxLFxR1GcN1d4P_su.KE29K66JCk3MDzgj?startTime=1629833378000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Introduction'
+  #               icon: 'slides'
+  #               link: 'https://docs.google.com/presentation/d/e/2PACX-1vQDphQQnbDWoW_bHfUDFH9StFEjM1KFHYeF8zDZq3BDnWYqD-YiLows6UwzYbQ5z7i-LgbW5G--0zv6/pub?start=false&loop=false&delayms=3000'
+  #               save: true
+  #
+  #             - text: 'Syllabus'
+  #               icon: 'website'
+  #               link: 'https://usfca.simplesyllabus.com/doc/63k541zg8/Fall-2021-CS-272-01-Software-Development?mode=view'
+  #
+  #         - label: 'Resources'
+  #           dates: ''
+  #           items:
+  #             - text: 'Getting Started'
+  #               link: '/guides/general/getting-started.html'
+  #               icon: 'website'
+  #
+  #             - text: 'Java and Eclipse Setup'
+  #               link: '/guides/eclipse/java-and-eclipse-setup.html'
+  #               icon: 'website'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'participation'
+  #               name: 'introduction'
+  #
+  #             - file: 'participation'
+  #               name: 'forum_setup'
+  #
+  #             - file: 'quizzes'
+  #               name: 'syllabus'
+  #
+  #             - file: 'attendance'
+  #               name: 'class1'
+  #               type: 'bump'
+  #
+  #             - file: 'attendance'
+  #               name: 'other1'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - text: 'Classes Begin'
+  #               date: 2021-08-24
+  #               show: true
+  #               icon: 'date'
+  #               type: *pending
+  #
+  #     - date: 2021-08-26
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/M8UBNaRCnG1G-zG-ons72BgONUuZctjr5XUfywaNy8JRgS22cTZ7Nm7xDNRlk80a.B7ctVJsCiGBrKONs?startTime=1630005998000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Project Euler'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/ProjectEuler'
+  #               icon: 'code'
+  #
+  #             - file: 'slides'
+  #               name: 'exceptions'
+  #               type: 'bump'
+  #
+  #             - text: 'Exception Handling'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/ExceptionHandling'
+  #               icon: 'code'
+  #
+  #     - date: 2021-08-27
+  #       sections:
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Learning Git and Github'
+  #               link: '/guides/general/learning-git-and-github.html'
+  #               icon: 'website'
+  #
+  #             - text: 'Java and Eclipse Setup'
+  #               link: '/guides/eclipse/java-and-eclipse-setup.html'
+  #               icon: 'website'
+  #
+  #             - text: 'Homework Guides'
+  #               link: '/guides/homework/'
+  #               icon: 'website'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'homework'
+  #               name: 'argumentmap'
+  #
+  #             - file: 'participation'
+  #               name: 'homework_setup'
+  #
+  #             - file: 'participation'
+  #               name: 'github_resource'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'participation'
+  #               name: 'introduction'
+  #
+  #             - file: 'participation'
+  #               name: 'forum_setup'
+  #
+  #             - file: 'quizzes'
+  #               name: 'syllabus'
+  #
+  #             - text: 'Add Deadline'
+  #               date: 2021-08-30
+  #               icon: 'date'
+  #               type: ['bump', 'has-text-warning']
+  #
+  # - week: 2
+  #   days:
+  #     - date: 2021-08-31
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/jX4Sf9CoEM4tHK8Tkb7DReLB87tkQDVDWa8eUm9VqNX4C8sZ_rWzr05TVZvQ-sN3.Rp6_Xv6ciBp4E7DG?startTime=1630437957000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - file: 'slides'
+  #               name: 'paths'
+  #
+  #             - text: 'File I/O'
+  #               icon: 'code'
+  #               type: 'bump'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/FileIO'
+  #
+  #             - text: '– PathDemo.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/FileIO/src/main/java/PathDemo.java'
+  #
+  #             - text: '– EliteFileConverter.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/FileIO/src/main/java/EliteFileConverter.java'
+  #
+  #             - text: '– DirectoryStreamDemo.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/FileIO/src/main/java/DirectoryStreamDemo.java'
+  #               tube: 'https://drive.google.com/file/d/1sAML7el7txCn53kIMccCgEPgOSDDzeCm/view?usp=sharing'
+  #
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class2'
+  #
+  #             - file: 'attendance'
+  #               name: 'other2'
+  #
+  #             - file: 'quizzes'
+  #               name: 'paths'
+  #               type: 'bump'
+  #
+  #             - file: 'participation'
+  #               name: 'lecture_setup'
+  #
+  #             - file: 'participation'
+  #               name: 'cs_event'
+  #               type: 'bump'
+  #
+  #             - file: 'participation'
+  #               name: 'piazza_post'
+  #
+  #             - file: 'participation'
+  #               name: 'piazza_response'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class1'
+  #
+  #             - file: 'attendance'
+  #               name: 'other1'
+  #
+  #     - date: 2021-09-02
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/TriNxGVFeJFt5gzCWvoj8Mc92OLq1G_PL6EltVxASzVGBteHgTCbDpL28fJufW3e.gyp_MwMRT0mxCfev?startTime=1630610908000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - file: 'slides'
+  #               name: 'data'
+  #
+  #             - file: 'slides'
+  #               name: 'collections'
+  #
+  #             - text: 'Data Structures'
+  #               icon: 'code'
+  #               type: 'bump'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/DataStructures'
+  #
+  #             - text: '– CollectionDemo.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/DataStructures/src/main/java/CollectionDemo.java'
+  #               tube: 'https://drive.google.com/file/d/1UbVnpLnFL1v0AKH6pazLRH0jKh1OkTF1/view?usp=sharing'
+  #
+  #             - text: '– MapDemo.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/DataStructures/src/main/java/MapDemo.java'
+  #               tube: 'https://drive.google.com/file/d/1byBtkaRo7WkY3cBfPXJNkvEi3D7UhoJD/view?usp=sharing'
+  #
+  #             - text: '– NestedMapDemo.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/DataStructures/src/main/java/NestedMapDemo.java'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'quizzes'
+  #               name: 'data'
+  #
+  #     - date: 2021-09-03
+  #       sections:
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Configuring Eclipse'
+  #               link: '/guides/eclipse/configuring-eclipse.html'
+  #               icon: 'website'
+  #
+  #             - text: 'Completing Homework'
+  #               link: '/guides/homework/complete-homework.html'
+  #               icon: 'website'
+  #               type: 'bump'
+  #
+  #             - text: 'Testing Homework'
+  #               link: '/guides/homework/test-homework.html'
+  #               icon: 'website'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'homework'
+  #               name: 'textfilestemmer'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'homework'
+  #               name: 'argumentmap'
+  #
+  #             - file: 'participation'
+  #               name: 'homework_setup'
+  #
+  #             - file: 'participation'
+  #               name: 'github_resource'
+  #
+  #             - text: 'Labor Day (No Classes)'
+  #               date: 2021-09-06
+  #               icon: 'date'
+  #               type: ['bump', 'has-text-grey-light']
+  #
+  # - week: 3
+  #   days:
+  #     - date: 2021-09-07
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/dvuZX3FtB3WPmnSu2PMH1Tnp0jCKdROPGwjjt56orQexmR3g7k0g2J8kjGKgA9Q.MQIHZ64qNpXnViK8?startTime=1631042883000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Project Overview'
+  #               icon: 'slides'
+  #               link: 'https://docs.google.com/presentation/d/e/2PACX-1vSjinSQQ1L-8OZCLnEnem30HUOHufhymweynhhl4_tCQ2hAy1GF5CIJfinJAghvmXcETTf4--V4fWKl/pub?start=false&loop=false&delayms=3000'
+  #               save: true
+  #
+  #             - text: 'Project 1 Inverted Index'
+  #               icon: 'website'
+  #               link: '/guides/projects/project-1.html'
+  #
+  #             - text: 'Data Structures'
+  #               icon: 'code'
+  #               type: 'bump'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/DataStructures'
+  #
+  #             - text: '– NestedMapDemo.java (Revisited)'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/DataStructures/src/main/java/NestedMapDemo.java'
+  #
+  #             - text: '– IterationDemo.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/DataStructures/src/main/java/IterationDemo.java'
+  #
+  #             - text: '– RemoveDemo.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/DataStructures/src/main/java/RemoveDemo.java'
+  #
+  #             - text: '– MutableSetDemo.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/DataStructures/src/main/java/MutableSetDemo.java'
+  #
+  #             - text: '– FindDemo.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/DataStructures/src/main/java/FindDemo.java'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class3'
+  #
+  #             - file: 'attendance'
+  #               name: 'other3'
+  #
+  #             - file: 'quizzes'
+  #               name: 'maps'
+  #               type: 'bump'
+  #
+  #             - file: 'participation'
+  #               name: 'intake'
+  #               type: 'bump'
+  #
+  #             - file: 'projects'
+  #               name: 'project1f'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class2'
+  #
+  #             - file: 'attendance'
+  #               name: 'other2'
+  #
+  #             - file: 'quizzes'
+  #               name: 'paths'
+  #
+  #             - file: 'quizzes'
+  #               name: 'data'
+  #
+  #     - date: 2021-09-09
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/llL_YSu50s3D1JHFoAuJCR7jYJemdGclmhmo_7x6ilm46jo0l-G_u6hb81HGgvj-.qQDSGKVVRfuTqf4i?startTime=1631215717000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Getting Help'
+  #               icon: 'slides'
+  #               link: 'https://docs.google.com/presentation/d/e/2PACX-1vQFoUdGZwy2Cozvsb6VPGX8QHtwD0lmC691ks4rB9FesW_uDXZz1GMYuDZA9zwAWWRGKt1aFfh9SdFM/pub?start=false&loop=false&delayms=3000'
+  #               save: true
+  #
+  #             - file: 'slides'
+  #               name: 'oop'
+  #               type: 'bump'
+  #
+  #             - text: 'Object Oriented Programming'
+  #               icon: 'code'
+  #               type: 'bump'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/ObjectOrientedProgramming'
+  #
+  #             - text: '<del>– Widget.java</del>'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/Widget.java'
+  #               tube: 'https://drive.google.com/file/d/1GHR0n-CskeZh2ABFQsGcZERDza1fot4s/view?usp=sharing'
+  #               type: 'del'
+  #               more: 'and <a href="https://github.com/usf-cs272-fall2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/WidgetDemo.java">WidgetDemo.java</a>'
+  #
+  #             - text: '– StaticDemo.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/StaticDemo.java'
+  #               tube: 'https://drive.google.com/file/d/13OATz6xNyiRGQXX_ZzSHPWSwt8mEaLji/view?usp=sharing'
+  #
+  #             - text: '– ObjectDemo.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/ObjectDemo.java'
+  #               tube: 'https://drive.google.com/file/d/1U0uVHUPp1-zZK-J5rVn0X-pP2CdxF3el/view?usp=sharing'
+  #
+  #             - text: '– StringDemo.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/StringDemo.java'
+  #               tube: 'https://drive.google.com/file/d/1Gncwuj-YnyaPivB3vQLLyWVM-8ZnFjeT/view?usp=sharing'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'quizzes'
+  #               name: 'identifier'
+  #
+  #             - file: 'quizzes'
+  #               name: 'static'
+  #
+  #     - date: 2021-09-10
+  #       sections:
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Project Setup'
+  #               icon: 'website'
+  #               link: 'https://usf-cs272-fall2021.github.io/guides/projects/setup.html'
+  #
+  #             - text: 'Stay on Track'
+  #               icon: 'website'
+  #               link: 'https://docs.google.com/spreadsheets/d/1fNSPLVnRL0Rt4WihZjO47H2dYKSQ6QQ0oIXc6PZVNUk/edit?usp=sharing'
+  #
+  #             - text: 'Comparing Files in Eclipse'
+  #               type: 'bump'
+  #               link: '/guides/eclipse/comparing-files.html'
+  #               icon: 'website'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'homework'
+  #               name: 'simplejsonwriter'
+  #
+  #             - file: 'participation'
+  #               name: 'project_setup'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'homework'
+  #               name: 'textfilestemmer'
+  #
+  #             - file: 'participation'
+  #               name: 'lecture_setup'
+  #
+  #             - text: 'Drop Deadline'
+  #               date: 2021-09-10
+  #               icon: 'date'
+  #               show: true
+  #               type: ['bump', 'has-text-warning']
+  #
+  # - week: 4
+  #   days:
+  #     - date: 2021-09-14
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/rwRFCNNkqTO0YrdVOnLJOubWLtaigOTOlDlvipJY1UGVtc-VgQwVWHLi9bSXyILH.OLdcAMSwEPyaNf_k?startTime=1631647910000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Object Oriented Programming'
+  #               icon: 'code'
+  #               type: 'bump'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/ObjectOrientedProgramming'
+  #
+  #             - text: '– HashCodeDemo.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/HashCodeDemo.java'
+  #
+  #             - text: '– MutabilityDemo.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/MutabilityDemo.java'
+  #
+  #             - text: '– ConcatenationDemo.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/ConcatenationDemo.java'
+  #
+  #             - text: '– MapMutabilityDemo.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/MapMutabilityDemo.java'
+  #
+  #             - text: '– PrefixMap.java'
+  #               icon: 'none'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/PrefixMap.java'
+  #               more: 'and <a href="https://github.com/usf-cs272-fall2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/PrefixDemo.java">PrefixDemo.java</a>'
+  #               type: 'del'
+  #
+  #             - file: 'slides'
+  #               name: 'generics'
+  #               type: 'bump del'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class4'
+  #
+  #             - file: 'attendance'
+  #               name: 'other4'
+  #
+  #             - file: 'quizzes'
+  #               name: 'mutability1'
+  #               type: 'bump'
+  #
+  #             - file: 'quizzes'
+  #               name: 'mutability2'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class3'
+  #
+  #             - file: 'attendance'
+  #               name: 'other3'
+  #
+  #             - file: 'quizzes'
+  #               name: 'maps'
+  #               type: 'bump'
+  #
+  #             - file: 'quizzes'
+  #               name: 'identifier'
+  #
+  #             - file: 'quizzes'
+  #               name: 'static'
+  #
+  #     - date: 2021-09-16
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/QiwJnpC_NvBy8tYbpr6RiaWSlV0G3DioNN10Ovl3JPzIcCooR_7cnMqfBJfurlqC.H3i68cxdGGqw1KPA?startTime=1631820821000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'PrefixMap.java'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/PrefixMap.java'
+  #               more: 'and <a href="https://github.com/usf-cs272-fall2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/PrefixDemo.java">PrefixDemo.java</a>'
+  #
+  #             - file: 'slides'
+  #               name: 'inheritance'
+  #               type: 'bump'
+  #
+  #             - file: 'slides'
+  #               name: 'abstract'
+  #
+  #             - file: 'slides'
+  #               name: 'generics'
+  #               type: 'bump'
+  #
+  #             - text: 'GenericTypesDemo.java'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Inheritance/src/main/java/GenericTypesDemo.java'
+  #               type: 'del'
+  #               tube: 'https://drive.google.com/file/d/1Haj475bCoHuTN3TZBAuYgsafkeka8WNA/view?usp=sharing'
+  #
+  #     - date: 2021-09-17
+  #       sections:
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Project Testing'
+  #               link: '/guides/projects/testing.html'
+  #               icon: 'website'
+  #
+  #             - text: 'Project Functionality'
+  #               link: '/guides/projects/functionality.html'
+  #               icon: 'website'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'homework'
+  #               name: 'textfileindex'
+  #
+  #             - file: 'participation'
+  #               name: 'belonging1'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'homework'
+  #               name: 'simplejsonwriter'
+  #
+  #             - file: 'participation'
+  #               name: 'project_setup'
+  #
+  #             - file: 'participation'
+  #               name: 'intake'
+  #
+  # - week: 5
+  #   days:
+  #     - date: 2021-09-21
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/6KB6Ss0hj-Lou4wKvUWNMmMG_-s7KM1ghoWM_JBeUoZes50PQjfIKTGM5Ugwhh85.u8JGuCCqoExloUWd?startTime=1632253486000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Project Design'
+  #               icon: 'website'
+  #               link: '/guides/projects/design.html'
+  #
+  #             - file: 'slides'
+  #               name: 'revisited'
+  #               type: 'bump'
+  #
+  #             - file: 'slides'
+  #               name: 'casting'
+  #
+  #             - text: 'Inheritance'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/Inheritance'
+  #               type: 'bump'
+  #
+  #             - text: '– CastDemo.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Inheritance/src/main/java/CastDemo.java'
+  #
+  #         - label: 'Additional Content'
+  #           dates: ''
+  #           items:
+  #             - file: 'slides'
+  #               name: 'object'
+  #
+  #             - file: 'slides'
+  #               name: 'final'
+  #
+  #             - text: 'GenericTypesDemo.java'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Inheritance/src/main/java/GenericTypesDemo.java'
+  #               tube: 'https://drive.google.com/file/d/1Haj475bCoHuTN3TZBAuYgsafkeka8WNA/view?usp=sharing'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class5'
+  #
+  #             - file: 'attendance'
+  #               name: 'other5'
+  #
+  #             - file: 'quizzes'
+  #               name: 'inheritance'
+  #               type: 'bump'
+  #
+  #             - file: 'quizzes'
+  #               name: 'collections'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class4'
+  #
+  #             - file: 'attendance'
+  #               name: 'other4'
+  #
+  #             - file: 'quizzes'
+  #               name: 'mutability1'
+  #               type: 'bump'
+  #
+  #             - file: 'quizzes'
+  #               name: 'mutability2'
+  #
+  #     - date: 2021-09-23
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/Xz74ti-dN9NPsdrWPAcKOy26KadiUKrV5qkInBnv21wAa1Lu_WfkpthTeVy9M4yw.oy9QBxdfzHPj9k88?startTime=1632425515000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - file: 'slides'
+  #               name: 'nested'
+  #
+  #             - text: 'Shape Demo'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/Inheritance'
+  #               type: 'bump'
+  #
+  #             - text: '– Shape.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Inheritance/src/main/java/Shape.java'
+  #
+  #             - text: '– Rectangle.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Inheritance/src/main/java/Rectangle.java'
+  #
+  #             - text: '– Square.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Inheritance/src/main/java/Square.java'
+  #
+  #             - text: '– ShapeDemo.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Inheritance/src/main/java/ShapeDemo.java'
+  #
+  #             - text: 'Gadget Sort Demo'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/Inheritance'
+  #               type: 'bump'
+  #               tube: 'https://drive.google.com/file/d/1LLItjwK8SwopHXJdZ7o1vffT1nNvoaEa/view?usp=sharing'
+  #
+  #             - text: '– Gadget.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Inheritance/src/main/java/Gadget.java'
+  #
+  #             - text: '– GadgetComparator.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Inheritance/src/main/java/GadgetComparator.java'
+  #
+  #             - text: '– GadgetDemo.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Inheritance/src/main/java/GadgetDemo.java'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'quizzes'
+  #               name: 'casting'
+  #
+  #             - file: 'quizzes'
+  #               name: 'nesting'
+  #
+  #     - date: 2021-09-24
+  #       sections:
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Project Design'
+  #               icon: 'website'
+  #               link: '/guides/projects/design.html'
+  #
+  #             - text: 'Homework Help'
+  #               icon: 'homework'
+  #               type: 'bump'
+  #
+  #             - text: 'Project Help'
+  #               icon: 'project'
+  #
+  #             - text: 'Code Reviews'
+  #               icon: 'review'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'homework'
+  #               name: 'textfilesorter'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'homework'
+  #               name: 'textfileindex'
+  #
+  #             - file: 'participation'
+  #               name: 'belonging1'
+  #
+  # - week: 6
+  #   days:
+  #     - date: 2021-09-28
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/RNNxBFTsGQTzSh96z0_Ir8KEJs8eOx6xI_kVgBYFCbBgQ4STNLI6CjekjlrACyms.mCNWR0VaGUElBjj4?startTime=1632857718000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Java Features'
+  #               icon: 'slides'
+  #               link: 'https://docs.google.com/presentation/d/e/2PACX-1vQHW0yBzbFrAFmDnFjhffAW79RMIHc0zVe1Lm3OajYN0G9j4_xxWx1O-tm9WksiOn3hF_DS_MYtXNtQ/pub?start=false&loop=false&delayms=3000'
+  #               save: 'true'
+  #               tube: 'https://drive.google.com/file/d/1WNk4AG9zWdC-n58sLeCEkgVA8VEgFUji/view?usp=sharing'
+  #
+  #             - file: 'slides'
+  #               name: 'lambdas'
+  #
+  #             - text: 'Lambda Expressions'
+  #               icon: 'code'
+  #               type: 'bump'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/LambdaExpressions'
+  #
+  #             - text: '– StringSorter.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/LambdaExpressions/src/main/java/StringSorter.java'
+  #
+  #             - text: '– PathMatcherDemo.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/LambdaExpressions/src/main/java/PathMatcherDemo.java'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class6'
+  #
+  #             - file: 'attendance'
+  #               name: 'other6'
+  #
+  #             - file: 'projects'
+  #               name: 'project2f'
+  #               type: 'bump'
+  #
+  #             - file: 'quizzes'
+  #               name: 'project2'
+  #
+  #             - file: 'quizzes'
+  #               name: 'java'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class5'
+  #
+  #             - file: 'attendance'
+  #               name: 'other5'
+  #
+  #             - file: 'projects'
+  #               name: 'project1f'
+  #               type: 'bump'
+  #
+  #     - date: 2021-09-30
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/uCUNgxvoZPfcG8A-E0ISRIGfUrCIFAYEHqqdKbWbzJIbhBLvfeksU_m_0GyBLRnd.SdNQ_n8TzhoYAKWE?startTime=1633030217000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Lambda Expressions'
+  #               icon: 'code'
+  #               type: 'bump'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/LambdaExpressions'
+  #
+  #             - text: '– LambdaDemo.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/LambdaExpressions/src/main/java/LambdaDemo.java'
+  #
+  #             - file: 'slides'
+  #               name: 'streams'
+  #               type: 'bump'
+  #
+  #             - file: 'slides'
+  #               name: 'pipelines'
+  #
+  #             - text: 'Stream Pipelines'
+  #               icon: 'code'
+  #               type: 'bump'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/StreamPipelines'
+  #
+  #             - text: '– StreamDemo.java'
+  #               icon: 'nothing'
+  #               tube: 'https://drive.google.com/file/d/18RKTIjJmH1ovGVIwbVzfCIiDBq1BhmbP/view?usp=sharing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/StreamPipelines/src/main/java/StreamDemo.java'
+  #
+  #             - text: '– ParallelStreamBenchmark.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/StreamPipelines/src/main/java/ParallelStreamBenchmark.java'
+  #
+  #         - label: 'Additional Content'
+  #           dates: ''
+  #           items:
+  #             - text: 'Problem1Revisited.java'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/StreamPipelines/src/main/java/Problem1Revisited.java'
+  #               tube: 'https://drive.google.com/file/d/1gTjlMdvnCHs_E3yEL_DNsvkswG0zSg96/view?usp=sharing'
+  #
+  #             - text: 'InfiniteStreamDemo.java'
+  #               icon: 'code'
+  #               tube: 'https://drive.google.com/file/d/1AbBKj-JiQYLNACw3GXGPkHlInBmVzg3X/view?usp=sharing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/StreamPipelines/src/main/java/InfiniteStreamDemo.java'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'quizzes'
+  #               name: 'lambdas'
+  #
+  #             - file: 'quizzes'
+  #               name: 'streams'
+  #
+  #             - file: 'participation'
+  #               name: 'stream_benchmark'
+  #
+  #     - date: 2021-10-01
+  #       sections:
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Homework Help'
+  #               icon: 'homework'
+  #
+  #             - text: 'Project Help'
+  #               icon: 'project'
+  #
+  #             - text: 'Code Reviews'
+  #               icon: 'review'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'homework'
+  #               name: 'textfilefinder'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'homework'
+  #               name: 'textfilesorter'
+  #
+  #             - file: 'quizzes'
+  #               name: 'inheritance'
+  #               type: 'bump'
+  #
+  #             - file: 'quizzes'
+  #               name: 'collections'
+  #
+  #             - file: 'quizzes'
+  #               name: 'casting'
+  #
+  #             - file: 'quizzes'
+  #               name: 'nesting'
+  #
+  # - week: 7
+  #   days:
+  #     - date: 2021-10-05
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/CX8uDf-SRQpZUkpHgTExOL12VU4_9D_HX9ttjzvPbg_LUJHBBDanR0Wq6fmMjrg0.y2OTw4JNc2I45Waa?startTime=1633462299000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Exam Guides'
+  #               link: '/guides/exams/'
+  #               icon: 'website'
+  #
+  #             - text: 'Exam Review'
+  #               link: '/guides/exams/exam-1.html'
+  #               icon: 'website'
+  #
+  #             - text: 'TextFileParser.java'
+  #               icon: 'code'
+  #               tube: 'https://drive.google.com/file/d/1x07LOgjD-N431tK_2sk2_kdboovJouCu/view?usp=sharing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/LambdaExpressions/src/main/java/TextFileParser.java'
+  #               type: 'bump'
+  #
+  #             - text: 'TextFileStreamer.java'
+  #               icon: 'code'
+  #               tube: 'https://drive.google.com/file/d/1H-FYMCrXlyx5xZ-M-wAIx5xtj9aieN8U/view?usp=sharing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/StreamPipelines/src/main/java/TextFileStreamer.java'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class7'
+  #
+  #             - file: 'attendance'
+  #               name: 'other7'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class6'
+  #
+  #             - file: 'attendance'
+  #               name: 'other6'
+  #
+  #             - file: 'quizzes'
+  #               name: 'project2'
+  #               type: 'bump'
+  #
+  #             - file: 'quizzes'
+  #               name: 'java'
+  #
+  #     - date: 2021-10-07
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/ZczFoOJJzte49_1KB_pyfbm0bj0pLD-kgEX9KHpF7QzwXTZyTEibYx1sOx7MsAWB.DwV5NA4qNcjm6sM-?startTime=1633635167000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'HTML'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/HyperText'
+  #               icon: 'code'
+  #
+  #             - text: 'Regular Expressions'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/RegularExpressions'
+  #               icon: 'code'
+  #
+  #         - label: 'Additional Content'
+  #           dates: ''
+  #           items:
+  #             - text: 'HTML Essential Training'
+  #               link: 'https://www.linkedin.com/learning/html-essential-training-4/'
+  #               icon: 'linkedin'
+  #
+  #             - text: 'Learning Regular Expressions'
+  #               link: 'https://www.linkedin.com/learning/learning-regular-expressions-2/'
+  #               icon: 'linkedin'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'quizzes'
+  #               name: 'regex'
+  #
+  #     - date: 2021-10-08
+  #       sections:
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Homework Help'
+  #               icon: 'homework'
+  #
+  #             - text: 'Project Help'
+  #               icon: 'project'
+  #
+  #             - text: 'Code Reviews'
+  #               icon: 'review'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'homework'
+  #               name: 'linkparser'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'homework'
+  #               name: 'textfilefinder'
+  #
+  #             - file: 'quizzes'
+  #               name: 'lambdas'
+  #
+  #             - file: 'quizzes'
+  #               name: 'streams'
+  #
+  #             - file: 'participation'
+  #               name: 'stream_benchmark'
+  #
+  #             - file: 'projects'
+  #               name: 'project1d'
+  #               type: 'bump'
+  #
+  # - week: 8
+  #   days:
+  #     - date: 2021-10-12
+  #       sections:
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Exam 1'
+  #               icon: 'exam'
+  #               type: 'has-text-danger has-text-weight-bold'
+  #               link: 'https://usfca.instructure.com/courses/1602551/assignments/7136950'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class8'
+  #
+  #             - file: 'attendance'
+  #               name: 'other8'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class7'
+  #
+  #             - file: 'attendance'
+  #               name: 'other7'
+  #
+  #     - date: 2021-10-14
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'CS 212-01 Recording (Cutoff)'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/kWi1CbgqlS1DBErwdtpEBBqU5ivExvN-1dhMkG9keiHA9zoqY77xMesVJQQIvK05.PoonNBOgJQGbAHAF?startTime=1634239748000'
+  #
+  #             - text: 'CS 212-02 Recording (Complete)'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/Nvrl9Nl_7SodTJHPYRoJUEzWo-K3U3DwuuakGIsL5z22Oa3cSzt469VJFbNyMdUS.ViW4wDfuk0W-DqrH?startTime=1634254461000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - file: 'slides'
+  #               name: 'testing_bugs'
+  #
+  #             - file: 'slides'
+  #               name: 'testing_intro'
+  #
+  #             - file: 'slides'
+  #               name: 'testing_unit'
+  #               type: 'bump'
+  #
+  #             - text: 'Unit Testing'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/UnitTesting'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - text: 'Exam 1 Retake'
+  #               date: 2021-10-21
+  #               icon: 'exam'
+  #               type: 'has-text-danger has-text-weight-bold'
+  #               link: 'https://usfca.instructure.com/courses/1602551/assignments/7137226'
+  #
+  #             - file: 'quizzes'
+  #               name: 'unit'
+  #
+  #     - date: 2021-10-15
+  #       sections:
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Homework Help'
+  #               icon: 'homework'
+  #
+  #             - text: 'Project Help'
+  #               icon: 'project'
+  #
+  #             - text: 'Code Reviews'
+  #               icon: 'review'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'homework'
+  #               name: 'htmlcleaner'
+  #
+  # - week: 9
+  #   days:
+  #     - date: 2021-10-19
+  #       sections:
+  #         - label: 'No Class'
+  #           dates: false
+  #           items:
+  #             - text: 'Fall Break'
+  #               icon: 'fall'
+  #               type: ['bump', 'has-text-grey-light']
+  #
+  #     - date: 2021-10-21
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/MybzOpOWUs1DHnttWmvX17uMC0s0Q4MxAzpoo57z2syKTO22kjLLUnavjnoddcCP.4EZxdg7ypp0pZ7H8?startTime=1634844610000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - file: 'slides'
+  #               name: 'logging'
+  #
+  #             - text: 'Debugging'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/Debugging'
+  #
+  #         - label: 'Additional Content'
+  #           dates: ''
+  #           items:
+  #             - file: 'slides'
+  #               name: 'assertions'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class9'
+  #
+  #             - file: 'attendance'
+  #               name: 'other9'
+  #
+  #             - file: 'quizzes'
+  #               name: 'asserts'
+  #               type: 'bump'
+  #
+  #             - file: 'quizzes'
+  #               name: 'logging'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class8'
+  #
+  #             - file: 'attendance'
+  #               name: 'other8'
+  #
+  #             - text: 'Exam 1 Retake'
+  #               date: 2021-10-21
+  #               icon: 'exam'
+  #               type: 'bump has-text-danger has-text-weight-bold'
+  #               link: 'https://usfca.instructure.com/courses/1602551/assignments/7137226'
+  #
+  #     - date: 2021-10-22
+  #       sections:
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Homework Help'
+  #               icon: 'homework'
+  #
+  #             - text: 'Project Help'
+  #               icon: 'project'
+  #
+  #             - text: 'Code Reviews'
+  #               icon: 'review'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'homework'
+  #               name: 'loggingsetup'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'homework'
+  #               name: 'linkparser'
+  #
+  #             - file: 'homework'
+  #               name: 'htmlcleaner'
+  #
+  #             - file: 'quizzes'
+  #               name: 'regex'
+  #               type: 'bump'
+  #
+  #             - file: 'quizzes'
+  #               name: 'unit'
+  #
+  # - week: 10
+  #   days:
+  #     - date: 2021-10-26
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/MNPFw_yvWnjB09towwN6nwYZz-MIuAOlsP-HIZIjcPiP7oN_bJ0mUSZZMMTiC7Yj.0uO_BO8xk-2Veayk?startTime=1635276472000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - file: 'slides'
+  #               name: 'multithreading'
+  #
+  #             - file: 'slides'
+  #               name: 'threads'
+  #
+  #             - file: 'slides'
+  #               name: 'liveness'
+  #
+  #             - text: 'Multithreading'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/Multithreading'
+  #               type: 'bump'
+  #
+  #             - text: '– ThreadStateDemo.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Multithreading/src/main/java/ThreadStateDemo.java'
+  #               tube: 'https://drive.google.com/file/d/1ddBJ9YG-xYORgvGbVIKz3z0tj-89n1T6/view?usp=sharing'
+  #
+  #             - text: '– RandomArrayTotal.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Multithreading/src/main/java/RandomArrayTotal.java'
+  #               tube: 'https://drive.google.com/file/d/12aYTi2LQW3W-8GYG-G1A-Febu9Wlof7c/view?usp=sharing'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class10'
+  #
+  #             - file: 'attendance'
+  #               name: 'other10'
+  #
+  #             - file: 'participation'
+  #               name: 'midterm_survey'
+  #               type: 'bump'
+  #
+  #             - file: 'projects'
+  #               name: 'project3f'
+  #               type: 'bump'
+  #
+  #             - file: 'quizzes'
+  #               name: 'project3'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class9'
+  #
+  #             - file: 'attendance'
+  #               name: 'other9'
+  #
+  #             - file: 'projects'
+  #               name: 'project2f'
+  #               type: 'bump'
+  #
+  #     - date: 2021-10-28
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/TjSjv_4NeuEiYBLI4PZz0xNf7lTGP2nH_WKCKcPPviaUZaWIM9YraT_FKPF_HppN.JCuJ21MaHaVXjuf2?startTime=1635449435000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - file: 'slides'
+  #               name: 'consistency'
+  #
+  #             - file: 'slides'
+  #               name: 'synchronization'
+  #
+  #             - file: 'slides'
+  #               name: 'coordination'
+  #
+  #             - text: 'Multithreading'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/Multithreading'
+  #               type: 'bump'
+  #
+  #             - text: '– LockDemo.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Multithreading/src/main/java/LockDemo.java'
+  #
+  #             - text: '– BoundedBuffer.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Multithreading/src/main/java/BoundedBuffer.java'
+  #               tube: 'https://drive.google.com/file/d/1e20Tr6fUSVmxRe6O4B_l7Ynx3uEBigXC/view?usp=sharing'
+  #               type: 'del'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'quizzes'
+  #               name: 'threads'
+  #
+  #             - file: 'quizzes'
+  #               name: 'synchronization'
+  #
+  #     - date: 2021-10-29
+  #       sections:
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Homework Help'
+  #               icon: 'homework'
+  #
+  #             - text: 'Project Help'
+  #               icon: 'project'
+  #
+  #             - text: 'Code Reviews'
+  #               icon: 'review'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'homework'
+  #               name: 'readwritelock'
+  #               type: 'del'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'homework'
+  #               name: 'loggingsetup'
+  #
+  #             - file: 'quizzes'
+  #               name: 'asserts'
+  #               type: 'bump'
+  #
+  #             - file: 'quizzes'
+  #               name: 'logging'
+  #
+  # - week: 11
+  #   days:
+  #     - date: 2021-11-02
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/rcMmLzK_vQ-9zVb_zXi7582aVIJ_QHPuhVMtHlOEqAukcgWEO7L396CQ63z7izb1.bJNEvH1ZTkX-vv4i?startTime=1635881331000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - file: 'slides'
+  #               name: 'coordination'
+  #
+  #             - text: 'BoundedBuffer.java'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Multithreading/src/main/java/BoundedBuffer.java'
+  #               tube: 'https://drive.google.com/file/d/1e20Tr6fUSVmxRe6O4B_l7Ynx3uEBigXC/view?usp=sharing'
+  #
+  #             - file: 'slides'
+  #               name: 'locks'
+  #               type: 'bump'
+  #
+  #             - text: 'Synchronization'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/Synchronization'
+  #               type: 'bump'
+  #
+  #             - text: '– IndexedSet.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Synchronization/src/main/java/IndexedSet.java'
+  #               tube: 'https://drive.google.com/file/d/1cfdM5jKix8_Q20ZpFm8IuEuu1ZaaKg7E/view?usp=sharing'
+  #
+  #             - text: '– SynchronizedSet.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Synchronization/src/main/java/SynchronizedSet.java'
+  #               tube: 'https://drive.google.com/file/d/118GTi62tSnV18xAMc8BeTdffHqW4lAqb/view?usp=sharing'
+  #
+  #             - text: '– ConcurrentSet.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Synchronization/src/main/java/ConcurrentSet.java'
+  #               tube: 'https://drive.google.com/file/d/16DmQjV8tkQjnFrAR9-Ivpu_tOgrJbSTs/view?usp=sharing'
+  #
+  #             - text: '– SetDemo.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Synchronization/src/main/java/SetDemo.java'
+  #               tube: 'https://drive.google.com/file/d/1rsm1VLf2-asJ_iqLVKU2-cR0F7fJ3u_L/view?usp=sharing'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class11'
+  #
+  #             - file: 'attendance'
+  #               name: 'other11'
+  #
+  #             - file: 'homework'
+  #               name: 'readwritelock'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class10'
+  #
+  #             - file: 'attendance'
+  #               name: 'other10'
+  #
+  #     - date: 2021-11-04
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/lNrBCI6AlqjNXzl9i8lm5mC8f37AFtAWxrbOEnWdWxACZ9-58UCQex7s-5m-pCLj.xCN-FduYIGy8cXAq?startTime=1636053913000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - file: 'slides'
+  #               name: 'volatile'
+  #
+  #             - file: 'slides'
+  #               name: 'pools'
+  #
+  #             - text: 'WorkQueue.java'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/WorkQueues/src/main/java/WorkQueue.java'
+  #               type: 'bump'
+  #               tube: 'https://drive.google.com/file/d/1IQIU3GxPRiF8YY4VS_lv_M0yfcLAMmnQ/view?usp=sharing'
+  #
+  #             - text: 'Directory Listing Demos'
+  #               icon: 'code'
+  #               tube: 'https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/WorkQueues'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'quizzes'
+  #               name: 'workers'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - text: 'Project Pass Requirement'
+  #               date: 2021-11-04
+  #               icon: 'date'
+  #               type: ['has-text-weight-bold', 'has-text-danger']
+  #
+  #     - date: 2021-11-05
+  #       sections:
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Homework Help'
+  #               icon: 'homework'
+  #
+  #             - text: 'Project Help'
+  #               icon: 'project'
+  #
+  #             - text: 'Code Reviews'
+  #               icon: 'review'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'homework'
+  #               name: 'primefinder'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'participation'
+  #               name: 'midterm_survey'
+  #
+  #             - file: 'quizzes'
+  #               name: 'threads'
+  #
+  #             - file: 'quizzes'
+  #               name: 'project3'
+  #
+  #             - file: 'projects'
+  #               name: 'project2d'
+  #               type: 'bump'
+  #
+  #             - text: 'Withdraw Deadline'
+  #               date: 2021-11-05
+  #               show: true
+  #               icon: 'date'
+  #               type: ['bump', 'has-text-warning']
+  #
+  # - week: 12
+  #   days:
+  #     - date: 2021-11-09
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/fFuo0uSb3CpZ-PNG70r-S3-Om9ctDeRM69PRKr2PMGRDPTTizBM_oyLGaHP4VK0-.hgjwZVAphSs5V34Q?startTime=1636489936000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - file: 'slides'
+  #               name: 'web'
+  #
+  #             - file: 'slides'
+  #               name: 'url'
+  #
+  #             - file: 'slides'
+  #               name: 'http'
+  #
+  #             - text: 'Sockets'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/Sockets'
+  #               tube: 'https://drive.google.com/file/d/1V02GkA2pUAmoUtFgdXl12VGVMJkw2pMy/view?usp=sharing'
+  #               type: 'bump'
+  #
+  #         - <<: *assignments
+  #           dates: false
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class12'
+  #
+  #             - file: 'attendance'
+  #               name: 'other12'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class11'
+  #
+  #             - file: 'attendance'
+  #               name: 'other11'
+  #
+  #             - text: 'Registration Begins'
+  #               date: 2021-11-09
+  #               show: true
+  #               icon: 'date'
+  #               type: ['bump', 'has-text-grey-light']
+  #
+  #     - date: 2021-11-11
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/IKhdRENi1DLlHfwlmZKEu0_u01xbpWMjvO1jBEy3BJGvJ62KDChs_MXZ2z3uOsWW.gvrqX3uqcAm8c4mI?startTime=1636662850000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - file: 'slides'
+  #               name: 'dynamic'
+  #
+  #             - file: 'slides'
+  #               name: 'jetty'
+  #
+  #             - text: 'Servlet Basics'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/ServletBasics'
+  #               type: 'bump'
+  #
+  #             - text: '– TodayServer.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ServletBasics/src/main/java/TodayServer.java'
+  #
+  #             - text: '– HelloServer.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ServletBasics/src/main/java/HelloServer.java'
+  #
+  #             - text: '– VisitServer.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ServletBasics/src/main/java/VisitServer.java'
+  #
+  #             - text: '– SimpleFileServer.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ServletBasics/src/main/java/SimpleFileServer.java'
+  #               tube: 'https://drive.google.com/file/d/17AUSBRl0c_n7eJ56cSHIbd1al7P9YylG/view?usp=sharing'
+  #
+  #     - date: 2021-11-12
+  #       sections:
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Homework Help'
+  #               icon: 'homework'
+  #
+  #             - text: 'Project Help'
+  #               icon: 'project'
+  #
+  #             - text: 'Code Reviews'
+  #               icon: 'review'
+  #
+  #         - <<: *assignments
+  #           dates: false
+  #           items:
+  #             - file: 'homework'
+  #               name: 'htmlfetcher'
+  #
+  #             - file: 'quizzes'
+  #               name: 'http'
+  #
+  #             - file: 'quizzes'
+  #               name: 'dynamic'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'quizzes'
+  #               name: 'synchronization'
+  #
+  #             - file: 'quizzes'
+  #               name: 'workers'
+  #
+  #             - file: 'homework'
+  #               name: 'readwritelock'
+  #
+  #             - file: 'homework'
+  #               name: 'primefinder'
+  #
+  # - week: 13
+  #   days:
+  #     - date: 2021-11-16
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/VPyTpYL2xyGm5cFB7geEx0R7Iv_ererS2IVN-qXezy3f5qaV76KqWH6O9CFyFtm6.JgdXlhlwxagv2nQW?startTime=1637094618000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Servlet Basics'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/ServletBasics'
+  #               type: 'bump'
+  #
+  #             - text: '– GalleryServer.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ServletBasics/src/main/java/GalleryServer.java'
+  #               tube: 'https://drive.google.com/file/d/1y7DlVnj3s1tcyS0kvKt5C7nxk-9ROkBz/view?usp=sharing'
+  #
+  #             - text: '– ContextServer.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ServletBasics/src/main/java/ContextServer.java'
+  #               tube: 'https://drive.google.com/file/d/1TXY__9WzN_GbvSYH1LmHTJLu-Uu06voT/view?usp=sharing'
+  #
+  #             - text: 'Servlet Data'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/ServletData'
+  #               type: 'bump'
+  #
+  #             - text: '– ReverseServer.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ServletData/src/main/java/ReverseServer.java'
+  #
+  #             - text: '– MessageServer.java'
+  #               icon: 'nothing'
+  #               tube: 'https://drive.google.com/file/d/1AhKibA6CMpro8BI7IsmTnRPCmj_kkube/view?usp=sharing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ServletData/src/main/java/MessageServer.java'
+  #               type: 'bump'
+  #
+  #             - text: '– MessageServlet.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ServletData/src/main/java/MessageServlet.java'
+  #               tube: 'https://drive.google.com/file/d/19NR1YdmY1MWH8OH3A0zRypiCSPnBSfCg/view?usp=sharing'
+  #
+  #             - text: '– BulmaMessageServlet.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/ServletData/src/main/java/BulmaMessageServlet.java'
+  #               tube: 'https://drive.google.com/file/d/1Tg5XcUStSyEAuzaEQ1Da6C66ExpxA2Lc/view?usp=sharing'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class13'
+  #
+  #             - file: 'attendance'
+  #               name: 'other13'
+  #
+  #             - file: 'quizzes'
+  #               name: 'servlets'
+  #               type: 'bump'
+  #
+  #             - file: 'projects'
+  #               name: 'project4f'
+  #               type: 'bump'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class12'
+  #
+  #             - file: 'attendance'
+  #               name: 'other12'
+  #
+  #             - file: 'projects'
+  #               name: 'project3f'
+  #               type: 'bump'
+  #
+  #     - date: 2021-11-18
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/j8hlpC9xOmg6SInRaGLldTDxK1iNiqgzWQTbk9jT6EdOiyqHnzQBKZC5p3F5dTus.YW26nm1O-cavi0MC?startTime=1637267654000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'HTTP Cookies'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/Sessions'
+  #
+  #             - text: '– CookieServer.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Sessions/src/main/java/CookieServer.java'
+  #
+  #             - text: '– CookieLandingServlet.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Sessions/src/main/java/CookieLandingServlet.java'
+  #
+  #             - text: '– CookieVisitServlet.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Sessions/src/main/java/CookieVisitServlet.java'
+  #
+  #             - text: 'Sessions Adventure'
+  #               icon: 'code'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/Sessions'
+  #               type: 'bump'
+  #
+  #             - text: '– AdventureServer.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Sessions/src/main/java/AdventureServer.java'
+  #               tube: 'https://drive.google.com/file/d/1ousizKV83c3vlSEObTdwuiyPcga2AhH4/view?usp=sharing'
+  #
+  #             - text: '– AdventureRoom.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Sessions/src/main/java/AdventureRoom.java'
+  #               tube: 'https://drive.google.com/file/d/1ousizKV83c3vlSEObTdwuiyPcga2AhH4/view?usp=sharing'
+  #
+  #             - text: '– AdventureServlet.java'
+  #               icon: 'nothing'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Sessions/src/main/java/AdventureServlet.java'
+  #               tube: 'https://drive.google.com/file/d/1VUXAIoeiG6Qkya1OkkbyutjKktyRkKEo/view?usp=sharing'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - text: 'Final Code Reviews'
+  #               icon: 'review'
+  #               link: '/guides/projects/final-review.html'
+  #               type: 'has-text-usf-plum'
+  #
+  #     - date: 2021-11-19
+  #       sections:
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Homework Help'
+  #               icon: 'homework'
+  #
+  #             - text: 'Project Help'
+  #               icon: 'project'
+  #
+  #             - text: 'Code Reviews'
+  #               icon: 'review'
+  #
+  #         - <<: *assignments
+  #           dates: false
+  #           items:
+  #             - file: 'homework'
+  #               name: 'headserver'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'homework'
+  #               name: 'htmlfetcher'
+  #
+  #             - file: 'quizzes'
+  #               name: 'http'
+  #
+  #             - file: 'quizzes'
+  #               name: 'dynamic'
+  #
+  # - week: 14
+  #   days:
+  #     - date: 2021-11-23
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/OseviBswUd-ENCu_3hTFD12JcQCgcBY9_oAB4FPI2hPj4exsI620LJQjW-2EOfg.E7l9YDN4vj1ICgif?startTime=1637699501000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Exam 2 Review'
+  #               link: '/guides/exams/exam-2.html'
+  #               icon: 'website'
+  #
+  #             - file: 'slides'
+  #               name: 'relational'
+  #               type: 'bump'
+  #
+  #             - file: 'slides'
+  #               name: 'sql'
+  #
+  #             - text: 'Database Accounts'
+  #               icon: 'website'
+  #               link: '/guides/sql/database-accounts.html'
+  #               type: 'bump has-text-weight-bold'
+  #
+  #             - text: 'SQL Introduction'
+  #               icon: 'website'
+  #               link: '/guides/sql/sql-intro-started.html'
+  #               type: 'bump'
+  #
+  #             - file: 'slides'
+  #               name: 'sqlintro1'
+  #               text: '– Creating Tables'
+  #               icon: 'nothing'
+  #
+  #             - file: 'slides'
+  #               name: 'sqlintro2'
+  #               text: '– Joining Data'
+  #               icon: 'nothing'
+  #
+  #             - file: 'slides'
+  #               name: 'sqlintro3'
+  #               text: '– Enforcing Relationships'
+  #               icon: 'nothing'
+  #
+  #             - file: 'slides'
+  #               name: 'sqldemo'
+  #               type: 'bump'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class14'
+  #
+  #             - file: 'quizzes'
+  #               name: 'joins'
+  #               type: 'bump'
+  #
+  #             - file: 'quizzes'
+  #               name: 'groups'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class13'
+  #
+  #             - file: 'attendance'
+  #               name: 'other13'
+  #
+  #             - file: 'quizzes'
+  #               name: 'servlets'
+  #               type: 'bump'
+  #
+  #     - date: 2021-11-25
+  #       sections:
+  #         - label: 'No Class'
+  #           dates: false
+  #           items:
+  #             - text: 'Thanksgiving Break'
+  #               icon: 'thanksgiving'
+  #               type: ['bump', 'has-text-grey-light']
+  #
+  #     - date: 2021-11-26
+  #       sections:
+  #         - label: 'No Class'
+  #           dates: false
+  #           items:
+  #             - text: 'Thanksgiving Break'
+  #               icon: 'thanksgiving'
+  #               type: ['bump', 'has-text-grey-light']
+  #
+  # - week: 15
+  #   days:
+  #     - date: 2021-11-30
+  #       sections:
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Exam 2'
+  #               icon: 'exam'
+  #               type: 'has-text-danger has-text-weight-bold'
+  #               link: 'https://usfca.instructure.com/courses/1602551/assignments/7144851'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class15'
+  #
+  #             - file: 'attendance'
+  #               name: 'other15'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class14'
+  #
+  #             - file: 'quizzes'
+  #               name: 'joins'
+  #               type: 'bump'
+  #
+  #             - file: 'quizzes'
+  #               name: 'groups'
+  #
+  #     - date: 2021-12-02
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'Lecture Recording'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/DcQZXZkqU-2sph4tAIbi_FhXM2HtqUahc_Hh58cvEmLDNYChFOIdzBVaw30Hajie.NF3pieeZMtoziF0t?startTime=1638477250000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - file: 'slides'
+  #               name: 'jdbc'
+  #
+  #             - text: 'Faculty Contact Server'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/JDBC'
+  #               icon: 'code'
+  #
+  #             - text: '– SQL and HTML'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/tree/main/JDBC/src/main/resources'
+  #               tube: 'https://drive.google.com/file/d/1Q8jyBIsugwjbzk-JGJJZT5QF4EvAs-xN/view?usp=sharing'
+  #               icon: 'nothing'
+  #
+  #             - text: '– DatabaseConnector.java'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/JDBC/src/main/java/DatabaseConnector.java'
+  #               tube: 'https://drive.google.com/file/d/1nJ17EatO7ZeureUORtqDLfTaw6MXyIZj/view?usp=sharing'
+  #               icon: 'nothing'
+  #
+  #             - text: '– FacultyServer.java'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/JDBC/src/main/java/FacultyServer.java'
+  #               tube: 'https://drive.google.com/file/d/1yqeeCTD2j3qKz6Q_7sWn94SYkAV18_lt/view?usp=sharing'
+  #               icon: 'nothing'
+  #
+  #             - text: '– FacultyServlet.java'
+  #               link: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/JDBC/src/main/java/FacultyServlet.java'
+  #               tube: 'https://drive.google.com/file/d/1J-buaf3BIVp4QYYm6u8M6-fzN_tXT3as/view?usp=sharing'
+  #               icon: 'nothing'
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - text: 'Exam 2 Retake'
+  #               date: 2021-12-09
+  #               icon: 'exam'
+  #               type: 'has-text-danger has-text-weight-bold'
+  #               link: 'https://usfca.instructure.com/courses/1602551/assignments/7145105'
+  #
+  #             - file: 'participation'
+  #               name: 'final_plan'
+  #               type: 'bump'
+  #
+  #             - file: 'participation'
+  #               name: 'belonging2'
+  #
+  #     - date: 2021-12-03
+  #       sections:
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Homework Help'
+  #               icon: 'homework'
+  #
+  #             - text: 'Project Help'
+  #               icon: 'project'
+  #
+  #             - text: 'Code Reviews'
+  #               icon: 'review'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'homework'
+  #               name: 'headserver'
+  #
+  #             - file: 'projects'
+  #               name: 'project3d'
+  #
+  # - week: 16
+  #   days:
+  #     - date: 2021-12-07
+  #       sections:
+  #         - <<: *recordings
+  #           items:
+  #             - text: 'CS 272-01 Recording (First Half)'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/dl4nKZ3JJKWhCfnyZYoJrifZ0ohjBE5O80hFNki-mRklvnBNa_l2ARmWVNcfEXs.WUTk98v-5V3KXRw_?startTime=1638909332000'
+  #
+  #             - text: 'CS 272-02 Recording (Full)'
+  #               icon: 'video'
+  #               link: 'https://usfca.zoom.us/rec/share/EU-RfTFG9HGt1DXeGoFB4BBV3qe1RrM-86c8gxQKKOY2QHnBZ5JyVmPjgIVCjrc0.yNze5rwQZczdplg4?startTime=1638924294000'
+  #
+  #         - label: 'Agenda'
+  #           dates: false
+  #           items:
+  #             - text: 'Search Engine Demo'
+  #
+  #             - text: 'Conclusion'
+  #               icon: 'slides'
+  #               save: true
+  #
+  #         - <<: *assignments
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class16'
+  #
+  #         - <<: *deadlines
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class15'
+  #
+  #             - file: 'attendance'
+  #               name: 'other15'
+  #
+  #             - file: 'projects'
+  #               name: 'project4f'
+  #               type: 'bump'
+  #
+  #             - text: 'Classes End'
+  #               date: 2021-12-07
+  #               show: true
+  #               icon: 'date'
+  #               type: ['bump', 'has-text-grey-light']
+  #
+  #     - date: ''
+  #       sections:
+  #         - label: 'End of Semester Deadlines'
+  #           items:
+  #             - file: 'attendance'
+  #               name: 'class16'
+  #
+  #             - file: 'participation'
+  #               name: 'cs_event'
+  #               type: 'bump'
+  #
+  #             - file: 'participation'
+  #               name: 'piazza_post'
+  #
+  #             - file: 'participation'
+  #               name: 'piazza_response'
+  #
+  #             - file: 'participation'
+  #               name: 'final_plan'
+  #
+  #             - file: 'participation'
+  #               name: 'belonging2'
+  #
+  #             - text: 'Exam 2 Retake'
+  #               date: 2021-12-09
+  #               icon: 'exam'
+  #               show: true
+  #               type: 'bump has-text-danger has-text-weight-bold'
+  #               link: 'https://usfca.instructure.com/courses/1602551/assignments/7145105'
+  #
+  #     - date: ''
+  #       sections:
+  #         - label: 'Final Project Deadlines'
+  #           items:
+  #             - text: 'Project Cutoff'
+  #               link: '/guides/projects/final-review.html'
+  #               icon: 'review'
+  #               show: true
+  #               date: 2021-12-10
+  #               type: 'has-text-danger has-text-weight-bold'
+  #
+  #         - label: 'Finals Week 12/10 &ndash; 12/16'
+  #           dates: false
+  #           items:
+  #             - text: 'Project 4 Search Engine'
+  #               icon: 'review'
+  #               link: '/guides/projects/project-4b.html'
+  #               type: 'has-text-usf-plum'
+  #
+  #             - text: 'Final Code Reviews'
+  #               icon: 'review'
+  #               link: '/guides/projects/final-review.html'
+  #               type: 'has-text-usf-plum'
+
+rows:
+  - false # top row (usually lecture items)
+  - true  # bottom row (usually deadlines)
