@@ -55,7 +55,8 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'homework'
+                name: 'argumentparser'
 
           - <<: *deadlines
             items:
@@ -95,11 +96,18 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'homework'
+                name: 'textfilestemmer'
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - text: 'Homework Bundle 0'
+                icon: 'date'
+                date: 2022-02-04
+                type: ['has-text-weight-bold']
+
+              - file: 'homework'
+                name: 'argumentparser'
 
   - week: 3
     days:
@@ -133,7 +141,8 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'homework'
+                name: 'simplejsonwriter'
 
           - <<: *deadlines
             items:
@@ -173,7 +182,8 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'homework'
+                name: 'textfileindex'
 
           - <<: *deadlines
             items:
@@ -199,7 +209,6 @@ weeks:
                 show: true
                 type: [*pending]
 
-
       - date: 2022-02-24
         sections:
           - <<: *lectures
@@ -214,11 +223,24 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'homework'
+                name: 'textfilefinder'
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - text: 'Homework Bundle 1'
+                icon: 'date'
+                date: 2022-02-25
+                type: ['has-text-weight-bold']
+
+              - file: 'homework'
+                name: 'textfilestemmer'
+
+              - file: 'homework'
+                name: 'simplejsonwriter'
+
+              - file: 'homework'
+                name: 'textfileindex'
 
   - week: 6
     days:
@@ -253,7 +275,8 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'homework'
+                name: 'textfilesorter'
 
           - <<: *deadlines
             items:
@@ -298,7 +321,8 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'homework'
+                name: 'loggersetup'
 
           - <<: *deadlines
             items:
@@ -363,11 +387,21 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'homework'
+                name: 'readwritelock'
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - text: 'Homework Bundle 2'
+                icon: 'date'
+                date: 2022-03-25
+                type: ['has-text-weight-bold']
+
+              - file: 'homework'
+                name: 'textfilefinder'
+
+              - file: 'homework'
+                name: 'textfilesorter'
 
   - week: 10
     days:
@@ -402,7 +436,8 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'homework'
+                name: 'primefinder'
 
           - <<: *deadlines
             items:
@@ -439,14 +474,29 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'homework'
+                name: 'linkparser'
 
           - <<: *deadlines
             items:
+              - text: 'Homework Bundle 3'
+                icon: 'date'
+                date: 2022-04-08
+                type: ['has-text-weight-bold']
+
+              - file: 'homework'
+                name: 'loggersetup'
+
+              - file: 'homework'
+                name: 'readwritelock'
+
+              - file: 'homework'
+                name: 'primefinder'
+
               - text: 'Project Pass Requirement'
                 date: 2022-04-08
                 icon: 'project'
-                type: ['has-text-danger']
+                type: ['has-text-danger', 'bump']
 
   - week: 12
     days:
@@ -491,7 +541,8 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'homework'
+                name: 'htmlcleaner'
 
   - week: 13
     days:
@@ -526,7 +577,8 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'homework'
+                name: 'htmlfetcher'
 
           - <<: *deadlines
             items:
@@ -563,11 +615,24 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'homework'
+                name: 'headerserver'
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - text: 'Homework Bundle 4'
+                icon: 'date'
+                date: 2022-04-29
+                type: ['has-text-weight-bold']
+
+              - file: 'homework'
+                name: 'linkparser'
+
+              - file: 'homework'
+                name: 'htmlcleaner'
+
+              - file: 'homework'
+                name: 'htmlfetcher'
 
   - week: 15
     days:
@@ -611,7 +676,13 @@ weeks:
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - text: 'Homework Bundle 5'
+                icon: 'date'
+                date: 2022-05-06
+                type: ['has-text-weight-bold']
+
+              - file: 'homework'
+                name: 'headerserver'
 
   - week: 16
     days:
