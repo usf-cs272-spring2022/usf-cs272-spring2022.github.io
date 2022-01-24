@@ -111,7 +111,9 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'projects'
+                name: 'project1t'
+                text: 'Project 1 Inverted Index'
 
           - <<: *deadlines
             items:
@@ -228,11 +230,14 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'projects'
+                name: 'project2t'
+                text: 'Project 2 Partial Search'
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - file: 'projects'
+                name: 'project1t'
 
       - date: 2022-03-03
         sections:
@@ -260,7 +265,9 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Exam 1'
+                icon: 'exam'
+                type: ['has-text-danger']
 
           - <<: *assignments
             items:
@@ -268,13 +275,20 @@ weeks:
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - file: 'projects'
+                name: 'project1r'
 
       - date: 2022-03-10
         sections:
           - <<: *lectures
             items:
               - text: Pending
+
+          - <<: *assignments
+            items:
+              - text: 'Exam 1 Retake'
+                icon: 'exam'
+                type: ['has-text-danger']
 
       - date: 2022-03-11
         sections:
@@ -330,7 +344,10 @@ weeks:
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - text: 'Exam 1 Retake'
+                icon: 'exam'
+                type: ['has-text-danger']
+                date: 2022-03-22
 
       - date: 2022-03-24
         sections:
@@ -362,11 +379,14 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'projects'
+                name: 'project3t'
+                text: 'Project 3 Multithreading'
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - file: 'projects'
+                name: 'project2t'
 
       - date: 2022-03-31
         sections:
@@ -402,7 +422,8 @@ weeks:
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - file: 'projects'
+                name: 'project2r'
 
       - date: 2022-04-07
         sections:
@@ -422,7 +443,10 @@ weeks:
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - text: 'Project Pass Requirement'
+                date: 2022-04-08
+                icon: 'project'
+                type: ['has-text-danger']
 
   - week: 12
     days:
@@ -469,8 +493,6 @@ weeks:
             items:
               - text: Pending
 
-
-
   - week: 13
     days:
       - date: 2022-04-19
@@ -481,11 +503,14 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: Pending
+              - file: 'projects'
+                name: 'project4t'
+                text: 'Project 4 Search Engine'
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - file: 'projects'
+                name: 'project3t'
 
       - date: 2022-04-21
         sections:
@@ -521,7 +546,8 @@ weeks:
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - file: 'projects'
+                name: 'project3r'
 
       - date: 2022-04-28
         sections:
@@ -549,7 +575,9 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: Pending
+              - text: 'Exam 2'
+                icon: 'exam'
+                type: ['has-text-danger']
 
           - <<: *assignments
             items:
@@ -564,6 +592,12 @@ weeks:
           - <<: *lectures
             items:
               - text: Pending
+
+          - <<: *assignments
+            items:
+              - text: 'Exam 2 Retake'
+                icon: 'exam'
+                type: ['has-text-danger']
 
       - date: 2022-05-06
         sections:
@@ -593,7 +627,8 @@ weeks:
 
           - <<: *deadlines
             items:
-              - text: Pending
+              - file: 'projects'
+                name: 'project4t'
 
       - date: 2022-05-12
         sections:
@@ -603,11 +638,16 @@ weeks:
 
           - <<: *deadlines
             items:
+              - text: 'Exam 2 Retake'
+                icon: 'exam'
+                date: 2022-05-12
+                type: ['has-text-danger']
+
               - text: 'Classes End'
                 date: 2022-05-12
                 icon: 'date'
                 show: true
-                type: [*pending]
+                type: [*pending, 'bump']
 
       - date: 2022-05-13
         sections:
@@ -637,7 +677,8 @@ weeks:
           - label: 'Final Project Deadlines'
             dates: false
             items:
-              - text: Pending
+              - file: 'projects'
+                name: 'project4r'
 
       - date: ''
         sections: false
