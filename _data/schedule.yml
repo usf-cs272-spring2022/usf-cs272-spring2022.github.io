@@ -2,23 +2,23 @@ defaults:
   pending: &pending 'has-text-grey-light'
 
   lectures: &lectures
-    label: 'Lecture Agenda'
+    label: 'Lecture Agenda <i class="fas fa-info-circle has-text-grey-light" title="Assigned content that will be covered during lecture."></i>'
     dates: false
 
   content: &content
-    label: 'Additional Content'
+    label: 'Additional Content <i class="fas fa-info-circle has-text-grey-light" title="Assigned content that students should view, but will not be covered during lecture."></i>'
     dates: ''
 
   labs: &labs
-    label: 'Lab Agenda'
+    label: 'Lab Agenda <i class="fas fa-info-circle has-text-grey-light" title="Assigned content that will be worked on during lab."></i>'
     dates: false
 
   assignments: &assignments
-    label: 'Assignments'
+    label: 'Assignments <i class="fas fa-info-circle has-text-grey-light" title="Assignments associated with class that students should begin working on."></i>'
     dates: true
 
   deadlines: &deadlines
-    label: 'Dates and Deadlines'
+    label: 'Dates and Deadlines <i class="fas fa-info-circle has-text-grey-light" title="Deadlines that fall on that day and other nearby dates (such as holidays)."></i>'
     dates: true
 
 weeks:
@@ -28,17 +28,18 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Getting Started'
-                icon: 'website'
-                link: '/guides/general/getting-started.html'
-
               - text: 'Course Syllabus'
                 icon: 'website'
                 link: 'https://usfca.simplesyllabus.com/doc/yoiu6kild/Spring-2022-CS-272-01-Software-Development?mode=view'
 
               - file: 'slides'
                 name: 'course_intro'
-                type: ['bump']
+
+          - <<: *content
+            items:
+              - text: 'Getting Started'
+                icon: 'website'
+                link: '/guides/general/getting-started.html'
 
           - <<: *assignments
             items:
