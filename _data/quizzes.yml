@@ -7,6 +7,7 @@ syllabus:
   <<: *default
   text: 'Course Syllabus'
   date: 2022-01-28
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2400455'
 
 # paths:
 #   <<: *default
