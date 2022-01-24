@@ -60,7 +60,7 @@ weeks:
 
   - week: 2
     days:
-      - date: 2022-01-25
+      - date: 2022-02-01
         sections:
           - <<: *lectures
             items:
@@ -74,13 +74,13 @@ weeks:
             items:
               - text: Pending
 
-      - date: 2022-01-27
+      - date: 2022-02-03
         sections:
           - <<: *lectures
             items:
               - text: Pending
 
-      - date: 2022-01-28
+      - date: 2022-02-04
         sections:
           - <<: *labs
             items:
@@ -96,7 +96,7 @@ weeks:
 
   - week: 3
     days:
-      - date: 2022-01-25
+      - date: 2022-02-08
         sections:
           - <<: *lectures
             items:
@@ -110,13 +110,13 @@ weeks:
             items:
               - text: Pending
 
-      - date: 2022-01-27
+      - date: 2022-02-10
         sections:
           - <<: *lectures
             items:
               - text: Pending
 
-      - date: 2022-01-28
+      - date: 2022-02-11
         sections:
           - <<: *labs
             items:
@@ -132,7 +132,7 @@ weeks:
 
   - week: 4
     days:
-      - date: 2022-01-25
+      - date: 2022-02-15
         sections:
           - <<: *lectures
             items:
@@ -146,13 +146,13 @@ weeks:
             items:
               - text: Pending
 
-      - date: 2022-01-27
+      - date: 2022-02-17
         sections:
           - <<: *lectures
             items:
               - text: Pending
 
-      - date: 2022-01-28
+      - date: 2022-02-18
         sections:
           - <<: *labs
             items:
@@ -168,7 +168,7 @@ weeks:
 
   - week: 5
     days:
-      - date: 2022-01-25
+      - date: 2022-02-22
         sections:
           - <<: *lectures
             items:
@@ -182,13 +182,13 @@ weeks:
             items:
               - text: Pending
 
-      - date: 2022-01-27
+      - date: 2022-02-24
         sections:
           - <<: *lectures
             items:
               - text: Pending
 
-      - date: 2022-01-28
+      - date: 2022-02-25
         sections:
           - <<: *labs
             items:
@@ -204,7 +204,7 @@ weeks:
 
   - week: 6
     days:
-      - date: 2022-01-25
+      - date: 2022-03-01
         sections:
           - <<: *lectures
             items:
@@ -218,13 +218,13 @@ weeks:
             items:
               - text: Pending
 
-      - date: 2022-01-27
+      - date: 2022-03-03
         sections:
           - <<: *lectures
             items:
               - text: Pending
 
-      - date: 2022-01-28
+      - date: 2022-03-04
         sections:
           - <<: *labs
             items:
@@ -240,7 +240,7 @@ weeks:
 
   - week: 7
     days:
-      - date: 2022-01-25
+      - date: 2022-03-08
         sections:
           - <<: *lectures
             items:
@@ -254,13 +254,13 @@ weeks:
             items:
               - text: Pending
 
-      - date: 2022-01-27
+      - date: 2022-03-10
         sections:
           - <<: *lectures
             items:
               - text: Pending
 
-      - date: 2022-01-28
+      - date: 2022-03-11
         sections:
           - <<: *labs
             items:
@@ -276,7 +276,7 @@ weeks:
 
   - week: 8
     days:
-      - date: 2022-01-25
+      - date: 2022-03-15
         sections:
           - <<: *lectures
             items:
@@ -290,13 +290,13 @@ weeks:
             items:
               - text: Pending
 
-      - date: 2022-01-27
+      - date: 2022-03-17
         sections:
           - <<: *lectures
             items:
               - text: Pending
 
-      - date: 2022-01-28
+      - date: 2022-03-18
         sections:
           - <<: *labs
             items:
@@ -312,7 +312,7 @@ weeks:
 
   - week: 9
     days:
-      - date: 2022-01-25
+      - date: 2022-03-22
         sections:
           - <<: *lectures
             items:
@@ -326,13 +326,13 @@ weeks:
             items:
               - text: Pending
 
-      - date: 2022-01-27
+      - date: 2022-03-24
         sections:
           - <<: *lectures
             items:
               - text: Pending
 
-      - date: 2022-01-28
+      - date: 2022-03-25
         sections:
           - <<: *labs
             items:
@@ -348,7 +348,7 @@ weeks:
 
   - week: 10
     days:
-      - date: 2022-01-25
+      - date: 2022-03-29
         sections:
           - <<: *lectures
             items:
@@ -362,13 +362,13 @@ weeks:
             items:
               - text: Pending
 
-      - date: 2022-01-27
+      - date: 2022-03-31
         sections:
           - <<: *lectures
             items:
               - text: Pending
 
-      - date: 2022-01-28
+      - date: 2022-04-01
         sections:
           - <<: *labs
             items:
@@ -384,7 +384,7 @@ weeks:
 
   - week: 11
     days:
-      - date: 2022-01-25
+      - date: 2022-04-05
         sections:
           - <<: *lectures
             items:
@@ -398,13 +398,13 @@ weeks:
             items:
               - text: Pending
 
-      - date: 2022-01-27
+      - date: 2022-04-07
         sections:
           - <<: *lectures
             items:
               - text: Pending
 
-      - date: 2022-01-28
+      - date: 2022-04-08
         sections:
           - <<: *labs
             items:
@@ -420,7 +420,7 @@ weeks:
 
   - week: 12
     days:
-      - date: 2022-01-25
+      - date: 2022-04-12
         sections:
           - <<: *lectures
             items:
@@ -434,13 +434,13 @@ weeks:
             items:
               - text: Pending
 
-      - date: 2022-01-27
+      - date: 2022-04-14
         sections:
           - <<: *lectures
             items:
               - text: Pending
 
-      - date: 2022-01-28
+      - date: 2022-04-15
         sections:
           - <<: *labs
             items:
@@ -456,7 +456,7 @@ weeks:
 
   - week: 13
     days:
-      - date: 2022-01-25
+      - date: 2022-04-19
         sections:
           - <<: *lectures
             items:
@@ -470,13 +470,13 @@ weeks:
             items:
               - text: Pending
 
-      - date: 2022-01-27
+      - date: 2022-04-21
         sections:
           - <<: *lectures
             items:
               - text: Pending
 
-      - date: 2022-01-28
+      - date: 2022-04-22
         sections:
           - <<: *labs
             items:
@@ -492,7 +492,7 @@ weeks:
 
   - week: 14
     days:
-      - date: 2022-01-25
+      - date: 2022-04-26
         sections:
           - <<: *lectures
             items:
@@ -506,13 +506,13 @@ weeks:
             items:
               - text: Pending
 
-      - date: 2022-01-27
+      - date: 2022-04-28
         sections:
           - <<: *lectures
             items:
               - text: Pending
 
-      - date: 2022-01-28
+      - date: 2022-04-29
         sections:
           - <<: *labs
             items:
@@ -528,7 +528,7 @@ weeks:
 
   - week: 15
     days:
-      - date: 2022-01-25
+      - date: 2022-05-03
         sections:
           - <<: *lectures
             items:
@@ -542,13 +542,13 @@ weeks:
             items:
               - text: Pending
 
-      - date: 2022-01-27
+      - date: 2022-05-05
         sections:
           - <<: *lectures
             items:
               - text: Pending
 
-      - date: 2022-01-28
+      - date: 2022-05-06
         sections:
           - <<: *labs
             items:
@@ -564,7 +564,7 @@ weeks:
 
   - week: 16
     days:
-      - date: 2022-01-25
+      - date: 2022-05-10
         sections:
           - <<: *lectures
             items:
@@ -578,13 +578,13 @@ weeks:
             items:
               - text: Pending
 
-      - date: 2022-01-27
+      - date: 2022-05-12
         sections:
           - <<: *lectures
             items:
               - text: Pending
 
-      - date: 2022-01-28
+      - date: 2022-05-13
         sections:
           - <<: *labs
             items:
@@ -600,7 +600,7 @@ weeks:
 
   - text: 'Finals'
     days:
-      - date: 2022-01-25
+      - date: 2022-05-17
         sections:
           - <<: *lectures
             items:
@@ -614,13 +614,13 @@ weeks:
             items:
               - text: Pending
 
-      - date: 2022-01-27
+      - date: 2022-05-19
         sections:
           - <<: *lectures
             items:
               - text: Pending
 
-      - date: 2022-01-28
+      - date: 2022-05-20
         sections:
           - <<: *labs
             items:
