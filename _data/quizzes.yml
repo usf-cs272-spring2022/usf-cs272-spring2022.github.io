@@ -1,10 +1,13 @@
-# syllabus: &default
-#   text: 'Course Syllabus'
-#   date: 2021-08-27
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2390230'
-#   icon: 'quiz'
-#   tags: ['none']
-#
+example_quiz: &default
+  text: 'Pending'
+  icon: 'quiz'
+  tags: []
+
+syllabus:
+  <<: *default
+  text: 'Course Syllabus'
+  date: 2022-01-28
+
 # paths:
 #   <<: *default
 #   text: 'Paths and Files'

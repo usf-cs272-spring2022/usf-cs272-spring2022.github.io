@@ -1,17 +1,25 @@
-# exceptions: &default
-#   icon: 'slides'
-#   save: true
-#   text: 'Exception Handling'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQM5vFKGToq-lR4ehKMyp-14AxkQQJBaXjv_aB8-Asa-cLP5gq_fAYa3b4K2BXQxIupoNptKZxfqUPF/pub?start=false&loop=false&delayms=3000'
-#   tags: ['exceptions']
-#
-# paths:
-#   <<: *default
-#   text: 'Paths and Files'
-#   tags: ['files']
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vSbFVadVrwGBGRuzFDB1MEGnj3iOk8UGS87vbBlyeK3rKmphDUZITxUMI6ZUBMipLYVQJ2wFU-v5mKo/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1yff1jEPcLSrh0po2Wytc3k9PcLlGZ0xg/view?usp=sharing'
-#
+example_slides: &default
+  text: 'Pending'
+  icon: 'slides'
+  save: false
+  tube: false
+  tags: []
+
+course_intro:
+  <<: *default
+  text: 'Course Introduction'
+
+exceptions:
+  <<: *default
+  text: 'Exception Handling'
+  tags: ['exceptions']
+
+paths:
+  <<: *default
+  text: 'Paths and Files'
+  tags: ['files']
+  tube: 'https://drive.google.com/file/d/1yff1jEPcLSrh0po2Wytc3k9PcLlGZ0xg/view?usp=sharing'
+
 # data:
 #   <<: *default
 #   tags: ['data']

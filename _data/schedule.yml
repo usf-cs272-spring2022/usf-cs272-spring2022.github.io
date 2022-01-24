@@ -5,7 +5,7 @@ defaults:
     label: 'Lecture Agenda'
     dates: false
 
-  additional: &content
+  content: &content
     label: 'Additional Content'
     dates: ''
 
@@ -28,11 +28,23 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Introduction'
-                type: [*pending]
+              - text: 'Getting Started'
+                icon: 'website'
+                link: '/guides/general/getting-started.html'
+
+              - text: 'Course Syllabus'
+                icon: 'website'
+                link: 'https://usfca.simplesyllabus.com/doc/yoiu6kild/Spring-2022-CS-272-01-Software-Development?mode=view'
+
+              - file: 'slides'
+                name: 'course_intro'
+                type: ['bump']
 
           - <<: *assignments
             items:
+              - file: 'quizzes'
+                name: 'syllabus'
+
               - file: 'participation'
                 name: 'introduction_post'
 
@@ -54,10 +66,17 @@ weeks:
           - <<: *lectures
             items:
               - text: 'Project Euler'
+                icon: 'code'
                 type: [*pending]
 
-              - text: 'Exception Handling'
+              - text: 'Files and Exceptions'
+                icon: 'code'
                 type: [*pending]
+
+          - <<: *content
+            items:
+              - file: 'slides'
+                name: 'exceptions'
 
       - date: 2022-01-28
         sections:
@@ -79,6 +98,9 @@ weeks:
 
           - <<: *deadlines
             items:
+              - file: 'quizzes'
+                name: 'syllabus'
+
               - file: 'participation'
                 name: 'introduction_post'
 
@@ -99,6 +121,11 @@ weeks:
             items:
               - text: 'File IO'
                 type: [*pending]
+
+          - <<: *content
+            items:
+              - file: 'slides'
+                name: 'paths'
 
           - <<: *assignments
             items:
