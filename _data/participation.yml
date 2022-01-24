@@ -1,9 +1,15 @@
-# introduction: &default
-#   text: 'Introductions'
-#   date: 2021-08-27
-#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7121977'
-#   icon: 'participation'
-#
+introduction_post: &default
+  text: 'Introduction Post'
+  date: 2022-01-28
+  link: 'https://usfca.instructure.com/courses/1605147/discussion_topics/8062671'
+  icon: 'participation'
+
+introduction_reply: &default
+  text: 'Introduction Reply'
+  date: 2022-02-04
+  link: 'https://usfca.instructure.com/courses/1605147/assignments/7175224'
+  icon: 'participation'
+
 # forum_setup:
 #   <<: *default
 #   text: 'Forum Setup'

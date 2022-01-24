@@ -31,6 +31,14 @@ weeks:
               - text: 'Introduction'
                 type: [*pending]
 
+          - <<: *assignments
+            items:
+              - file: 'participation'
+                name: 'introduction_post'
+
+              - file: 'participation'
+                name: 'introduction_reply'
+
           - <<: *deadlines
             items:
               - text: 'Classes Begin'
@@ -65,11 +73,14 @@ weeks:
 
           - <<: *deadlines
             items:
+              - file: 'participation'
+                name: 'introduction_post'
+
               - text: 'Add Deadline'
                 date: 2022-01-28
                 icon: 'date'
                 show: true
-                type: [*pending]
+                type: [*pending, 'bump']
 
   - week: 2
     days:
@@ -101,10 +112,13 @@ weeks:
 
           - <<: *deadlines
             items:
+              - file: 'participation'
+                name: 'introduction_reply'
+
               - text: 'Homework Bundle 0'
                 icon: 'date'
                 date: 2022-02-04
-                type: ['has-text-weight-bold']
+                type: ['has-text-weight-bold', 'bump']
 
               - file: 'homework'
                 name: 'argumentparser'
