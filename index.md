@@ -5,7 +5,7 @@ navbar: Home
 
 Welcome to <strong class="has-text-usf-green">{{ site.data.info.code }} {{ site.data.info.name }}</strong> for <strong class="has-text-usf-green">{{ site.data.info.term }}</strong>. {{ site.data.info.blurb }}
 
-[Course Syllabus]({{ site.data.info.links.syllabus.link }}){: .button .is-primary } &nbsp; [Getting Started Guide](/guides/general/getting-started.html){: .button .is-primary }
+[Zoom Meeting]({{ site.data.info.streams.lectures.link }}){: .button .is-primary } &nbsp; [Course Syllabus]({{ site.data.info.links.syllabus.link }}){: .button .is-primary } &nbsp; [Getting Started Guide](/guides/general/getting-started.html){: .button .is-primary }
 
 ## Upcoming Schedule
 
