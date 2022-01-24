@@ -39,6 +39,9 @@ weeks:
               - file: 'participation'
                 name: 'introduction_reply'
 
+              - file: 'participation'
+                name: 'forum_setup'
+
           - <<: *deadlines
             items:
               - text: 'Classes Begin'
@@ -68,6 +71,9 @@ weeks:
 
           - <<: *assignments
             items:
+              - file: 'participation'
+                name: 'homework_setup'
+
               - file: 'homework'
                 name: 'argumentparser'
 
@@ -75,6 +81,9 @@ weeks:
             items:
               - file: 'participation'
                 name: 'introduction_post'
+
+              - file: 'participation'
+                name: 'forum_setup'
 
               - text: 'Add Deadline'
                 date: 2022-01-28
@@ -91,6 +100,17 @@ weeks:
               - text: 'File IO'
                 type: [*pending]
 
+          - <<: *assignments
+            items:
+              - file: 'participation'
+                name: 'piazza_post'
+
+              - file: 'participation'
+                name: 'piazza_reply'
+
+              - file: 'participation'
+                name: 'cs_event'
+
       - date: 2022-02-03
         sections:
           - <<: *lectures
@@ -102,21 +122,34 @@ weeks:
         sections:
           - <<: *labs
             items:
+              - text: 'Lecture Code'
+                type: [*pending]
+
               - text: 'Homework Help'
                 type: [*pending]
 
           - <<: *assignments
             items:
+              - file: 'participation'
+                name: 'lecture_setup'
+
+              - file: 'participation'
+                name: 'github_resource'
+
               - file: 'homework'
                 name: 'textfilestemmer'
+                type: ['bump']
 
           - <<: *deadlines
             items:
               - file: 'participation'
                 name: 'introduction_reply'
 
+              - file: 'participation'
+                name: 'homework_setup'
+
               - text: 'Homework Bundle 0'
-                icon: 'date'
+                icon: 'homework'
                 date: 2022-02-04
                 type: ['has-text-weight-bold', 'bump']
 
@@ -154,16 +187,29 @@ weeks:
 
           - <<: *assignments
             items:
+              - file: 'participation'
+                name: 'intake_review'
+
+              - file: 'participation'
+                name: 'project_setup'
+
               - file: 'homework'
                 name: 'simplejsonwriter'
+                type: ['bump']
 
           - <<: *deadlines
             items:
+              - file: 'participation'
+                name: 'lecture_setup'
+
+              - file: 'participation'
+                name: 'github_resource'
+
               - text: 'Drop Deadline (Census)'
                 date: 2022-02-11
                 icon: 'date'
                 show: true
-                type: [*pending]
+                type: [*pending, 'bump']
 
   - week: 4
     days:
@@ -192,6 +238,14 @@ weeks:
             items:
               - file: 'homework'
                 name: 'textfileindex'
+
+          - <<: *deadlines
+            items:
+              - file: 'participation'
+                name: 'intake_review'
+
+              - file: 'participation'
+                name: 'project_setup'
 
   - week: 5
     days:
@@ -235,7 +289,7 @@ weeks:
           - <<: *deadlines
             items:
               - text: 'Homework Bundle 1'
-                icon: 'date'
+                icon: 'homework'
                 date: 2022-02-25
                 type: ['has-text-weight-bold']
 
@@ -336,6 +390,11 @@ weeks:
               - file: 'homework'
                 name: 'loggersetup'
 
+          - <<: *deadlines
+            items:
+              - file: 'participation'
+                name: 'piazza_post'
+
   - week: 8
     days:
       - date: 2022-03-15
@@ -403,7 +462,7 @@ weeks:
           - <<: *deadlines
             items:
               - text: 'Homework Bundle 2'
-                icon: 'date'
+                icon: 'homework'
                 date: 2022-03-25
                 type: ['has-text-weight-bold']
 
@@ -497,7 +556,7 @@ weeks:
           - <<: *deadlines
             items:
               - text: 'Homework Bundle 3'
-                icon: 'date'
+                icon: 'homework'
                 date: 2022-04-08
                 type: ['has-text-weight-bold']
 
@@ -643,7 +702,7 @@ weeks:
           - <<: *deadlines
             items:
               - text: 'Homework Bundle 4'
-                icon: 'date'
+                icon: 'homework'
                 date: 2022-04-29
                 type: ['has-text-weight-bold']
 
@@ -692,7 +751,7 @@ weeks:
           - <<: *deadlines
             items:
               - text: 'Homework Bundle 5'
-                icon: 'date'
+                icon: 'homework'
                 date: 2022-05-06
                 type: ['has-text-weight-bold']
 
@@ -744,7 +803,11 @@ weeks:
           - label: 'End of Semester Deadlines'
             dates: true
             items:
-              - text: Pending
+              - file: 'participation'
+                name: 'cs_event'
+
+              - file: 'participation'
+                name: 'piazza_reply'
 
   - text: 'Finals'
     days:

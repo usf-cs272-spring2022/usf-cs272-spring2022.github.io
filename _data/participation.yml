@@ -1,100 +1,117 @@
-introduction_post: &default
+example_assignment: &default
+  text: 'Pending'
+  icon: 'participation'
+  date: false
+  link: false
+
+# week 1
+
+introduction_post:
+  <<: *default
   text: 'Introduction Post'
-  date: 2022-01-28
   link: 'https://usfca.instructure.com/courses/1605147/discussion_topics/8062671'
-  icon: 'participation'
+  date: 2022-01-28
 
-introduction_reply: &default
+forum_setup:
+  <<: *default
+  text: 'Forum Setup'
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2400251'
+  date: 2022-01-28
+
+# week 2 (homework bundle 0 due)
+
+introduction_reply:
+  <<: *default
   text: 'Introduction Reply'
-  date: 2022-02-04
   link: 'https://usfca.instructure.com/courses/1605147/assignments/7175224'
-  icon: 'participation'
+  date: 2022-02-04
 
-# forum_setup:
-#   <<: *default
-#   text: 'Forum Setup'
-#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7122544'
-#   date: 2021-08-27
-#
-# homework_setup:
-#   <<: *default
-#   text: 'Setup Homework'
-#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7125754'
-#   date: 2021-09-03
-#
-# github_resource:
-#   <<: *default
-#   text: 'Git/Github Resource'
-#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7126537'
-#   date: 2021-09-03
-#
-# lecture_setup:
-#   <<: *default
-#   text: 'Lecture Setup'
-#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7125755'
-#   date: 2021-09-10
-#
-# cs_event:
-#   <<: *default
-#   text: 'CS Event'
-#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7127389'
-#   date: 2021-12-09
-#   show: true
-#
-# piazza_post:
-#   <<: *default
-#   text: 'Piazza Post'
-#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7127537'
-#   date: 2021-12-09
-#   show: true
-#
-# piazza_response:
-#   <<: *default
-#   text: 'Piazza Response'
-#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7127539'
-#   date: 2021-12-09
-#   show: true
-#
-# intake:
-#   <<: *default
-#   text: 'Code Review Intake'
-#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7128352'
-#   date: 2021-09-17
-#
-# project_setup:
-#   <<: *default
-#   text: 'Project Setup'
-#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7129460'
-#   date: 2021-09-17
-#
-# belonging1:
-#   <<: *default
-#   text: 'CS Belonging Survey 1'
-#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7132274'
-#   date: 2021-09-24
-#
-# stream_benchmark:
-#   <<: *default
-#   text: 'Stream Benchmark'
-#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7134916'
-#   date: 2021-10-08
-#
+homework_setup:
+  <<: *default
+  text: 'Homework Setup'
+  date: 2022-02-04
+
+# week 3 (nothing)
+
+github_resource:
+  <<: *default
+  text: 'Git/Github Resource'
+  date: 2022-02-11
+
+lecture_setup:
+  <<: *default
+  text: 'Lecture Setup'
+  date: 2022-02-11
+
+# week 4 (nothing)
+
+intake_review:
+  <<: *default
+  text: 'Code Review Intake'
+  date: 2022-02-18
+
+project_setup:
+  <<: *default
+  text: 'Project Setup'
+  date: 2022-02-18
+
+# week 5 (homework bundle 1)
+
+# week 6 (project 1)
+
+# week 7 (exam 1)
+
+piazza_post:
+  <<: *default
+  text: 'Piazza Post'
+  date: 2022-03-11
+  show: true
+
+# week 8 (spring break)
+
+# week 9 (retake, homework bundle 2)
+
 # midterm_survey:
 #   <<: *default
 #   text: 'Midterm Survey'
 #   link: 'https://usfca.instructure.com/courses/1602551/assignments/7139677'
 #   date: 2021-11-05
-#
+
+# week 10 (project 2)
+
 # final_plan:
 #   <<: *default
 #   text: 'Final Grade Plan'
 #   link: 'https://usfca.instructure.com/courses/1602551/assignments/7145001'
 #   date: 2021-12-09
 #   show: true
-#
-# belonging2:
+
+# week 11 (homework bundle 3, pass requirement)
+
+# week 12 (easter)
+
+# week 13 (project 3)
+
+# week 14 (homework bundle 4)
+
+# week 15 (exam 2, homework bundle 5)
+
+# week 16 (project 4, end of semester)
+
+cs_event:
+  <<: *default
+  text: 'CS Event'
+  date: 2022-05-13
+  show: true
+
+piazza_reply:
+  <<: *default
+  text: 'Piazza Reply'
+  date: 2022-05-13
+  show: true
+
+# final_survey:
 #   <<: *default
-#   text: 'CS Belonging Survey 2'
-#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7144605'
-#   date: 2021-12-09
-#   show: true
+#   text: 'Midterm Survey'
+#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7139677'
+#   date: 2021-11-05
