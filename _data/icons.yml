@@ -43,11 +43,6 @@ participation:
   class: 'far fa-ballot-check'
   shown: true
 
-attendance:
-  label: 'Attendance'
-  class: 'far fa-users-class'
-  shown: true
-
 quiz:
   label: 'Quiz'
   class: 'far fa-edit'
@@ -101,14 +96,10 @@ time:
   label: 'Time'
   class: 'far fa-alarm-clock'
 
-fall:
-  label: 'Fall Break'
-  class: 'far fa-campfire'
+spring:
+  label: 'Spring Break'
+  class: 'far fa-flower-tulip'
 
-thanksgiving:
-  label: 'Thanksgiving Holiday'
-  class: 'far fa-pumpkin'
-
-linkedin:
-  label: 'Linkedin'
-  class: 'fab fa-linkedin'
+easter:
+  label: 'Easter Holiday'
+  class: 'far fa-rabbit'
