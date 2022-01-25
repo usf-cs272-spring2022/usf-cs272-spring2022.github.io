@@ -72,7 +72,7 @@ weeks:
             items:
               - text: 'Project Euler'
                 icon: 'code'
-                type: [*pending]
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/ProjectEuler'
 
               - text: 'Files and Exceptions'
                 icon: 'code'
