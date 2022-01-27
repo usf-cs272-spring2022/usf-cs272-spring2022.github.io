@@ -72,11 +72,10 @@
 
   <script>
     const params = new URLSearchParams(window.location.search);
-    const poll = new URL("https://www.polleverywhere.com/discourses/hfXL00Zs1U5Wzfbutyzvb?preview=true&controls=none");
+    const poll = new URL("https://www.polleverywhere.com/discourses/hfXL00Zs1U5Wzfbutyzvb?preview=true&controls=all");
 
     // set defaults
     if (Array.from(params.keys()).length < 1) {
-      console.log("Hello world.")
       params.append("text", "true");
     }
 
@@ -92,7 +91,7 @@
 
     console.log("Using: " + url);
     const iframe = document.createElement("iframe");
-    iframe.src = `https://embed.polleverywhere.com${url}?controls=none`;
+    iframe.src = `https://embed.polleverywhere.com${url}?controls=all`;
     document.getElementById("left-column").appendChild(iframe);
 
     // right column
@@ -114,7 +113,7 @@
       div.style.flexGrow = "2";
 
       const iframe = document.createElement("iframe");
-      iframe.src = `https://www.bigtimer.net/info?minutes=${minutes}`;
+      iframe.src = `https://www.bigtimer.net/?minutes=${minutes}`;
 
       right.appendChild(div);
       div.appendChild(iframe);
@@ -140,7 +139,7 @@
       div.style.flexGrow = "3";
 
       const iframe = document.createElement("iframe");
-      iframe.src = `https://embed.polleverywhere.com${poll.pathname}?controls=none`;
+      iframe.src = `https://embed.polleverywhere.com${poll.pathname}?controls=all`;
 
       right.appendChild(div);
       div.appendChild(iframe);
