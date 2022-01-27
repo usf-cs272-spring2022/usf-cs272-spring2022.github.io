@@ -40,7 +40,7 @@ javac 17.0.2
 
 Note that `%` above indicates the command prompt, and the lines below that are the output.
 
-If when you verify the version of `java` and `javac`, it does not default to your new installation, then you might need to do some extra setup in Eclipse. See the "Verify Eclipse Java Settings" section below.
+**If when you verify the version of `java` and `javac`, it does not default to your new installation, then you might need to do some extra setup in Eclipse.** See the "Verify Eclipse Java Settings" section below.
 
 ## Setup Folders (Optional)
 
@@ -56,7 +56,11 @@ Therefore, I recommend you create a `CS 272` or `cs272` folder, and within it cr
 
     ![Git Settings]({{ "/images/eclipse-version-control-git.png" | relative_url }}){: .is-600 }
 
+**Setup the folders *before* setting up Eclipse!**
+
 Eclipse does not behave well when you combine or nest the `Workspace` and `Repositories` folders. **Keep these separate!**
+
+You can use the "Finder" application on Mac or "File Explorer" (previously "Windows Explorer") in Windows to create the folders. Or, on any Unix or Linux-based system, you can use the `mkdir` command.
 
 ## Install Eclipse
 
@@ -76,11 +80,13 @@ Mac Users: I recommend you move the Eclipse.app file into your "Applications" fo
 
 If you installed the latest version of Java before Eclipse, Eclipse will usually use that version of Java automatically. Otherwise, you may need to change the Java settings within Eclipse.
 
-The first step is to make sure Eclipse is aware of your new Java installation. Open the Eclipse preferences and go to the "Java" » "Installed JREs" settings:
+When you first open Eclipse, it will ask you for the workspace location. If you setup your folders already, choose the `Workspace` subfolder in your `CS 272` folder for the workspace. You can use this same workspace for the entire semester.
+
+The next step is to make sure Eclipse is aware of your new Java installation. Open the Eclipse preferences and go to the "Java" » "Installed JREs" settings:
 
 ![Eclipse Screenshot]({{ "/images/eclipse-installed-jres.png" | relative_url }}){: .is-400 }
 
-If you do not see your newly installed version of Java, click the "Search" button to tell Eclipse where to find it. Then, I recommend removing any other installations from this window.
+**If you do not see your newly installed version of Java, click the "Search" button to tell Eclipse where to find it.** Then, I recommend removing any other installations from this window.
 
 The next step is to configure Eclipse to use this version when **running** Java code. Open the "Java" » "Installed JREs" » "Execution Environments" panel:
 
