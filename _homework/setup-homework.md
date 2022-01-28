@@ -4,6 +4,9 @@ navbar: Guides
 title: Setup Homework
 key: 1
 
+run_summary: '#'
+run_detail: '#'
+
 ---
 
 This guide will walk you through the process of setting up your homework repository and importing it into Eclipse.
@@ -16,16 +19,16 @@ Before you begin, you need to make sure to go through the other setup guides fir
   - [General Guides](/guides/general/)
   - [Eclipse Guides](/guides/eclipse/)
 
-If you do not yet have a Github account, [sign up for a free account](https://github.com/join). I recommend choosing a professional username and signing up for the [Student Developer Pack](https://education.github.com/pack)  when you get a chance.
+This includes making sure you have a GitHub account linked to your USF email. See the [Getting Started with GitHub](/guides/general/getting-started-with-github.html) guide for details.
 
 ## Per-Homework Setup
 {: .page-header }
 
 For every homework assignment, you will need to repeat these steps:
 
-  1. **Setup your Github repository.**
+  1. **Setup your GitHub repository.**
 
-      1. Find the homework assignment on Canvas. For example, go to the [ArgumentMap](https://usfca.instructure.com/courses/1602551/assignments/7115402) assignment on Canvas for the first homework of the semester.
+      1. Find the homework assignment on Canvas. For example, go to the [{{ site.data.homework.argumentparser.text }}]({{ site.data.homework.argumentparser.link }}) assignment on Canvas for the first homework of the semester.
 
       1. Click the Github Classroom invitation link and follow the instructions.
 
@@ -74,7 +77,7 @@ For every homework assignment, you will need to repeat these steps:
       Make sure the action finishes running. Here is an example of what a completed action looks like:
 
       ![Screenshot]({{ "/images/github-homework-action-summary.png" | relative_url }}){: .is-600 }  
-      <https://github.com/usf-cs272-fall2021/homework-ArgumentMap-template/actions/runs/1168472802>
+      <{{ page.run_summary }}>
 
       Scroll down in the "Summary" view to see the "Annotations" section. That will report the number of points your homework has earned so far:
 
@@ -83,7 +86,7 @@ For every homework assignment, you will need to repeat these steps:
       For details on which tests failed, you need to drill into the "Autograding" output.
 
       ![Screenshot]({{ "/images/github-homework-action-detail.png" | relative_url }}){: .is-600 }  
-      <https://github.com/usf-cs272-fall2021/homework-ArgumentMap-template/runs/3427517659?check_suite_focus=true#step:5:132>
+      <{{ page.run_detail }}>
 
       You can also see the number of points on the README.md file as well:
 
