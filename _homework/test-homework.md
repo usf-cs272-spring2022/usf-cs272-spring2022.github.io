@@ -4,8 +4,8 @@ navbar: Guides
 title: Testing Homework
 key: 3
 
-example_test: 'https://github.com/usf-cs272-fall2021/homework-ArgumentMap-template/blob/9d6de268c89caf7a1b3bbd18c57f7304eafe87e2/src/test/java/ArgumentMapTest.java#L73-L87'
-example_run: 'https://github.com/usf-cs272-fall2021/homework-ArgumentMap-template/runs/3427517659?check_suite_focus=true#step:5:15'
+example_test: 'https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template/blob/01d2c51a1986ee4007ad0a040fe6ffbdc9641cb1/src/test/java/edu/usfca/cs272/ArgumentParserTest.java#L73-L86'
+example_run: 'https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template/runs/4985351349?check_suite_focus=true#step:3:1'
 
 ---
 
@@ -32,10 +32,9 @@ For example, consider [this test]({{ page.example_test }}):
  */
 @Order(2)
 @ParameterizedTest(name = "[{index}: \"{0}\"]")
-@ValueSource(strings = {
-    "a-b-c", "hello", "hello world", "", " ", "\t", "\n", "-", " - a",
-    " -a", "\t-a", "--a", "-$a", "-_a", "-\ta", "97", "1", "-1"
-})
+@ValueSource(strings = { "a-b-c", "hello", "hello world", "", " ", "\t",
+    "\n", "-", " - a", " -a", "\t-a", "--a", "-$a", "-_a", "-\ta", "97",
+    "1", "-1", "-42" })
 public void testInvalidFlags(String flag) {
   boolean actual = ArgumentParser.isFlag(flag);
   Assertions.assertFalse(actual, flag);

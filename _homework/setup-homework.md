@@ -4,8 +4,8 @@ navbar: Guides
 title: Setup Homework
 key: 1
 
-run_summary: '#'
-run_detail: '#'
+run_summary: 'https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template/actions/runs/1763252998'
+run_detail: 'https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template/runs/4985351349?check_suite_focus=true#step:3:1'
 
 ---
 
