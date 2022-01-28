@@ -43,6 +43,6 @@ To receive full credit on any homework assignment, you must:
 
   - **Follow the `TODO` directions.** For example, if the `TODO` comment stated you must use a `HashSet` and your code does not, you could lose points even if you are passing all of the unit tests.
 
-  - **Properly submit your homework on time.** Remember, there are no late homework submissions unless you apply for a policy exception. See the syllabus for details.
+  - **Properly submit your homework on time.** By default, Github Classroom will report your grade based on the last commit *before* the deadline and will ignore all other commits after that. You will have to reach out on Piazza to have late submissions regraded manually.
 
 To submit your homework, you must make a commit and push that commit to Github before the deadline!
