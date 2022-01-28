@@ -4,6 +4,10 @@ navbar: Guides
 title: Importing Eclipse Projects from Github
 key: 3
 bump: true
+
+tags:
+  - text: 'New'
+    type: 'is-primary'
 ---
 
 Follow these steps to import an Eclipse project from your Github repository. You must have completed the steps in the following guides **before** starting this one:
