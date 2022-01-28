@@ -92,7 +92,8 @@ weeks:
                 link: '/guides/eclipse/java-and-eclipse-setup.html'
 
               - text: 'Homework Setup'
-                type: [*pending]
+                icon: 'website'
+                link: '/guides/homework/'
 
           - <<: *assignments
             items:
