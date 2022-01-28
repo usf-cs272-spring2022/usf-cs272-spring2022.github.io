@@ -3,6 +3,10 @@ layout: guides
 navbar: Guides
 title: Testing Homework
 key: 3
+
+example_test: 'https://github.com/usf-cs272-fall2021/homework-ArgumentMap-template/blob/9d6de268c89caf7a1b3bbd18c57f7304eafe87e2/src/test/java/ArgumentMapTest.java#L73-L87'
+example_run: 'https://github.com/usf-cs272-fall2021/homework-ArgumentMap-template/runs/3427517659?check_suite_focus=true#step:5:15'
+
 ---
 
 Every homework comes with a `src` » `test` » `java` directory with JUnit 5 test code. You must pass all of these tests remotely to earn full credit.
@@ -14,11 +18,11 @@ The screenshots are shown at reduced size. Click to open the image to view it at
 ## Understanding Tests
 {: .page-header }
 
-Each homework will have a class called `HomeworkTest.java` where `Homework` is the name of the homework assignment. For example, for the `ArgumentMap` homework, its associated test class is `ArgumentMapTest.java`.
+Each homework will have a class called `HomeworkTest.java` where `Homework` is the name of the homework assignment. For example, for the `ArgumentParser` homework, its associated test class is `ArgumentParserTest.java`.
 
 The homework tests use the [Junit 5](https://junit.org/junit5/) testing framework, which has built-in support in Eclipse. The tests themselves are Java code. There are always several parts of a test: the test case (method being tested and on which input), the actual result of running that method, and the expected result.
 
-For example, consider [this test](https://github.com/usf-cs272-fall2021/homework-ArgumentMap-template/blob/9d6de268c89caf7a1b3bbd18c57f7304eafe87e2/src/test/java/ArgumentMapTest.java#L73-L87):
+For example, consider [this test]({{ page.example_test }}):
 
 ```java
 /**
@@ -33,15 +37,15 @@ For example, consider [this test](https://github.com/usf-cs272-fall2021/homework
     " -a", "\t-a", "--a", "-$a", "-_a", "-\ta", "97", "1", "-1"
 })
 public void testInvalidFlags(String flag) {
-  boolean actual = ArgumentMap.isFlag(flag);
+  boolean actual = ArgumentParser.isFlag(flag);
   Assertions.assertFalse(actual, flag);
 }
 ```
 
-The method being tested is the `isFlag` method in `ArgumentMap`, given by this line:
+The method being tested is the `isFlag` method in `ArgumentParser`, given by this line:
 
 ```java
-boolean actual = ArgumentMap.isFlag(flag);
+boolean actual = ArgumentParser.isFlag(flag);
 ```
 
 The method is being tested multiple times, once for each input in the `@ValueSource` here:
@@ -59,7 +63,7 @@ For each of these input values for the `isFlag` method, the test is expecting th
 Assertions.assertFalse(actual, flag);
 ```
 
-If we consider the first input value, then the code *asserts* `ArgumentMap.isFlag("a-b-c")` should return `false`. If it does, the test passes. If not, an exception is thrown.
+If we consider the first input value, then the code *asserts* `ArgumentParser.isFlag("a-b-c")` should return `false`. If it does, the test passes. If not, an exception is thrown.
 
 Each method might look slightly different, but it will always have those same three components: what is being tested, what is the actual value, and what is the expected value. If you ever have trouble understanding a test, reach out on CampusWire!
 
@@ -76,9 +80,9 @@ To run the JUnit tests provided with the homework template, follow these steps:
 
   3. From the "Run" menu, select "Run As" &raquo; "JUnit Test" from the menu. If prompted which tests to run, select the one with the same name as the class. For example, for the `ArgumentParser` homework assignment, `ArgumentParserTest` is the associated test class.
 
-  4. Running the tests should open the "JUnit" view. You can use that view to see which tests you are passing and which you are not. See the [Eclipse User Guide](https://help.eclipse.org/2021-06/topic/org.eclipse.jdt.doc.user/reference/views/ref-view-junit.htm) for what each of the buttons mean in this view.
+  4. Running the tests should open the "JUnit" view. You can use that view to see which tests you are passing and which you are not. See the [Eclipse User Guide](https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/reference/views/ref-view-junit.htm) for what each of the buttons mean in this view.
 
-  5. After making changes to your code, you can re-run the tests by following the same steps or clicking the <img alt="Rerun Test" src="https://help.eclipse.org/2021-06/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.junit/elcl16/relaunch.svg"> Rerun Test button.
+  5. After making changes to your code, you can re-run the tests by following the same steps or clicking the <img alt="Rerun Test" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.junit/elcl16/relaunch.svg"> Rerun Test button.
 
 It is important you only try to pass one test at a time, because the changes you make may affect other tests. You should commit your changes every time you start passing a new test. You only need to push your changes at the end of every coding session (you can do it more often as well).
 
@@ -159,9 +163,9 @@ Finally, you can run the tests as they will be run by Github Actions.  Follow th
 
   1. Enter `test` in the "Goals" text box.
 
-  2. Click the "Add..." button and add a parameter with name `test` and value `HomeworkTest*` where `Homework` is the homework name. For example, enter `ArgumentMapTest*` to run all of the tests for the `ArgumentMap` homework.
+  2. Click the "Add..." button and add a parameter with name `test` and value `HomeworkTest*` where `Homework` is the homework name. For example, enter `ArgumentParserTest*` to run all of the tests for the `ArgumentParser` homework.
 
-      Alternatively, if you want to run one of the A, B, C, etc. test groups, enter `HomeworkTest*X_*` where `Homework` is the homework name and `X` is the test group (such as `A`, `B`, and so on). For example, enter `ArgumentMapTest*A_*` to run the `A` tests for the `ArgumentMap` homework.
+      Alternatively, if you want to run one of the A, B, C, etc. test groups, enter `HomeworkTest*X_*` where `Homework` is the homework name and `X` is the test group (such as `A`, `B`, and so on). For example, enter `ArgumentParserTest*A_*` to run the `A` tests for the `ArgumentParser` homework.
 
       [![Screenshot]({{ "/images/eclipse-maven-run-test.png" | relative_url }}){: .is-400 }]({{ "/images/eclipse-maven-run-test.png" | relative_url }})
 
@@ -189,8 +193,6 @@ While the messages are *annoying*, they do not impact your code. However, [you c
       ![Screenshot]({{ "/images/eclipse-installed-software.png" | relative_url }}){: .is-400 }
 
 After that is uninstalled, you should no longer see that error message.
-
-
 </div>
 </details>
 
@@ -245,4 +247,4 @@ Once you are passing all of the tests locally, it is time to test your homework 
 
       ...this is output by Maven and not an issue with your code.
 
-You can link to a specific line in this autograder run when asking for help on [Piazza]({{ site.data.info.links.forums.link }})! For example, [here is a link](https://github.com/usf-cs272-fall2021/homework-ArgumentMap-template/runs/3427517659?check_suite_focus=true#step:5:15) to the autograder run for the `ArgumentMap` template.
+You can link to a specific line in this autograder run when asking for help on [Piazza]({{ site.data.info.links.forums.link }})! For example, [here is a link]({{ page.example_run }}) to the autograder run for the `ArgumentParser` template.
