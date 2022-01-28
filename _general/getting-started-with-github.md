@@ -36,6 +36,10 @@ When creating an account for this class (including accounts already created), ke
 
 You can see the [instructor's profile page](https://github.com/sjengle) for an example. When done with this class, you'll be able to show off your Github profile to potential employers.
 
+<i class="fas fa-info-circle"></i>
+Using your Github username and password authentication [no longer an option for authentication](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/) via the command-line.
+{: .notification }
+
 ## Setup Repository Access
 {: .page-header }
 
@@ -43,9 +47,13 @@ You will need to access your private GitHub repositories on your own local syste
 
   1. **Using SSH, which involves [generating SSH keys per system](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) you want to access GitHub from.** If you already use SSH (for example, to access `stargate.cs.usfca.edu`), then that approach may be more convenient since you likely already have SSH keys generated.
 
-  1. **Using HTTPS, which involves [generating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) (instead of a password).** If you do not already use SSH, I recommend the HTTPS method. It allows more fine-grained control, including when it should expire.
+  1. **Using HTTPS, which involves [generating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) (instead of a password).** If you do not already use SSH, I recommend the HTTPS method. It allows more fine-grained control, including when it should expire. With this option, make sure to configure an expiration *after* the end of the semester, and add both "repo" and "workflow" access:
+
+      ![Token Scope]({{ "/images/github-token-scope.png" | relative_url }}){: .is-400 }
 
 Either way works; they each have different pros and cons. When you know which method you prefer, go to the [**Authenticating with the command line**](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#authenticating-with-the-command-line) article on GitHub for details about get started.
+
+You should only need to complete this step **once** for the entire semester!
 
 ## Learn Git and GitHub
 {: .page-header }
