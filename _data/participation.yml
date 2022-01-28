@@ -26,6 +26,12 @@ introduction_reply:
   link: 'https://usfca.instructure.com/courses/1605147/assignments/7175224'
   date: 2022-02-04
 
+assistants_reply:
+  <<: *default
+  text: 'TA Introuctions'
+  link: 'https://usfca.instructure.com/courses/1605147/discussion_topics/8062687'
+  date: 2022-02-04
+
 homework_setup:
   <<: *default
   text: 'Homework Setup'

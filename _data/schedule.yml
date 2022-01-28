@@ -98,6 +98,9 @@ weeks:
           - <<: *assignments
             items:
               - file: 'participation'
+                name: 'assistants_reply'
+
+              - file: 'participation'
                 name: 'homework_setup'
 
               - file: 'homework'
@@ -178,6 +181,9 @@ weeks:
             items:
               - file: 'participation'
                 name: 'introduction_reply'
+
+              - file: 'participation'
+                name: 'assistants_reply'
 
               - file: 'participation'
                 name: 'homework_setup'
