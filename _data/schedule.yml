@@ -91,9 +91,27 @@ weeks:
                 icon: 'website'
                 link: '/guides/eclipse/java-and-eclipse-setup.html'
 
+              - text: 'Github Setup'
+                icon: 'website'
+                link: '/guides/general/getting-started-with-github.html'
+
               - text: 'Homework Setup'
                 icon: 'website'
-                link: '/guides/homework/'
+                link: '/guides/homework/setup-homework.html'
+
+          - <<: *content
+            items:
+              - text: 'Configuring Eclipse'
+                icon: 'website'
+                link: '/guides/eclipse/configuring-eclipse.html'
+
+              - text: 'Completing Homework'
+                icon: 'website'
+                link: '/guides/homework/complete-homework.html'
+
+              - text: 'Testing Homework'
+                icon: 'website'
+                link: '/guides/homework/test-homework.html'
 
           - <<: *assignments
             items:
