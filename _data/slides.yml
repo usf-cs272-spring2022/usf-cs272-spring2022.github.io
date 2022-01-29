@@ -23,6 +23,8 @@ paths:
   text: 'Paths and Files'
   tags: ['files']
   tube: 'https://drive.google.com/file/d/1yff1jEPcLSrh0po2Wytc3k9PcLlGZ0xg/view?usp=sharing'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vR83LiLgIdbC_1ibZPBFxl15sQgAtPFY6f-r5lZnaGrUV96A1CL065WfdbNQq6z3HMRkCpMQ5y8N8IK/pub?start=false&loop=false&delayms=3000'
+  save: true
 
 # data:
 #   <<: *default
