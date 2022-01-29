@@ -155,6 +155,12 @@ weeks:
               - file: 'slides'
                 name: 'paths'
 
+              - file: 'slides'
+                name: 'data'
+
+              - file: 'slides'
+                name: 'collections'
+
           - <<: *assignments
             items:
               - file: 'participation'

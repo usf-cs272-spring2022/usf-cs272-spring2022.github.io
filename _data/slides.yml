@@ -26,19 +26,23 @@ paths:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vR83LiLgIdbC_1ibZPBFxl15sQgAtPFY6f-r5lZnaGrUV96A1CL065WfdbNQq6z3HMRkCpMQ5y8N8IK/pub?start=false&loop=false&delayms=3000'
   save: true
 
-# data:
-#   <<: *default
-#   tags: ['data']
-#   text: 'Abstract Data Types'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQgpvOAAqjNV5liUyu6g655xlL6J3QFLGSMfz_-sgfc9hjdVnpPFFT6UkkuIVuJuY1jbBho_bEf9ZAx/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1OvFMONm4PEYQ8LtR9P9BxkfxxJZrGNK4/view?usp=sharing'
-#
-# collections:
-#   <<: *default
-#   tags: ['data']
-#   text: 'Collections Framework'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQ47_2Y7F29dDWW0RDQmqaPqdRDaRhFuSjaRV87xn8_JhYuLriLVrYntUNvCVCMekl0X979DFy0qEtL/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1O2I-vvdaul1AEZ31PO6KrFakcw1ORlkJ/view?usp=sharing'
+data:
+  <<: *default
+  tags: ['data']
+  text: 'Abstract Data Types'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vQ6NExS3Gl1ZqodvfIHu8EP2HArAxA4CKUNpPWwpj9Q2QeD-l6FfOC-ydk7S5OGpZ4SHs-m6q3s2b7C/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1OvFMONm4PEYQ8LtR9P9BxkfxxJZrGNK4/view?usp=sharing'
+  save: true
+
+collections:
+  <<: *default
+  tags: ['data']
+  text: 'Collections Framework'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vQPQbd8zq-FXm7J2GfYEm9spxVo_pPbJGSrcWKIRhjc5rZa2orf3U5m7DdJuM7cFaY54okDcO2sTEl7/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1O2I-vvdaul1AEZ31PO6KrFakcw1ORlkJ/view?usp=sharing'
+  save: true
+
+
 #
 # oop:
 #   <<: *default
