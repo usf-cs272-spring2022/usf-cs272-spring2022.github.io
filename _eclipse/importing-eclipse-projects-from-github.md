@@ -13,7 +13,7 @@ tags:
 Follow these steps to import an Eclipse project from your Github repository. You must have completed the steps in the following guides **before** starting this one:
 
   - [Java and Eclipse Setup](/guides/eclipse/java-and-eclipse-setup.html)
-  - [Getting Started with Github](guides/general/getting-started-with-github.html)
+  - [Getting Started with Github](/guides/general/getting-started-with-github.html)
 
 It is also recommended to complete the  [Configuring Eclipse](/guides/eclipse/configuring-eclipse.html) guide before this one.
 
