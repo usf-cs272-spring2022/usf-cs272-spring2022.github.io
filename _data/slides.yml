@@ -1,7 +1,7 @@
 example_slides: &default
   text: 'Pending'
   icon: 'slides'
-  save: false
+  save: true
   tube: false
   tags: []
 
@@ -9,14 +9,12 @@ course_intro:
   <<: *default
   text: 'Course Introduction'
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQVhpS83TujZo3nyK0_14jEbuNK8kALrS7ES8Aaz2UjI7ANbd5DCeuqa77bVefi-tI2JzAEYgTRiAUU/pub?start=false&loop=false&delayms=3000'
-  save: true
 
 exceptions:
   <<: *default
   text: 'Exception Handling'
   tags: ['exceptions']
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vT6WdZbuKS1KqIKwCkVhMwvlyiCbztsMi2w7Cd1AkZqdIf4dsRo_Kb7_fgH_qGvcEjTTiCiNfjnmKiY/pub?start=false&loop=false&delayms=3000'
-  save: true
 
 paths:
   <<: *default
@@ -24,7 +22,6 @@ paths:
   tags: ['files']
   tube: 'https://drive.google.com/file/d/1yff1jEPcLSrh0po2Wytc3k9PcLlGZ0xg/view?usp=sharing'
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vR83LiLgIdbC_1ibZPBFxl15sQgAtPFY6f-r5lZnaGrUV96A1CL065WfdbNQq6z3HMRkCpMQ5y8N8IK/pub?start=false&loop=false&delayms=3000'
-  save: true
 
 data:
   <<: *default
@@ -32,7 +29,6 @@ data:
   text: 'Abstract Data Types'
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQ6NExS3Gl1ZqodvfIHu8EP2HArAxA4CKUNpPWwpj9Q2QeD-l6FfOC-ydk7S5OGpZ4SHs-m6q3s2b7C/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1OvFMONm4PEYQ8LtR9P9BxkfxxJZrGNK4/view?usp=sharing'
-  save: true
 
 collections:
   <<: *default
@@ -40,24 +36,21 @@ collections:
   text: 'Collections Framework'
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQPQbd8zq-FXm7J2GfYEm9spxVo_pPbJGSrcWKIRhjc5rZa2orf3U5m7DdJuM7cFaY54okDcO2sTEl7/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1O2I-vvdaul1AEZ31PO6KrFakcw1ORlkJ/view?usp=sharing'
-  save: true
 
+oop:
+  <<: *default
+  tags: ['objects']
+  text: 'Object Oriented Programming'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vRvHDGd0zAcJWsRyjtwFNPInmQg-9Q4qYDL5DPnp75LWQPLOSE0p2tRo6WhAyhzeaqy4j2aadWmzBY0/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/14aTl6kRfuIptdA3T9kOx75FNUBXS7tGX/view?usp=sharing'
 
-#
-# oop:
-#   <<: *default
-#   tags: ['objects']
-#   text: 'Object Oriented Programming'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vRjT9CcuJsN6nHX8fineRezDh3YFo-HXQfgRRBfYQwFCd1RJM6NU0mtx1AXgCZT2sUD6KnJsOscoNDZ/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/14aTl6kRfuIptdA3T9kOx75FNUBXS7tGX/view?usp=sharing'
-#
-# inheritance:
-#   <<: *default
-#   tags: ['inheritance']
-#   text: 'Inheritance Relationships'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vSbaAAOrp5szw2JBxwQ7y9mj0buRPO2-G6EV-UULmZdQ539V8ozG7uqHoKvmmuUw2gSaK_5itu5ZSQM/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1eu_Co497YW-6vW6JpbtUkET75VZ3iFyw/view?usp=sharing'
-#
+inheritance:
+  <<: *default
+  tags: ['inheritance']
+  text: 'Inheritance Relationships'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vTYaBdIMxtjd9iGXph2XPFBiz2ydDtBk0ejaN5UqRaVtStP23nkfUztyM26-3rlYUSVhovH2j3SQuH3/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1eu_Co497YW-6vW6JpbtUkET75VZ3iFyw/view?usp=sharing'
+
 # abstract:
 #   <<: *default
 #   tags: ['inheritance']
