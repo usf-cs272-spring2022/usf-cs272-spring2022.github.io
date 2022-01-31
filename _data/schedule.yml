@@ -99,6 +99,11 @@ weeks:
                 icon: 'website'
                 link: '/guides/homework/setup-homework.html'
 
+              - text: 'ArgumentParser'
+                link: 'https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template'
+                icon: 'homework'
+                type: 'bump'
+
           - <<: *content
             items:
               - text: 'Configuring Eclipse'
@@ -224,19 +229,30 @@ weeks:
         sections:
           - <<: *labs
             items:
-              - text: 'Lecture Code'
-                type: [*pending]
+              - text: 'Configuring Eclipse'
+                icon: 'website'
+                link: '/guides/eclipse/configuring-eclipse.html'
 
-              - text: 'Homework Help'
-                type: [*pending]
+              - text: 'Importing Lectures'
+                icon: 'website'
+                link: '/guides/eclipse/importing-eclipse-projects-from-github.html'
+
+              - text: 'Homework Guides'
+                icon: 'website'
+                link: '/guides/homework/'
+
+              - text: 'ArgumentParser'
+                link: 'https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template'
+                icon: 'homework'
+                type: 'bump'
+
+              - text: 'TextFileStemmer'
+                icon: 'homework'
 
           - <<: *assignments
             items:
               - file: 'participation'
                 name: 'lecture_setup'
-
-              - file: 'participation'
-                name: 'github_resource'
 
               - file: 'homework'
                 name: 'textfilestemmer'
@@ -316,9 +332,6 @@ weeks:
               - file: 'participation'
                 name: 'lecture_setup'
                 type: ['bump']
-
-              - file: 'participation'
-                name: 'github_resource'
 
               - text: 'Drop Deadline (Census)'
                 date: 2022-02-11

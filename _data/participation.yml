@@ -40,10 +40,10 @@ homework_setup:
 
 # week 3 (nothing)
 
-github_resource:
-  <<: *default
-  text: 'Git/Github Resource'
-  date: 2022-02-11
+# github_resource:
+#   <<: *default
+#   text: 'Git/Github Resource'
+#   date: 2022-02-11
 
 lecture_setup:
   <<: *default
