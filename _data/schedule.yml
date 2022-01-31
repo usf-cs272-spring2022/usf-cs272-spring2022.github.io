@@ -153,16 +153,20 @@ weeks:
               - text: 'File IO'
                 type: ['bump']
                 icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/FileIO'
 
               - text: '– EliteFileConverter'
                 icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/FileIO/src/main/java/edu/usfca/cs272/EliteFileConverter.java'
 
               - text: '– DirectoryStreamDemo'
                 icon: 'nothing'
                 tube: 'https://drive.google.com/file/d/1sAML7el7txCn53kIMccCgEPgOSDDzeCm/view?usp=sharing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/FileIO/src/main/java/edu/usfca/cs272/DirectoryStreamDemo.java'
 
               - text: '– PathDemo'
                 icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/FileIO/src/main/java/edu/usfca/cs272/PathDemo.java'
 
           - <<: *assignments
             items:
@@ -192,17 +196,21 @@ weeks:
               - text: 'Data Structures'
                 icon: 'code'
                 type: ['bump']
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/DataStructures'
 
               - text: '– CollectionDemo'
                 icon: 'nothing'
                 tube: 'https://drive.google.com/file/d/1UbVnpLnFL1v0AKH6pazLRH0jKh1OkTF1/view?usp=sharing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/CollectionDemo.java'
 
               - text: '– MapDemo'
                 icon: 'nothing'
                 tube: 'https://drive.google.com/file/d/1byBtkaRo7WkY3cBfPXJNkvEi3D7UhoJD/view?usp=sharing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/MapDemo.java'
 
               - text: '– NestedMapDemo'
                 icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/NestedMapDemo.java'
 
           - <<: *assignments
             items:
