@@ -73,6 +73,7 @@ piazza_post:
   text: 'Piazza Post'
   date: 2022-03-11
   show: true
+  link: 'https://usfca.instructure.com/courses/1605147/assignments/7181489'
 
 # week 8 (spring break)
 
@@ -110,12 +111,14 @@ cs_event:
   text: 'CS Event'
   date: 2022-05-13
   show: true
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401177'
 
 piazza_reply:
   <<: *default
   text: 'Piazza Reply'
   date: 2022-05-13
   show: true
+  link: 'https://usfca.instructure.com/courses/1605147/assignments/7181490'
 
 # final_survey:
 #   <<: *default
