@@ -14,18 +14,21 @@ paths:
   text: 'Paths and Files'
   date: 2022-02-11
   tags: ['files']
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401174'
 
 data:
   <<: *default
   text: 'Data Structures'
   date: 2022-02-11
   tags: ['data']
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401175'
 
 maps:
   <<: *default
   text: 'Using Maps'
   date: 2022-02-11
   tags: ['data']
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401176'
 
 # static:
 #   <<: *default
