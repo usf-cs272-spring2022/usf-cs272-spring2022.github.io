@@ -147,19 +147,22 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'File IO'
-                type: [*pending]
-
-          - <<: *content
-            items:
               - file: 'slides'
                 name: 'paths'
 
-              - file: 'slides'
-                name: 'data'
+              - text: 'File IO'
+                type: ['bump']
+                icon: 'code'
 
-              - file: 'slides'
-                name: 'collections'
+              - text: '– EliteFileConverter'
+                icon: 'nothing'
+
+              - text: '– DirectoryStreamDemo'
+                icon: 'nothing'
+                tube: 'https://drive.google.com/file/d/1sAML7el7txCn53kIMccCgEPgOSDDzeCm/view?usp=sharing'
+
+              - text: '– PathDemo'
+                icon: 'nothing'
 
           - <<: *assignments
             items:
@@ -176,8 +179,26 @@ weeks:
         sections:
           - <<: *lectures
             items:
+              - file: 'slides'
+                name: 'data'
+
+              - file: 'slides'
+                name: 'collections'
+
               - text: 'Data Structures'
-                type: [*pending]
+                icon: 'code'
+                type: ['bump']
+
+              - text: '– CollectionDemo'
+                icon: 'nothing'
+                tube: 'https://drive.google.com/file/d/1UbVnpLnFL1v0AKH6pazLRH0jKh1OkTF1/view?usp=sharing'
+
+              - text: '– MapDemo'
+                icon: 'nothing'
+                tube: 'https://drive.google.com/file/d/1byBtkaRo7WkY3cBfPXJNkvEi3D7UhoJD/view?usp=sharing'
+
+              - text: '– NestedMapDemo'
+                icon: 'nothing'
 
       - date: 2022-02-04
         sections:
