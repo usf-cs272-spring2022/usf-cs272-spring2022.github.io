@@ -17,6 +17,9 @@
       height: 100%;
       margin: 0px;
       padding: 0px;
+
+      font-family: 'Roboto Mono', monospace;
+      font-size: 22pt;
     }
 
     body {
@@ -24,9 +27,13 @@
       flex-direction: row;
     }
 
-    #left-column, #right-column {
+    #left-column {
       flex-grow: 1;
-      flex-basis: 50%;
+      flex-basis: 100%;
+    }
+
+    #right-column {
+      min-width: 20em;
     }
 
     #right-rows {
@@ -34,14 +41,6 @@
       flex-direction: column;
       height: 100%;
     }
-
-    /* #top-right-cell {
-      flex-grow: 2;
-    }
-
-    #bottom-right-cell {
-      flex-grow: 3;
-    } */
 
     iframe {
       width: 100%;
@@ -62,11 +61,6 @@
 
   <div id="right-column">
     <div id="right-rows">
-      <!-- <div id="top-right-cell">
-      </div>
-
-      <div id="bottom-right-cell">
-      </div> -->
     </div>
   </div>
 
