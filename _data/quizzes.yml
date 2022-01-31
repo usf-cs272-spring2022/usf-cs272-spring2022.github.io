@@ -9,30 +9,24 @@ syllabus:
   date: 2022-01-28
   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2400455'
 
-# paths:
-#   <<: *default
-#   text: 'Paths and Files'
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2391037'
-#   date: 2021-09-07
-#   tags: ['files']
-#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392581'
-#
-# data:
-#   <<: *default
-#   text: 'Data Structures'
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2391039'
-#   date: 2021-09-07
-#   tags: ['data']
-#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392587'
-#
-# maps:
-#   <<: *default
-#   text: 'Using Maps'
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2391417'
-#   date: 2021-09-14
-#   tags: ['data']
-#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392589'
-#
+paths:
+  <<: *default
+  text: 'Paths and Files'
+  date: 2022-02-11
+  tags: ['files']
+
+data:
+  <<: *default
+  text: 'Data Structures'
+  date: 2022-02-11
+  tags: ['data']
+
+maps:
+  <<: *default
+  text: 'Using Maps'
+  date: 2022-02-11
+  tags: ['data']
+
 # static:
 #   <<: *default
 #   text: 'Instance vs Static'

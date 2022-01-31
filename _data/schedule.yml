@@ -166,8 +166,12 @@ weeks:
 
           - <<: *assignments
             items:
+              - file: 'quizzes'
+                name: 'paths'
+
               - file: 'participation'
                 name: 'piazza_post'
+                type: ['bump']
 
               - file: 'participation'
                 name: 'piazza_reply'
@@ -199,6 +203,14 @@ weeks:
 
               - text: '– NestedMapDemo'
                 icon: 'nothing'
+
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'data'
+
+              - file: 'quizzes'
+                name: 'maps'
 
       - date: 2022-02-04
         sections:
@@ -284,8 +296,18 @@ weeks:
 
           - <<: *deadlines
             items:
+              - file: 'quizzes'
+                name: 'paths'
+
+              - file: 'quizzes'
+                name: 'data'
+
+              - file: 'quizzes'
+                name: 'maps'
+
               - file: 'participation'
                 name: 'lecture_setup'
+                type: ['bump']
 
               - file: 'participation'
                 name: 'github_resource'
