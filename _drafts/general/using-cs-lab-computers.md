@@ -21,7 +21,11 @@ Alternatively, you use your myUSF username and password to login into myUSF, Can
 
 Your CS account username will always be the same as your myUSF username. You can determine your username by looking at the part before `@dons.usfca.edu` in your USF email address. For example, if my email address is `sjengle@dons.usfca.edu` then my username will be `sjengle`.
 
-Your initial password will be the LAST six digits of your student ID. Since your student ID is 8 digits, remove the first two digits from your student ID (usually `20...`) and use the remaining digits as your password. For example, if your student ID is `20123456`, then your initial password will be `123456`.
+Your initial password depends on when your account was created. Specifically:
+
+  - If it was created before 2022, your password will be the LAST six digits of your student ID. Since your student ID is 8 digits, remove the first two digits from your student ID (usually `20...`) and use the remaining digits as your password. For example, if your student ID is `20123456`, then your initial password will be `123456`.
+
+  - If it was created in or after 2022, your password will your entire student ID. For example, if your student ID is `20123456`, then your initial password will be `20123456`.
 
 You should [change your password](https://myusf.usfca.edu/arts-sciences/computer-science/technical-resources#q3) after logging in for the first time.
 
