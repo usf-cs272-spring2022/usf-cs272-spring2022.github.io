@@ -1,6 +1,6 @@
 project1t: &default
   text: 'Project 1 Tests'
-  # link: '/guides/projects/project-1.html'
+  link: '/guides/projects/project-1.html'
   date: 2022-03-01
   icon: 'project'
   type: 'has-text-usf-plum'
@@ -8,46 +8,46 @@ project1t: &default
 project1r:
   <<: *default
   text: 'Project 1 Review 1'
-  # link: '/guides/projects/project-1.html'
+  link: '/guides/projects/project-1.html'
   icon: 'review'
   date: 2022-03-08
 
 project2t:
   <<: *default
   text: 'Project 2 Tests'
-  # link: '/guides/projects/project-2.html'
+  link: '/guides/projects/project-2.html'
   date: 2022-03-29
 
 project2r:
   <<: *default
   text: 'Project 2 Review 1'
-  # link: '/guides/projects/project-2.html'
+  link: '/guides/projects/project-2.html'
   icon: 'review'
   date: 2022-04-05
 
 project3t:
   <<: *default
   text: 'Project 3 Tests'
-  # link: '/guides/projects/project-3.html'
+  link: '/guides/projects/project-3.html'
   date: 2022-04-19
 
 project3r:
   <<: *default
   text: 'Project 3 Review 1'
-  # link: '/guides/projects/project-3.html'
+  link: '/guides/projects/project-3.html'
   icon: 'review'
   date: 2022-04-26
 
 project4t:
   <<: *default
   text: 'Project 4 Tests'
-  # link: '/guides/projects/project-4.html'
+  link: '/guides/projects/project-4.html'
   date: 2022-05-10
 
 project4r:
   <<: *default
   text: 'Project 4 Review'
-  # link: '/guides/projects/project-4.html'
+  link: '/guides/projects/project-4.html'
   icon: 'review'
   show: true
   date: 'Finals'
