@@ -283,8 +283,31 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Iteration and Search'
-                type: [*pending]
+              - text: 'Data Structures'
+                icon: 'code'
+                type: ['bump']
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/DataStructures'
+
+              - text: '– NestedMapDemo'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/NestedMapDemo.java'
+                info: ' (Revisited)'
+
+              - text: '– IterationDemo'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/IterationDemo.java'
+
+              - text: '– RemoveDemo'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/RemoveDemo.java'
+
+              - text: '– MutableSetDemo'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/MutableSetDemo.java'
+
+              - text: '– FindDemo'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/FindDemo.java'
 
           - <<: *assignments
             items:
