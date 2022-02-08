@@ -283,6 +283,15 @@ weeks:
         sections:
           - <<: *lectures
             items:
+              - text: 'Project Overview'
+                link: 'https://docs.google.com/presentation/d/e/2PACX-1vRXnJZ7OcwkHCW4kTj9U_Qc8K_FX-H_hIdRoyUkVQ7jl6JGSiIBX9HC5AEHj4CvmK9dhcEWSGQ4L_ZR/pub?start=false&loop=false&delayms=3000'
+                save: true
+                icon: 'slides'
+
+              - text: 'Project 1 Inverted Index'
+                icon: 'website'
+                link: '/guides/projects/project-1.html'
+
               - text: 'Data Structures'
                 icon: 'code'
                 type: ['bump']
@@ -314,6 +323,9 @@ weeks:
               - file: 'projects'
                 name: 'project1t'
                 text: 'Project 1 Inverted Index'
+
+              - file: 'participation'
+                name: 'intake_review'
 
       - date: 2022-02-10
         sections:
