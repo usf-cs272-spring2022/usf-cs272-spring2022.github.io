@@ -1,22 +1,28 @@
 ---
-title: Project 4 Final Project
+title: Project 4 Search Engine
 navbar: Guides
 layout: guides
 key: 4.0
-bump: true
+bump: false
+
+project: 4
 
 tags:
-  - text: 'New'
-    type: 'is-primary'
+  - text: 'Pending'
+    type: 'is-muted'
 
 assignments:
-  - text: 'Project 4a Web Crawler'
-    link: 'project-4a.html'
+  - text: 'Project 4 Tests'
+    link: 'https://usfca.instructure.com/courses/1605147/assignments/7166809'
 
-  - text: 'Project 4b Search Engine'
-    link: 'project-4b.html'
+  - text: 'Project 4 Review'
+    link: 'https://usfca.instructure.com/courses/1605147/assignments/7166811'
 
 ---
+
+Pending
+
+{% comment %}
 
 For this project, you will extend your [previous project](project-3.html) to create a fully functional search engine. This is the **last project** for this course and is split into two main components:
 
@@ -27,3 +33,4 @@ For this project, you will extend your [previous project](project-3.html) to cre
 To earn credit for [Project 4a Web Crawler](project-4a.html), you fully must pass the design of [project 2](project-2.html) and functionality of [project 3](project-3.html). To earn credit for [Project 4b Search Engine](project-4b.html), you must fully pass the functionality of [project 4a](project-4a.html).
 
 The code reviews for this project are conducted synchronously during finals week only. See the [Final Code Review](final-review.html) guide for details.
+{% endcomment %}

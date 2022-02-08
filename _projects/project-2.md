@@ -4,14 +4,44 @@ navbar: Guides
 layout: guides
 key: 2.0
 bump: false
+project: 2
+
+tags:
+  - text: 'Pending'
+    type: 'is-muted'
 
 assignments:
-  - text: 'Project 2 Functionality'
-    link: 'https://usfca.instructure.com/courses/1602551/assignments/7118292'
+  - text: 'Project 2 Tests'
+    link: 'https://usfca.instructure.com/courses/1605147/assignments/7166801'
 
-  - text: 'Project 2 Design'
-    link: 'https://usfca.instructure.com/courses/1602551/assignments/7118298'
+  - text: 'Project 2 Review 1'
+    link: 'https://usfca.instructure.com/courses/1605147/assignments/7166802'
+
+  - text: 'Project 2 Review 2'
+    link: 'https://usfca.instructure.com/courses/1605147/assignments/7166803'
+
+  - text: 'Project 2 Final Release'
+    link: 'https://usfca.instructure.com/courses/1605147/assignments/7166804'
+
 ---
+
+Pending
+
+{% comment %}
+TO ADD:
+
+To be eligible for the "Project 2 Tests" grade, you must meet the following criteria:
+
+  - You must have a non-zero grade for the "Project 1 Tests" and "Project 1 Review 1" assignments in Canvas.
+
+  - Your code must pass the tests for the previous project, project 1.
+
+  - Your code must pass the tests for the current project, project 2.
+
+  - Your code must *not* pass the tests for the future project, project 3.
+
+See the [Project Testing](project-testing.html) guide for additional details.
+
 
 For this project, you will extend your [previous project](project-1.html) to support exact search and partial search. In addition to meeting the [previous project](project-1.html) requirements, your code must be able to track the total number of words found in each text file, parse and stem a query file, generate a sorted list of search results from the inverted index, and support writing those results to a JSON file.
 
@@ -272,3 +302,5 @@ The important part will be to test your code as you go. The JUnit tests provided
 <i class="fas fa-info-circle"></i>
 These hints may or may not be useful depending on your approach. Do not be overly concerned if you do not find these hints helpful for your approach for this project.
 {: .notification }
+
+{% endcomment %}

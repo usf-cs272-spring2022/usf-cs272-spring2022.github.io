@@ -5,14 +5,29 @@ layout: guides
 key: 3.0
 bump: false
 
-assignments:
-  - text: 'Project 3 Functionality'
-    link: 'https://usfca.instructure.com/courses/1602551/assignments/7118293'
+project: 3
 
-  - text: 'Project 3 Design'
-    link: 'https://usfca.instructure.com/courses/1602551/assignments/7118299'
+tags:
+  - text: 'Pending'
+    type: 'is-muted'
+
+assignments:
+  - text: 'Project 3 Tests'
+    link: 'https://usfca.instructure.com/courses/1605147/assignments/7166805'
+
+  - text: 'Project 3 Review 1'
+    link: 'https://usfca.instructure.com/courses/1605147/assignments/7166806'
+
+  - text: 'Project 3 Review 2'
+    link: 'https://usfca.instructure.com/courses/1605147/assignments/7166807'
+
+  - text: 'Project 3 Final Release'
+    link: 'https://usfca.instructure.com/courses/1605147/assignments/7166808'
 ---
 
+Pending
+
+{% comment %}
 For this project, you will extend your [previous project](project-2.html) to support multithreading. In addition to meeting the previous project requirements, your code must make a thread-safe inverted index, and use work queues to build and search an inverted index using multiple threads.
 
 ## Functionality
@@ -136,3 +151,5 @@ It is important to develop the project iteratively. One possible breakdown of ta
 These issues are best detected using logging.
 
 The important part will be to test your code as you go. The JUnit tests provided only test the entire project as a whole, not the individual parts. You are responsible for testing the individual parts themselves.
+
+{% endcomment %}
