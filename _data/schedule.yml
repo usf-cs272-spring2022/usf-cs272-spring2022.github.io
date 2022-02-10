@@ -314,8 +314,10 @@ weeks:
                 icon: 'nothing'
                 link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/MutableSetDemo.java'
 
-              - text: '– FindDemo'
-                icon: 'nothing'
+          - <<: *content
+            items:
+              - text: 'FindDemo'
+                icon: 'code'
                 link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/FindDemo.java'
 
           - <<: *assignments
@@ -331,8 +333,45 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Classes and Objects'
-                type: [*pending]
+              - text: 'Getting Help'
+                link: 'https://docs.google.com/presentation/d/e/2PACX-1vSSa230GPB0k3US0k4H5Zl20lvVSSIDrG3RlXDFIJk3g5NkZLcPJSxuwqLm4U32HIh6aqBPxQRsknIE/pub?start=false&loop=false&delayms=3000'
+                save: true
+                icon: 'slides'
+
+              - text: 'MutableSetDemo'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/DataStructures/src/main/java/edu/usfca/cs272/MutableSetDemo.java'
+                type: ['bump']
+
+              - file: 'slides'
+                name: 'oop'
+                type: ['bump']
+
+              - text: 'Object Oriented Programming'
+                icon: 'code'
+                type: 'bump'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/ObjectOrientedProgramming'
+
+              - text: '– StaticDemo.java'
+                icon: 'none'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/StaticDemo.java'
+                tube: 'https://drive.google.com/file/d/13OATz6xNyiRGQXX_ZzSHPWSwt8mEaLji/view?usp=sharing'
+
+              - text: '– ObjectDemo.java'
+                icon: 'none'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/ObjectDemo.java'
+                tube: 'https://drive.google.com/file/d/1U0uVHUPp1-zZK-J5rVn0X-pP2CdxF3el/view?usp=sharing'
+
+              - text: '– StringDemo.java'
+                icon: 'none'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/StringDemo.java'
+                tube: 'https://drive.google.com/file/d/1Gncwuj-YnyaPivB3vQLLyWVM-8ZnFjeT/view?usp=sharing'
+
+              - text: '– Widget.java'
+                icon: 'none'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/Widget.java'
+                tube: 'https://drive.google.com/file/d/1GHR0n-CskeZh2ABFQsGcZERDza1fot4s/view?usp=sharing'
+                more: 'and <a href="https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/WidgetDemo.java">WidgetDemo.java</a>'
 
       - date: 2022-02-11
         sections:
