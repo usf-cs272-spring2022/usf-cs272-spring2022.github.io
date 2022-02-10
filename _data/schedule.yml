@@ -248,6 +248,7 @@ weeks:
 
               - text: 'TextFileStemmer'
                 icon: 'homework'
+                link: 'https://github.com/usf-cs272-spring2022/homework-TextFileStemmer-template'
 
           - <<: *assignments
             items:
@@ -379,6 +380,15 @@ weeks:
             items:
               - text: 'Project Setup'
                 type: [*pending]
+
+              - text: 'TextFileStemmer'
+                icon: 'homework'
+                type: ['bump']
+                link: 'https://github.com/usf-cs272-spring2022/homework-TextFileStemmer-template'
+
+              - text: 'SimpleJsonWriter'
+                icon: 'homework'
+                link: 'https://github.com/usf-cs272-spring2022/homework-SimpleJsonWriter-template'
 
           - <<: *assignments
             items:
