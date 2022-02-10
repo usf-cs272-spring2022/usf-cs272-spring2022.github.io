@@ -381,6 +381,10 @@ weeks:
               - text: 'Project Setup'
                 type: [*pending]
 
+              - text: 'Comparing Output'
+                icon: 'website'
+                link: '/guides/eclipse/comparing-output.html'
+
               - text: 'TextFileStemmer'
                 icon: 'homework'
                 type: ['bump']
