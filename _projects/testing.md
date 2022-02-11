@@ -6,34 +6,45 @@ key: 0.2
 
 ---
 
-You must verify your project is passing the functionality tests to earn the project functionality grade as well as before every code review required to earn your design grade. This guide walks through that testing process.
+You must verify your project is passing the functionality tests to earn the project tests grade as well as before every code review required to earn your project final release grade. This guide walks through that testing process.
 
 This guide assumes you have already [setup your project](setup.html) in Eclipse.
-
-## Walkthrough Video
-
-The following video 33 minute video gives an overview of projects, how to test projects locally (starting at 13:53), testing projects remotely (starting at 24:33), and get your first functionality grade (starting at 29:38).
-
-<figure>
-<p>
-  <iframe src="https://drive.google.com/file/d/13JeruWvyf6d2wXbXxGoXFGbM10uL8UD1/preview" width="640" height="360" allow="autoplay" class="is-bordered"></iframe>
-  <br/>
-  <caption><a href="https://drive.google.com/file/d/13JeruWvyf6d2wXbXxGoXFGbM10uL8UD1/view?usp=sharing">https://drive.google.com/file/d/13JeruWvyf6d2wXbXxGoXFGbM10uL8UD1/view?usp=sharing</a></caption>
-</p>
-</figure>
-
-The version of Java and appearance of Eclipse may be slightly different between semesters.
 
 ## Testing Locally
 {: .page-header }
 
 It is important to work and test the projects iteratively, as well as attempt to pass the tests locally before considering running the tests remotely.
 
+### Running JUnit Tests
+
+You must use the [JUnit 5](https://junit.org/junit5/) tests provided with the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository to determine if your project is meeting the required functionality. The suite of tests for each project are given by the `Project#Test.java` files in the [src]({{ site.data.info.links.github.link }}/project-tests/tree/main/src/test/java/edu/usfca/cs272) subdirectory. For example, the tests for [Project 1](project-1.html) are provided by the [Project1Test.java]({{ site.data.info.links.github.link }}/project-tests/blob/main/src/test/java/edu/usfca/cs272/Project1Test.java) file.
+
+While you are initially working on the project, **focus on individual tests** or individual groups of tests. There is no need to run all of the tests every time; in fact this can make debugging harder! See the [Homework Testing](/guides/homework/test-homework.html#running-individual-tests) guide for different ways you can run individual JUnit tests. Here is an example run configuration:
+
+![Screenshot]({{ "/images/project-eclipse-junit-run-configuration.png" | relative_url }}){: .is-600 }
+
+**Pay attention to the test output.** The output tells you where to find the actual and expected output files and what caused the test to fail. It also tells you the arguments that were passed to your `Driver` class, which is helpful for debugging. The full output, which can be copied to the console for easy copying/pasting using the <img src="{{ "eclipse-copy-junit-output-to-console.png" | prepend: "/images/" | relative_url }}" style="height: 16px; vertical-align: middle;"> button, includes the following text:
+
+```
+Actual File:
+    actual/index-simple-hello.json
+Expected File:
+    expected/index/index-simple/index-simple-hello.json
+Arguments:
+    -text input/text/simple/hello.txt -index actual/index-simple-hello.json
+Message:
+    Difference detected on line: 2.
+```
+
+This gives the actual arguments passed to `Driver` by the test, the actual and expected files being compared, and where the first difference was detected. You can use the [Compare Editor](http://help.eclipse.org/latest/topic/org.eclipse.platform.doc.user/reference/ref-25.htm?cp=0_4_4_1_2) in Eclipse to compare the files side-by-side for debugging, or use the [Run Configurations](#running-driver) in Eclipse to enter the same arguments manually.
+
+<i class="fas fa-exclamation-triangle"></i>
+To save space, the tests automatically delete your output files if they match the expected output. Only output files for failing tests will be kept.
+{: .notification }
+
 ### Running Driver
 
-When you first start, very little template code is provided. The tests provided only test the final output of your project, unlike the homework which has tests for individual methods. It will likely take some time before running the JUnit tests will be helpful.
-
-Instead, you may want to start by running your `Driver` class directly using a Run Configuration and manually inspecting the output.
+When you first start, very little template code is provided and the tests provided only test the final output of your project (unlike the homework which has tests for individual methods). Depending on your approach, you may want to pass in your own arguments to the `Driver` class using a "Run Configuration" and manually inspecting the output.
 
 <details>
 <p><summary>View Details</summary></p>
@@ -74,40 +85,11 @@ Instead, you may want to start by running your `Driver` class directly using a R
 
   1. Click the "Apply" and "Run" buttons.
 
-If you want you can download the [`Driver.launch` configuration file](https://gist.github.com/sjengle/6447c6ee8953fb1cdbd429249495d28c) and then go to the "Import" dialog window, open the "Run/Debug" section, and select "Launch Configurations" to import it into Eclipse.
-
 </div>
 </details>
 
 <br/>
 You can keep running this same "Run Configuration" while debugging. If you are failing a specific JUnit test, you can copy/paste the arguments used by the test (provided in the failure output) to debug your code.
-
-### Running JUnit Tests
-
-You must use the [JUnit 5](https://junit.org/junit5/) tests provided with the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository to determine if your project is meeting the required functionality. The suite of tests for each project are given by the `Project#Test.java` files in the [src]({{ site.data.info.links.github.link }}/project-tests/tree/main/src/test/java) subdirectory. For example, the tests for [Project 1](project-1.html) are provided by the [Project1Test.java]({{ site.data.info.links.github.link }}/project-tests/blob/main/src/test/java/Project1Test.java) file.
-
-While you are initially working on the project, **focus on individual tests** or individual groups of tests. There is no need to run all of the tests every time; in fact this can make debugging harder! See the [Homework Testing](/guides/homework/test-homework.html#running-individual-tests) guide for different ways you can run individual JUnit tests. Here is an example run configuration:
-
-![Screenshot]({{ "/images/project-eclipse-junit-run-configuration.png" | relative_url }}){: .is-600 }
-
-**Pay attention to the test output.** The output tells you where to find the actual and expected output files and what caused the test to fail. It also tells you the arguments that were passed to your `Driver` class, which is helpful for debugging. The full output, which can be copied to the console for easy copying/pasting using the <img src="{{ "eclipse-copy-junit-output-to-console.png" | prepend: "/images/" | relative_url }}" style="height: 16px; vertical-align: middle;"> button, includes the following text:
-
-```
-Actual File:
-    actual/index-simple-hello.json
-Expected File:
-    expected/index/index-simple/index-simple-hello.json
-Arguments:
-    -text input/text/simple/hello.txt -index actual/index-simple-hello.json
-Message:
-    Difference detected on line: 2.
-```
-
-This gives the actual arguments passed to `Driver` by the test, the actual and expected files being compared, and where the first difference was detected. You can use the [Compare Editor](http://help.eclipse.org/2021-06/topic/org.eclipse.platform.doc.user/reference/ref-25.htm?cp=0_4_4_1_2) in Eclipse to compare the files side-by-side for debugging, or use the [Run Configurations](#run-configurations) in Eclipse to enter the same arguments manually.
-
-<i class="fas fa-exclamation-triangle"></i>
-To save space, the tests automatically delete your output files if they match the expected output. Only output files for failing tests will be kept.
-{: .notification }
 
 ### Running Maven
 
@@ -137,32 +119,16 @@ Follow these steps to create this run configuration:
   1. Enter the following into the "Goals:" text box:
 
       ```
-      clean compile test-compile test
+      clean test
       ```
 
-      The `clean` goal removes all previously-compiled class files. The `compile` goal compiles all of the main source code in the `main` directory and the `test-compile` goal compiles all of the test source code in the `test` directory of the `project-tests` repository. Finally, the `test` goal runs the JUnit tests found in the `test` directory.
+      This combination will remove all previously-compiled class files, re-compile the main code and test code, and run the JUnit tests.
 
   1. Next to the "Parameter Name" list, click the "Add..." button to add a parameter. Enter `test` for the "Name:" text box and `Project#Test*` for the "Value:" textbox, where `#` is the project number. For example, enter `Project1Test*` for Project 1. Click the "OK" button when done.
 
-  1. [OPTIONAL] Click the "Add..." button to add another parameter. Enter `excludedGroups` and `none() | !verify` for the name and value. This tells Maven to run all tests except those without tags, or those that don't have the `verify` tag. Or, in other words, it only runs the tests tagged with `verify`, which finishes much faster than running all of the tests. *This can be skipped if you want to run all of the tests regardless.*
+  1. [OPTIONAL] Click the "Add..." button to add another parameter. Enter `groups` and `test#` for the name and value, where `#` is the project (e.g. `test1`). This tells Maven to run just the tests that Github Actions focuses on for this project. *This can be skipped if you want to run all of the tests regardless.*
 
-  1. [OPTIONAL] Click the "Add..." button to add another parameter. Enter `compileOptionXlint` and `-Xlint:all,-processing` (with no spaces) for the name and value. This will tell Maven to check for all warnings (except annotation processing). *This is only required if you are going to enable the next option to fail when warnings are detected.*
-
-  1. [OPTIONAL] Click the "Add..." button to add another parameter. Enter `compileOptionFail` and `true` for the name and value. This tells Maven to fail if any compile warning are detected. If there are warnings, it will report those warnings and exit (it will not run the tests). *This is not required to earn functionality credit, but will be required to sign up for a code review.*
-
-  1. Ignore the red `SLF4J:` output at the beginning. Look for output similar to:
-
-      ```
-      [INFO] Running Project1Test$A_OutputTest
-
-      Running: actual/index-text.json...
-      Elapsed: 3.085000 seconds
-      [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.336 s - in Project1Test$A_OutputTest
-      ```
-
-      Make sure you always see `Failures: 0`. Otherwise, scroll up in the console output to see which tests failed.
-
-If you want you can download the [`Driver (Maven).launch` configuration file](https://gist.github.com/sjengle/6447c6ee8953fb1cdbd429249495d28c) and then go to the "Import" dialog window, open the "Run/Debug" section, and select "Launch Configurations" to import it into Eclipse.
+  1. [OPTIONAL] Click the "Add..." button to add another parameter. Enter `compileOptionFail` and `true` for the name and value. This tells Maven to fail if any compile warning are detected. If there are warnings, it will report those warnings and exit (it will not run the tests). *This is not required to earn project test credit, but will be required to sign up for a code review.*
 
 </div>
 </details>
@@ -201,19 +167,23 @@ You can see a [sample release]({{ site.data.info.links.github.link }}/project-te
 
 **Generally, you should not delete releases even if they are not passing tests.**
 
-### Verification Action
+### Check Release Action
 
-Creating or editing a release triggers the "Run Project Tests" action in the "Actions" tab to run automatically. It will have the same title as the release tag:
+Creating or editing a release triggers the "Check project release" action in the "Actions" tab to run automatically. It will have the same title as the release tag:
 
 ![Screenshot]({{ "/images/actions-run-project-tests.png" | relative_url }}){: .is-600 }
 
 To view details, click on the run title. The yellow circle <i class="fas fa-circle has-text-warning"></i> icon indicates the run or step is still in progress and has not yet completed. The red circle <i class="fas fa-times-circle has-text-danger"></i> indicates the run or step failed (either because of setup issues or the tests failed). The green circle <i class="fas fa-check-circle has-text-success"></i> icon indicates the run or step completed and was successful (i.e. all tests passed).
 
-You can see an [example run](https://github.com/usf-cs272-fall2021/project-template/actions/runs/1207184188) in the template repository.
+You can see an [example run]({{ site.data.info.links.github.link }}/project-template/actions/workflows/project-release.yml) in the template repository.
 
 ### Debugging Failures
 
-If the "Run Project Tests" action failed, you need to debug what went wrong. Details on what happened can be found in the detailed view, and reports and actual output files can be downloaded from the summary view.
+Pending
+
+{% comment %}
+
+If the "Check project release" action failed, you need to debug what went wrong. Details on what happened can be found in the detailed view, and reports and actual output files can be downloaded from the summary view.
 
 <i class="fas fa-exclamation-triangle"></i>
 The raw logs are always available, but debug output is only provided when the action fully completes but one or more tests fail.
@@ -262,3 +232,19 @@ And in the detailed run log:
 Most of the time, these can be ignored. For example, the warnings above happen anytime the test repository changes. They are only problematic if they show up in other situations as well. Sometimes, Github Actions also automatically adds warnings to indicate an pending change to their infrastructure.
 
 If you are ever in doubt, do not hesitate to post on [Piazza]({{ site.data.info.links.forums.link }}) with a link to the warning.
+
+{% endcomment %}
+
+## Walkthrough Video
+
+The following video 33 minute video gives an overview of projects, how to test projects locally (starting at 13:53), testing projects remotely (starting at 24:33), and get your first functionality grade (starting at 29:38).
+
+Keep in mind the version of Java, appearance of Eclipse, and appearance of the Github Action runs may be slightly different between semesters.
+
+<figure>
+<p>
+  <iframe src="https://drive.google.com/file/d/13JeruWvyf6d2wXbXxGoXFGbM10uL8UD1/preview" width="640" height="360" allow="autoplay" class="is-bordered"></iframe>
+  <br/>
+  <caption><a href="https://drive.google.com/file/d/13JeruWvyf6d2wXbXxGoXFGbM10uL8UD1/view?usp=sharing">https://drive.google.com/file/d/13JeruWvyf6d2wXbXxGoXFGbM10uL8UD1/view?usp=sharing</a></caption>
+</p>
+</figure>

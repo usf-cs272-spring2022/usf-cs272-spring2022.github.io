@@ -379,7 +379,12 @@ weeks:
           - <<: *labs
             items:
               - text: 'Project Setup'
-                type: [*pending]
+                icon: 'website'
+                link: '/guides/projects/setup.html'
+
+              - text: 'Project Testing'
+                icon: 'website'
+                link: '/guides/projects/testing.html'
 
               - text: 'Comparing Output'
                 icon: 'website'
