@@ -58,21 +58,20 @@ mutability2:
   date: 2022-02-25
   tags: ['objects']
 
-# inheritance:
-#   <<: *default
-#   text: 'Inheritance Keywords'
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392015'
-#   date: 2021-10-01
-#   tags: ['inheritance']
-#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392590'
-#
-# collections:
-#   <<: *default
-#   text: 'Collections Revisited'
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392159'
-#   date: 2021-10-01
-#   tags: ['inheritance']
-#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392596'
+inheritance:
+  <<: *default
+  text: 'Inheritance Keywords'
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401874'
+  date: 2022-02-25
+  tags: ['inheritance']
+
+collections:
+  <<: *default
+  text: 'Collections Revisited'
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401873'
+  date: 2022-02-25
+  tags: ['inheritance']
+
 #
 # casting:
 #   <<: *default

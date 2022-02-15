@@ -483,6 +483,14 @@ weeks:
               - text: 'Inheritance'
                 type: [*pending]
 
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'inheritance'
+
+              - file: 'quizzes'
+                name: 'collections'
+
       - date: 2022-02-18
         sections:
           - <<: *labs
@@ -554,6 +562,12 @@ weeks:
 
               - file: 'quizzes'
                 name: 'mutability2'
+
+              - file: 'quizzes'
+                name: 'inheritance'
+
+              - file: 'quizzes'
+                name: 'collections'
 
               - file: 'participation'
                 name: 'intake_review'
