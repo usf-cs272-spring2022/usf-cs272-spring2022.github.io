@@ -51,27 +51,27 @@ inheritance:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vTYaBdIMxtjd9iGXph2XPFBiz2ydDtBk0ejaN5UqRaVtStP23nkfUztyM26-3rlYUSVhovH2j3SQuH3/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1eu_Co497YW-6vW6JpbtUkET75VZ3iFyw/view?usp=sharing'
 
-# abstract:
-#   <<: *default
-#   tags: ['inheritance']
-#   text: 'Abstract and Interfaces'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQfUSsyZ7msguGLlWLgQCQtJJZPbIxsDDrOQq6I_sNbTCGSB32iYbdcmFCHkbif2oMauWEooNAOM_L3/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1PmAI01wb-SL5_ImzTJ_mfUiBo0Pxicfd/view?usp=sharing'
-#
+abstract:
+  <<: *default
+  tags: ['inheritance']
+  text: 'Abstract and Interfaces'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vTsSxfUipDMlb7Q1AIaZiXGYG5cfFddeQ_fqAT3RkLLfk0dZPIm2R-6giHqwTqdMqNAjG72euva3kxC/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1PmAI01wb-SL5_ImzTJ_mfUiBo0Pxicfd/view?usp=sharing'
+
 # generics:
 #   <<: *default
 #   tags: ['inheritance']
 #   text: 'Generic Types'
 #   link: 'https://docs.google.com/presentation/d/e/2PACX-1vRLv774EzqUee1-xCj-nysHC1FeY7tr2kWFwv8GwzQ-V4wJksO42iXC170K2411uoPxLXtZwm_xboZJ/pub?start=false&loop=false&delayms=3000'
 #   tube: 'https://drive.google.com/file/d/1nQgjWWZhPalu3bkcWzGkO2v_5_6rc9BF/view?usp=sharing'
-#
-# revisited:
-#   <<: *default
-#   tags: ['inheritance']
-#   text: 'Collections Revisited'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vRQ9ENIguFSZ1EkoE8gxoYWTQMIJhrVnQN0NNA2mneqJZiDlZ2U2pqWrikhH-4ZuSAc-9QPwPO49TRn/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1NO1gWoNzCMx4Rs5GkZe0ICK8OrI6uk2z/view?usp=sharing'
-#
+
+revisited:
+  <<: *default
+  tags: ['inheritance']
+  text: 'Collections Revisited'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vQtquqomYW0z_yeGrc8C-9xrpvriARaa_IENbA3gux39XWyRw405pNWacKYKFPT-4oqYyaOgKpuIQx7/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1NO1gWoNzCMx4Rs5GkZe0ICK8OrI6uk2z/view?usp=sharing'
+
 # casting:
 #   <<: *default
 #   tags: ['inheritance']
@@ -85,14 +85,14 @@ inheritance:
 #   text: 'Object Class'
 #   link: 'https://docs.google.com/presentation/d/e/2PACX-1vSTUIL9orhyiHrEdxJnADrQSsgdBkSDLSNtREjoYBuTmt7Sa78EtEAcB7NTHUDtfMErn5gyEkPe4MnQ/pub?start=false&loop=false&delayms=3000'
 #   tube: 'https://drive.google.com/file/d/1Ktagbp_14RRcvlbZrU7qp22qa8hH3pvi/view?usp=sharing'
-#
-# final:
-#   <<: *default
-#   tags: ['inheritance']
-#   text: 'Final Keyword'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vSxoP6R27gSk4onRfZw88Ywn8Q2KGzYCjZS-VW-tuGl4lZm1EsxPOjgZ9XxzeRqgQzraM57dAw_sU7K/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1L61dJEpzn1yAwP7dizMCqGnhtSlyNFlP/view?usp=sharing'
-#
+
+final:
+  <<: *default
+  tags: ['inheritance']
+  text: 'Final Keyword'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vRxr6k6zVSrLL2gORwAlExQIq-w51VzaOHn0q7vxQOVXCgf9q3E0CBnicDNVqExPHuHvfQMxgyKnN63/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1L61dJEpzn1yAwP7dizMCqGnhtSlyNFlP/view?usp=sharing'
+
 # nested:
 #   <<: *default
 #   tags: ['inheritance']
