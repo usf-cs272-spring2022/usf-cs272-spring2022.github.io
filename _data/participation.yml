@@ -56,7 +56,7 @@ lecture_setup:
 intake_review:
   <<: *default
   text: 'Code Review Intake'
-  date: 2022-02-18
+  date: 2022-02-25
   link: 'https://usfca.instructure.com/courses/1605147/assignments/7184046'
 
 project_setup:

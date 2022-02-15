@@ -30,38 +30,34 @@ maps:
   tags: ['data']
   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401176'
 
-# static:
-#   <<: *default
-#   text: 'Instance vs Static'
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2391540'
-#   date: 2021-09-14
-#   tags: ['objects']
-#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392593'
-#
-# identifier:
-#   <<: *default
-#   text: 'Instance vs Identifier'
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2391542'
-#   date: 2021-09-14
-#   tags: ['objects']
-#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392592'
-#
-# mutability1:
-#   <<: *default
-#   text: 'Mutability Part 1'
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2391749'
-#   date: 2021-09-21
-#   tags: ['objects']
-#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392594'
-#
-# mutability2:
-#   <<: *default
-#   text: 'Mutability Part 2'
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2391750'
-#   date: 2021-09-21
-#   tags: ['objects']
-#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392595'
-#
+static:
+  <<: *default
+  text: 'Instance vs Static'
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401868'
+  date: 2022-02-18
+  tags: ['objects']
+
+identifier:
+  <<: *default
+  text: 'Instance vs Identifier'
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401870'
+  date: 2022-02-18
+  tags: ['objects']
+
+mutability1:
+  <<: *default
+  text: 'Mutability Part 1'
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401869'
+  date: 2022-02-25
+  tags: ['objects']
+
+mutability2:
+  <<: *default
+  text: 'Mutability Part 2'
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401871'
+  date: 2022-02-25
+  tags: ['objects']
+
 # inheritance:
 #   <<: *default
 #   text: 'Inheritance Keywords'

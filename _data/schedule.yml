@@ -368,12 +368,6 @@ weeks:
                 link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/StringDemo.java'
                 tube: 'https://drive.google.com/file/d/1Gncwuj-YnyaPivB3vQLLyWVM-8ZnFjeT/view?usp=sharing'
 
-              - text: '– Widget.java'
-                icon: 'none'
-                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/Widget.java'
-                tube: 'https://drive.google.com/file/d/1GHR0n-CskeZh2ABFQsGcZERDza1fot4s/view?usp=sharing'
-                more: 'and <a href="https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/WidgetDemo.java">WidgetDemo.java</a>'
-
       - date: 2022-02-11
         sections:
           - <<: *labs
@@ -441,6 +435,29 @@ weeks:
               - text: 'Mutability'
                 type: [*pending]
 
+          - <<: *content
+            items:
+              - text: 'Widget.java'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/Widget.java'
+                tube: 'https://drive.google.com/file/d/1GHR0n-CskeZh2ABFQsGcZERDza1fot4s/view?usp=sharing'
+                more: 'and <a href="https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/WidgetDemo.java">WidgetDemo.java</a>'
+
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'static'
+
+              - file: 'quizzes'
+                name: 'identifier'
+
+              - file: 'quizzes'
+                name: 'mutability1'
+                type: ['bump']
+
+              - file: 'quizzes'
+                name: 'mutability2'
+
       - date: 2022-02-17
         sections:
           - <<: *lectures
@@ -463,10 +480,14 @@ weeks:
           - <<: *deadlines
             items:
               - file: 'participation'
-                name: 'intake_review'
-
-              - file: 'participation'
                 name: 'project_setup'
+
+              - file: 'quizzes'
+                name: 'static'
+                type: ['bump']
+
+              - file: 'quizzes'
+                name: 'identifier'
 
   - week: 5
     days:
@@ -509,10 +530,21 @@ weeks:
 
           - <<: *deadlines
             items:
+              - file: 'quizzes'
+                name: 'mutability1'
+                type: ['bump']
+
+              - file: 'quizzes'
+                name: 'mutability2'
+
+              - file: 'participation'
+                name: 'intake_review'
+                type: ['bump']
+
               - text: 'Homework Bundle 1'
                 icon: 'homework'
                 date: 2022-02-25
-                type: ['has-text-weight-bold']
+                type: ['has-text-weight-bold', 'bump']
 
               - file: 'homework'
                 name: 'textfilestemmer'
