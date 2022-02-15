@@ -432,8 +432,26 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Mutability'
-                type: [*pending]
+              - text: 'Object Oriented Programming'
+                icon: 'code'
+                type: 'bump'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/ObjectOrientedProgramming'
+
+              - text: '– HashCodeDemo.java'
+                icon: 'none'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/HashCodeDemo.java'
+
+              - text: '– MutabilityDemo.java'
+                icon: 'none'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/MutabilityDemo.java'
+
+              - text: '– MapMutabilityDemo.java'
+                icon: 'none'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/MapMutabilityDemo.java'
+
+              - text: '– ConcatenationDemo.java'
+                icon: 'none'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/MapMutabilityDemo.java'
 
           - <<: *content
             items:
