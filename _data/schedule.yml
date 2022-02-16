@@ -457,9 +457,9 @@ weeks:
             items:
               - text: 'Widget.java'
                 icon: 'code'
-                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/Widget.java'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/Widget.java'
                 tube: 'https://drive.google.com/file/d/1GHR0n-CskeZh2ABFQsGcZERDza1fot4s/view?usp=sharing'
-                more: 'and <a href="https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/WidgetDemo.java">WidgetDemo.java</a>'
+                more: 'and <a href="https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/WidgetDemo.java">WidgetDemo.java</a>'
 
           - <<: *assignments
             items:
@@ -480,8 +480,22 @@ weeks:
         sections:
           - <<: *lectures
             items:
+              - text: 'Object Oriented Programming'
+                icon: 'code'
+                type: 'bump'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/ObjectOrientedProgramming'
+
+              - text: '– PrefixMap.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/PrefixMap.java'
+
+              - text: '– PrefixMap.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ObjectOrientedProgramming/src/main/java/edu/usfca/cs272/PrefixDemo.java'
+
               - file: 'slides'
                 name: 'inheritance'
+                type: ['bump']
 
               - file: 'slides'
                 name: 'abstract'
