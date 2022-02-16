@@ -72,23 +72,23 @@ collections:
   date: 2022-02-25
   tags: ['inheritance']
 
-#
-# casting:
-#   <<: *default
-#   text: 'Casting'
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2391850'
-#   date: 2021-10-01
-#   tags: ['inheritance']
+
+casting:
+  <<: *default
+  text: 'Casting'
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401872'
+  date: 2022-03-04
+  tags: ['inheritance']
 #   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392597'
-#
-# nesting:
-#   <<: *default
-#   text: 'Nested Classes'
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392160'
-#   date: 2021-10-01
-#   tags: ['inheritance']
+
+nesting:
+  <<: *default
+  text: 'Nested Classes'
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401875'
+  date: 2022-03-04
+  tags: ['inheritance']
 #   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392599'
-#
+
 # project2:
 #   <<: *default
 #   text: 'Project 2 Writeup'

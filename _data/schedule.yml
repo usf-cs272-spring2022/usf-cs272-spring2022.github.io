@@ -544,6 +544,14 @@ weeks:
               - file: 'slides'
                 name: 'generics'
 
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'casting'
+
+              - file: 'quizzes'
+                name: 'nesting'
+
           - <<: *deadlines
             items:
               - text: "Presidents' Day"
@@ -649,8 +657,15 @@ weeks:
 
           - <<: *assignments
             items:
+              - file: 'quizzes'
+                name: 'casting'
+
+              - file: 'quizzes'
+                name: 'nesting'
+
               - file: 'homework'
                 name: 'textfilesorter'
+                type: ['bump']
 
   - week: 7
     days:
