@@ -480,8 +480,22 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Inheritance'
-                type: [*pending]
+              - file: 'slides'
+                name: 'inheritance'
+
+              - file: 'slides'
+                name: 'abstract'
+
+              - file: 'slides'
+                name: 'final'
+
+          - <<: *content
+            items:
+              - file: 'slides'
+                name: 'object'
+
+              - file: 'slides'
+                name: 'revisited'
 
           - <<: *assignments
             items:
@@ -521,8 +535,14 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Casting and Nesting'
-                type: [*pending]
+              - file: 'slides'
+                name: 'casting'
+
+              - file: 'slides'
+                name: 'nested'
+
+              - file: 'slides'
+                name: 'generics'
 
           - <<: *deadlines
             items:
