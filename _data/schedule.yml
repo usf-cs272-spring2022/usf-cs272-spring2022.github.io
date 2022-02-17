@@ -532,8 +532,18 @@ weeks:
         sections:
           - <<: *labs
             items:
-              - text: 'Project Help'
-                type: [*pending]
+              - text: 'Project Grading'
+                icon: 'website'
+                link: '/guides/projects/grading.html'
+
+              - text: 'SimpleJsonWriter'
+                icon: 'homework'
+                type: ['bump']
+                link: 'https://github.com/usf-cs272-spring2022/homework-SimpleJsonWriter-template'
+
+              - text: 'TextFileIndex'
+                icon: 'homework'
+                link: 'https://github.com/usf-cs272-spring2022/homework-TextFileIndex-template'
 
           - <<: *assignments
             items:
