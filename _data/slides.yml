@@ -99,13 +99,19 @@ nested:
   text: 'Nested Classes'
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQBvQKSNDon1KN9-FgdLye6c6tXagkGAK0WY8gUvu83uXFWwX4uaJoUBApLLXLQeNVFCZukpHkg5EGU/pub?start=false&loop=false&delayms=3000'
 
-# lambdas:
-#   <<: *default
-#   tags: ['lambdas']
-#   text: 'Lambda Expressions'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vRk65puXK15xua_B9o743NVnStpxG7d4LzO1KwXhF-BmR7xSNsMVXeVr9D_gaag8YjNLqxGcivrC_z3/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1H2_A1qYec7PtvSPi_9TiC-nI51dpAlG-/view?usp=sharing'
-#
+java:
+  <<: *default
+  text: 'Java Features'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vQ2V6ZRfey3ntHos4WYSn6CApCcQoXqv4jEO4XIKcoMSC_HqzdDOaMGErp3ICfjTFB9wSJNCSUBrKge/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1WNk4AG9zWdC-n58sLeCEkgVA8VEgFUji/view?usp=sharing'
+
+lambdas:
+  <<: *default
+  tags: ['lambdas']
+  text: 'Lambda Expressions'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vQRO9yRgwvGqmh9vCYoz1P6bJ3pKZfMsJVHusCExf0H1ojonTnD8ipgQMcCh1ud-911NNpnMwj08aOW/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1H2_A1qYec7PtvSPi_9TiC-nI51dpAlG-/view?usp=sharing'
+
 # streams:
 #   <<: *default
 #   tags: ['streams']

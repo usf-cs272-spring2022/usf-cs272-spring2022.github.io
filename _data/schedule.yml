@@ -634,13 +634,11 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Java Features'
-                icon: 'slides'
-                type: [*pending]
+              - file: 'slides'
+                name: 'java'
 
-              - text: 'Lambda Expressions'
-                icon: 'slides'
-                type: [*pending]
+              - file: 'slides'
+                name: 'lambdas'
 
               - text: 'Lambda Expressions'
                 icon: 'code'
