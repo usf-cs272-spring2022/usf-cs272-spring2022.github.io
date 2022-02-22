@@ -96,14 +96,14 @@ java:
   date: 2022-03-04
   tags: ['none']
 
-# lambdas:
-#   <<: *default
-#   text: 'Lambda Expressions'
-#   date: 2021-10-08
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392377'
-#   tags: ['lambdas']
-#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392598'
-#
+lambdas:
+  <<: *default
+  text: 'Lambda Expressions'
+  date: 2022-03-04
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402044'
+  tags: ['lambdas']
+  # test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392598'
+
 # streams:
 #   <<: *default
 #   text: 'Stream Pipelines'
