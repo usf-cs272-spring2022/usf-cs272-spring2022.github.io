@@ -242,12 +242,14 @@ weeks:
                 link: '/guides/homework/'
 
               - text: 'ArgumentParser'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166815'
                 more: '(<a href="https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template">Template</a>)'
                 icon: 'homework'
                 type: 'bump'
 
               - text: 'TextFileStemmer'
                 icon: 'homework'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166816'
                 more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileStemmer-template">Template</a>)'
 
           - <<: *assignments
@@ -387,10 +389,12 @@ weeks:
               - text: 'TextFileStemmer'
                 icon: 'homework'
                 type: ['bump']
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166816'
                 more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileStemmer-template">Template</a>)'
 
               - text: 'SimpleJsonWriter'
                 icon: 'homework'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166817'
                 more: '(<a href="https://github.com/usf-cs272-spring2022/homework-SimpleJsonWriter-template">Template</a>)'
 
           - <<: *assignments
@@ -539,10 +543,12 @@ weeks:
               - text: 'SimpleJsonWriter'
                 icon: 'homework'
                 type: ['bump']
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166817'
                 more: '(<a href="https://github.com/usf-cs272-spring2022/homework-SimpleJsonWriter-template">Template</a>)'
 
               - text: 'TextFileIndex'
                 icon: 'homework'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166818'
                 more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileIndex-template">Template</a>)'
 
           - <<: *assignments
@@ -658,26 +664,55 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: 'Java Features'
-                type: [*pending, 'bump']
+              - file: 'quizzes'
+                name: 'java'
 
-              - text: 'Lambda Expressions'
-                type: [*pending]
+              - file: 'quizzes'
+                name: 'lambdas'
 
       - date: 2022-02-25
         sections:
           - <<: *labs
             items:
-              - text: 'Homework Help'
+              - text: 'Homework Bundle 1 Help'
                 icon: 'homework'
+
+              - text: '– TextFileStemmer'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166816'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileStemmer-template">Template</a>)'
+
+              - text: '– SimpleJsonWriter'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166817'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-SimpleJsonWriter-template">Template</a>)'
+
+              - text: '– TextFileIndex'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166818'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileIndex-template">Template</a>)'
+
+              - text: 'Homework Bundle 2 Help'
+                icon: 'homework'
+                type: 'bump'
+
+              - text: '– TextFileSorter'
+                icon: 'nothing'
+                #link: 'https://usfca.instructure.com/courses/1605147/assignments/7166820'
+                more: '(Template)'
 
               - text: 'Project Help'
                 icon: 'project'
+                type: 'bump'
+
+              - text: '– Project 1 Inverted Index'
+                icon: 'nothing'
+                link: '/guides/projects/project-1.html'
 
           - <<: *assignments
             items:
               - file: 'homework'
-                name: 'textfilefinder'
+                name: 'textfilesorter'
 
           - <<: *deadlines
             items:
@@ -745,6 +780,7 @@ weeks:
       - date: 2022-03-04
         sections:
           - <<: *labs
+            row: false
             items:
               - text: 'Homework Help'
                 icon: 'homework'
@@ -753,6 +789,14 @@ weeks:
                 icon: 'project'
 
           - <<: *assignments
+            row: false
+            items:
+              - file: 'homework'
+                name: 'textfilefinder'
+                type: ['bump']
+
+          - <<: *deadlines
+            row: false
             items:
               - file: 'quizzes'
                 name: 'casting'
@@ -760,9 +804,12 @@ weeks:
               - file: 'quizzes'
                 name: 'nesting'
 
-              - file: 'homework'
-                name: 'textfilesorter'
-                type: ['bump']
+              - file: 'quizzes'
+                name: 'java'
+
+              - file: 'quizzes'
+                name: 'lambdas'
+
 
   - week: 7
     days:
@@ -884,10 +931,10 @@ weeks:
                 type: ['has-text-weight-bold']
 
               - file: 'homework'
-                name: 'textfilefinder'
+                name: 'textfilesorter'
 
               - file: 'homework'
-                name: 'textfilesorter'
+                name: 'textfilefinder'
 
   - week: 10
     days:

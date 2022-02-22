@@ -89,20 +89,13 @@ nesting:
   tags: ['inheritance']
 #   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392599'
 
-# project2:
-#   <<: *default
-#   text: 'Project 2 Writeup'
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392164'
-#   date: 2021-10-05
-#   tags: ['none']
-#
-# java:
-#   <<: *default
-#   text: 'Java Features'
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392375'
-#   date: 2021-10-05
-#   tags: ['none']
-#
+java:
+  <<: *default
+  text: 'Java Features'
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402043'
+  date: 2022-03-04
+  tags: ['none']
+
 # lambdas:
 #   <<: *default
 #   text: 'Lambda Expressions'
@@ -118,7 +111,15 @@ nesting:
 #   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392378'
 #   tags: ['streams']
 #   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392600'
+
+# project2:
+#   <<: *default
+#   text: 'Project 2 Writeup'
+#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392164'
+#   date: 2021-10-05
+#   tags: ['none']
 #
+
 # regex:
 #   <<: *default
 #   text: 'Regular Expressions'
