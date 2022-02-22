@@ -634,6 +634,35 @@ weeks:
         sections:
           - <<: *lectures
             items:
+              - text: 'Java Features'
+                icon: 'slides'
+                type: [*pending]
+
+              - text: 'Lambda Expressions'
+                icon: 'slides'
+                type: [*pending]
+
+              - text: 'Lambda Expressions'
+                icon: 'code'
+                type: [*pending, 'bump']
+
+              - text: '– PathMatcherDemo.java'
+                icon: 'nothing'
+                type: [*pending]
+
+              - text: '– PathMatcherDemo.java'
+                icon: 'nothing'
+                type: [*pending]
+
+              - text: '– LambdaDemo.java'
+                icon: 'nothing'
+                type: [*pending]
+
+          - <<: *assignments
+            items:
+              - text: 'Java Features'
+                type: [*pending, 'bump']
+
               - text: 'Lambda Expressions'
                 type: [*pending]
 
