@@ -100,7 +100,7 @@ weeks:
                 link: '/guides/homework/setup-homework.html'
 
               - text: 'ArgumentParser'
-                link: 'https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template">Template</a>)'
                 icon: 'homework'
                 type: 'bump'
 
@@ -242,13 +242,13 @@ weeks:
                 link: '/guides/homework/'
 
               - text: 'ArgumentParser'
-                link: 'https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-ArgumentParser-template">Template</a>)'
                 icon: 'homework'
                 type: 'bump'
 
               - text: 'TextFileStemmer'
                 icon: 'homework'
-                link: 'https://github.com/usf-cs272-spring2022/homework-TextFileStemmer-template'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileStemmer-template">Template</a>)'
 
           - <<: *assignments
             items:
@@ -387,11 +387,11 @@ weeks:
               - text: 'TextFileStemmer'
                 icon: 'homework'
                 type: ['bump']
-                link: 'https://github.com/usf-cs272-spring2022/homework-TextFileStemmer-template'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileStemmer-template">Template</a>)'
 
               - text: 'SimpleJsonWriter'
                 icon: 'homework'
-                link: 'https://github.com/usf-cs272-spring2022/homework-SimpleJsonWriter-template'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-SimpleJsonWriter-template">Template</a>)'
 
           - <<: *assignments
             items:
@@ -539,11 +539,11 @@ weeks:
               - text: 'SimpleJsonWriter'
                 icon: 'homework'
                 type: ['bump']
-                link: 'https://github.com/usf-cs272-spring2022/homework-SimpleJsonWriter-template'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-SimpleJsonWriter-template">Template</a>)'
 
               - text: 'TextFileIndex'
                 icon: 'homework'
-                link: 'https://github.com/usf-cs272-spring2022/homework-TextFileIndex-template'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileIndex-template">Template</a>)'
 
           - <<: *assignments
             items:
