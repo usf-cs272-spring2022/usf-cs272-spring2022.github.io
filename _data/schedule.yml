@@ -574,8 +574,45 @@ weeks:
               - file: 'slides'
                 name: 'nested'
 
-              - file: 'slides'
-                name: 'generics'
+              - text: 'Inheritance'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Inheritance'
+                type: ['bump']
+
+              - text: '– CastDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/CastDemo.java'
+
+              - text: 'Shape Demo'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Inheritance'
+                type: ['bump']
+
+              - text: '–'
+                icon: 'nothing'
+                more: '<a href="https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/Shape.java">Shape.java</a>, <a href="https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/Rectangle.java">Rectangle.java</a>, and <a href="https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/Square.java">Square.java</a>'
+
+              - text: '– ShapeDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/ShapeDemo.java'
+
+              - text: 'Gadget Sort Demo'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Inheritance'
+                tube: 'https://drive.google.com/file/d/1LLItjwK8SwopHXJdZ7o1vffT1nNvoaEa/view?usp=sharing'
+                type: ['bump']
+
+              - text: '– Gadget.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/Gadget.java'
+
+              - text: '– GadgetComparator.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/GadgetComparator.java'
+
+              - text: '– GadgetSortDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/GadgetSortDemo.java'
 
           - <<: *assignments
             items:
