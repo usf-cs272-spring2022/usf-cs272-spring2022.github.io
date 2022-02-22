@@ -507,11 +507,6 @@ weeks:
                 name: 'generics'
                 type: ['bump']
 
-              - text: 'Generic Types Demo'
-                icon: 'code'
-                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/GenericTypesDemo.java'
-                tube: 'https://drive.google.com/file/d/1Haj475bCoHuTN3TZBAuYgsafkeka8WNA/view?usp=sharing'
-
           - <<: *content
             items:
               - file: 'slides'
@@ -519,6 +514,11 @@ weeks:
 
               - file: 'slides'
                 name: 'revisited'
+
+              - text: 'Generic Types Demo'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Inheritance/src/main/java/edu/usfca/cs272/GenericTypesDemo.java'
+                tube: 'https://drive.google.com/file/d/1Haj475bCoHuTN3TZBAuYgsafkeka8WNA/view?usp=sharing'
 
           - <<: *assignments
             items:
