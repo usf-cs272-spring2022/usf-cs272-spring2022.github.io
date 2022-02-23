@@ -647,20 +647,28 @@ weeks:
                 name: 'lambdas'
 
               - text: 'Lambda Expressions'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/LambdaExpressions'
                 icon: 'code'
-                type: [*pending, 'bump']
+                type: ['bump']
+
+              - text: '– StringSorterDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/StringSorter.java'
 
               - text: '– PathMatcherDemo.java'
                 icon: 'nothing'
-                type: [*pending]
-
-              - text: '– PathMatcherDemo.java'
-                icon: 'nothing'
-                type: [*pending]
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/PathMatcherDemo.java'
 
               - text: '– LambdaDemo.java'
                 icon: 'nothing'
-                type: [*pending]
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/LambdaDemo.java'
+
+          - <<: *content
+            items:
+              - text: 'TextFileParser.java'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/TextFileParser.java'
+                icon: 'code'
+                tube: 'https://drive.google.com/file/d/1x07LOgjD-N431tK_2sk2_kdboovJouCu/view?usp=sharing'
 
           - <<: *assignments
             items:
