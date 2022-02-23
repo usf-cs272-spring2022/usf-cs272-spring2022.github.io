@@ -706,8 +706,8 @@ weeks:
 
               - text: '– TextFileSorter'
                 icon: 'nothing'
-                #link: 'https://usfca.instructure.com/courses/1605147/assignments/7166820'
-                more: '(Template)'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166820'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileSorter-template">Template</a>)'
 
               - text: 'Project Help'
                 icon: 'project'
