@@ -9,8 +9,8 @@ key: 0.3
 #    type: 'is-info'
 
 tags:
-  - text: 'New'
-    type: 'is-primary'
+  - text: 'Updated'
+    type: 'is-info'
 
 assignments:
   - text: 'Project 1 Inverted Index'
@@ -57,10 +57,16 @@ You can visit the linked action run to see the bot progress. Eventually, the bot
 
 The next sections cover more specifics about each different type of request.
 
-## Request Project Tests Grade
+## Project Functionality (Tests)
 {: .page-header }
 
-There is only one assignment associated with project functionality: the `Project # Tests` assignment, where `#` is either the `1`, `2`, `3`, or `4` project number. This assignment requires you pass the appropriate tests when run by GitHub Actions. See below for details.
+There is only one assignment associated with project functionality: the `Project # Tests` assignment, where `#` is either the `1`, `2`, `3`, or `4` project number. This assignment requires you pass the appropriate tests when run by GitHub Actions. To request this grade, use the issue template:
+
+> **Request Project Test Grade**  
+> Used to request a "Project Test" grade
+{: style="background-color: white;" }
+
+Follow the instructions indicated by the GitHub Actions bot.
 
 ### Eligibility
 
@@ -96,7 +102,7 @@ The `Project # Tests` assignment is worth `100` points total. You will earn the 
 
 For example, if the deadline is March 1 at 11:59pm and the project release that first passes the tests on GitHub was created on March 2 at 12:05am, the late penalty will be `2 * 1 = 2` and you will earn `100 - 2 = 98` points on the assignment. If your release is `14` days late, the late penalty will be `26` since `2 * 14 = 28` is greater than the maximum penalty of `26`. The resulting grade in that case will be `74` points.
 
-## Request Code Review Appointment
+## Project Design (Code Review)
 {: .page-header }
 
 After passing functionality, the design of your project is evaluated via 2 or more code review appointments. The design grade is broken up into multiple assignments to track your process:
@@ -105,7 +111,13 @@ After passing functionality, the design of your project is evaluated via 2 or mo
   - **Project # Review 2**: Earned after attending your second code review for the `#` project.
   - **Project # Final Release**: Earned after passing code review and creating a final release of the `#` project.
 
-You must request and attend a code review appointment to be eligible for these grades. See below for details.
+You must request and attend a code review appointment to be eligible for these grades. That begins by using the following issue template:
+
+> **Request Code Review Appointment**  
+> Used to request a code review appointment.
+{: style="background-color: white;" }
+
+Follow the instructions indicated by the GitHub Actions bot.
 
 The code review process for project 4 is handled differently, since it occurs during finals week at the end of the semester. Additional details for the last code review will be posted towards the end of the semester.
 {: .notification }
@@ -132,37 +144,53 @@ You can also verify this by visiting the GitHub Actions run and checking that th
 
   3. The "Check / Code Style" job, which checks for basic cleanup tasks (like removing `TODO` comments, extra `main` methods, and stack traces).
 
-If the release indicated by the issue title meets these requirements, the GitHub Actions bot will setup a pull request and give you instructions for how to sign up for an appointment. Keep in mind that you may only have up to 1 code review appointment with the instructor every 5 days.
+The release must reflect the latest version of your code on the `main` branch. If you make changes to the code in your `main` branch, those changes must be re-verified by making a new release.
+
+### Signup
+
+Do not sign up for an appointment until you are ready; once you request an appointment, you should not make any changes to your code until after the code review.
+
+Once you are ready and have a release that passes the checks, use the "Request Code Review Appointment" issue template to request your appointment. This will trigger the GitHub Actions bot to do the following:
+
+  1. The bot will verify your release passes the checks.
+
+  1. The bot will verify there have been no modifications made to the `main` branch since the release was made.
+
+  1. The bot will create a branch and pull request that the instructor will use during the code review.
+
+  1. The bot will close your issue and respond with a link to the pull request it created.
+
+  1. The pull request will include instructions on how to sign up for an appointment. This includes a link that has been customized **for you** to signup.
+
+It is important you **do not misuse the appointment system** when signing up. This includes:
+
+  - Do not sign up before you are eligible. You may have up to 1 code review appointment every 5 days. The instructions will include the *earliest* date you can signup.
+
+  - Do not sign up for more than one appointment at a time. You may only have 1 upcoming code review at a time; you cannot pre-reserve additional appointment times.
+
+  - Do not miss your appointment or arrive more than 5 minutes late.
+
+See the grading section below for possible consequences to misusing the appointment system.
 
 ### Grading
 
-You receive grades for your first two code review appointments, and for the final release of your project created after you pass code review. Additional code reviews after the first two are not graded or penalized. See the following sections for details.
+You receive grades for your first two code review appointments. You must have a pull request approved by the instructor (happens at the end of your appointment) to be eligible for those grades. You can request these grades using the following issue template:
 
-Make sure to attend your appointment on-time. You will receive one warning if you arrive more than 5 minutes late or miss an appointment. After a warning, you may choose one of two penalties: lose **5** points per additional late or missed appointment or wait another **5** days for your next appointment.
+> **Request Project Review Grade**  
+> Used to request a "Project Review" grade.
+{: style="background-color: white;" }
+
+Your grade for the first code review will be based on whether it is held by the deadline. If not, your grade will be deducted `5` points per `3` days your appointment is late, up to a maximum of `20` points.
+
+Your grade for the second code review will be based on whether it is held within 5 to 10 days of your first code review. If not, your grade will be deducted an additional `5` points.
+
+Additional code reviews after the first two are not graded or penalized. When you pass code review, you can request the final release grade using the following issue template:
+
+> **Request Project Final Release Grade**  
+> Used to request a "Project Final Release" grade.
+{: style="background-color: white;" }
+
+Your grade for the final release will be based on whether it is held within 5 to 10 days of your passing code review. If not, your grade will be deducted an additional `5` points.
+
+You will receive one warning if you misuse the appointment system. After a warning, you may choose one of two penalties per offense: (1) lose **5** points to your project grade, or (2) wait another **5** days for your next appointment.
 {: .notification .is-danger }
-
-## Request Project Review Grade
-{: .page-header }
-
-TL;DR You must attend your code review on-time. For the first code review, this is by the deadline listed on the course schedule. For the second code review, this is within 10 days of the first code review.
-
-### Eligibility
-
-Pending
-
-### Grading
-
-Pending
-
-## Request Project Final Release Grade
-{: .page-header }
-
-TL;DR You must pass code review and create a final release that passes all of the checks within 10 days of the last code review.
-
-### Eligibility
-
-Pending
-
-### Grading
-
-Pending
