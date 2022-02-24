@@ -713,6 +713,10 @@ weeks:
                 icon: 'project'
                 type: 'bump'
 
+              - text: '– Project Grading'
+                icon: 'nothing'
+                link: '/guides/projects/grading.html'
+
               - text: '– Project 1 Inverted Index'
                 icon: 'nothing'
                 link: '/guides/projects/project-1.html'
