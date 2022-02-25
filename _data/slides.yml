@@ -112,20 +112,20 @@ lambdas:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQRO9yRgwvGqmh9vCYoz1P6bJ3pKZfMsJVHusCExf0H1ojonTnD8ipgQMcCh1ud-911NNpnMwj08aOW/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1H2_A1qYec7PtvSPi_9TiC-nI51dpAlG-/view?usp=sharing'
 
-# streams:
-#   <<: *default
-#   tags: ['streams']
-#   text: 'Stream Basics'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vROPJVkIL1GcCOxSN0isk8MHagk4HKj7Z5RfSzV2XIMtGMEwFZ72XkhLyQ9uem4j9cTJCBV-5kooKM-/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/10MCP3wTHYPQ5LGL6rP3sH7kYiF3OAIhh/view?usp=sharing'
-#
-# pipelines:
-#   <<: *default
-#   tags: ['streams']
-#   text: 'Stream Pipelines'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQojJQ1Vztc6-Swq-RXKImWhk5iS6IkkSf0c4mslFPDtdTXdR-aimHG_xE9Y2Jca0lPSdOO7LYVpGiC/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1vWdlCE8eOt3HzVGa04zO1jJiWP1mJJ3z/view?usp=sharing'
-#
+streams:
+  <<: *default
+  tags: ['streams']
+  text: 'Stream Basics'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vQt0VFX9HXKoP6uCHISe6B4EUTJJKbnLluvqP3fyAG85e76fxgRBd4P8rpLe9Ik7RhOj_0AjO7Evfzo/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/10MCP3wTHYPQ5LGL6rP3sH7kYiF3OAIhh/view?usp=sharing'
+
+pipelines:
+  <<: *default
+  tags: ['streams']
+  text: 'Stream Pipelines'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vROMQZRnL_-fg3RjZXfkVqV89LOa0u0zZFwfjjBRznInBFsg-N8mOUjxhP-G5TC3A0RtVqQ5eKLj7Hz/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1vWdlCE8eOt3HzVGa04zO1jJiWP1mJJ3z/view?usp=sharing'
+
 # testing_intro:
 #   <<: *default
 #   tags: ['testing']
