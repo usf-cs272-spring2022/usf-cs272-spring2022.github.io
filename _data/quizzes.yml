@@ -15,6 +15,7 @@ paths:
   date: 2022-02-11
   tags: ['files']
   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401174'
+  test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402165'
 
 data:
   <<: *default
@@ -22,6 +23,7 @@ data:
   date: 2022-02-11
   tags: ['data']
   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401175'
+  test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402173'
 
 maps:
   <<: *default
@@ -29,6 +31,7 @@ maps:
   date: 2022-02-11
   tags: ['data']
   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401176'
+  test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402168'
 
 static:
   <<: *default
@@ -43,6 +46,7 @@ identifier:
   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401870'
   date: 2022-02-18
   tags: ['objects']
+  test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402174'
 
 mutability1:
   <<: *default
@@ -50,6 +54,7 @@ mutability1:
   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401869'
   date: 2022-02-25
   tags: ['objects']
+  test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402169'
 
 mutability2:
   <<: *default
@@ -57,6 +62,7 @@ mutability2:
   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401871'
   date: 2022-02-25
   tags: ['objects']
+  test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402170'
 
 inheritance:
   <<: *default
@@ -64,6 +70,7 @@ inheritance:
   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401874'
   date: 2022-02-25
   tags: ['inheritance']
+  test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402167'
 
 collections:
   <<: *default
@@ -71,7 +78,7 @@ collections:
   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401873'
   date: 2022-02-25
   tags: ['inheritance']
-
+  test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402171'
 
 casting:
   <<: *default
@@ -79,7 +86,7 @@ casting:
   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401872'
   date: 2022-03-04
   tags: ['inheritance']
-#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392597'
+  test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402175'
 
 nesting:
   <<: *default
@@ -87,7 +94,7 @@ nesting:
   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401875'
   date: 2022-03-04
   tags: ['inheritance']
-#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392599'
+  test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402166'
 
 java:
   <<: *default
@@ -102,7 +109,7 @@ lambdas:
   date: 2022-03-04
   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402044'
   tags: ['lambdas']
-  # test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392598'
+  test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402172'
 
 streams:
   <<: *default
@@ -110,7 +117,7 @@ streams:
   date: 2022-03-04
   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402162'
   tags: ['streams']
-  # test: 'https://usfca.instructure.com/courses/1602551/quizzes/2392600'
+  test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402176'
 
 # project2:
 #   <<: *default
