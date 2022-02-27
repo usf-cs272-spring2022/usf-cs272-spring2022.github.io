@@ -7,8 +7,8 @@ bump: false
 project: 2
 
 tags:
-  - text: 'Pending'
-    type: 'is-muted'
+  - text: 'New'
+    type: 'is-primary'
 
 assignments:
   - text: 'Project 2 Tests'
@@ -25,7 +25,58 @@ assignments:
 
 ---
 
+For this project, you will extend your [previous project](project-1.html) to support **exact search** and **partial search** queries. In addition to meeting the [previous project](project-1.html) requirements, your code must be able to track the total number of words found in each text file, parse and stem lines in a query file, generate a sorted list of search results from the inverted index, and support writing those results to a JSON file.
+
+## Functionality
+{: .page-header }
+
 Pending
+
+### Input
+
+Pending
+
+### Output
+
+Pending
+
+### Grading
+
+Pending
+
+#### Project Tests
+
+Pending
+
+#### Project Reviews
+
+Pending
+
+## Getting Started
+{: .page-header }
+
+The following sections may be useful for getting started on this project.
+
+### Examples
+
+Pending
+
+### Related Content
+
+The following homework assignments and lecture code may be useful to complete as part of this project:
+
+Pending
+
+### Hints
+
+Your goal should be to get to testable code as quickly as possible first, and then to focus on passing the functionality tests. One possible breakdown of tasks are:
+
+Pending
+
+It is important to **get started early** so you have plenty of time to think about how you want to approach the project *and* start coding iteratively. Planning to complete the code in too large of a chunk is a recipe to get stuck and fall behind!
+
+<i class="fas fa-info-circle"></i>&nbsp;These hints may or may not be useful depending on your approach. Do not be overly concerned if you do not find these hints helpful for your approach for this project.
+{: .notification }
 
 {% comment %}
 TO ADD:
