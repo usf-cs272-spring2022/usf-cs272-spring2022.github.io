@@ -39,6 +39,7 @@ static:
   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2401868'
   date: 2022-02-18
   tags: ['objects']
+  test: 'https://usfca.instructure.com/courses/1605147/quizzes/2401869'
 
 identifier:
   <<: *default
