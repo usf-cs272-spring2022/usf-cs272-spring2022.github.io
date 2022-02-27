@@ -12,9 +12,9 @@ There will be two non-comprehensive exams. The exam dates are provided on the [c
 
 The exam pass requirement assesses that students understand the underlying concepts required to meet the learning outcomes. The requirement is stated as:
 
-> **Exam Pass Requirement:** Students must earn an average C letter grade or higher in either the Exam 1 or Exam 2 categories. Each exam category score is calculated as the average of the original attempt and highest retake attempt.
+> **Exam Pass Requirement:** Students must earn a passing exam average on either Exam 1 or Exam 2. The exam average is calculated as the original exam attempt averaged with the highest retake attempt. Unless otherwise specified, a passing exam average is a C letter grade (74% or higher). Students only need to pass one of the two exams.
 
-Based on the standard grading scale used by this class, the category grade must be `74%` or higher to meet this requirement. Students must earn a passing grade in only one of the two exam categories, *not* both exam categories.
+Based on the standard grading scale used by this class, the average of the original and retake grade must be `74%` or higher to meet this requirement. Students must earn a passing grade in only one of the two exams, *not* both.
 
 Students that failure to meet 1 or more of the pass requirements will have their letter grade capped to C– maximum, regardless of whether they have a higher letter grade in Canvas. See the [course syllabus]({{ site.data.info.links.syllabus.link }}) for details.
 

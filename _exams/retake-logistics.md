@@ -14,7 +14,7 @@ The format will be the same as the original attempt.
 
 However, if the exam uses random variants of each question, it is possible students will see a different variant on the retake attempt. Students should pay close attention to each question before copying a response from the original attempt into the retake attempt.
 
-If the exam included code snippet questions setup via Github Classroom, students may modify the exact same repository for the exam retake.
+If the exam included code snippet questions setup via GitHub Classroom, students may modify the exact same repository for the exam retake.
 
 ## Modality
 
@@ -77,8 +77,6 @@ Exams are stressful. You want to strategize how you go about the retake process 
 I **strongly** suggest you avoid trial-by-error answering of questions you do not understand. The exam is too long and has too much randomization for that strategy to be worthwhile.
 
 However, there are just suggestions; everyone learns differently!
-
-
 
 ## SDS Accommodations
 

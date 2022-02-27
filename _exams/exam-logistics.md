@@ -11,12 +11,12 @@ This guide will discuss the logistics and possible topics for exam 1 and exam 2.
 
 ## Format
 
-The exam will be split into two components: (1) the primary exam conducted within Canvas and (2) a short coding section conducted using Github Classroom. To complete the exam, students must have access to:
+The exam will be split into two components: (1) the primary exam conducted within Canvas and (2) a short coding section conducted using GitHub Classroom. To complete the exam, students must have access to:
 
 | Resource | Login Account | Details |
 |:-----------------|:--------------|:--------|
-| [Canvas]({{ site.data.info.links.canvas.link }}) | Login using your USF account. | Used to conduct the exam. Will include the necessary Github Classroom link for the coding section. |
-| [Github]({{ site.data.info.links.github.link }}) | Login using your Github account linked to this class. | Used for the coding section. A Github Classroom link will be provided in Canvas that will setup the necessary Github repository. Only code committed and pushed to this repository before the deadline will be used. |
+| [Canvas]({{ site.data.info.links.canvas.link }}) | Login using your USF account. | Used to conduct the exam. Will include the necessary GitHub Classroom link for the coding section. |
+| [GitHub]({{ site.data.info.links.github.link }}) | Login using your GitHub account linked to this class. | Used for the coding section. A GitHub Classroom link will be provided in Canvas that will setup the necessary GitHub repository. Only code committed and pushed to this repository before the deadline will be used. |
 | Eclipse | N/A | Used to import, run, commit, and push code for the coding section. Other IDEs may be used at the students' risk. Students should verify all of the relevant lecture code is runnable from within their IDE! |
 
 The Canvas portion will *not* use Lockdown Browser. Students will *not* see your scores or answers after completing the exam until the retake begins.
@@ -31,7 +31,13 @@ The exam will be locked with a password. How students will receive this password
 
   - Students **attending in person** will receive the exam password in class and do not need to join Zoom. Students can ask questions by raising their hand in class or approaching the lectern.
 
-Any student may opt to choose a remote modality regardless of enrolled section. Students wanting to take the exam in person but not enrolled in the appropriate section may make a private post on the [course forums]({{ site.data.info.links.forums.link }}). Requests must be made 48 hours before the exam date and will be approved first-come first-serve as long as there is classroom capacity.
+Any student may opt to choose a remote modality; pre-approval is not required.
+
+## Timing
+
+The exam will automatically unlock and lock at the start and end times of the enrolled section for each student. However, students may request a different start time by making a private post on [course forums]({{ site.data.info.links.forums.link }}).
+
+The exam should take around 1 hour to complete, but students will have the entire class time of <i class="far fa-hourglass-half"></i> **1 hour 45 minutes** to complete the exam.
 
 ## Question Types
 
@@ -47,7 +53,7 @@ The exam questions on Canvas may consist of:
 
 The specific questions, order you see questions, and possible answers may be <i class="far fa-random"></i> randomized. These questions will be automatically graded by Canvas.
 
-The exam code snippets will use the same infrastructure as homework: using Github Classroom links to setup private repositories with code templates and tests importable into Eclipse. The snippet grades will be automatically calculated by Github Classroom and Github Actions. Changes made to these repositories after the deadline will not impact the original exam score.
+The exam code snippets will use the same infrastructure as homework: using GitHub Classroom links to setup private repositories with code templates and tests importable into Eclipse. The snippet grades will be automatically calculated by GitHub Classroom and GitHub Actions. Changes made to these repositories after the deadline will not impact the original exam score.
 
 ## Resources
 
@@ -55,19 +61,13 @@ The exams are open book, with the exception that students **cannot** ask anyone 
 
 Students should make sure to have ready access to the following official Java documentation during the exam:
 
-  - [Java 16 API](https://www.cs.usfca.edu/~cs272/javadoc/api/index.html)
-  - [Java SE 16 Language Specification](https://docs.oracle.com/javase/specs/jls/se16/html/index.html)
-  - [Java SE 16 Documentation Center](https://docs.oracle.com/en/java/javase/16/)
+  - [Java API](https://www.cs.usfca.edu/~cs272/javadoc/api/index.html)
+  - [Java SE Language Specification](https://docs.oracle.com/javase/specs/jls/se17/html/index.html)
+  - [Java SE Documentation Center](https://docs.oracle.com/en/java/javase/17/)
   - [Java Tutorials](https://docs.oracle.com/javase/tutorial/)
   - [Java Glossary](https://docs.oracle.com/javase/tutorial/information/glossary.html)
 
 Students should also be prepared to access any of the class materials, including homework submissions. Students might also want to be familiar with `jshell` just in case they want to quickly run Java code.
-
-## Timing
-
-The exam will automatically unlock and lock at the start and end times of the enrolled section for each student. However, students with current addresses in other time zones may request a different start time by making a private post on [course forums]({{ site.data.info.links.forums.link }}).
-
-The exam should take around 1 hour to complete, but students will have the entire class time of <i class="far fa-hourglass-half"></i> **1 hour 45 minutes** to complete the exam.
 
 ## SDS Accommodations
 
