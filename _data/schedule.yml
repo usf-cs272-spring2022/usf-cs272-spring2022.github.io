@@ -814,8 +814,13 @@ weeks:
         sections:
           - <<: *lectures
             items:
+              - text: 'Exam Logistics'
+                link: '/guides/exams/'
+                icon: 'exam'
+
               - text: 'Exam Review'
-                type: [*pending]
+                link: '/guides/exams/exam-1.html'
+                icon: 'exam'
 
               - text: 'TextFileParser.java'
                 link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/TextFileParser.java'
