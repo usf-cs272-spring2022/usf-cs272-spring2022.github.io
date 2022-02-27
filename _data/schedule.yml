@@ -663,13 +663,6 @@ weeks:
                 icon: 'nothing'
                 link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/LambdaDemo.java'
 
-          - <<: *content
-            items:
-              - text: 'TextFileParser.java'
-                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/TextFileParser.java'
-                icon: 'code'
-                tube: 'https://drive.google.com/file/d/1x07LOgjD-N431tK_2sk2_kdboovJouCu/view?usp=sharing'
-
           - <<: *assignments
             items:
               - file: 'quizzes'
@@ -765,14 +758,52 @@ weeks:
         sections:
           - <<: *lectures
             items:
+              - text: 'LambdaDemo.java'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/LambdaDemo.java'
+
+              - file: 'slides'
+                name: 'streams'
+                type: ['bump']
+
+              - file: 'slides'
+                name: 'pipelines'
+
               - text: 'Stream Pipelines'
-                type: [*pending]
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/StreamPipelines'
+                type: ['bump']
+
+              - text: '– StreamDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/StreamDemo.java'
+                tube: 'https://drive.google.com/file/d/18RKTIjJmH1ovGVIwbVzfCIiDBq1BhmbP/view?usp=sharing'
+
+              - text: '– ParallelStreamBenchmark.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/ParallelStreamBenchmark.java'
+
+              - text: '– InfiniteStreamDemo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/InfiniteStreamDemo.java'
+                tube: 'https://drive.google.com/file/d/1AbBKj-JiQYLNACw3GXGPkHlInBmVzg3X/view?usp=sharing'
+
+          - <<: *content
+            items:
+              - text: '– Problem1Revisited.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/Problem1Revisited.java'
+                tube: 'https://drive.google.com/file/d/1gTjlMdvnCHs_E3yEL_DNsvkswG0zSg96/view?usp=sharing'
 
           - <<: *assignments
             items:
+              - file: 'quizzes'
+                name: 'streams'
+
               - file: 'projects'
                 name: 'project2t'
                 text: 'Project 2 Partial Search'
+                type: 'bump'
 
           - <<: *deadlines
             items:
@@ -783,22 +814,50 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Stream Pipelines'
-                type: [*pending]
-
               - text: 'Exam Review'
                 type: [*pending]
+
+              - text: 'TextFileParser.java'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/TextFileParser.java'
+                icon: 'code'
+                tube: 'https://drive.google.com/file/d/1x07LOgjD-N431tK_2sk2_kdboovJouCu/view?usp=sharing'
+                type: ['bump']
+
+              - text: 'TextFileStreamer.java'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/TextFileStreamer.java'
+                icon: 'code'
+                tube: 'https://drive.google.com/file/d/1H-FYMCrXlyx5xZ-M-wAIx5xtj9aieN8U/view?usp=sharing'
 
       - date: 2022-03-04
         sections:
           - <<: *labs
             row: false
             items:
-              - text: 'Homework Help'
+              - text: 'Homework Bundle 2 Help'
                 icon: 'homework'
+                type: 'bump'
+
+              - text: '– TextFileSorter'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166820'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileSorter-template">Template</a>)'
+
+              - text: '– TextFileFinder'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166819'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileFinder-template">Template</a>)'
 
               - text: 'Project Help'
                 icon: 'project'
+                type: 'bump'
+
+              - text: '– Project 1 Inverted Index'
+                icon: 'nothing'
+                link: '/guides/projects/project-1.html'
+
+              - text: '– Project 2 Partial Search'
+                icon: 'nothing'
+                link: '/guides/projects/project-2.html'
 
           - <<: *assignments
             row: false
@@ -822,6 +881,8 @@ weeks:
               - file: 'quizzes'
                 name: 'lambdas'
 
+              - file: 'quizzes'
+                name: 'streams'
 
   - week: 7
     days:
