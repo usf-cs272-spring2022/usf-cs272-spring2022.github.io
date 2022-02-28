@@ -120,13 +120,13 @@ streams:
   tags: ['streams']
   test: 'https://usfca.instructure.com/courses/1605147/quizzes/2402176'
 
-# project2:
-#   <<: *default
-#   text: 'Project 2 Writeup'
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2392164'
-#   date: 2021-10-05
-#   tags: ['none']
-#
+project2:
+  <<: *default
+  text: 'Project 2 Guide'
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402205'
+  date: 2022-03-11
+  tags: ['none']
+
 
 # regex:
 #   <<: *default

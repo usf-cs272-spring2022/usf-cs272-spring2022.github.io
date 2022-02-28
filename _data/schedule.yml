@@ -800,6 +800,9 @@ weeks:
               - file: 'quizzes'
                 name: 'streams'
 
+              - file: 'quizzes'
+                name: 'project2'
+
               - file: 'projects'
                 name: 'project2t'
                 text: 'Project 2 Partial Search'
@@ -936,6 +939,9 @@ weeks:
             items:
               - file: 'participation'
                 name: 'piazza_post'
+
+              - file: 'quizzes'
+                name: 'project2'
 
   - week: 8
     days:
