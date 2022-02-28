@@ -25,85 +25,16 @@ assignments:
 
 ---
 
-For this project, you will extend your [previous project](project-1.html) to support **exact search** and **partial search** queries. In addition to meeting the [previous project](project-1.html) requirements, your code must be able to track the total number of words found in each text file, parse and stem lines in a query file, generate a sorted list of search results from the inverted index, and support writing those results to a JSON file.
-
-## Functionality
-{: .page-header }
-
-Pending
-
-### Input
-
-Pending
-
-### Output
-
-Pending
-
-### Grading
-
-Pending
-
-#### Project Tests
-
-Pending
-
-#### Project Reviews
-
-Pending
-
-## Getting Started
-{: .page-header }
-
-The following sections may be useful for getting started on this project.
-
-### Examples
-
-Pending
-
-### Related Content
-
-The following homework assignments and lecture code may be useful to complete as part of this project:
-
-Pending
-
-### Hints
-
-Your goal should be to get to testable code as quickly as possible first, and then to focus on passing the functionality tests. One possible breakdown of tasks are:
-
-Pending
-
-It is important to **get started early** so you have plenty of time to think about how you want to approach the project *and* start coding iteratively. Planning to complete the code in too large of a chunk is a recipe to get stuck and fall behind!
-
-<i class="fas fa-info-circle"></i>&nbsp;These hints may or may not be useful depending on your approach. Do not be overly concerned if you do not find these hints helpful for your approach for this project.
-{: .notification }
-
-{% comment %}
-TO ADD:
-
-To be eligible for the "Project 2 Tests" grade, you must meet the following criteria:
-
-  - You must have a non-zero grade for the "Project 1 Tests" and "Project 1 Review 1" assignments in Canvas.
-
-  - Your code must pass the tests for the previous project, project 1.
-
-  - Your code must pass the tests for the current project, project 2.
-
-  - Your code must *not* pass the tests for the future project, project 3.
-
-See the [Project Testing](project-testing.html) guide for additional details.
-
-
-For this project, you will extend your [previous project](project-1.html) to support exact search and partial search. In addition to meeting the [previous project](project-1.html) requirements, your code must be able to track the total number of words found in each text file, parse and stem a query file, generate a sorted list of search results from the inverted index, and support writing those results to a JSON file.
+For this project, you will extend your [previous project](project-{{ page.project | minus: 1 }}.html) to support **exact search** and **partial search** queries. In addition to meeting the [previous project](project-{{ page.project | minus: 1 }}.html) requirements, your code must be able to track the total number of words found in each text file, parse and stem lines in a query file, generate a sorted list of search results from the inverted index, and support writing those results to a JSON file.
 
 ## Functionality
 {: .page-header }
 
 The core functionality of your project must satisfy the following requirements:
 
-  - Maintain the functionality of the [previous project](project-1.html).
+  - Maintain the functionality of the [previous project](project-{{ page.project | minus: 1 }}.html).
 
-  - Process **additional command-line parameters** to determine whether to search the inverted index and whether to produce additional JSON ouput. See the "Input" section for specifics.
+  - Process **additional** command-line arguments to determine the input to process and output to produce. See the "Input" and "Output" sections below for specifics.
 
   - Modify how input text files are processed to also **track the total word count of each file** when storing it in the inverted index. See the "Word Count" section for specifics.
 
@@ -115,13 +46,13 @@ The core functionality of your project must satisfy the following requirements:
 
   - Sort the search results using a simple **term frequency metric** to determine the most "useful" search results to output first. See the "Result Sorting" section for specifics.
 
-The functionality of your project will be evaluated with the `Project2Test.java` group of JUnit tests. See the "Testing" section for details.
+See the following sections for additional details.
 
 ### Word Count
 
 Before you can calculate search results, you need to know how many word stems were stored in your inverted index for each text file.
 
-**Avoid opening up any file more than once!** You should store this information alongside the inverted index, as the files are first processed.
+**Avoid opening up any file more than once!** Your code should store this information alongside the inverted index, as the files are first processed.
 
 These word counts will be output to file using the same pretty JSON format as the inverted index. Here is the expected output for the word count of all the text files associated with this project:
 
@@ -231,27 +162,31 @@ You can use [`Double.compare(...)`](https://www.cs.usfca.edu/~cs272/javadoc/api/
 
 See the partial search results for `ant perf` for an example of results sorted by score, the results for `lori` for an example of results with the same score and thus sorted by count, and finally the results for `capybara hidden` for an example of results with the same score and same count and thus sorted alphabetically by location.
 
+<i class="fas fa-exclamation-triangle"></i>
 If you calculate the score using `float` instead of `double` objects, or sort using `Path` instead of `String` objects, you may not get the expected results!
+{: .notification .is-warning }
 
-## Input
-{: .page-header }
+<i class="fas fa-exclamation-triangle"></i>
+Use lists and <a href="https://www.cs.usfca.edu/~cs272/javadoc/api/java.base/java/util/Collections.html#sort(java.util.List)">Collections.sort(List)</a> to sort search results, not a <a href="https://www.cs.usfca.edu/~cs272/javadoc/api/java.base/java/util/TreeSet.html">TreeSet</a> data structure. Custom mutable objects do not behave well when used in sets or as keys in maps.
+{: .notification .is-warning }
+
+### Input
 
 Your `main` method must be placed in a class named `Driver`. The `Driver` class should accept the following additional command-line arguments:
 
-  - `-counts [path]` where `-counts` is an *optional* flag that indicates the next argument `[path]` is the path to use to output all of the locations and their word count. If the `[path]` argument is not provided, use `counts.json` as the default output filename. If the `-counts` flag is not provided, do not produce an output file of locations.
+  - `-counts [path]` where the flag `-counts` indicates the next argument `[path]` is the path to use to output all of the locations and their word count. If the `[path]` argument is not provided, use `counts.json` as the default output filename. If the `-counts` flag is not provided, do not produce an output file of locations.
 
-  - `-query [path]` where `-query` indicates the next argument `[path]` is a path to a text file of queries to be used for search. If this flag is not provided, then no search should be performed.
+  - `-query [path]` where the flag `-query` indicates the next argument `[path]` is a path to a text file of queries to be used for search. If this flag is not provided, then no search should be performed.
 
-  - `-exact` where `-exact` is an *optional* flag that indicates all search operations performed should be exact search. If the flag is *not* present, any search operations should use partial search instead.
+  - `-exact` where the flag `-exact` indicates all search operations performed should be exact search. If the flag is *not* present, any search operations should use partial search instead.
 
-  - `-results [path]` where `-results` is an *optional* flag that indicates the next argument `[path]` is the path to use for the search results output file. This may include partial or exact search results! If the `[path]` argument is not provided, use `results.json` as the default output filename. If the `-results` flag is not provided, do not produce an output file of search results but still perform the search operation.
+  - `-results [path]` where the flag `-results` indicates the next argument `[path]` is the path to use for the search results output file. This may include partial or exact search results! If the `[path]` argument is not provided, use `results.json` as the default output filename. If the `-results` flag is not provided, do not produce an output file of search results but still perform the search operation.
 
-The command-line flag/value pairs may be provided in any order, and the order provided is not the same as the order you should perform the operations (i.e. always build the index before performing search, even if the flags are provided in the other order).
+The command-line flag/value pairs may be provided in any order, and the order provided is not the same as the order the code should perform the operations (i.e. always build the index before performing search, even if the flags are provided in the other order).
 
 Your code should support all of the command-line arguments from the [previous project](project-1.html) as well.
 
-## Output
-{: .page-header }
+### Output
 
 The output of your inverted index should be the same from the previous project. See the "Word Count" section for the desired output.
 
@@ -294,64 +229,98 @@ The use of spaces, newline characters, and spaces are the same as before for “
 
 You can also find this output in the `search-exact-simple-simple.json` file in the [`project-tests`]({{ site.github.owner_url }}/project-tests) repository. See the other expected output files for more examples.
 
-## Testing
+### Grading
+
+The following sections detail how to earn credit for this project. The project grade is separated into one "functionality" or "test" grade worth 100 points, and a series of "design" or "code review" grades that together are worth another 100 points.
+
+#### Project Tests
+
+To be eligible for the "Project {{ page.project }} Tests" grade, you must meet the following criteria:
+
+  - Your code must pass the tests for the current project, project {{ page.project }}.
+
+  - Your code must pass the tests for the previous project, [project {{ page.project | minus: 1 }}](project-{{ page.project | minus: 1 }}.html).
+
+  - Your code must *not* pass the tests for the future project, [project {{ page.project | plus: 1 }}](project-{{ page.project | plus: 1 }}.html).
+
+  - You must have non-zero grades for the "Project {{ page.project | minus: 1 }} Tests" and "Project {{ page.project | minus: 1 }} Review 1" assignments in Canvas.
+
+The tests for this project can be found in the `Project{{ page.project }}Test.java` group of JUnit tests in the [`project-tests`]({{ site.github.owner_url }}/project-tests) repository. See the [Project Testing](project-testing.html) guide for additional details.
+
+#### Project Reviews
+
+To be eligible for the "Project {{ page.project }} Review 1" grade, you must meet the following criteria:
+
+  - You must have a non-zero grade for the "Project {{ page.project | minus: 1 }} Final Release" assignment in Canvas.
+
+  - You must have a non-zero grade for the "Project {{ page.project }} Tests" assignment in Canvas and your code must still pass the associated tests.
+
+  - Your code must additionally pass the code review checks, and you must attend a code review with the instructor.
+
+See the [Project Reviewing](project-reviewing.html) guide for additional details, including how to earn the subsequent "Project {{ page.project }} Review 2" and "Project {{ page.project }} Final Release" grades.
+
+## Getting Started
 {: .page-header }
 
-You must pass 100% of the tests in the `Project2Test.java` group of JUnit tests in the [`project-tests`]({{ site.github.owner_url }}/project-tests) repository as reported by the "Run Project Tests" action on your project Github repository.
+The following sections may be useful for getting started on this project.
 
-## Examples
-{: .page-header }
+### Examples
 
 The following are a few examples (non-comprehensive) to illustrate the usage of the command-line arguments that can be passed to your `Driver` class via a "Run Configuration" in Eclipse, assuming you set the working directory to the `project-tests` directory.
 
 Consider the following example:
 
 ```
--text "input/text/simple/"
--query "input/query/simple.txt"
--exact
--results actual/search-exact-simple.json
+-text "input/text/simple/" -query "input/query/simple.txt" -exact -results actual/search-exact-simple.json
 ```
 
 The above arguments indicate that `Driver` should build an inverted index from text files in the `input/text/simple/` subdirectory of the current working directory, process the `simple.txt` query file in the `input/query` subdirectory, conduct an exact search, and output the search results to `search-exact-simple.json` in the `actual` subdirectory. This is equivalent to the `testSimpleDirectory()` test method of `Project2Test.java` in the [`project-tests`]({{ site.github.owner_url }}/project-tests) repository.
 
 ```
--text "input/text/simple/"
--query "input/query/simple.txt"
--results actual/search-exact-simple.json
+-text "input/text/simple/" -query "input/query/simple.txt" -results actual/search-exact-simple.json
 ```
 
 The above arguments are nearly the same, but should trigger a partial search instead.
 
 Note that a search should **always** be conducted if the `-query` file is provided, even if the `-results` flag is missing and no results are output to file.
 
-## Hints
-{: .page-header }
+### Related Content
 
-It is important to develop the project iteratively. One possible breakdown of tasks are:
+The following homework assignments and lecture code may be useful to complete as part of this project:
+
+  - The `ArgumentParser` homework is useful for processing the command-line arguments. This homework can be used directly for your project.
+
+  - The `TextFileStemmer` homework is useful for processing the query files. (There should be a method that can be used directly for this purpose.) This homework can be used directly for your project.
+
+  - The `SimpleJsonWriter` homework is useful for producing pretty JSON output. (There should be a method that can be used directly for outputting word counts.) This homework can be used directly and extended as needed for your project.
+
+  - The `TextFileSorter` homework is useful for an example of how to create a custom comparable object for storing search metrics and sorting by those metrics. This homework should *not* be used directly for your project; there is no need to implement multiple different `Comparator` classes using different approaches.
+
+  - The lectures on data structures (especially iteration and search), inheritance, and functional programming may be helpful for this project.
+
+You can modify homework assignments and lecture code as necessary for this project. However, for homework, make sure your code is passing all of the tests before using.
+
+You should *not* wait until you have completed all of the associated homework assignments or covered all of the related lecture content to start the project. You should **develop the project iteratively** as you progress throughout the semester, integrating assignments and concepts one at a time into your project code.
+
+### Hints
+
+Your goal should be to get to testable code as quickly as possible first, and then to focus on passing the functionality tests. One possible breakdown of tasks are:
 
   - Add the ability to **store total word count** whenever a file is indexed, and the ability to output these counts when the `-counts` flag is provided.
 
   - Add the ability to **parse query files**. Compare your parsed queries to those in the expected output files. For example, the line `performer performers` should become `perform` after being parsed, cleaned, stemmed, sorted, and discarding duplicates.
 
-  - Create a class that stores a **single search result** and implements the [Comparable](hhttps://www.cs.usfca.edu/~cs272/javadoc/api/java.base/java/lang/Comparable.html) interface. You will need data members for each of the sort criteria, including the location, total word count of the location, and number of times the query occurs at that location. This is similar to the `TextFileSorter` homework assignment.
+  - Create a class that stores a **single search result** and implements the [Comparable](hhttps://www.cs.usfca.edu/~cs272/javadoc/api/java.base/java/lang/Comparable.html) interface. You will need data members for each of the sort criteria, including the location, total word count of the location, and number of times the query occurs at that location.
 
   - Add an **exact search method** to your inverted index data structure that takes already parsed words from a single line of the query file, and returns a sorted list of search results. Output the results to the console for debugging.
-
-      <i class="fas fa-exclamation-triangle"></i>
-      Use lists and <a href="https://www.cs.usfca.edu/~cs272/javadoc/api/java.base/java/util/Collections.html#sort(java.util.List)">Collections.sort(List)</a> to sort search results, not a <a href="https://www.cs.usfca.edu/~cs272/javadoc/api/java.base/java/util/TreeSet.html">TreeSet</a> data structure. Custom mutable objects do not behave well when used in sets or as keys in maps.
-      {: .notification .is-warning }
 
   - Add the ability to **output the search results** to JSON file. Make sure the exact search results match the expected output.
 
   - Add a **partial search method** to your inverted index data structure that takes already parsed words from a single line of the query file, and returns a sorted list of search results.
 
-  - Do not worry about efficient partial search until after you are getting correct results.
+  - Do not worry about efficiency, duplicate code, or encapsulation until *after* you are getting correct results.
 
-The important part will be to test your code as you go. The JUnit tests provided only test the entire project as a whole, not the individual parts. You are responsible for testing the individual parts themselves.
+It is important to **get started early** so you have plenty of time to think about how you want to approach the project *and* start coding iteratively. Planning to complete the code in too large of a chunk is a recipe to get stuck and fall behind!
 
-<i class="fas fa-info-circle"></i>
-These hints may or may not be useful depending on your approach. Do not be overly concerned if you do not find these hints helpful for your approach for this project.
+<i class="fas fa-info-circle"></i>&nbsp;These hints may or may not be useful depending on your approach. Do not be overly concerned if you do not find these hints helpful for your approach for this project.
 {: .notification }
-
-{% endcomment %}
