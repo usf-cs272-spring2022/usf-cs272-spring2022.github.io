@@ -766,9 +766,6 @@ weeks:
                 name: 'streams'
                 type: ['bump']
 
-              - file: 'slides'
-                name: 'pipelines'
-
               - text: 'Stream Pipelines'
                 icon: 'code'
                 link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/StreamPipelines'
@@ -790,8 +787,11 @@ weeks:
 
           - <<: *content
             items:
-              - text: '– Problem1Revisited.java'
-                icon: 'nothing'
+              - file: 'slides'
+                name: 'pipelines'
+
+              - text: 'Problem1Revisited.java'
+                icon: 'code'
                 link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/StreamPipelines/src/main/java/edu/usfca/cs272/Problem1Revisited.java'
                 tube: 'https://drive.google.com/file/d/1gTjlMdvnCHs_E3yEL_DNsvkswG0zSg96/view?usp=sharing'
 
@@ -824,6 +824,10 @@ weeks:
               - text: 'Exam Review'
                 link: '/guides/exams/exam-1.html'
                 icon: 'exam'
+
+              - file: 'slides'
+                name: 'pipelines'
+                type: ['bump']
 
               - text: 'TextFileParser.java'
                 link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/LambdaExpressions/src/main/java/edu/usfca/cs272/TextFileParser.java'
