@@ -904,6 +904,7 @@ weeks:
             items:
               - text: 'Exam 1'
                 icon: 'exam'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7188663'
                 type: ['has-text-danger']
 
           - <<: *deadlines
@@ -922,6 +923,7 @@ weeks:
             items:
               - text: 'Exam 1 Retake'
                 icon: 'exam'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7189028'
                 type: ['has-text-danger']
 
       - date: 2022-03-11
@@ -986,6 +988,7 @@ weeks:
             items:
               - text: 'Exam 1 Retake'
                 icon: 'exam'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7189028'
                 type: ['has-text-danger']
                 date: 2022-03-22
 
