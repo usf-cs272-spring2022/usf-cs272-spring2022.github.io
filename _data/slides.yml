@@ -143,14 +143,14 @@ pipelines:
 #   tags: ['testing']
 #   text: 'Unit Testing'
 #   link: 'https://docs.google.com/presentation/d/e/2PACX-1vRQtvbeBB1KFdG2O7qqhgy112nirr42EUC1-zyQy8wiucRJQz3cRLqo6dwi8gBaGid_-EAgZN1q3mbf/pub?start=false&loop=false&delayms=3000'
-#
-# assertions:
-#   <<: *default
-#   tags: ['debugging']
-#   text: 'Assertions'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQNRzlEGWHaAjqbmgh5ruEDVaA0x7LOay9VD_rEnsAtcbLeI0u2FGkNT-ncItUQuZkvuAz_uko8Mx5a/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1mSAPW69YHYzl-Uqz-FyZY3Eg8j7StxiP/view?usp=sharing'
-#
+
+assertions:
+  <<: *default
+  tags: ['debugging']
+  text: 'Assertions'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vT3Qehdi8CtGFwg8p_yxcaqh2wNaWnbqdWka3gK_SmJNb_zfdy8ZdKxgoTIghl5utEifUoS5XwwIqTC/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1mSAPW69YHYzl-Uqz-FyZY3Eg8j7StxiP/view?usp=sharing'
+
 # logging:
 #   <<: *default
 #   tags: ['debugging']

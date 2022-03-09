@@ -919,6 +919,11 @@ weeks:
               - text: 'Logging'
                 type: [*pending]
 
+          - <<: *content
+            items:
+              - file: 'slides'
+                name: 'assertions'
+                
           - <<: *assignments
             items:
               - text: 'Exam 1 Retake'
