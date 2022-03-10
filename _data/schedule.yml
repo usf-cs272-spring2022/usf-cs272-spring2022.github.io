@@ -923,26 +923,62 @@ weeks:
             items:
               - file: 'slides'
                 name: 'assertions'
-                
+
           - <<: *assignments
             items:
+              - file: 'participation'
+                name: 'midterm_survey'
+
               - text: 'Exam 1 Retake'
                 icon: 'exam'
                 link: 'https://usfca.instructure.com/courses/1605147/assignments/7189028'
-                type: ['has-text-danger']
+                type: ['has-text-danger', 'bump']
 
       - date: 2022-03-11
         sections:
           - <<: *labs
             items:
-              - text: 'Homework Help'
+              - text: 'Homework Bundle 2 Help'
                 icon: 'homework'
+                type: 'bump'
+
+              - text: '– TextFileSorter'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166820'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileSorter-template">Template</a>)'
+
+              - text: '– TextFileFinder'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166819'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileFinder-template">Template</a>)'
+
+              - text: 'Homework Bundle 2 Help'
+                icon: 'homework'
+                type: 'bump'
+
+              - text: '– LoggerSetup'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166821'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-LoggerSetup-template">Template</a>)'
 
               - text: 'Project Help'
                 icon: 'project'
+                type: 'bump'
+
+              - text: '– Project 1 Inverted Index'
+                icon: 'nothing'
+                link: '/guides/projects/project-1.html'
+
+              - text: '– Project 2 Partial Search'
+                icon: 'nothing'
+                link: '/guides/projects/project-2.html'
+
 
           - <<: *assignments
             items:
+              - file: 'participation'
+                name: 'midterm_survey'
+
               - file: 'homework'
                 name: 'loggersetup'
 
@@ -1021,16 +1057,21 @@ weeks:
 
           - <<: *deadlines
             items:
+              - file: 'participation'
+                name: 'midterm_survey'
+
               - text: 'Homework Bundle 2'
                 icon: 'homework'
                 date: 2022-03-25
-                type: ['has-text-weight-bold']
+                type: ['has-text-weight-bold', 'bump']
 
               - file: 'homework'
                 name: 'textfilesorter'
 
               - file: 'homework'
                 name: 'textfilefinder'
+
+
 
   - week: 10
     days:

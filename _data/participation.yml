@@ -75,18 +75,18 @@ piazza_post:
   <<: *default
   text: 'Piazza Post'
   date: 2022-03-11
-  show: true
+  #show: true
   link: 'https://usfca.instructure.com/courses/1605147/assignments/7181489'
 
 # week 8 (spring break)
 
 # week 9 (retake, homework bundle 2)
 
-# midterm_survey:
-#   <<: *default
-#   text: 'Midterm Survey'
-#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7139677'
-#   date: 2021-11-05
+midterm_survey:
+  <<: *default
+  text: 'Midterm Survey'
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402539'
+  date: 2022-03-25
 
 # week 10 (project 2)
 
