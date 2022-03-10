@@ -916,8 +916,8 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Logging'
-                type: [*pending]
+              - file: 'slides'
+                name: 'logging'
 
           - <<: *content
             items:

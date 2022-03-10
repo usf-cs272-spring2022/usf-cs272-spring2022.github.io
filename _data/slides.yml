@@ -151,13 +151,13 @@ assertions:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vT3Qehdi8CtGFwg8p_yxcaqh2wNaWnbqdWka3gK_SmJNb_zfdy8ZdKxgoTIghl5utEifUoS5XwwIqTC/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1mSAPW69YHYzl-Uqz-FyZY3Eg8j7StxiP/view?usp=sharing'
 
-# logging:
-#   <<: *default
-#   tags: ['debugging']
-#   text: 'Logging'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vS6VoA4bvSNYTQGsNyRz-3Dqbag-TcW2rsV_bq3T3waUVisHn8lW7A1UOE5gUA9NxzbXuTTLpZ2-yqY/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1ZJnvRK56Zj43E8pkby_YVPfQm7rwM_PT/view?usp=sharing'
-#
+logging:
+  <<: *default
+  tags: ['debugging']
+  text: 'Logging'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vTx6cqMhgvR_isXl34UX-l1Meu4IMwhHh7H-N5ZRpEfNgQcLr8_zdQQeDStydaZIVeI_PdaDOeClXQ6/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1ZJnvRK56Zj43E8pkby_YVPfQm7rwM_PT/view?usp=sharing'
+
 # multithreading:
 #   <<: *default
 #   tags: ['threads']
