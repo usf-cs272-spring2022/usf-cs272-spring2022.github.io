@@ -929,6 +929,12 @@ weeks:
               - file: 'participation'
                 name: 'midterm_survey'
 
+              - file: 'quizzes'
+                name: 'asserts'
+
+              - file: 'quizzes'
+                name: 'logging'
+
               - text: 'Exam 1 Retake'
                 icon: 'exam'
                 link: 'https://usfca.instructure.com/courses/1605147/assignments/7189028'
@@ -1059,6 +1065,12 @@ weeks:
             items:
               - file: 'participation'
                 name: 'midterm_survey'
+
+              - file: 'quizzes'
+                name: 'asserts'
+
+              - file: 'quizzes'
+                name: 'logging'
 
               - text: 'Homework Bundle 2'
                 icon: 'homework'
