@@ -919,6 +919,40 @@ weeks:
               - file: 'slides'
                 name: 'logging'
 
+              - text: 'Logging'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Logging'
+                type: ['bump']
+
+              - text: '– log4j2.xml'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Logging/src/main/resources/log4j2.xml'
+
+              - text: '– Log4j2Demo.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Logging/src/main/java/edu/usfca/cs272/Log4jDemo.java'
+
+              - text: '– CharacterCounter.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Logging/src/main/java/edu/usfca/cs272/CharacterCounter.java'
+
+              - text: 'CharacterFinder Example'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Logging'
+                type: ['bump']
+
+              - text: '– CharacterFinder.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Logging/src/main/java/edu/usfca/cs272/CharacterFinder.java'
+
+              - text: '– CharacterCompare.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Logging/src/main/java/edu/usfca/cs272/CharacterCompare.java'
+
+              - text: '– CharacterBenchmark.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Logging/src/main/java/edu/usfca/cs272/CharacterBenchmark.java'
+
           - <<: *content
             items:
               - file: 'slides'
