@@ -158,67 +158,67 @@ logging:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vTx6cqMhgvR_isXl34UX-l1Meu4IMwhHh7H-N5ZRpEfNgQcLr8_zdQQeDStydaZIVeI_PdaDOeClXQ6/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1ZJnvRK56Zj43E8pkby_YVPfQm7rwM_PT/view?usp=sharing'
 
-# multithreading:
-#   <<: *default
-#   tags: ['threads']
-#   text: 'Multithreading'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vSdp9XCSHSyPd_uRErfIgL1TIV0kd83eHXbDqq3DaSGrHcMZ77iKzsGO9_3XkRDG0y7YKFErwKDHrH4/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1bDx_QfV8uXgxBnMuGW1BifaOkcHuVsxU/view?usp=sharing'
-#
-# threads:
-#   <<: *default
-#   tags: ['threads']
-#   text: 'Thread Lifecycle'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vST58GQ2KwGV5U4iIp-y03mXwLwlGWT7ndYF3NsByv6sZfWZQw37RXlHM8UxtaohwmPD1zaOXM9r0gF/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/19WIE-aE_n2okfI-Evk7OMEtCUvzaCSwT/view?usp=sharing'
-#
-# consistency:
-#   <<: *default
-#   tags: ['threads']
-#   text: 'Consistency'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vRS0EIKrf1T5g9iNlBDkg-Z-KsBkXNoAeB0TLcNumhMkiA8fbhFZwgGTQUL3xmtryJ7SEsh6ZDTgW08/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1XGxlAjAP10M77GLTy7mRquS6Miy9PTkh/view?usp=sharing'
-#
-# liveness:
-#   <<: *default
-#   tags: ['threads']
-#   text: 'Liveness'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQIQ-WWui5xGdFYl6tR_dE5hd9wLCEA4IRXkFA5lMrNxPqhOr0se3Ns3jw7LKtV28yiXPXQNBjxVvdG/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1ZoPqrdm4e2exLo9djFJcoLKBRwNMOEII/view?usp=sharing'
-#
-# synchronization:
-#   <<: *default
-#   tags: ['threads']
-#   text: 'Synchronization'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vRAa63kBV969kPKTLfUaotLDcmEWetYZwso8dBEnm04LVUQYfYX1Od6rVZCpUUEdssanqxlKvDGr3dL/pub?start=false&loop=false&delayms=3000'
-#
-# locks:
-#   <<: *default
-#   tags: ['threads']
-#   text: 'Conditional Locks'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQ7ezqwnZtRd1ty3dF4vjnasXVGACXjY9Fltt15Ejk0a9y7gv9X9m6feGA69L7s7s7kgQPxDkff4kI2/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1M9bd401kt3RkjjcFw8jI92hMbhW4CtQP/view?usp=sharing'
-#
-# coordination:
-#   <<: *default
-#   tags: ['threads']
-#   text: 'Coordination'
-#   link: ;https://docs.google.com/presentation/d/e/2PACX-1vSSF8qWjq17WSkfa5d1NrtNscETH5_FoGpIY0nK6r4AduU8S80FmsJN0GdcqaJpXcZMzQQoqHLuY3Qc/pub?start=false&loop=false&delayms=3000
-#
-# volatile:
-#   <<: *default
-#   tags: ['threads']
-#   text: 'Volatile Keyword'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQz-zZBrSviez9lk1igJa2cyzfRaqh4nadnLQRpCQq2aqT5jB6jA49vp17cDhR2QRmHHjXTBeQdEO5o/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1PtN8QKiJurwN1aIi0bruYMNnA7aJgnC8/view?usp=sharing'
-#
-# pools:
-#   <<: *default
-#   tags: ['threads']
-#   text: 'Thread Pools and Work Queues'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQcFkxoLMWlyWIrTQjEsPNQ5XwNm_fviTs0N2iDtPyMFK0EA2VQxNCDgj7xRdhe8Y5rL9Lz17eamoJa/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1Nz47N4dqlnypm3HSvtOB0iMwmO35aMgR/view?usp=sharing'
-#
+multithreading:
+  <<: *default
+  tags: ['threads']
+  text: 'Multithreading'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vQyqZEpYY9CZbQXQ6AGgWfmp3O1Er8ROx6Vh7zIURfG6Xrp6NOVtNO23YN26LTvlYljAKlO-X67XRQB/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1bDx_QfV8uXgxBnMuGW1BifaOkcHuVsxU/view?usp=sharing'
+
+threads:
+  <<: *default
+  tags: ['threads']
+  text: 'Thread Lifecycle'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vQTx2eOpOXS-BeVLcWFvH5RtdH-Whg__yGVR1A6ygG2jB6SvjQP6IKno3trNT520Lvzip_UbKWp3BTS/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/19WIE-aE_n2okfI-Evk7OMEtCUvzaCSwT/view?usp=sharing'
+
+consistency:
+  <<: *default
+  tags: ['threads']
+  text: 'Consistency'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vSsaYqKGQIrnjAmz8jBFTwRGb3vRb5ZF0NSuEabWCausebxeiL00HMapK1aW4wLNG8FyHLm3W4e1c0K/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1XGxlAjAP10M77GLTy7mRquS6Miy9PTkh/view?usp=sharing'
+
+liveness:
+  <<: *default
+  tags: ['threads']
+  text: 'Liveness'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vQX0l_EFmG_CzaQXOG2_UiqEuWGN8lgyULSD3RKCnC6f_a5ivL9G7hbgRFPVkmmQASLLboVOMQEKVdg/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1ZoPqrdm4e2exLo9djFJcoLKBRwNMOEII/view?usp=sharing'
+
+synchronization:
+  <<: *default
+  tags: ['threads']
+  text: 'Synchronization'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vQFORczjj38IRo3u7jItjPs2k5tGD2wEv80fv3QWgyc1DXrYl9CgVEMqOUYUuG4ApbmZbqgn-pRMvNg/pub?start=false&loop=false&delayms=3000'
+
+locks:
+  <<: *default
+  tags: ['threads']
+  text: 'Conditional Locks'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vRbZafNkza9WrsPOOgPpenkb6w2unYqk35YTT60kmvR4PTTtcCzTTVTAM3rc72trrGjHY9ZLgniy8CU/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1M9bd401kt3RkjjcFw8jI92hMbhW4CtQP/view?usp=sharing'
+
+coordination:
+  <<: *default
+  tags: ['threads']
+  text: 'Coordination'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vRgaxlB988wHt0tr7wcm8psZtRirJyv86y2fajJl2O8WjpKBRjxxWeWWJUeM2jbVV6_w3KpmbPXw2QI/pub?start=false&loop=false&delayms=3000'
+
+volatile:
+  <<: *default
+  tags: ['threads']
+  text: 'Volatile Keyword'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vSYWS_dq9cCtk1CafKuM8wpylfUcq0DXMX5pO19ugsbMPsJ4Elf2AaqaOgmAQ70rfZnHE54SKr0IaRu/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1PtN8QKiJurwN1aIi0bruYMNnA7aJgnC8/view?usp=sharing'
+
+pools:
+  <<: *default
+  tags: ['threads']
+  text: 'Thread Pools and Work Queues'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vRDwWXi-ZKFNEHpxugFBLPd3P-JBtlE3dFziNg91abi0EzkYbiZgNyh2EA9OFuOOw2nlQQ0ibw0Xii8/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1Nz47N4dqlnypm3HSvtOB0iMwmO35aMgR/view?usp=sharing'
+
 # web:
 #   <<: *default
 #   tags: ['web']
