@@ -992,7 +992,7 @@ weeks:
                 link: 'https://usfca.instructure.com/courses/1605147/assignments/7166819'
                 more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileFinder-template">Template</a>)'
 
-              - text: 'Homework Bundle 2 Help'
+              - text: 'Homework Bundle 3 Help'
                 icon: 'homework'
                 type: 'bump'
 
@@ -1062,8 +1062,21 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Multithreading'
-                type: [*pending]
+              - file: 'slides'
+                name: 'multithreading'
+
+              - file: 'slides'
+                name: 'threads'
+
+          - <<: *content
+            items:
+              - file: 'slides'
+                name: 'liveness'
+
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'threads'
 
           - <<: *deadlines
             items:
@@ -1077,18 +1090,60 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Multithreading'
-                type: [*pending]
+              - file: 'slides'
+                name: 'consistency'
+
+              - file: 'slides'
+                name: 'synchronization'
+
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'synchronization'
 
       - date: 2022-03-25
         sections:
           - <<: *labs
             items:
-              - text: 'Homework Help'
+              - text: 'Homework Bundle 2 Help'
                 icon: 'homework'
+                type: 'bump'
+
+              - text: '– TextFileSorter'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166820'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileSorter-template">Template</a>)'
+
+              - text: '– TextFileFinder'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166819'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-TextFileFinder-template">Template</a>)'
+
+              - text: 'Homework Bundle 3 Help'
+                icon: 'homework'
+                type: 'bump'
+
+              - text: '– LoggerSetup'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166821'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-LoggerSetup-template">Template</a>)'
+
+              - text: '– ReadWriteLock'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166822'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-ReadWriteLock-template">Template</a>)'
 
               - text: 'Project Help'
                 icon: 'project'
+                type: 'bump'
+
+              - text: '– Project 1 Inverted Index'
+                icon: 'nothing'
+                link: '/guides/projects/project-1.html'
+
+              - text: '– Project 2 Partial Search'
+                icon: 'nothing'
+                link: '/guides/projects/project-2.html'
 
           - <<: *assignments
             items:
@@ -1117,16 +1172,17 @@ weeks:
               - file: 'homework'
                 name: 'textfilefinder'
 
-
-
   - week: 10
     days:
       - date: 2022-03-29
         sections:
           - <<: *lectures
             items:
-              - text: 'Multithreading'
-                type: [*pending]
+              - file: 'slides'
+                name: 'coordination'
+
+              - file: 'slides'
+                name: 'locks'
 
           - <<: *assignments
             items:
@@ -1143,23 +1199,66 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Multithreading'
-                type: [*pending]
+              - file: 'slides'
+                name: 'pools'
+
+          - <<: *content
+            items:
+              - file: 'slides'
+                name: 'volatile'
+
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'workers'
 
       - date: 2022-04-01
         sections:
           - <<: *labs
             items:
-              - text: 'Homework Help'
+              - text: 'Homework Bundle 3 Help'
                 icon: 'homework'
+                type: 'bump'
+
+              - text: '– LoggerSetup'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166821'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-LoggerSetup-template">Template</a>)'
+
+              - text: '– ReadWriteLock'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166822'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-ReadWriteLock-template">Template</a>)'
+
+              - text: '– PrimeFinder'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166823'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-PrimeFinder-template">Template</a>)'
 
               - text: 'Project Help'
                 icon: 'project'
+                type: 'bump'
+
+              - text: '– Project 2 Partial Search'
+                icon: 'nothing'
+                link: '/guides/projects/project-2.html'
+
+              - text: '– Project 3 Multithreading'
+                icon: 'nothing'
+                link: '/guides/projects/project-3.html'
 
           - <<: *assignments
             items:
               - file: 'homework'
                 name: 'primefinder'
+
+          - <<: *deadlines
+            items:
+              - file: 'quizzes'
+                name: 'threads'
+
+              - file: 'quizzes'
+                name: 'synchronization'
 
   - week: 11
     days:
@@ -1202,10 +1301,13 @@ weeks:
 
           - <<: *deadlines
             items:
+              - file: 'quizzes'
+                name: 'workers'
+
               - text: 'Homework Bundle 3'
                 icon: 'homework'
                 date: 2022-04-08
-                type: ['has-text-weight-bold']
+                type: ['has-text-weight-bold', 'bump']
 
               - file: 'homework'
                 name: 'loggersetup'
