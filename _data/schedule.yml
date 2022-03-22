@@ -1068,6 +1068,21 @@ weeks:
               - file: 'slides'
                 name: 'threads'
 
+              - text: 'Multithreading'
+                type: 'bump'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Multithreading'
+
+              - text: '– RandomArrayDemo.java'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Multithreading/src/main/java/edu/usfca/cs272/RandomArrayTotal.java'
+                tube: 'https://drive.google.com/file/d/12aYTi2LQW3W-8GYG-G1A-Febu9Wlof7c/view?usp=sharing'
+                icon: 'nothing'
+
+              - text: '– ThreadStateDemo.java'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Multithreading/src/main/java/edu/usfca/cs272/ThreadStateDemo.java'
+                tube: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Multithreading/src/main/java/ThreadStateDemo.java'
+                icon: 'nothing'
+
           - <<: *content
             items:
               - file: 'slides'
@@ -1095,6 +1110,23 @@ weeks:
 
               - file: 'slides'
                 name: 'synchronization'
+
+              - text: 'Synchronization'
+                type: 'bump'
+                icon: 'code'
+
+              - text: '– IndexedSet.java'
+                icon: 'nothing'
+                tube: 'https://drive.google.com/file/d/1cfdM5jKix8_Q20ZpFm8IuEuu1ZaaKg7E/view?usp=sharing'
+
+              - text: '– SynchronizedSet.java'
+                icon: 'nothing'
+                tube: 'https://drive.google.com/file/d/118GTi62tSnV18xAMc8BeTdffHqW4lAqb/view?usp=sharing'
+
+              - text: '– LockDemo.java'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Multithreading/src/main/java/edu/usfca/cs272/LockDemo.java'
+                type: 'bump'
+                icon: 'nothing'
 
           - <<: *assignments
             items:
@@ -1181,8 +1213,31 @@ weeks:
               - file: 'slides'
                 name: 'coordination'
 
+              - text: 'Multithreading'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Multithreading/'
+                type: 'bump'
+                icon: 'code'
+
+              - text: '– BoundedBuffer.java'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Multithreading/src/main/java/edu/usfca/cs272/BoundedBuffer.java'
+                icon: 'nothing'
+                tube: 'https://drive.google.com/file/d/1e20Tr6fUSVmxRe6O4B_l7Ynx3uEBigXC/view?usp=sharing'
+
               - file: 'slides'
                 name: 'locks'
+                type: 'bump'
+
+              - text: 'Synchronization'
+                type: 'bump'
+                icon: 'code'
+
+              - text: '– ConcurrentSet.java'
+                icon: 'nothing'
+                tube: 'https://drive.google.com/file/d/16DmQjV8tkQjnFrAR9-Ivpu_tOgrJbSTs/view?usp=sharing'
+
+              - text: '– SetDemo.java'
+                icon: 'nothing'
+                tube: 'https://drive.google.com/file/d/1rsm1VLf2-asJ_iqLVKU2-cR0F7fJ3u_L/view?usp=sharing'
 
           - <<: *assignments
             items:
@@ -1201,6 +1256,15 @@ weeks:
             items:
               - file: 'slides'
                 name: 'pools'
+
+              - text: 'Work Queue'
+                icon: 'code'
+                tube: 'https://drive.google.com/file/d/16DmQjV8tkQjnFrAR9-Ivpu_tOgrJbSTs/view?usp=sharing'
+                type: 'bump'
+
+              - text: 'Directory Listing Demos'
+                icon: 'code'
+                tube: 'https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view'
 
           - <<: *content
             items:
