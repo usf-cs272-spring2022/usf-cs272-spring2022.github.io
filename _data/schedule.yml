@@ -1080,7 +1080,7 @@ weeks:
 
               - text: '– ThreadStateDemo.java'
                 link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Multithreading/src/main/java/edu/usfca/cs272/ThreadStateDemo.java'
-                tube: 'https://github.com/usf-cs272-fall2021/lectures/blob/main/Multithreading/src/main/java/ThreadStateDemo.java'
+                tube: 'https://drive.google.com/file/d/1ddBJ9YG-xYORgvGbVIKz3z0tj-89n1T6/view?usp=sharing'
                 icon: 'nothing'
 
           - <<: *content
