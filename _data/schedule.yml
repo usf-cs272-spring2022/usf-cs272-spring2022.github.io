@@ -1083,6 +1083,10 @@ weeks:
                 tube: 'https://drive.google.com/file/d/1ddBJ9YG-xYORgvGbVIKz3z0tj-89n1T6/view?usp=sharing'
                 icon: 'nothing'
 
+              - file: 'slides'
+                name: 'consistency'
+                type: 'bump'
+
           - <<: *content
             items:
               - file: 'slides'
@@ -1106,27 +1110,31 @@ weeks:
           - <<: *lectures
             items:
               - file: 'slides'
-                name: 'consistency'
-
-              - file: 'slides'
                 name: 'synchronization'
 
               - text: 'Synchronization'
                 type: 'bump'
                 icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Synchronization'
 
               - text: '– IndexedSet.java'
                 icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/IndexedSet.java'
                 tube: 'https://drive.google.com/file/d/1cfdM5jKix8_Q20ZpFm8IuEuu1ZaaKg7E/view?usp=sharing'
 
               - text: '– SynchronizedSet.java'
                 icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/SynchronizedSet.java'
                 tube: 'https://drive.google.com/file/d/118GTi62tSnV18xAMc8BeTdffHqW4lAqb/view?usp=sharing'
 
               - text: '– LockDemo.java'
-                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Multithreading/src/main/java/edu/usfca/cs272/LockDemo.java'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/LockDemo.java'
                 type: 'bump'
                 icon: 'nothing'
+
+              - file: 'slides'
+                name: 'coordination'
+                type: 'bump'
 
           - <<: *assignments
             items:
@@ -1210,9 +1218,6 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - file: 'slides'
-                name: 'coordination'
-
               - text: 'Multithreading'
                 link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Multithreading/'
                 type: 'bump'
@@ -1230,13 +1235,16 @@ weeks:
               - text: 'Synchronization'
                 type: 'bump'
                 icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Synchronization'
 
               - text: '– ConcurrentSet.java'
                 icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/ConcurrentSet.java'
                 tube: 'https://drive.google.com/file/d/16DmQjV8tkQjnFrAR9-Ivpu_tOgrJbSTs/view?usp=sharing'
 
               - text: '– SetDemo.java'
                 icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/SetDemo.java'
                 tube: 'https://drive.google.com/file/d/1rsm1VLf2-asJ_iqLVKU2-cR0F7fJ3u_L/view?usp=sharing'
 
           - <<: *assignments
