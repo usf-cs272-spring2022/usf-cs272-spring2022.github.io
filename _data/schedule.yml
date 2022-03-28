@@ -1237,6 +1237,16 @@ weeks:
                 icon: 'code'
                 link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Synchronization'
 
+              - text: '– IndexedSet.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/IndexedSet.java'
+                tube: 'https://drive.google.com/file/d/1cfdM5jKix8_Q20ZpFm8IuEuu1ZaaKg7E/view?usp=sharing'
+
+              - text: '– SynchronizedSet.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/SynchronizedSet.java'
+                tube: 'https://drive.google.com/file/d/118GTi62tSnV18xAMc8BeTdffHqW4lAqb/view?usp=sharing'
+
               - text: '– ConcurrentSet.java'
                 icon: 'nothing'
                 link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Synchronization/src/main/java/edu/usfca/cs272/ConcurrentSet.java'
@@ -1267,17 +1277,50 @@ weeks:
 
               - text: 'Work Queue'
                 icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/WorkQueue.java'
                 tube: 'https://drive.google.com/file/d/16DmQjV8tkQjnFrAR9-Ivpu_tOgrJbSTs/view?usp=sharing'
                 type: 'bump'
 
               - text: 'Directory Listing Demos'
                 icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/WorkQueues'
                 tube: 'https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view'
+                type: 'bump'
+
+              - text: '– SerialDirectoryListing.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/SerialDirectoryListing.java'
+
+              - text: '– SlowDirectoryListing.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/SlowDirectoryListing.java'
+
+              - text: '– ThreadDirectoryListing.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ThreadDirectoryListing.java'
+
+              - text: '– FastDirectoryListing.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/FastDirectoryListing.java'
 
           - <<: *content
             items:
               - file: 'slides'
                 name: 'volatile'
+
+              - text: 'Directory Listing Demos'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/WorkQueues'
+                tube: 'https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view'
+                type: 'bump'
+
+              - text: '– ConcurrentWorkQueue.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ConcurrentWorkQueue.java'
+
+              - text: '– ExecutorDirectoryListing.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/ExecutorDirectoryListing.java'
 
           - <<: *assignments
             items:
