@@ -27,6 +27,51 @@ assignments:
 
 Pending
 
+## Functionality
+{: .page-header }
+
+Pending
+
+### Input
+
+Pending
+
+### Output
+
+Pending
+
+## Grading
+{: .page-header }
+
+
+The following sections detail how to earn credit for this project. The project grade is separated into one "functionality" or "test" grade worth 100 points, and a series of "design" or "code review" grades that together are worth another 100 points.
+
+#### Project Tests
+
+Pending
+
+#### Project Reviews
+
+Pending
+
+
+## Getting Started
+{: .page-header }
+
+The following sections may be useful for getting started on this project.
+
+### Examples
+
+Pending
+
+### Related Content
+
+Pending
+
+### Hints
+
+Pending
+
 {% comment %}
 For this project, you will extend your [previous project](project-2.html) to support multithreading. In addition to meeting the previous project requirements, your code must make a thread-safe inverted index, and use work queues to build and search an inverted index using multiple threads.
 
