@@ -34,7 +34,13 @@ Pending
 
 ### Input
 
-Pending
+Your `main` method must be placed in a class named `Driver`. The `Driver` class should accept the following additional command-line arguments:
+
+  - Pending
+
+The command-line flag/value pairs may be provided in any order, and the order provided is not the same as the order the code should perform the operations (i.e. always build the index before performing search, even if the flags are provided in the other order).
+
+Your code should support all of the command-line arguments from the [previous project](project-{{ page.project | minus: 1 }}.html) as well.
 
 ### Output
 
@@ -43,17 +49,23 @@ Pending
 ## Grading
 {: .page-header }
 
-
 The following sections detail how to earn credit for this project. The project grade is separated into one "functionality" or "test" grade worth 100 points, and a series of "design" or "code review" grades that together are worth another 100 points.
 
 #### Project Tests
 
-Pending
+To be eligible for the "Project {{ page.project }} Tests" grade, you must meet the following criteria:
+
+  - Pending
+
+The tests for this project can be found in the `Project{{ page.project }}Test.java` group of JUnit tests in the [`project-tests`]({{ site.github.owner_url }}/project-tests) repository. See the [Project Testing](project-testing.html) guide for additional details.
 
 #### Project Reviews
 
-Pending
+To be eligible for the "Project {{ page.project }} Review 1" grade, you must meet the following criteria:
 
+  - Pending
+
+See the [Project Reviewing](project-reviewing.html) guide for additional details, including how to earn the subsequent "Project {{ page.project }} Review 2" and "Project {{ page.project }} Final Release" grades.
 
 ## Getting Started
 {: .page-header }
@@ -62,15 +74,34 @@ The following sections may be useful for getting started on this project.
 
 ### Examples
 
-Pending
+The following are a few examples (non-comprehensive) to illustrate the usage of the command-line arguments that can be passed to your `Driver` class via a "Run Configuration" in Eclipse, assuming you set the working directory to the `project-tests` directory.
+
+Consider the following example:
+
+```
+pending
+```
 
 ### Related Content
 
-Pending
+The following homework assignments and lecture code may be useful to complete as part of this project:
+
+  - Pending
+
+You can modify homework assignments and lecture code as necessary for this project. However, for homework, make sure your code is passing all of the tests before using.
+
+You should *not* wait until you have completed all of the associated homework assignments or covered all of the related lecture content to start the project. You should **develop the project iteratively** as you progress throughout the semester, integrating assignments and concepts one at a time into your project code.
 
 ### Hints
 
-Pending
+Your goal should be to get to testable code as quickly as possible first, and then to focus on passing the functionality tests. One possible breakdown of tasks are:
+
+  - Pending
+
+It is important to **get started early** so you have plenty of time to think about how you want to approach the project *and* start coding iteratively. Planning to complete the code in too large of a chunk is a recipe to get stuck and fall behind!
+
+<i class="fas fa-info-circle"></i>&nbsp;These hints may or may not be useful depending on your approach. Do not be overly concerned if you do not find these hints helpful for your approach for this project.
+{: .notification }
 
 {% comment %}
 For this project, you will extend your [previous project](project-2.html) to support multithreading. In addition to meeting the previous project requirements, your code must make a thread-safe inverted index, and use work queues to build and search an inverted index using multiple threads.
