@@ -229,7 +229,8 @@ The use of spaces, newline characters, and spaces are the same as before for “
 
 You can also find this output in the `search-exact-simple-simple.json` file in the [`project-tests`]({{ site.github.owner_url }}/project-tests) repository. See the other expected output files for more examples.
 
-### Grading
+## Grading
+{: .page-header }
 
 The following sections detail how to earn credit for this project. The project grade is separated into one "functionality" or "test" grade worth 100 points, and a series of "design" or "code review" grades that together are worth another 100 points.
 

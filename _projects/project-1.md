@@ -124,7 +124,8 @@ The paths should be output in the form they were originally provided. The tests 
 
 The project tests account for different path separators (forward slash `/` for Linux/Mac systems, and backward slash `\` for Windows systems). Your code does *not* have to convert between the two!
 
-### Grading
+## Grading
+{: .page-header }
 
 The following sections detail how to earn credit for this project. The project grade is separated into one "functionality" or "test" grade worth 100 points, and a series of "design" or "code review" grades that together are worth another 100 points.
 
