@@ -8,8 +8,8 @@ bump: false
 project: 3
 
 tags:
-  - text: 'Pending'
-    type: 'is-muted'
+  - text: 'New'
+    type: 'is-primary'
 
 assignments:
   - text: 'Project 3 Tests'
