@@ -30,13 +30,23 @@ Pending
 ## Functionality
 {: .page-header }
 
-Pending
+The core functionality of your project must satisfy the following requirements:
+
+  - Maintain the functionality of the [previous project](project-{{ page.project | minus: 1 }}.html).
+
+  - Process **additional** command-line arguments to determine the input to process and output to produce. See the "Input" and "Output" sections below for specifics.
+
+  - Pending
+
+See the following sections for additional details.
 
 ### Input
 
 Your `main` method must be placed in a class named `Driver`. The `Driver` class should accept the following additional command-line arguments:
 
-  - Pending
+  - `-threads [num]` threads where the flag `-threads`  indicates the next argument `[num]` is the number of worker threads to use. If the `[num]` argument is not provided or an invalid number, use `5` as the default number of worker threads.
+
+    If the `-threads` flag is not provided, then a work queue should *not* be initialized, no worker threads should be created, and the project should execute with a single main thread *exactly* as previous projects.
 
 The command-line flag/value pairs may be provided in any order, and the order provided is not the same as the order the code should perform the operations (i.e. always build the index before performing search, even if the flags are provided in the other order).
 
@@ -44,26 +54,80 @@ Your code should support all of the command-line arguments from the [previous pr
 
 ### Output
 
-Pending
+The output of your inverted index and search results should be the same from the [previous project](project-{{ page.project | minus: 1 }}.html).
+
+As before, your code should **only generate output files if the necessary flags are provided**. If the correct flags are provided, your code should perform the indexing and search operations even if file output is not being generated.
 
 ## Grading
 {: .page-header }
 
 The following sections detail how to earn credit for this project. The project grade is separated into one "functionality" or "test" grade worth 100 points, and a series of "design" or "code review" grades that together are worth another 100 points.
 
+<article class="message is-warning">
+  <div class="message-body"><i class="far fa-exclamation-triangle"></i>&nbsp;The tests for project 3 are handled slightly differently than other projects. Pay close attention to the sections below!</div>
+</article>
+
+#### Multithreading Tests
+
+The project tests primarily check the file output of your code. Therefore, it is difficult to detect whether your code is actually multithreading as required. The tests can only detect is whether your code initializes a work queue, not whether that work queue is properly used.
+
+Submitting code for a test grade that is not multithreading using a work queue and conditional read/write lock will result in a **one-time 10 to 20 point deduction** to the test score. It is up to you to manually verify that:
+
+  - Your code is creating tasks as required (one per file for building, one per line for searching) and adding those tasks to a work queue to be executed.
+
+  - Your code is utilizing a conditional read/write lock to protect access to your inverted index data structure.
+
+You are strongly encouraged to use logging to verify tasks are being created and run as intended.
+
+#### Benchmarking Tests
+
+Unlike previous projects, the tests for this project are broken in two: `Project3aTest.java` and `Project3bTest.java`.
+
+For the test grade and first code review, your code only needs to pass the tests in the `Project3aTest.java` group of JUnit tests. These tests verify your code still produces the correct file output.
+
+For the following code reviews and the final release of this project, your code must also pass the `Project3bTest.java` group of JUnit tests. These tests benchmark your single-threaded versus multithreaded code and make sure your multithreaded version is faster.
+
+For code reviews, this includes getting a speedup of at least `1.1x` faster on average using multithreading. For the final release, the speedup should be at least `1.5x` faster.
+
+<article class="message is-warning">
+  <div class="message-body"><i class="far fa-stopwatch"></i>&nbsp;Be patient. The tests for project 3 can take some time to complete, even if you have an efficient approach.</div>
+</article>
+
 #### Project Tests
 
 To be eligible for the "Project {{ page.project }} Tests" grade, you must meet the following criteria:
 
-  - Pending
+  - Your code must pass the first `Project{{ page.project }}aTest.java` group of JUnit tests.
 
-The tests for this project can be found in the `Project{{ page.project }}Test.java` group of JUnit tests in the [`project-tests`]({{ site.github.owner_url }}/project-tests) repository. See the [Project Testing](project-testing.html) guide for additional details.
+  - Your code must be multithreaded. See the "Multithreading Tests" section for details.
+
+As with previous projects, you must also meet the following criteria for the test grade:
+
+  - Your code must pass the tests for the previous project, [project {{ page.project | minus: 1 }}](project-{{ page.project | minus: 1 }}.html).
+
+  - Your code must *not* pass the tests for the future project, [project {{ page.project | plus: 1 }}](project-{{ page.project | plus: 1 }}.html).
+
+  - You must have non-zero grades for the "Project {{ page.project | minus: 1 }} Tests" and "Project {{ page.project | minus: 1 }} Review 1" assignments in Canvas.
+
+See the [`project-tests`]({{ site.github.owner_url }}/project-tests) repository for the test code and the [Project Testing](project-testing.html) guide for additional details.
 
 #### Project Reviews
 
 To be eligible for the "Project {{ page.project }} Review 1" grade, you must meet the following criteria:
 
-  - Pending
+  - Your code must pass the `Project{{ page.project }}aTest.java` group of JUnit tests.
+
+  - Your code must also pass the `Project{{ page.project }}bTest.java` group of JUnit benchmark tests with at least a `1.1x` speedup for `v3.1.x` or higher releases.
+
+  - Your code must also pass the `Project{{ page.project }}bTest.java` group of JUnit benchmark tests with at least a `1.5x` speedup for the final release.
+
+As with previous projects, you must also meet the following criteria for code reviews:
+
+  - You must have a non-zero grade for the "Project {{ page.project | minus: 1 }} Final Release" assignment in Canvas.
+
+  - You must have a non-zero grade for the "Project {{ page.project }} Tests" assignment in Canvas and your code must still pass the associated tests.
+
+  - Your code must additionally pass the code review checks, such as being free of compile warnings and `TODO` comments.
 
 See the [Project Reviewing](project-reviewing.html) guide for additional details, including how to earn the subsequent "Project {{ page.project }} Review 2" and "Project {{ page.project }} Final Release" grades.
 
@@ -86,7 +150,15 @@ pending
 
 The following homework assignments and lecture code may be useful to complete as part of this project:
 
-  - Pending
+  - The `LoggerSetup` homework is useful for learning how to set up and configure `log4j2`, which will be helpful when it comes to debugging multithreaded code.
+
+  - The `ReadWriteLock` homework is useful for creating a  simple conditional read/write lock. The conditional lock class can be used directly for your project. It also illustrates how to use a conditional lock to make a data structure class thread-safe.
+
+  - The `PrimeFinder` homework is useful for creating a work queue that tracks pending work. This work queue class can be used directly for your project. It also illustrates how to use this work queue and create tasks for non-recursive problems.
+
+  - The `Synchronization` lecture code illustrates how to use a conditional read/write lock to make a data structure class thread-safe.
+
+  - The `WorkQueues` lecture code illustrates how to use a work queue and create tasks for recursive problems. If your approach is not recursive, this example might not be helpful for this project.
 
 You can modify homework assignments and lecture code as necessary for this project. However, for homework, make sure your code is passing all of the tests before using.
 
@@ -145,24 +217,6 @@ The work queue must support the ability to automatically track unfinished (or pe
 
 **The work queue should not be initialized unless multithreading is enabled.** It is possible to reuse the same work queue for both building and searching if multithreading is enabled.
 
-## Input
-{: .page-header }
-
-Your main method must be placed in a class named `Driver`. The `Driver` class should accept the following **additional** command-line arguments:
-
-  - `-threads num` threads where `-threads` indicates the next argument `num` is the number of worker threads to use. If `num` is missing or an invalid number of threads are provided, please default to 5 threads.
-
-    If the `-threads` flag is not provided, then a work queue should *not* be initialized and the project should execute *exactly* as previous projects.
-
-The command-line flag/value pairs may be provided in any order, and the order provided is not the same as the order you should perform the operations (i.e. always build the index before performing search, even if the flags are provided in the other order).
-
-Your code should support all of the command-line arguments from the [previous project](project-2.html) as well.
-
-## Output
-{: .page-header }
-
-The output of your inverted index and search results should be the same from the [previous project](project-2.html). As before, you should **only generate output files if the necessary flags are provided**.
-
 ## Testing
 {: .page-header }
 
@@ -175,25 +229,6 @@ You must pass `Project3bTest.java` for followup code reviews and to earn the pro
 <article class="message is-warning">
   <div class="message-body"><i class="far fa-stopwatch"></i>&nbsp;Be patient. The tests for project 3 can take some time to complete, even if you have an efficient approach.</div>
 </article>
-
-## Related Content
-{: .page-header }
-
-The following content from this semester may be helpful in completing this project:
-
-  - The `LoggerSetup` homework assignment demonstrates how to configure `log4j2` to debug code.
-
-  - The `ReadWriteLock` homework assignment creates the simple read/write lock required by this project, and illustrates how to use it to make a data structure class thread-safe.
-
-  - The `Synchronization` lecture code illustrates how to use a read/write lock to make a data structure class thread-safe.
-
-  - The `PrimeFinder` homework assignment creates the work queue required by this project, as well as illustrates how to use a work queue and create tasks for non-recursive problems.
-
-  - The `WorkQueues` lecture code illustrates how to use a work queue and create tasks for recursive problems. If your approach is not recursive, this example might not be helpful for this project.
-
-  - The `WorkQueues` lecture code illustrates how to speed up multithreading code and avoid problems with over-blocking.
-
-It is strongly recommended to pass all of the homework tests before integrating them into your projects.
 
 ## Hints
 {: .page-header }
