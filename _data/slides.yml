@@ -225,20 +225,20 @@ regex:
   text: 'Regular Expressions'
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vTtjIEXsc9TLIzJdgDXCzgsKhrQ5U6rsFZJEJZRmFL-XvAULA7Gk8zL2_oR-5p8EO_H3cOyiH0CYljJ/pub?start=false&loop=false&delayms=3000'
 
-# web:
-#   <<: *default
-#   tags: ['web']
-#   text: 'Web Basics'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vTpC3pjOFUXBGl956RBsC9GOqBwXB0jOyCF40Kj3ztiYSBj-PhjcmO6X1Y9MHUdP4p2_ohpNpb0BgaL/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1EjtB-Ikl7fpijJ9k5B1I0aSRc74g3pXQ/view?usp=sharing'
-#
-# url:
-#   <<: *default
-#   tags: ['web']
-#   text: 'Uniform Resource Locator (URL)'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vQNdlB6gs8m-O35-rFhpdFvXmtu25-Qy8b_F3bhM1RAZoqyjaZ0W2HMkPr5RXdy41SPHmOYarkjZ9Wa/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1RmbX1-3Qqm5OyQJVZe8ugtqRUiO8THX-/view?usp=sharing'
-#
+web:
+  <<: *default
+  tags: ['web']
+  text: 'Web Basics'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vTgjB-K0x53dpiykBT1aoj76l1bcED3niRAiu0g2LHFP7lOwQ9bxtb-2LDeMrx_gaUfaprCMu2a276b/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1EjtB-Ikl7fpijJ9k5B1I0aSRc74g3pXQ/view?usp=sharing'
+
+url:
+  <<: *default
+  tags: ['web']
+  text: 'Uniform Resource Locator (URL)'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vS8EeWTLfFogzcwIjpEzaC2MjLRmmkwHq2py7fqEfsz1Yr4eF2-yFluUVI2YtUHnMkic1A46EKp28-K/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1RmbX1-3Qqm5OyQJVZe8ugtqRUiO8THX-/view?usp=sharing'
+
 # http:
 #   <<: *default
 #   tags: ['web']
