@@ -219,6 +219,12 @@ pools:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vRDwWXi-ZKFNEHpxugFBLPd3P-JBtlE3dFziNg91abi0EzkYbiZgNyh2EA9OFuOOw2nlQQ0ibw0Xii8/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1Nz47N4dqlnypm3HSvtOB0iMwmO35aMgR/view?usp=sharing'
 
+regex:
+  <<: *default
+  tags: ['regex']
+  text: 'Regular Expressions'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vTtjIEXsc9TLIzJdgDXCzgsKhrQ5U6rsFZJEJZRmFL-XvAULA7Gk8zL2_oR-5p8EO_H3cOyiH0CYljJ/pub?start=false&loop=false&delayms=3000'
+
 # web:
 #   <<: *default
 #   tags: ['web']
