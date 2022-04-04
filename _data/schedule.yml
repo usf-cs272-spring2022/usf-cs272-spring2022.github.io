@@ -1278,13 +1278,13 @@ weeks:
               - text: 'Work Queue'
                 icon: 'code'
                 link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/WorkQueues/src/main/java/edu/usfca/cs272/WorkQueue.java'
-                tube: 'https://drive.google.com/file/d/16DmQjV8tkQjnFrAR9-Ivpu_tOgrJbSTs/view?usp=sharing'
+                tube: 'https://drive.google.com/file/d/1IQIU3GxPRiF8YY4VS_lv_M0yfcLAMmnQ/view?usp=sharing'
                 type: 'bump'
 
               - text: 'Directory Listing Demos'
                 icon: 'code'
                 link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/WorkQueues'
-                tube: 'https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view'
+                tube: 'https://drive.google.com/file/d/1UKW_iCN2AgCOWx7GSbKRRfH71ueXtU9L/view?usp=sharing'
                 type: 'bump'
 
               - text: '– SerialDirectoryListing.java'
