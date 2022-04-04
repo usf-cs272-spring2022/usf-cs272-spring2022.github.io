@@ -103,3 +103,7 @@ spring:
 easter:
   label: 'Easter Holiday'
   class: 'far fa-rabbit'
+
+linkedin:
+  label: 'Linkedin'
+  class: 'fab fa-linkedin'
