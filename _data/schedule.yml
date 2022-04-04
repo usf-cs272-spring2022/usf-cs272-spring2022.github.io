@@ -1381,8 +1381,53 @@ weeks:
         sections:
           - <<: *lectures
             items:
+              - file: 'slides'
+                name: 'web'
+
+              - file: 'slides'
+                name: 'url'
+
+              - text: 'HyperText Markup'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/HyperText'
+
+              - file: 'slides'
+                name: 'regex'
+                type: 'bump'
+
               - text: 'Regular Expressions'
-                type: [*pending]
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/RegularExpressions'
+
+              - text: '– RegexClasses.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexClasses.java'
+                tube: 'https://drive.google.com/file/d/1TFSN35nVHQlhAqptWLbApR_3hg89v1yF/view?usp=sharing'
+
+              - text: '– RegexQuantifiers.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexQuantifiers.java'
+                tube: 'https://drive.google.com/file/d/1OwNQ72SGStcDEFZBvw40bQW2ldjEfiUg/view?usp=sharing'
+
+              - text: '– RegexWordParsing.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexWordParsing.java'
+                tube: 'https://drive.google.com/file/d/1FdZnv-uN5_5o1YCVjbwz-r4F-GybabH0/view?usp=sharing'
+
+          - <<: *content
+            items:
+              - text: 'Introduction to HTML'
+                link: 'https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML'
+                icon: 'website'
+
+              - text: 'HTML Essential Training'
+                link: 'https://www.linkedin.com/learning/html-essential-training-4/'
+                icon: 'linkedin'
+
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'project3'
 
           - <<: *deadlines
             items:
@@ -1394,20 +1439,63 @@ weeks:
           - <<: *lectures
             items:
               - text: 'Regular Expressions'
-                type: [*pending]
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/RegularExpressions'
 
-              - text: 'HTML'
-                type: [*pending]
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'regex'
+
+          - <<: *content
+            items:
+              - text: 'Learning Regular Expressions'
+                link: 'https://www.linkedin.com/learning/learning-regular-expressions-2/'
+                icon: 'linkedin'
 
       - date: 2022-04-08
         sections:
           - <<: *labs
             items:
-              - text: 'Homework Help'
+              - text: 'Homework Bundle 3 Help'
                 icon: 'homework'
+                type: 'bump'
+
+              - text: '– LoggerSetup'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166821'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-LoggerSetup-template">Template</a>)'
+
+              - text: '– ReadWriteLock'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166822'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-ReadWriteLock-template">Template</a>)'
+
+              - text: '– PrimeFinder'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166823'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-PrimeFinder-template">Template</a>)'
+
+              - text: 'Homework Bundle 4 Help'
+                icon: 'homework'
+                type: 'bump'
+
+              - text: '– LinkParser'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166824'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-LinkParser-template">LinkParser</a>)'
 
               - text: 'Project Help'
                 icon: 'project'
+                type: 'bump'
+
+              - text: '– Project 2 Partial Search'
+                icon: 'nothing'
+                link: '/guides/projects/project-2.html'
+
+              - text: '– Project 3 Multithreading'
+                icon: 'nothing'
+                link: '/guides/projects/project-3.html'
 
           - <<: *assignments
             items:
@@ -1484,6 +1572,14 @@ weeks:
             items:
               - file: 'homework'
                 name: 'htmlcleaner'
+
+          - <<: *deadlines
+            items:
+              - file: 'quizzes'
+                name: 'regex'
+
+              - file: 'quizzes'
+                name: 'project3'
 
   - week: 13
     days:
