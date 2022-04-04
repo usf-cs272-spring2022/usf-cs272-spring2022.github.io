@@ -171,7 +171,7 @@ project3:
   <<: *default
   text: 'Project 3 Writeup'
   date: 2022-04-15
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393370'
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2402851'
   tags: ['none']
 
 synchronization:
