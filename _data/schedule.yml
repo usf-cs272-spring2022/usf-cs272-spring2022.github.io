@@ -1381,12 +1381,6 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - file: 'slides'
-                name: 'web'
-
-              - file: 'slides'
-                name: 'url'
-
               - text: 'HyperText Markup'
                 icon: 'code'
                 link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/HyperText'
@@ -1409,16 +1403,18 @@ weeks:
                 link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexQuantifiers.java'
                 tube: 'https://drive.google.com/file/d/1OwNQ72SGStcDEFZBvw40bQW2ldjEfiUg/view?usp=sharing'
 
-              - text: '– RegexWordParsing.java'
-                icon: 'nothing'
-                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexWordParsing.java'
-                tube: 'https://drive.google.com/file/d/1FdZnv-uN5_5o1YCVjbwz-r4F-GybabH0/view?usp=sharing'
-
           - <<: *content
             items:
+              - file: 'slides'
+                name: 'web'
+
+              - file: 'slides'
+                name: 'url'
+
               - text: 'Introduction to HTML'
                 link: 'https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML'
                 icon: 'website'
+                type: 'bump'
 
               - text: 'HTML Essential Training'
                 link: 'https://www.linkedin.com/learning/html-essential-training-4/'
@@ -1441,6 +1437,11 @@ weeks:
               - text: 'Regular Expressions'
                 icon: 'code'
                 link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/RegularExpressions'
+
+              - text: '– RegexWordParsing.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexWordParsing.java'
+                tube: 'https://drive.google.com/file/d/1FdZnv-uN5_5o1YCVjbwz-r4F-GybabH0/view?usp=sharing'
 
           - <<: *assignments
             items:
