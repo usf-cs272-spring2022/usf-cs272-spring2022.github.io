@@ -1443,6 +1443,18 @@ weeks:
                 link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexWordParsing.java'
                 tube: 'https://drive.google.com/file/d/1FdZnv-uN5_5o1YCVjbwz-r4F-GybabH0/view?usp=sharing'
 
+              - text: '– RegexBoundaries.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexBoundaries.java'
+
+              - text: '– RegexGroups.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexGroups.java'
+
+              - text: '– RegexChallenge.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexChallenge.java'
+
           - <<: *assignments
             items:
               - file: 'quizzes'
@@ -1453,6 +1465,11 @@ weeks:
               - text: 'Learning Regular Expressions'
                 link: 'https://www.linkedin.com/learning/learning-regular-expressions-2/'
                 icon: 'linkedin'
+
+              - text: 'RegexStreams.java'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/RegularExpressions/src/main/java/edu/usfca/cs272/RegexStreams.java'
+
 
       - date: 2022-04-08
         sections:
