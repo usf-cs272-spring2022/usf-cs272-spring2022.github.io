@@ -246,13 +246,13 @@ http:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vR1wr0TjBUu9SfC1H2P2y5URlkRdsZQqt2b-wdL2ZwYO6Jfa46uak07gt30QcFtlvPNkJzo_WWmWdnl/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1L-JTuRZKalismoydzJUaSe2szdobX-L1/view?usp=sharing'
 
-# dynamic:
-#   <<: *default
-#   tags: ['web']
-#   text: 'Static vs Dynamic Web'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vTNdC7oUTuQj60GFId1-ZSsA3zFMPCIw8eBGfxKxBCR9hK_0i6f9UMh_5LDyRJgWcs7fg9d-TMN3-C4/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1ix3i4i2eoHy-D9aTYgEkp9IPBBzgYxRw/view?usp=sharing'
-#
+dynamic:
+  <<: *default
+  tags: ['web']
+  text: 'Static vs Dynamic Web'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vSJ-2ju74POcizJNyqJsU_sTTVDmTa_kcIzIhUbCxTcsAmGM8veKPX4rocSFs9KGqvyTK7u3LEDnYjw/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1ix3i4i2eoHy-D9aTYgEkp9IPBBzgYxRw/view?usp=sharing'
+
 # jetty:
 #   <<: *default
 #   tags: ['servlets']
