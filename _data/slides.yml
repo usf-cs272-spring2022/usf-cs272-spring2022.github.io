@@ -239,13 +239,13 @@ url:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vS8EeWTLfFogzcwIjpEzaC2MjLRmmkwHq2py7fqEfsz1Yr4eF2-yFluUVI2YtUHnMkic1A46EKp28-K/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1RmbX1-3Qqm5OyQJVZe8ugtqRUiO8THX-/view?usp=sharing'
 
-# http:
-#   <<: *default
-#   tags: ['web']
-#   text: 'Hypertext Transfer Protocol (HTTP)'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vTKuLKizWttKXTUExV3nUi7tNajx6m06TH1r7kze6kksjtMZLfEBL5iflMLbjGtf1tGmIi1rhh8Z6Ai/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1L-JTuRZKalismoydzJUaSe2szdobX-L1/view?usp=sharing'
-#
+http:
+  <<: *default
+  tags: ['web']
+  text: 'Hypertext Transfer Protocol (HTTP)'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vR1wr0TjBUu9SfC1H2P2y5URlkRdsZQqt2b-wdL2ZwYO6Jfa46uak07gt30QcFtlvPNkJzo_WWmWdnl/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1L-JTuRZKalismoydzJUaSe2szdobX-L1/view?usp=sharing'
+
 # dynamic:
 #   <<: *default
 #   tags: ['web']
