@@ -1588,8 +1588,8 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Servlets'
-                type: [*pending]
+              - file: 'slides'
+                name: 'jetty'
 
           - <<: *assignments
             items:
@@ -1674,7 +1674,7 @@ weeks:
 
               - file: 'quizzes'
                 name: 'dynamic'
-                
+
   - week: 14
     days:
       - date: 2022-04-26
