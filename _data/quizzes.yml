@@ -190,22 +190,22 @@ workers:
   tags: ['threads']
   # test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394173'
 
-# http:
-#   <<: *default
-#   text: 'HTTP Basics'
-#   date: 2021-11-19
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393226'
-#   tags: ['web']
+http:
+  <<: *default
+  text: 'HTTP Basics'
+  date: 2022-04-22
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2403553'
+  tags: ['web']
 #   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394179'
-#
-# dynamic:
-#   <<: *default
-#   text: 'Dynamic Web'
-#   date: 2021-11-19
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393224'
-#   tags: ['servlets']
+
+dynamic:
+  <<: *default
+  text: 'Dynamic Web'
+  date: 2021-04-22
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2403554'
+  tags: ['servlets']
 #   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394184'
-#
+
 # servlets:
 #   <<: *default
 #   text: 'Servlet Contexts'
