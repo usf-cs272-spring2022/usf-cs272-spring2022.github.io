@@ -1550,11 +1550,32 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'HTTP'
-                type: [*pending]
-
               - text: 'Sockets'
-                type: [*pending]
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/Sockets'
+
+              - text: '– SimpleServer.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Sockets/src/main/java/edu/usfca/cs272/SimpleServer.java'
+                more: 'and <a href="https://github.com/usf-cs272-spring2022/lectures/blob/main/Sockets/src/main/java/edu/usfca/cs272/SimpleClient.java">SimpleClient.java</a>'
+                tube: 'https://drive.google.com/file/d/1V02GkA2pUAmoUtFgdXl12VGVMJkw2pMy/view?usp=sharing'
+
+              - file: 'slides'
+                name: 'http'
+                type: 'bump'
+
+              - text: 'UrlFetcher.java'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Sockets/src/main/java/edu/usfca/cs272/UrlFetcher.java'
+
+              - text: 'HttpFetcher.java'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/Sockets/src/main/java/edu/usfca/cs272/HttpsFetcher.java'
+
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'http'
 
           - <<: *deadlines
             items:
@@ -1569,6 +1590,11 @@ weeks:
             items:
               - text: 'Servlets'
                 type: [*pending]
+
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'dynamic'
 
           - <<: *deadlines
             items:
@@ -1641,6 +1667,14 @@ weeks:
               - file: 'homework'
                 name: 'htmlfetcher'
 
+          - <<: *deadlines
+            items:
+              - file: 'quizzes'
+                name: 'http'
+
+              - file: 'quizzes'
+                name: 'dynamic'
+                
   - week: 14
     days:
       - date: 2022-04-26
