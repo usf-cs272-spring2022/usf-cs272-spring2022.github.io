@@ -1591,6 +1591,33 @@ weeks:
               - file: 'slides'
                 name: 'jetty'
 
+              - text: 'Servlet Basics'
+                icon: 'code'
+                type: 'bump'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/ServletBasics'
+
+              - text: '– TodayServer.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/TodayServer.java'
+
+              - text: '– HelloServer.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/HelloServer.java'
+
+              - text: '– VisitServer.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/VisitServer.java'
+
+              - text: '– SimpleFileServer.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/SimpleFileServer.java'
+                tube: 'https://drive.google.com/file/d/17AUSBRl0c_n7eJ56cSHIbd1al7P9YylG/view?usp=sharing'
+
+          - <<: *content
+            items:
+              - file: 'slides'
+                name: 'dynamic'
+
           - <<: *assignments
             items:
               - file: 'quizzes'
@@ -1631,8 +1658,24 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Servlets'
-                type: [*pending]
+
+              - text: 'Servlet Basics'
+                icon: 'code'
+                type: 'bump'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/ServletBasics'
+
+              - text: '– GalleryServer.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/GalleryServer.java'
+                tube: 'https://drive.google.com/file/d/1y7DlVnj3s1tcyS0kvKt5C7nxk-9ROkBz/view?usp=sharing'
+
+              - text: '– ContextServer.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/ContextServer.java'
+                tube: 'https://drive.google.com/file/d/1TXY__9WzN_GbvSYH1LmHTJLu-Uu06voT/view?usp=sharing'
+
+              - text: 'Servlet Data'
+                type: [*pending, 'bump']
 
           - <<: *assignments
             items:
