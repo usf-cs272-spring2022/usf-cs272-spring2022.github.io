@@ -41,13 +41,13 @@ project3r:
 project4t:
   <<: *default
   text: 'Project 4 Tests'
-  link: '/guides/projects/project-4.html'
+  link: '/guides/projects/project-4a.html'
   date: 2022-05-10
 
 project4r:
   <<: *default
   text: 'Project 4 Review'
-  link: '/guides/projects/project-4.html'
+  link: '/guides/projects/project-4b.html'
   icon: 'review'
   show: true
   date: 'Finals'
