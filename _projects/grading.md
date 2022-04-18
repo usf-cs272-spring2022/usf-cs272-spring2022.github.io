@@ -8,10 +8,6 @@ key: 0.3
 #  - text: 'Updated'
 #    type: 'is-info'
 
-tags:
-  - text: 'Updated'
-    type: 'is-info'
-
 assignments:
   - text: 'Project 1 Inverted Index'
     link: 'project-1.html'
