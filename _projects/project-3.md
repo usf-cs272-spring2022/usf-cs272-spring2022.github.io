@@ -239,37 +239,3 @@ It is important to **get started early** so you have plenty of time to think abo
 
 <i class="fas fa-info-circle"></i>&nbsp;These hints may or may not be useful depending on your approach. Do not be overly concerned if you do not find these hints helpful for your approach for this project.
 {: .notification }
-
-{% comment %}
-
-## Functionality
-{: .page-header }
-
-The core functionality of your project must satisfy the following requirements:
-
-  - Maintain the functionality of the [previous project](project-2.html).
-
-  - Process **additional command-line parameters** to determine whether to use multithreading and if so, how many threads to use in the work queue. See the [Input](#input) section for specifics.
-
-  - Support the **same output functionality** as before. See the [Output](#output) section for specifics.
-
-  - Create a custom **read/write lock class** that allows multiple concurrent read operations. See below for specifics.
-
-  - Create a new **thread-safe inverted index** using the custom read/write lock class above *in addition to* the original inverted index created for the previous projects.
-
-  - Create a single **work queue with finish and shutdown** functionality. The work queue should not be initialized unless multithreading is enabled. See below for specifics.
-
-  - Use the work queue to **support multithreaded building** the inverted index from a directory of files. Each worker thread should parse a single file.
-
-  - Use the work queue to **support multithreaded searching** of the inverted index from a file of multiple word queries (for both exact and partial search). Each worker thread should handle an individual query line (which may contain multiple words).
-
-  - Exit gracefully (shutting down all worker threads) *without* calling `System.exit()` when all of the building and searching operations are complete.
-
-  - Extend your classes from previous projects or create completely new classes to support multithreading. **DO NOT REMOVE YOUR SINGLE THREADING CODE**, as you still need to support single threaded building and searching the index.
-
-  - Do *NOT* use any of the classes in the `java.util.concurrent` package and do *NOT* use the `Stream.parallel` method for the multithreaded code.
-
-The functionality of your project will be evaluated with various JUnit tests. Please see the [Testing](#testing) section for specifics.
-
-
-{% endcomment %}
