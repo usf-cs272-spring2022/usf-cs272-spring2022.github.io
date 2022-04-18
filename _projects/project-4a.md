@@ -27,6 +27,67 @@ The core functionality of your project must satisfy the following requirements:
 
   - Pending
 
+### Downloading URLs
+
+For each unique normalized URL that must be crawled (up until the limit), the worker thread must:
+
+  - Use sockets, NOT use the URL class, to download the web page over HTTP or HTTPs.
+
+  - If the HTTP response status was a redirect, follow the redirect up to a limit of 3 redirects (to avoid an infinite redirect loop). The content at the end of this process will be assigned to the original URL.
+
+    For example, the URL [~cs212/redirect/one](https://www.cs.usfca.edu/~cs212/redirect/one) eventually redirects to [~cs212/simple/hello.html](https://www.cs.usfca.edu/~cs212/simple/hello.html). However, the web crawler will associate the content of [~cs212/simple/hello.html](https://www.cs.usfca.edu/~cs212/simple/hello.html) with the original link [~cs212/redirect/one](https://www.cs.usfca.edu/~cs212/redirect/one) instead.
+
+  - If the HTTP response status code is `200 OK` and the content-type is `text/html`, download the HTML (without other HTTP headers) for additional processing.
+
+See the next section for how to process the downloaded HTML content.
+
+### Processing URLs
+
+After the HTML has been downloaded, the next step is to process that HTML to find additional links to crawl. Specifically:
+
+  - Remove any HTML comments and block elements that should not be considered for parsing links, including the `head`, `style`, `script`, `noscript`, and `svg` elements.
+
+  - Parse all of the URLs remaining on the page, and convert them to normalized absolute form (e.g. remove fragments, convert relative URLs to absolute URLs).
+
+  - For each of the processed absolute URLs, queue a new crawl of that URL if:
+
+    1. The maximum crawl limit has not yet been reached.
+
+    2. This URL has not already been crawled or queued to be crawled.
+
+If using the work queue properly and the maximum limit is 50 URLs, then the first 49 unique URLs on the seed page (plus the seed URL itself) will be part of the crawl.
+
+### Process HTML
+
+After the links have been processed, the next step is to remove the remaining HTML markup. The remaining text must be cleaned and stemmed the same way as text files. Specifically:
+
+  - Remove all of the remaining HTML tags.
+
+  - Convert any HTML 4 entities to their Unicode symbol and remove any other HTML entities found that could not be converted.
+
+  - Clean, parse, and stem the resulting text.
+
+  - Efficiently add the stems to the inverted index.
+
+Once the stems are added to the index, the search functionality should work the same as before.
+
+### Input
+
+Your `main` method must be placed in a class named `Driver`. The `Driver` class should accept the following additional command-line arguments:
+
+  - `-html [seed]` where the flag `-html` indicates the next argument `[seed]` is the seed URL your web crawler should initially crawl to build the inverted index. If the `-html` flag is provided, your code should **enable multithreading** with the default number of worker threads even if the `-threads` flag is not provided.
+
+  - `-max [total]` where the flag `-max` is an *optional* flag that indicates the next argument `[total]` is the total number of URLs to crawl (including the seed URL) when building the index. If the `[total]` argument is not provided or an invalid number, use `1` as the default value.
+
+The command-line flag/value pairs may be provided in any order, and the order provided is not the same as the order the code should perform the operations (i.e. always build the index before performing search, even if the flags are provided in the other order).
+
+Your code should support all of the command-line arguments from the [previous project](project-{{ page.project | minus: 1 }}.html) as well.
+
+### Output
+
+The output of your inverted index and search results should be the same from the [previous project](project-{{ page.project | minus: 1 }}.html).
+
+As before, your code should **only generate output files if the necessary flags are provided**. If the correct flags are provided, your code should perform the indexing and search operations even if file output is not being generated.
 
 ## Grading
 {: .page-header }
@@ -44,6 +105,10 @@ To be eligible for the "Project {{ page.project }} Tests" grade, you must meet t
   - You must have non-zero grades for the "Project {{ page.project | minus: 1 }} Tests" and "Project {{ page.project | minus: 1 }} Review 1" assignments in Canvas.
 
 The tests for this project can be found in the `Project{{ page.project }}Test.java` group of JUnit tests in the [`project-tests`]({{ site.github.owner_url }}/project-tests) repository. See the [Project Testing](project-testing.html) guide for additional details.
+
+<article class="message is-warning">
+  <div class="message-body"><i class="far fa-exclamation-triangle"></i>&nbsp;Run only the exact tests needed for debugging! Running all of the tests too often could result in getting blocked or rate-limited by the web server or your network provider!</div>
+</article>
 
 #### Project Reviews
 
@@ -95,17 +160,6 @@ It is important to **get started early** so you have plenty of time to think abo
 {% comment %}
 
 
-## Eligibility
-{: .page-header }
-
-The eligibility requirements for this project are the same [functionality eligibility](functionality.html#eligibility) requirements of the previous projects. Specifically:
-
-  - You must have a non-zero design grade for [project 2](project-2.html) on [Canvas]({{ site.data.info.links.canvas.link }}).
-
-  - You must have a non-zero functionality grade for [project 3](project-3.html) on [Canvas]({{ site.data.info.links.canvas.link }}).
-
-If you are missing a grade you should already have, please reach out to us on the [course forums]({{ site.data.info.links.forums.link }}).
-
 ## Functionality
 {: .page-header }
 
@@ -133,67 +187,7 @@ The core functionality of your project must satisfy the following requirements:
 
 The functionality of your project will be evaluated with various JUnit tests. Please see the [Testing](#testing) section for specifics.
 
-### Downloading URLs
 
-For each unique normalized URL that must be crawled (up until the limit), the worker thread must:
-
-  - Use sockets, NOT use the URL class, to download the web page over HTTP or HTTPs.
-
-  - If the HTTP response status was a redirect, follow the redirect up to a limit of 3 redirects (to avoid an infinite redirect loop). The content at the end of this process will be assigned to the original URL.
-
-    For example, the URL [~cs212/redirect/one](https://www.cs.usfca.edu/~cs212/redirect/one) eventually redirects to [~cs212/simple/hello.html](https://www.cs.usfca.edu/~cs212/simple/hello.html). However, the web crawler will associate the content of [~cs212/simple/hello.html](https://www.cs.usfca.edu/~cs212/simple/hello.html) with the original link [~cs212/redirect/one](https://www.cs.usfca.edu/~cs212/redirect/one) instead.
-
-  - If the HTTP response status code is `200 OK` and the content-type is HTML, download the HTML (without other HTTP headers) for additional processing.
-
-See the next section for how to process the downloaded HTML content.
-
-### Processing URLs
-
-Once the HTML has been downloaded, the next step is to process that HTML to find additional links to crawl. Specifically:
-
-  - Remove any HTML comments and block elements that should not be considered for parsing links, including the `head`, `style`, `script`, `noscript`, and `svg` elements.
-
-  - Parse all of the URLs remaining on the page, and convert them to normalized absolute form (remove fragments, convert relative URLs to absolute URLs, etc.).
-
-  - For each of the processed absolute URLs, queue a new crawl of that URL if:
-
-    1. The maximum crawl limit has not yet been reached.
-
-    2. This URL has not already been crawled or queued to be crawled.
-
-If using the work queue properly and the maximum limit is 50 URLs, then the first 49 unique URLs on the seed page (plus the seed URL itself) will be part of the crawl.
-
-### Process HTML
-
-Once the links have been processed, the next step is to process the remaining HTML and add the stemmed content to the index. Specifically:
-
-  - Remove all of the remaining HTML tags.
-
-  - Convert any HTML 4 entities to their Unicode symbol and remove any other HTML entities found that could not be converted.
-
-  - Clean, parse, and stem the resulting text.
-
-  - Efficiently add the stems to the inverted index.
-
-## Input
-{: .page-header }
-
-Your main method must be placed in a class named `Driver`. The `Driver` class should accept the following **additional** command-line arguments:
-
-  - `-html seed` where `-html` indicates the next argument `seed` is the seed URL your web crawler should initially crawl to build the inverted index.
-
-      If the `-html` flag is provided, your code should **enable multithreading** with the default number of worker threads even if the `-threads` flag is not provided.
-
-  - `-max total` where `-max` is an *optional* flag that indicates the next argument `total` is the total number of URLs to crawl (including the seed URL) when building the index. Use `1` as the default limit if this flag is not provided or is not provided with a valid value.
-
-The command-line flag/value pairs may be provided in any order, and the order provided is not the same as the order you should perform the operations (i.e. always build the index before performing search, even if the flags are provided in the other order).
-
-Your code should support all of the command-line arguments from the [previous project](project-3.html) as well.
-
-## Output
-{: .page-header }
-
-The output of your inverted index and search results should be the same from the [previous project](project-3.html). As before, you should **only generate output files if the necessary flags are provided**.
 
 ## Testing
 {: .page-header }
