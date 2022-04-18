@@ -149,7 +149,11 @@ You should *not* wait until you have completed all of the associated homework as
 
 Your goal should be to get to testable code as quickly as possible first, and then to focus on passing the functionality tests. One possible breakdown of tasks are:
 
-  - Pending
+  - Configure `log4j2` add debug messages in your code. Once you are certain a class is working, disable debug messages for that class in your `log4j2.xml` file.
+
+  - Your code must have an efficient approach to multithreading to pass the runtime tests. Wait until you have at least one project 3 code review and are able to pass those runtime tests before starting this project.
+
+  - Outside of the relevant homework and lecture classes, there is likely only one new class (a web crawler class) required for this project.
 
 It is important to **get started early** so you have plenty of time to think about how you want to approach the project *and* start coding iteratively. Planning to complete the code in too large of a chunk is a recipe to get stuck and fall behind!
 
@@ -188,51 +192,4 @@ The core functionality of your project must satisfy the following requirements:
 The functionality of your project will be evaluated with various JUnit tests. Please see the [Testing](#testing) section for specifics.
 
 
-
-## Testing
-{: .page-header }
-
-You must pass 100% of the tests in the `Project4Test.java` group of JUnit tests. This test group does NOT include the long-running runtime tests that benchmark your single- versus multi-threading code for the [previous project](project-3.html). However, it does make sure your new web crawler code runs faster with 3 threads versus 1 thread.
-
-<article class="message is-info">
-  <div class="message-body">
-    <i class="fas fa-info-circle"></i>&nbsp;These tests are only for the web crawler functionality. The search engine functionality will be verified during the final code review appointment, not via automated system tests.
-  </div>
-</article>
-
-## Related Content
-{: .page-header }
-
-The following content from this semester may be helpful in completing this project:
-
-  - The `LoggerSetup` homework assignment demonstrates how to configure `log4j2` to debug code.
-
-  - The `Sockets` lecture code illustrates how to use sockets and create HTTP requests (useful for the `HtmlFetcher` homework).
-
-  - The `HtmlFetcher` homework assignment will help follow HTTP redirects and download HTML over a socket connection. <i class="fas fa-star has-text-usf-gold"></i>
-
-  - The `HtmlCleaner` homework assignment will help process the download HTML. Be careful about how much HTML content is removed before links are parsed! <i class="fas fa-star has-text-usf-gold"></i>
-
-  - The `LinkParser` homework assignment will help parse links from HTML (after block elements are removed). <i class="fas fa-star has-text-usf-gold"></i>
-
-  - The `TextFileStemmer` homework assignment will help parse the remaining content after cleaning the HTML into stems to add to the inverted index.
-
-  - The `WorkQueues` lecture code illustrates how to use a work queue and create tasks for recursive problems (like web crawling). <i class="fas fa-star has-text-usf-gold"></i>
-
-  - The `WorkQueues` lecture code illustrates how to speed up multithreading code and avoid problems with over-blocking.
-
-It is strongly recommended to pass all of the homework tests before integrating them into your projects.
-
-## Hints
-{: .page-header }
-
-It is important to develop the project iteratively. One possible breakdown of tasks are:
-
-  - Get `log4j2` working and start adding debug messages in your code. Once you are certain a class is working, disable debug messages for that class in your `log4j2.xml` file.
-
-  - You must have an efficient approach to multithreading to pass all of the tests. You should wait until you have at least one project 3 code review and are able to pass those runtime tests before starting this project.
-
-  - Outside of the relevant homework and lecture classes, there is likely only one new class (a web crawler class) required for this project. However, you must be careful to properly multithread and synchronize in this class!
-
-The important part will be to test your code as you go. The JUnit tests provided only test the entire project as a whole, not the individual parts. You are responsible for testing the individual parts themselves.
 {% endcomment %}
