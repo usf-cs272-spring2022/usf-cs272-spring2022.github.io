@@ -4,21 +4,81 @@ navbar: Guides
 layout: guides
 key: 4.1
 bump: false
+project: 4
 
 tags:
   - text: 'New'
     type: 'is-primary'
 
 assignments:
-  - text: 'Project 4 Web Crawler'
-    link: 'https://usfca.instructure.com/courses/1602551/assignments/7118294'
+  - text: 'Project 4 Tests'
+    link: 'https://usfca.instructure.com/courses/1605147/assignments/7166809'
 
 ---
 
-{% comment %}
-For this project, you will extend your [previous project](project-3.html) to create a multithreaded web crawler using a work queue that builds the inverted index from a seed URL.
+For this project, you will extend your [previous project](project-{{ page.project | minus: 1 }}.html) to create a multithreaded web crawler using a work queue that builds the inverted index from a seed URL.
 
-**This writeup is for the web crawler functionality only.** See the general [Project 4 Writeup](project-4.html) for more details.
+**This writeup is for the web crawler functionality only.** See the general [Project 4 Final Project](project-4.html) guide for more details.
+
+## Functionality
+{: .page-header }
+
+The core functionality of your project must satisfy the following requirements:
+
+  - Pending
+
+
+## Grading
+{: .page-header }
+
+The following sections detail how to earn credit for this project. The project grade is separated into one "functionality" or "test" grade worth 100 points, and a series of "design" or "code review" grades that together are worth another 100 points.
+
+#### Project Tests
+
+To be eligible for the "Project {{ page.project }} Tests" grade, you must meet the following criteria:
+
+  - Your code must pass the tests for the current project, project {{ page.project }}.
+
+  - Your code must pass the tests for the previous project, [project {{ page.project | minus: 1 }}](project-{{ page.project | minus: 1 }}.html).
+
+  - You must have non-zero grades for the "Project {{ page.project | minus: 1 }} Tests" and "Project {{ page.project | minus: 1 }} Review 1" assignments in Canvas.
+
+The tests for this project can be found in the `Project{{ page.project }}Test.java` group of JUnit tests in the [`project-tests`]({{ site.github.owner_url }}/project-tests) repository. See the [Project Testing](project-testing.html) guide for additional details.
+
+#### Project Reviews
+
+See the general [Project 4 Final Project](project-4.html) guide for more details on how the "design" or "review" grade for this project will be handled.
+
+## Getting Started
+{: .page-header }
+
+The following sections may be useful for getting started on this project.
+
+### Examples
+
+Pending
+
+### Related Content
+
+The following homework assignments and lecture code may be useful to complete as part of this project:
+
+  - Pending
+
+
+### Hints
+
+Your goal should be to get to testable code as quickly as possible first, and then to focus on passing the functionality tests. One possible breakdown of tasks are:
+
+  - Pending
+
+It is important to **get started early** so you have plenty of time to think about how you want to approach the project *and* start coding iteratively. Planning to complete the code in too large of a chunk is a recipe to get stuck and fall behind!
+
+<i class="fas fa-info-circle"></i>&nbsp;These hints may or may not be useful depending on your approach. Do not be overly concerned if you do not find these hints helpful for your approach for this project.
+{: .notification }
+
+
+{% comment %}
+
 
 ## Eligibility
 {: .page-header }
