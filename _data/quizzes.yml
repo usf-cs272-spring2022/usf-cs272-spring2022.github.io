@@ -206,14 +206,14 @@ dynamic:
   tags: ['servlets']
 #   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394184'
 
-# servlets:
-#   <<: *default
-#   text: 'Servlet Contexts'
-#   date: 2021-11-23
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393225'
-#   tags: ['servlets']
-#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394180'
-#
+servlets:
+  <<: *default
+  text: 'Servlet Contexts'
+  date: 2021-11-23
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2403555'
+  tags: ['servlets']
+  # test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394180'
+
 # joins:
 #   <<: *default
 #   text: 'SQL Joins'
