@@ -25,7 +25,33 @@ For this project, you will extend your [previous project](project-{{ page.projec
 
 The core functionality of your project must satisfy the following requirements:
 
-  - Pending
+  - Maintain the functionality of the [previous project](project-{{ page.project | minus: 1 }}.html).
+
+  - Process **additional** command-line arguments to determine the input to process and output to produce. See the "Input" and "Output" sections below for specifics.
+
+  - Add support to **build the inverted index from a seed URL** instead of a directory using a web crawler. For each page crawled, this includes:
+
+      1. Use **sockets to download webpages** over HTTP or HTTPS, following up to 3 redirects. See the "Downloading URLs" section for details.
+
+      2. The web crawler must **remove certain HTML block elements**, process links from the remaining HTML, and then add the found URLs to a queue for further crawling. See the "Processing URLs" for details.
+
+      3. After processing links, **remove HTML tags and entities**, and then add the remaining stemmed words to the index. See the "Processing HTML" for details.
+
+  - When crawling, **download the content only once** from the web server and only if necessary.
+
+      - Do not fetch the web page content more than once. For example, do not fetch the entire web page content once to check the headers and again to process the HTML.
+
+      - Do not fetch the web page content if it is not HTML. For example, for large text file without the `text/html` content-type, there is no need to download any of the content that appears after the headers.
+
+      - Do not fetch the web page if it has already been encountered before, regardless of whether it was added to the index or skipped (due to an invalid type or status code).
+
+  - Use a work queue to **efficiently multithreaded** the web crawler such that each worker thread handles all of the processing associated with a single web page. This includes *everything* from downloading the web page to adding the processed text to the inverted index.
+
+  - To avoid a infinite crawl, the web crawler should crawl up to a **fixed limit of unique URLs** (including the seed URL).
+
+  - Do *NOT* use any of the classes in the `java.util.concurrent` package and do *NOT* use the `Stream.parallel` method for the multithreaded code.
+
+See the following sections for additional details.
 
 ### Downloading URLs
 
@@ -121,7 +147,22 @@ The following sections may be useful for getting started on this project.
 
 ### Examples
 
-Pending
+
+The following are a few examples (non-comprehensive) to illustrate the usage of the command-line arguments that can be passed to your `Driver` class via a "Run Configuration" in Eclipse, assuming you set the working directory to the `project-tests` directory.
+
+Consider the following example:
+
+```
+-text "https://usf-cs272-spring2022.github.io/project-web/input/simple/" -limit 15 -threads 3 -index index-crawl.json
+```
+
+The above arguments behave the same as [project {{ page.project | minus: 1 }}](project-{{ page.project | minus: 1 }}.html), except it will build the index from a seed web page and process up to `15` found links from that seed page.
+
+```
+-text "https://usf-cs272-spring2022.github.io/project-web/input/simple/" -index index-crawl.json
+```
+
+The above arguments are nearly the same, except use the default of `1` for the limit and `5` worker threads.
 
 ### Related Content
 
@@ -159,37 +200,3 @@ It is important to **get started early** so you have plenty of time to think abo
 
 <i class="fas fa-info-circle"></i>&nbsp;These hints may or may not be useful depending on your approach. Do not be overly concerned if you do not find these hints helpful for your approach for this project.
 {: .notification }
-
-
-{% comment %}
-
-
-## Functionality
-{: .page-header }
-
-The core functionality of your project must satisfy the following requirements:
-
-  - Maintain the functionality of the [previous project](project-3.html).
-
-  - Process **additional command-line parameters** to support the functionality of this project. See the [Input](#input) section for specifics.
-
-  - Support the **same output functionality** as before. See the [Output](#output) section for specifics.
-
-  - Add support to **build the inverted index from a seed URL** instead of a directory using a web crawler. For each page crawled, this includes:
-
-      1. Use **sockets to download webpages** over HTTP or HTTPS, following up to 3 redirects. See the "Downloading URLs" section for details.
-
-      2. The web crawler must **remove certain HTML block elements**, process links from the remaining HTML, and then add the found URLs to a queue for further crawling. See the "Processing URLs" for details.
-
-      3. After processing links, **remove HTML tags and entities**, and then add the remaining stemmed words to the index. See the "Processing HTML" for details.
-
-  - Use a work queue to **efficiently multithreaded** the web crawler such that each worker thread handles all of the processing associated with a single web page. (This includes *everything* from downloading the web page to adding the processed text to the inverted index.)
-
-  - To avoid a infinite crawl, the web crawler should crawl up to a **fixed limit of unique URLs** (including the seed URL).
-
-  - Your code may *NOT* use any of the classes in the `java.util.concurrent` package.
-
-The functionality of your project will be evaluated with various JUnit tests. Please see the [Testing](#testing) section for specifics.
-
-
-{% endcomment %}
