@@ -1613,6 +1613,11 @@ weeks:
                 link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/SimpleFileServer.java'
                 tube: 'https://drive.google.com/file/d/17AUSBRl0c_n7eJ56cSHIbd1al7P9YylG/view?usp=sharing'
 
+              - text: '– GalleryServer.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/GalleryServer.java'
+                tube: 'https://drive.google.com/file/d/1y7DlVnj3s1tcyS0kvKt5C7nxk-9ROkBz/view?usp=sharing'
+
           - <<: *content
             items:
               - file: 'slides'
@@ -1658,30 +1663,24 @@ weeks:
         sections:
           - <<: *lectures
             items:
-
-              - text: 'Servlet Basics'
-                icon: 'code'
-                type: 'bump'
-                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/ServletBasics'
-
-              - text: '– GalleryServer.java'
-                icon: 'nothing'
-                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/GalleryServer.java'
-                tube: 'https://drive.google.com/file/d/1y7DlVnj3s1tcyS0kvKt5C7nxk-9ROkBz/view?usp=sharing'
-
-              - text: '– ContextServer.java'
-                icon: 'nothing'
-                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/ContextServer.java'
-                tube: 'https://drive.google.com/file/d/1TXY__9WzN_GbvSYH1LmHTJLu-Uu06voT/view?usp=sharing'
-
               - text: 'Servlet Data'
                 type: [*pending, 'bump']
 
+          - <<: *content
+            items:
+              - text: 'ContextServer.java'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletBasics/src/main/java/edu/usfca/cs272/ContextServer.java'
+                tube: 'https://drive.google.com/file/d/1TXY__9WzN_GbvSYH1LmHTJLu-Uu06voT/view?usp=sharing'
+
           - <<: *assignments
             items:
+              - file: 'quizzes'
+                name: 'servlets'
+
               - file: 'projects'
                 name: 'project4t'
-                text: 'Project 4 Search Engine'
+                text: 'Project 4 Web Crawler'
 
           - <<: *deadlines
             items:
