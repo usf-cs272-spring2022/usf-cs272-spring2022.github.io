@@ -62,8 +62,23 @@ Pending
 
 The following homework assignments and lecture code may be useful to complete as part of this project:
 
-  - Pending
+  - The `LoggerSetup` homework is useful for learning how to set up and configure `log4j2`, which will be helpful when it comes to debugging multithreaded code.
 
+  - The `Sockets` lecture code illustrates how to use sockets and create HTTP requests (useful for the `HtmlFetcher` homework).
+
+  - The `HtmlFetcher` homework is useful for following HTTP redirects and downloading HTML over a socket connection. This homework can be used directly for your project.
+
+  - The `HtmlCleaner` homework is useful for processing the download HTML. This homework can be used directly for your project, but be careful about how much HTML content is removed before links are parsed!
+
+  - The `LinkParser` homework is useful for parsing links from HTML (after block elements are removed). This homework can be used directly for your project.
+
+  - The `TextFileStemmer` homework is useful for converting cleaned HTML into word stems. This homework can be used directly for your project.
+
+  - The `WorkQueues` lecture code illustrates how to use a work queue and create tasks for recursive problems (like web crawling).
+
+You can modify homework assignments and lecture code as necessary for this project. However, for homework, make sure your code is passing all of the tests before using.
+
+You should *not* wait until you have completed all of the associated homework assignments or covered all of the related lecture content to start the project. You should **develop the project iteratively** as you progress throughout the semester, integrating assignments and concepts one at a time into your project code.
 
 ### Hints
 
