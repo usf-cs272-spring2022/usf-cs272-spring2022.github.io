@@ -192,7 +192,7 @@ Your goal should be to get to testable code as quickly as possible first, and th
 
   - Configure `log4j2` add debug messages in your code. Once you are certain a class is working, disable debug messages for that class in your `log4j2.xml` file.
 
-  - Your code must have an efficient approach to multithreading to pass the runtime tests. Wait until you have at least one project 3 code review and are able to pass those runtime tests before starting this project.
+  - Your code must have an efficient approach to multithreading to pass the runtime tests. Wait until you are able to pass the runtime tests of the previous project before worrying about efficiency for this project.
 
   - Outside of the relevant homework and lecture classes, there is likely only one new class (a web crawler class) required for this project.
 
