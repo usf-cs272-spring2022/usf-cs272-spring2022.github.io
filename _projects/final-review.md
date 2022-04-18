@@ -1,17 +1,24 @@
 ---
-title: Final Code Review
+title: Project Final Review
 navbar: Guides
 layout: guides
-key: 5.1
-bump: true
+key: 5.2
+bump: false
 
 tags:
-  - text: 'Important'
-    type: 'is-danger'
+#  - text: 'Important'
+#    type: 'is-danger'
+  - text: 'Pending'
+    type: 'is-muted'
 
 ---
 
-Instead of a final exam, you will have a final code review during finals week. The final code review is the **last synchronous code review** appointment possible in the semester. The **project cutoff deadline** determines which projects will be graded in your final code review. It is the *only* code review for which you may earn **partial project grades** and the *only* opportunity to have [Project 4 Search Engine](project-4b.html) graded.
+Instead of a final exam, you will have a final code review during finals week. The final code review is the **last synchronous code review** appointment possible in the semester.
+
+Additional details pending.
+
+{% comment %}
+The **project cutoff deadline** determines which projects will be graded in your final code review. It is the *only* code review for which you may earn **partial project grades** and the *only* opportunity to have [Project 4 Search Engine](project-4b.html) graded.
 
 Here are some details regarding how your final code review will be handled.
 
@@ -175,3 +182,4 @@ Include a brief 1 paragraph justification, which can range from struggles with r
 The grade deadline is **Tuesday, January 4th**; this is the non-extendable university deadline by which I must enter your final letter grade for the semester.
 
 **Therefore the hard deadline for all extensions will be Monday, January 3rd at 11:59pm**, which gives me 24 hours to wrap up the grading and enter the final letter grades.
+{% endcomment %}

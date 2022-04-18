@@ -6,14 +6,19 @@ key: 4.2
 bump: false
 
 tags:
-  - text: 'New'
-    type: 'is-primary'
+  - text: 'Pending'
+    type: 'is-muted'
+#  - text: 'New'
+#    type: 'is-primary'
 
 assignments:
   - text: 'Project 4 Search Engine'
     link: 'https://usfca.instructure.com/courses/1602551/assignments/7118300'
 ---
 
+Pending
+
+{% comment %}
 For this project, you will extend your [previous project](project-4a.html) to create a search engine web interface using embedded Jetty and servlets.
 
 **This writeup is for the search engine functionality only.** See the general [Project 4 Writeup](project-4.html) for more details.
@@ -219,3 +224,4 @@ It is important to develop the project iteratively. Some considerations to make 
   - For graceful shutdown, you will need to create a special servlet combined with the [ShutdownHandler](https://www.eclipse.org/jetty/javadoc/jetty-11/org/eclipse/jetty/server/handler/ShutdownHandler.html) in Jetty.
 
 The important part will be to test your code as you go. Use the JUnit tests provided for previous projects to come up with your own test cases.
+{% endcomment %}
