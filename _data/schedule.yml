@@ -1678,6 +1678,9 @@ weeks:
               - file: 'quizzes'
                 name: 'servlets'
 
+              - file: 'quizzes'
+                name: 'project4'
+
               - file: 'projects'
                 name: 'project4t'
                 text: 'Project 4 Web Crawler'
@@ -1755,10 +1758,16 @@ weeks:
 
           - <<: *deadlines
             items:
+              - file: 'quizzes'
+                name: 'servlets'
+
+              - file: 'quizzes'
+                name: 'project4'
+
               - text: 'Homework Bundle 4'
                 icon: 'homework'
                 date: 2022-04-29
-                type: ['has-text-weight-bold']
+                type: ['has-text-weight-bold', 'bump']
 
               - file: 'homework'
                 name: 'linkparser'

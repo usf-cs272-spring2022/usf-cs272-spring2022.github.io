@@ -209,10 +209,18 @@ dynamic:
 servlets:
   <<: *default
   text: 'Servlet Contexts'
-  date: 2021-11-23
+  date: 2022-04-29
   link: 'https://usfca.instructure.com/courses/1605147/quizzes/2403555'
   tags: ['servlets']
   # test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394180'
+
+
+project4:
+  <<: *default
+  text: 'Project 4 Writeup'
+  date: 2022-04-29
+  link: 'https://usfca.instructure.com/courses/1605147/assignments/7195820'
+  tags: ['none']
 
 # joins:
 #   <<: *default
