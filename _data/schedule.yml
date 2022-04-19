@@ -1664,7 +1664,28 @@ weeks:
           - <<: *lectures
             items:
               - text: 'Servlet Data'
-                type: [*pending, 'bump']
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/ServletData'
+
+              - text: '– ReverseServer.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletData/src/main/java/edu/usfca/cs272/ReverseServer.java'
+
+              - text: '– MessageServer.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletData/src/main/java/edu/usfca/cs272/MessageServer.java'
+                tube: 'https://drive.google.com/file/d/1AhKibA6CMpro8BI7IsmTnRPCmj_kkube/view?usp=sharing'
+                type: 'bump'
+
+              - text: '– MessageServlet.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletData/src/main/java/edu/usfca/cs272/MessageServlet.java'
+                tube: 'https://drive.google.com/file/d/19NR1YdmY1MWH8OH3A0zRypiCSPnBSfCg/view?usp=sharing'
+
+              - text: '– BulmaServlet.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/ServletData/src/main/java/edu/usfca/cs272/BulmaMessageServlet.java'
+                tube: 'https://drive.google.com/file/d/1Tg5XcUStSyEAuzaEQ1Da6C66ExpxA2Lc/view?usp=sharing'
 
           - <<: *content
             items:
