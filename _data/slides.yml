@@ -260,53 +260,53 @@ jetty:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vS1AOABH_j5s6nDi5d8XFA9BQC-ufUVbgPBM8QcrkfPaxev1kGzbckaMsKJ6vMlw-l9j5bjOHrvFYiX/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1OtvslLGJB1FOhoQRYv1yTFMLE6OCQCCN/view?usp=sharing'
 
-# relational:
-#   <<: *default
-#   tags: ['sql']
-#   text: 'Relational Databases'
-#   save: true
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vRbPqGyndNy24E25v7NjqkgyfZ4YJNyfehWimbRq3bt2_YKGjmkPqLN_I4XeAvdfzyO4IS3slC8klRK/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1L-CLDjzNTGVzZPds1CkaU9uGvHl7FtwW/view?usp=sharing'
-#
-# sql:
-#   <<: *default
-#   tags: ['sql']
-#   text: 'Structured Query Language (SQL)'
-#   tube: 'https://drive.google.com/file/d/1jjVGe-4dbyefIr3k_5z2ZEjXL5cPL3MH/view?usp=sharing'
-#   save: true
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vRPvlS9M0KVagEAjEvREljoAuAe5R1t6J_O5_sRlcmUefjgzldogvz-VSHcAmhJucOZEyFJDWU4jwzW/pub?start=false&loop=false&delayms=3000'
-#
-# sqlintro1:
-#   icon: 'website'
-#   save: false
-#   text: 'SQL Intro, Part 1'
-#   link: '/guides/sql/sql-intro-started.html'
-#   tube: 'https://drive.google.com/file/d/1W5pneWmLOXVkDrvxL9YWhRsZ8PwjM4vZ/view?usp=sharing'
-#   tags: ['sql']
-#
-# sqlintro2:
-#   icon: 'website'
-#   save: false
-#   text: 'SQL Intro, Part 2'
-#   link: '/guides/sql/sql-intro-joining.html'
-#   tube: 'https://drive.google.com/file/d/1auHLPbiHxJq8tr_78HtNrKELu2Wi_zk4/view?usp=sharing'
-#   tags: ['sql']
-#
-# sqlintro3:
-#   icon: 'website'
-#   save: false
-#   text: 'SQL Intro, Part 3'
-#   link: '/guides/sql/sql-intro-enforcing.html'
-#   tube: 'https://drive.google.com/file/d/1MOokzFUB8FXT2msoxU65PcqMlxYOsd0B/view?usp=sharing'
-#   tags: ['sql']
-#
-# sqldemo:
-#   icon: 'website'
-#   save: false
-#   text: 'SQL Faculty Demo'
-#   link: '/guides/sql/sql-demo-intro.html'
-#   tags: ['sql']
-#
+relational:
+  <<: *default
+  tags: ['sql']
+  text: 'Relational Databases'
+  save: true
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vQlufEei7Vp791_iFDdldK96m5osZ-opqeZS137XjUZb4Hc4R-D6BPA_itMd47JvZFbIc-Nb5DJTdV8/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1L-CLDjzNTGVzZPds1CkaU9uGvHl7FtwW/view?usp=sharing'
+
+sql:
+  <<: *default
+  tags: ['sql']
+  text: 'Structured Query Language (SQL)'
+  tube: 'https://drive.google.com/file/d/1jjVGe-4dbyefIr3k_5z2ZEjXL5cPL3MH/view?usp=sharing'
+  save: true
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vRKyfJ8X501zWpnsyWo3i90YT6hLyps0mu24_ikAjAiXivVuXBYatp5Qyd8bieD2Tx4mltjslToZdUx/pub?start=false&loop=false&delayms=3000'
+
+sqlintro1:
+  icon: 'website'
+  save: false
+  text: 'SQL Intro, Part 1'
+  link: '/guides/sql/sql-intro-started.html'
+  tube: 'https://drive.google.com/file/d/1W5pneWmLOXVkDrvxL9YWhRsZ8PwjM4vZ/view?usp=sharing'
+  tags: ['sql']
+
+sqlintro2:
+  icon: 'website'
+  save: false
+  text: 'SQL Intro, Part 2'
+  link: '/guides/sql/sql-intro-joining.html'
+  tube: 'https://drive.google.com/file/d/1auHLPbiHxJq8tr_78HtNrKELu2Wi_zk4/view?usp=sharing'
+  tags: ['sql']
+
+sqlintro3:
+  icon: 'website'
+  save: false
+  text: 'SQL Intro, Part 3'
+  link: '/guides/sql/sql-intro-enforcing.html'
+  tube: 'https://drive.google.com/file/d/1MOokzFUB8FXT2msoxU65PcqMlxYOsd0B/view?usp=sharing'
+  tags: ['sql']
+
+sqldemo:
+  icon: 'website'
+  save: false
+  text: 'SQL Faculty Demo'
+  link: '/guides/sql/sql-demo-intro.html'
+  tags: ['sql']
+
 # jdbc:
 #   <<: *default
 #   text: 'Java Database Connectivity (JDBC)'
