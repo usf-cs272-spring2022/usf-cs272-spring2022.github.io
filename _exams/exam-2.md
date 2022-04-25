@@ -13,13 +13,13 @@ topics:
     tags: 'regexes'
     code: ['RegularExpressions']
 
-  - text: 'Software Testing'
-    tags: 'testing'
-    code: ['UnitTesting']
+#  - text: 'Software Testing'
+#    tags: 'testing'
+#    code: ['UnitTesting']
 
-  - text: 'Debugging'
+  - text: 'Logging'
     tags: 'debugging'
-    code: ['Debugging']
+    code: ['Logging']
 
   - text: 'Multithreading'
     tags: 'threads'
@@ -71,7 +71,7 @@ See below for resources and additional details.
 
 In addition to the general [exam logistics](exam-logistics.html), you want to consider the following:
 
-  - You should bookmark your favorite regular expression, JUnit, Log4j2, HTTP, Jetty, and SQL resources. The README files of the lecture code have several recommendations for each topic.
+  - You should bookmark your favorite regular expression, <!--JUnit,--> Log4j2, HTTP, Jetty, and SQL resources. The README files of the lecture code have several recommendations for each topic.
 
   - Make sure you can access the on-campus database. You will be able to `SOURCE` the tables from the exam and test out your SQL queries there.
 
@@ -167,7 +167,7 @@ The following are some example topics that you may want to make sure you underst
 
 - You should understand the different ways to use the **`?` character** in a regular expression. For example: `(?i)` to turn on the `i` flag, `(?:i)` to create a non-capturing group that matches the `i` character, `[?!]` to create a character class that matches the `?` and `!` characters, `i?` to match the `i` character 0 or 1 times (greedy), and `i+?` to match the `i` character 1 or more times (reluctant).
 
-- You should understand how to interpret JUnit test classes, and create your own basic JUnit tests. This includes understanding the `@Test`, `@Nested`, `@BeforeEach`, `@AfterEach`, and `@ParameterizedTest` annotations and the methods in the `org.junit.jupiter.api.Assertions` package.
+<!-- - You should understand how to interpret JUnit test classes, and create your own basic JUnit tests. This includes understanding the `@Test`, `@Nested`, `@BeforeEach`, `@AfterEach`, and `@ParameterizedTest` annotations and the methods in the `org.junit.jupiter.api.Assertions` package.-->
 
 - You should understand how to use **assertions** in Java using the `assert` keyword, and where it is (or is not) appropriate to use.
 
