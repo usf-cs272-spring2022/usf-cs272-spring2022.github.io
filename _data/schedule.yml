@@ -847,7 +847,6 @@ weeks:
             items:
               - text: 'Homework Bundle 2 Help'
                 icon: 'homework'
-                type: 'bump'
 
               - text: '– TextFileSorter'
                 icon: 'nothing'
@@ -980,7 +979,6 @@ weeks:
             items:
               - text: 'Homework Bundle 2 Help'
                 icon: 'homework'
-                type: 'bump'
 
               - text: '– TextFileSorter'
                 icon: 'nothing'
@@ -1147,7 +1145,6 @@ weeks:
             items:
               - text: 'Homework Bundle 2 Help'
                 icon: 'homework'
-                type: 'bump'
 
               - text: '– TextFileSorter'
                 icon: 'nothing'
@@ -1333,7 +1330,6 @@ weeks:
             items:
               - text: 'Homework Bundle 3 Help'
                 icon: 'homework'
-                type: 'bump'
 
               - text: '– LoggerSetup'
                 icon: 'nothing'
@@ -1477,7 +1473,6 @@ weeks:
             items:
               - text: 'Homework Bundle 3 Help'
                 icon: 'homework'
-                type: 'bump'
 
               - text: '– LoggerSetup'
                 icon: 'nothing'
@@ -1753,7 +1748,6 @@ weeks:
             items:
               - text: 'Homework Bundle 4 Help'
                 icon: 'homework'
-                type: 'bump'
 
               - text: '– LinkParser'
                 icon: 'nothing'
@@ -1898,7 +1892,6 @@ weeks:
             items:
               - text: 'Homework Bundle 4 Help'
                 icon: 'homework'
-                type: 'bump'
 
               - text: '– LinkParser'
                 icon: 'nothing'
@@ -1983,7 +1976,6 @@ weeks:
             items:
               - text: 'Project Help'
                 icon: 'project'
-                type: 'bump'
 
               - text: '– Project 3 Multithreading'
                 icon: 'nothing'
