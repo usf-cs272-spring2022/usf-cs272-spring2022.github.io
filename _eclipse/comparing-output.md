@@ -4,9 +4,9 @@ navbar: Guides
 title: Comparing Output in Eclipse
 key: 4
 
-tags:
-  - text: 'New'
-    type: 'is-primary'
+#tags:
+#  - text: 'New'
+#    type: 'is-primary'
 ---
 
 For homework and projects, it may be useful to compare actual and expected output side-by-side. Eclipse has a nice comparison view that will align the different outputs and highlight the differences, even differences in whitespaces that may be otherwise difficult to see.
