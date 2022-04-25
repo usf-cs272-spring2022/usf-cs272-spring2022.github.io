@@ -221,7 +221,7 @@ pools:
 
 regex:
   <<: *default
-  tags: ['regex']
+  tags: ['regexes']
   text: 'Regular Expressions'
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vTtjIEXsc9TLIzJdgDXCzgsKhrQ5U6rsFZJEJZRmFL-XvAULA7Gk8zL2_oR-5p8EO_H3cOyiH0CYljJ/pub?start=false&loop=false&delayms=3000'
 
