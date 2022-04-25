@@ -4,21 +4,19 @@ navbar: Guides
 layout: guides
 key: 4.2
 bump: false
+project: 4
 
 tags:
-  - text: 'Pending'
-    type: 'is-muted'
-#  - text: 'New'
-#    type: 'is-primary'
+#  - text: 'Pending'
+#    type: 'is-muted'
+  - text: 'New'
+    type: 'is-primary'
 
 assignments:
   - text: 'Project 4 Search Engine'
     link: 'https://usfca.instructure.com/courses/1602551/assignments/7118300'
 ---
 
-Pending
-
-{% comment %}
 For this project, you will extend your [previous project](project-4a.html) to create a search engine web interface using embedded Jetty and servlets.
 
 **This writeup is for the search engine functionality only.** See the general [Project 4 Writeup](project-4.html) for more details.
@@ -26,16 +24,19 @@ For this project, you will extend your [previous project](project-4a.html) to cr
 ## Eligibility
 {: .page-header }
 
-The eligibility requirements for this project are the same [design eligibility](design.html#eligibility) requirements of the previous projects. Specifically:
+To be eligible for the "Project 4 Search Engine" grade, you must meet the following criteria:
 
-  - You must have a non-zero design grade for [project 3](project-3.html) on [Canvas]({{ site.data.info.links.canvas.link }}).
+  - You must have a non-zero grade for the "Project {{ page.project | minus: 1 }} Final Release" assignment in Canvas.
 
-  - You must have a non-zero functionality grade for [project 4a](project-4a.html) on [Canvas]({{ site.data.info.links.canvas.link }}).
+  - You must have a non-zero grade for the "Project {{ page.project }} Tests" assignment in Canvas and your code must still pass the associated tests.
 
-If you are missing a grade you should already have, please reach out to us on the [course forums]({{ site.data.info.links.forums.link }}).
+  - Your code must additionally pass the code review checks, and you must attend a code review with the instructor.
+
+See the [final code review](final-review.html) guide for the deadline to meet the eligibility requirements to qualify for this project assignment.
 
 ## Functionality
 {: .page-header }
+
 
 The functionality for this project is broken into 2 parts: core functionality and extra features. **You must complete the core functionality before attempting extra functionality.**
 
@@ -143,9 +144,38 @@ The following miscellaneous features may also be implemented:
 
 There are 45 points possible in this category.
 
-### Potential Deductions
+### Input
 
-There will be a brief review of your code for this project. If you have implemented additional functionality and your implementations have any of the following issues, points may be deducted from your the project grade:
+Your main method must be placed in a class named `Driver`. The `Driver` class should accept the following **additional** command-line arguments:
+
+  - `-server [port]` where the flag `-server` indicates to launch a search engine web server, and the next *optional* argument `[port]` is the port the web server should use to accept socket connections. Use `8080` as the default value if it is not provided.
+
+    If the `-server` flag is provided, your code should **enable multithreading** with the default number of worker threads even if the `-threads` flag is not provided.
+
+The command-line flag/value pairs may be provided in any order, and the order provided is not the same as the order you should perform the operations (i.e. always build the index before performing search, even if the flags are provided in the other order).
+
+Your code should support all of the command-line arguments from the [previous project](project-4a.html) as well.
+
+### Output
+
+The output of your inverted index and search results should be the same from the [previous project](project-4a.html). As before, you should **only generate output files if the necessary flags are provided**.
+
+## Grading
+{: .page-header }
+
+The following sections detail how to earn credit for this project.
+
+#### Project Tests
+
+There are no tests specifically for the **Project 4b Search Engine** other than the [Project 4a Web Crawler](project-4a.html) tests provided.
+
+#### Project Reviews
+
+The search engine functionality will be demonstrated in a single code review during finals week (if eligible). See the general [Final Code Review](final-review.html) guide for more details on how this last code review will be handled.
+
+#### Potential Deductions
+
+It is possible to lose points earned for additional functionality if your implementations have any of the following issues:
 
 | Points | Deduction Description |
 |:------:|:----------------------|
@@ -157,46 +187,39 @@ There will be a brief review of your code for this project. If you have implemen
 |  -5 | **Poor Code Style:** Deducted if your code is not professional. Use professional formatting, variable names, Javadoc, exception handling, and address all compiler warnings. |
 {: .table .is-hoverable }
 
-While there are many ways to lose points, the total possible deduction is capped such that no more than 15 points total will be removed from your project grade due to the above issues.
+These deductions will only come out of the points earned for additional functionality---they will not impact points earned for core functionality.
 
-### Extra Credit
+While there are many ways to lose points, the total possible deduction is capped such that no more than 20 points total will be removed from your project grade due to the above issues.
 
-You may complete additional functionality as extra credit. There is no cap on how much extra credit you can earn for this specific project, however the overall project category grade will be capped to 110% at the end of the semester.
+#### Extra Credit
 
-For example, suppose you lost 10% because you submitted project functionality late and completed 130% worth of extra credit on the search engine project. Instead of earning 130% &ndash; 10% = 120% in the project category, your overall project category grade will be capped to 110% instead. This is a great way to make up missed points from late submissions, as well as boost your score if you struggled in the other grade categories.
+You may complete additional functionality as extra credit. You can earn up to 120% on this project assignment.
 
 Regardless of what you implemented, you will NOT earn points for the search engine core functionality if you are not passing all of the web crawler tests, and will NOT earn points for extra functionality if you have not fully implemented the core functionality!
 {: .notification .is-warning .is-light }
 
-## Input
+## Getting Started
 {: .page-header }
 
-Your main method must be placed in a class named `Driver`. The `Driver` class should accept the following **additional** command-line arguments:
+The following sections may be useful for getting started on this project.
 
-  - `-server port` where `-server` indicates a search engine web server should be launched and the next argument `port` is the port the web server should use to accept socket connections. Use `8080` as the default value if it is not provided.
+### Examples
 
-    If the `-server` flag is provided, your code should **enable multithreading** with the default number of worker threads even if the `-threads` flag is not provided.
+The following are a few examples (non-comprehensive) to illustrate the usage of the command-line arguments that can be passed to your `Driver` class via a "Run Configuration" in Eclipse, assuming you set the working directory to the `project-tests` directory.
 
-The command-line flag/value pairs may be provided in any order, and the order provided is not the same as the order you should perform the operations (i.e. always build the index before performing search, even if the flags are provided in the other order).
+Consider the following example:
 
-Your code should support all of the command-line arguments from the [previous project](project-4a.html) as well.
+```
+-html "https://usf-cs272-spring2022.github.io/project-web/input/simple/" -limit 15 -threads 3 -server 8080
+```
 
-## Output
-{: .page-header }
+The above arguments behave the same as [project {{ page.project | minus: 1 }}](project-{{ page.project | minus: 1 }}.html), except it will also start up a web server on port `8080` for the user to interface with the search engine. No file output will be generated in this example.
 
-The output of your inverted index and search results should be the same from the [previous project](project-4a.html). As before, you should **only generate output files if the necessary flags are provided**.
+### Related Content
 
-## Testing
-{: .page-header }
+The following homework assignments and lecture code may be useful to complete as part of this project:
 
-**There are no functionality tests for this project.** Instead, you will demonstrate your search engine functionality to the instructor during your [final code review](final-review.html) appointment during finals week.
-
-## Related Content
-{: .page-header }
-
-The following content from this semester may be helpful in completing this project:
-
-  - The `ServletBasics` and `ServletData` lecture code illustrates how to use embedded Jetty and servlets to create a basic web interface.
+  - The `ServletBasics` and `ServletData` lecture code illustrates how to use embedded Jetty and servlets to create a basic web interface. The `ReverseServer` example is most relevant for basic search functionality.
 
   - The `HeaderServer` homework assignment illustrates how to use web forms with embedded Jetty and servlets.
 
@@ -204,12 +227,13 @@ The following content from this semester may be helpful in completing this proje
 
   - `JDBC` lecture code illustrates how to connect servlets to a SQL database on campus (optional).
 
-It is strongly recommended to pass all of the homework tests before integrating them into your projects.
+You can modify homework assignments and lecture code as necessary for this project. However, for homework, make sure your code is passing all of the tests before using.
 
-## Hints
-{: .page-header }
+You should *not* wait until you have completed all of the associated homework assignments or covered all of the related lecture content to start the project. You should **develop the project iteratively** as you progress throughout the semester, integrating assignments and concepts one at a time into your project code.
 
-It is important to develop the project iteratively. Some considerations to make while developing are:
+### Hints
+
+Your goal should be to get to testable code as quickly as possible first, and then to develop the project iteratively. Some considerations to make while developing are:
 
   - Start with using `GET` requests for basic search functionality.
 
@@ -224,4 +248,3 @@ It is important to develop the project iteratively. Some considerations to make 
   - For graceful shutdown, you will need to create a special servlet combined with the [ShutdownHandler](https://www.eclipse.org/jetty/javadoc/jetty-11/org/eclipse/jetty/server/handler/ShutdownHandler.html) in Jetty.
 
 The important part will be to test your code as you go. Use the JUnit tests provided for previous projects to come up with your own test cases.
-{% endcomment %}
