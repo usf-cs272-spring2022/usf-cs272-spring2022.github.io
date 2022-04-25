@@ -1805,8 +1805,40 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'SQL'
-                type: [*pending]
+              - file: 'slides'
+                name: 'relational'
+
+              - file: 'slides'
+                name: 'sql'
+
+              - text: 'Database Accounts'
+                icon: 'website'
+                link: '/guides/sql/database-accounts.html'
+                type: ['bump']
+
+              - text: 'SQL Introduction'
+                icon: 'website'
+                link: '/guides/sql/sql-intro-started.html'
+                type: ['bump']
+
+              - text: '– Getting Started'
+                icon: 'nothing'
+                link: '/guides/sql/sql-intro-started.html'
+
+              - text: '– Creating Tables'
+                icon: 'nothing'
+                link: '/guides/sql/sql-intro-creating.html'
+                tube: 'https://drive.google.com/file/d/1W5pneWmLOXVkDrvxL9YWhRsZ8PwjM4vZ/view?usp=sharing'
+
+              - text: '– Joining Data'
+                icon: 'nothing'
+                link: '/guides/sql/sql-intro-joining.html'
+                tube: 'https://drive.google.com/file/d/1auHLPbiHxJq8tr_78HtNrKELu2Wi_zk4/view?usp=sharing'
+
+              - text: '– Enforcing Relationships'
+                icon: 'nothing'
+                link: '/guides/sql/sql-intro-enforcing.html'
+                tube: 'https://drive.google.com/file/d/1MOokzFUB8FXT2msoxU65PcqMlxYOsd0B/view?usp=sharing'
 
           - <<: *deadlines
             items:
@@ -1817,18 +1849,74 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'SQL'
-                type: [*pending]
+              - text: 'Exam Review'
+                link: '/guides/exams/exam-2.html'
+                icon: 'exam'
+
+              - text: 'SQL Faculty Demo'
+                icon: 'website'
+                link: '/guides/sql/sql-intro-started.html'
+                type: 'bump'
+
+              - text: '– Getting Started'
+                icon: 'nothing'
+                link: '/guides/sql/sql-demo-intro.html'
+
+              - text: '– Creating Tables'
+                icon: 'nothing'
+                link: '/guides/sql/sql-demo-creating.html'
+
+              - text: '– Selecting Data'
+                icon: 'nothing'
+                link: '/guides/sql/sql-demo-selecting.html'
+
+          - <<: *assignments
+            items:
+              - file: 'projects'
+                name: 'project4r'
+                text: 'Project 4 Search Engine'
+
+              - text: 'Final Code Review'
+                link: '/guides/projects/final-review.html'
+                icon: 'review'
+                show: true
+                date: 'Finals'
+                type: ['has-text-usf-plum']
 
       - date: 2022-04-29
         sections:
           - <<: *labs
             items:
-              - text: 'Homework Help'
+              - text: 'Homework Bundle 4 Help'
                 icon: 'homework'
+                type: 'bump'
+
+              - text: '– LinkParser'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166824'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-LinkParser-template">LinkParser</a>)'
+
+              - text: '– HtmlCleaner'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166826'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-HtmlCleaner-template">HtmlCleaner</a>)'
+
+              - text: '– HtmlFetcher'
+                icon: 'nothing'
+                link: 'https://usfca.instructure.com/courses/1605147/assignments/7166825'
+                more: '(<a href="https://github.com/usf-cs272-spring2022/homework-HtmlFetcher-template">HtmlFetcher</a>)'
 
               - text: 'Project Help'
                 icon: 'project'
+                type: 'bump'
+
+              - text: '– Project 3 Multithreading'
+                icon: 'nothing'
+                link: '/guides/projects/project-3.html'
+
+              - text: '– Project 4 Web Crawler'
+                icon: 'nothing'
+                link: '/guides/projects/project-4a.html'
 
           - <<: *assignments
             items:
@@ -1884,11 +1972,17 @@ weeks:
         sections:
           - <<: *labs
             items:
-              - text: 'Homework Help'
-                icon: 'homework'
-
               - text: 'Project Help'
                 icon: 'project'
+                type: 'bump'
+
+              - text: '– Project 3 Multithreading'
+                icon: 'nothing'
+                link: '/guides/projects/project-3.html'
+
+              - text: '– Project 4 Web Crawler'
+                icon: 'nothing'
+                link: '/guides/projects/project-4a.html'
 
           - <<: *deadlines
             items:
