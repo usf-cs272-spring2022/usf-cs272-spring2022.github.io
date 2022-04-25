@@ -147,19 +147,18 @@ The following sections may be useful for getting started on this project.
 
 ### Examples
 
-
 The following are a few examples (non-comprehensive) to illustrate the usage of the command-line arguments that can be passed to your `Driver` class via a "Run Configuration" in Eclipse, assuming you set the working directory to the `project-tests` directory.
 
 Consider the following example:
 
 ```
--text "https://usf-cs272-spring2022.github.io/project-web/input/simple/" -limit 15 -threads 3 -index index-crawl.json
+-html "https://usf-cs272-spring2022.github.io/project-web/input/simple/" -limit 15 -threads 3 -index index-crawl.json
 ```
 
 The above arguments behave the same as [project {{ page.project | minus: 1 }}](project-{{ page.project | minus: 1 }}.html), except it will build the index from a seed web page and process up to `15` found links from that seed page.
 
 ```
--text "https://usf-cs272-spring2022.github.io/project-web/input/simple/" -index index-crawl.json
+-html "https://usf-cs272-spring2022.github.io/project-web/input/simple/" -index index-crawl.json
 ```
 
 The above arguments are nearly the same, except use the default of `1` for the limit and `5` worker threads.
