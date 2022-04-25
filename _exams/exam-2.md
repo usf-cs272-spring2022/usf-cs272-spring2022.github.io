@@ -9,6 +9,10 @@ tags:
     type: 'is-primary'
 
 topics:
+  - text: 'Logging'
+    tags: 'debugging'
+    code: ['Logging']
+
   - text: 'Regular Expressions'
     tags: 'regexes'
     code: ['RegularExpressions']
@@ -17,9 +21,6 @@ topics:
 #    tags: 'testing'
 #    code: ['UnitTesting']
 
-  - text: 'Logging'
-    tags: 'debugging'
-    code: ['Logging']
 
   - text: 'Multithreading'
     tags: 'threads'
