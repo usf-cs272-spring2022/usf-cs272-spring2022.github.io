@@ -222,18 +222,18 @@ project4:
   link: 'https://usfca.instructure.com/courses/1605147/assignments/7195820'
   tags: ['none']
 
-# joins:
-#   <<: *default
-#   text: 'SQL Joins'
-#   date: 2021-11-30
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393218'
-#   tags: ['sql']
-#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394176'
-#
-# groups:
-#   <<: *default
-#   text: 'SQL Groups'
-#   date: 2021-11-30
-#   link: 'https://usfca.instructure.com/courses/1602551/quizzes/2393221'
-#   tags: ['sql']
-#   test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394177'
+joins:
+  <<: *default
+  text: 'SQL Joins'
+  date: 2022-05-06
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2403556'
+  tags: ['sql']
+  # test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394176'
+
+groups:
+  <<: *default
+  text: 'SQL Groups'
+  date: 2022-05-06
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2403557'
+  tags: ['sql']
+  # test: 'https://usfca.instructure.com/courses/1602551/quizzes/2394177'

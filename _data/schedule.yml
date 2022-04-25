@@ -1840,6 +1840,15 @@ weeks:
                 link: '/guides/sql/sql-intro-enforcing.html'
                 tube: 'https://drive.google.com/file/d/1MOokzFUB8FXT2msoxU65PcqMlxYOsd0B/view?usp=sharing'
 
+
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'joins'
+
+              - file: 'quizzes'
+                name: 'groups'
+
           - <<: *deadlines
             items:
               - file: 'projects'
@@ -1986,10 +1995,16 @@ weeks:
 
           - <<: *deadlines
             items:
+              - file: 'quizzes'
+                name: 'joins'
+
+              - file: 'quizzes'
+                name: 'groups'
+
               - text: 'Homework Bundle 5'
                 icon: 'homework'
                 date: 2022-05-06
-                type: ['has-text-weight-bold']
+                type: ['has-text-weight-bold', 'bump']
 
               - file: 'homework'
                 name: 'headerserver'
