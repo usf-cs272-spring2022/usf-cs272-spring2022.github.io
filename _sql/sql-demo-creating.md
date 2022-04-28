@@ -38,13 +38,13 @@ We will create a `faculty_names` table with 1 row per professor that stores:
 
   - The USF username (named `usfid`), which must be unique, may not be null, and can be used as the primary key for this table and the foreign key for other tables.
 
-  - The `first`, `middle`, and `last` names in separate columns. Only the `middle` name may be null. None of these columns need to be unique. For example, more than one person has the first name `David` in the department.
+  - The `first`, `middle`, and `last` names in separate columns. The `middle` name may be null. None of these columns need to be unique. For example, more than one person has the first name `David` in the department.
 
 **Exercise:** See if you can create a `faculty_names` table that will match the following:
 
 | Field  | Type        | Null | Key | Default | Extra |
 |--------|-------------|------|-----|---------|-------|
-| usfid  | char(10)    | NO   | PRI | NULL    |       |
+| usfid  | char(20)    | NO   | PRI | NULL    |       |
 | first  | varchar(20) | NO   |     | NULL    |       |
 | middle | varchar(20) | YES  |     | NULL    |       |
 | last   | varchar(20) | NO   |     | NULL    |       |
@@ -54,7 +54,7 @@ We will create a `faculty_names` table with 1 row per professor that stores:
 
 {% highlight sql %}
 CREATE TABLE faculty_names (
-  usfid   CHAR(10)    NOT NULL PRIMARY KEY,
+  usfid   CHAR(20)    NOT NULL PRIMARY KEY,
   first   VARCHAR(20) NOT NULL,
   middle  VARCHAR(20),
   last    VARCHAR(20) NOT NULL
@@ -99,7 +99,7 @@ We will create a `faculty_twitter` table that tracks Twitter accounts for profes
 | Field     | Type     | Null | Key | Default | Extra |
 |-----------|----------|------|-----|---------|-------|
 | twitterid | char(15) | NO   | PRI | NULL    |       |
-| usfid     | char(10) | NO   | MUL | NULL    |       |
+| usfid     | char(20) | NO   | MUL | NULL    |       |
 
 <details>
 <summary>See Answer.</summary>
@@ -107,7 +107,7 @@ We will create a `faculty_twitter` table that tracks Twitter accounts for profes
 {% highlight sql %}
 CREATE TABLE faculty_twitter (
   twitterid   CHAR(15) NOT NULL PRIMARY KEY,
-  usfid       CHAR(10) NOT NULL,
+  usfid       CHAR(20) NOT NULL,
   FOREIGN KEY (usfid)
   REFERENCES  faculty_names (usfid)
 );
@@ -149,7 +149,7 @@ We will create a `faculty_courses` table that tracks the undergraduate courses t
 {% highlight sql %}
 CREATE TABLE faculty_courses (
   courseid INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  usfid    CHAR(10) NOT NULL,
+  usfid    CHAR(20) NOT NULL,
   course   CHAR(10) NOT NULL,
   FOREIGN KEY (usfid)
   REFERENCES  faculty_names (usfid)
