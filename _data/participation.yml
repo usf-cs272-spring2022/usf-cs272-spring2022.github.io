@@ -123,8 +123,16 @@ piazza_reply:
   show: true
   link: 'https://usfca.instructure.com/courses/1605147/assignments/7181490'
 
-# final_survey:
-#   <<: *default
-#   text: 'Midterm Survey'
-#   link: 'https://usfca.instructure.com/courses/1602551/assignments/7139677'
-#   date: 2021-11-05
+whatif:
+  <<: *default
+  text: 'What-If Check'
+  date: 2022-05-13
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2404155'
+  show: true
+
+final_survey:
+  <<: *default
+  text: 'Final Survey'
+  link: 'https://usfca.instructure.com/courses/1605147/quizzes/2404162'
+  date: 2022-05-13
+  show: true

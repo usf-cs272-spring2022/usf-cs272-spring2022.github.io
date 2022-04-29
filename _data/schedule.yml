@@ -1968,7 +1968,20 @@ weeks:
             items:
               - text: 'Exam 2 Retake'
                 icon: 'exam'
+                date: 2022-05-12
                 type: ['has-text-danger']
+
+              - file: 'participation'
+                name: 'whatif'
+                type: 'bump'
+
+              - file: 'participation'
+                name: 'final_survey'
+
+              - text: 'Official Evaluations'
+                date: 2022-05-18
+                icon: 'evals'
+
 
       - date: 2022-05-06
         sections:
@@ -2051,6 +2064,17 @@ weeks:
 
               - file: 'participation'
                 name: 'piazza_reply'
+
+              - file: 'participation'
+                name: 'whatif'
+
+              - file: 'participation'
+                name: 'final_survey'
+
+              - text: 'Official Evaluations'
+                date: 2022-05-18
+                show: true
+                icon: 'evals'
 
   - text: 'Finals'
     days:
