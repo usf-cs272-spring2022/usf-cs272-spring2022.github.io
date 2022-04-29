@@ -46,7 +46,7 @@ Here is what each part means:
 
   - The `-h sql.cs.usfca.edu` specifies the hostname of our database server. You can actually type `-h sql` and the `cs.usfca.edu` part will be assumed since you are on the CS lab network.
 
-  - The `-u user###` part will specify the database account username. This is **different** from your CS or USF usernames. See the [Database Accounts](https://usfca.instructure.com/courses/1597848/pages/database-accounts) page for your assigned database account and replace `user###` with your database username.
+  - The `-u user###` part will specify the database account username. This is **different** from your CS or USF usernames. See the [Database Accounts]({{ site.data.info.links.canvas.link }}/pages/database-accounts) page for your assigned database account and replace `user###` with your database username.
 
   - The `-D user###` part specifies the specific database to use. You only have one database for this class, and it has the same name as your database account username.
 
