@@ -1961,8 +1961,14 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'Software Testing'
-                type: [*pending]
+              - file: 'slides'
+                name: 'testing_bugs'
+
+              - file: 'slides'
+                name: 'testing_intro'
+
+              - file: 'slides'
+                name: 'testing_unit'
 
           - <<: *assignments
             items:
