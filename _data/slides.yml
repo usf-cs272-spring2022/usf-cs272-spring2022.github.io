@@ -126,23 +126,23 @@ pipelines:
   link: 'https://docs.google.com/presentation/d/e/2PACX-1vROMQZRnL_-fg3RjZXfkVqV89LOa0u0zZFwfjjBRznInBFsg-N8mOUjxhP-G5TC3A0RtVqQ5eKLj7Hz/pub?start=false&loop=false&delayms=3000'
   tube: 'https://drive.google.com/file/d/1vWdlCE8eOt3HzVGa04zO1jJiWP1mJJ3z/view?usp=sharing'
 
-# testing_intro:
-#   <<: *default
-#   tags: ['testing']
-#   text: 'Software Testing'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vTsJ9jY3f5bsUXGOLDQe9etAuXCAY0QWTA4YIq-dQ_dFUjo2qk8QdVpRLKSRKUj45-CQo7tB2tRJQp5/pub?start=false&loop=false&delayms=3000'
-#
-# testing_bugs:
-#   <<: *default
-#   tags: ['testing']
-#   text: 'Software Bugs'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vSpv5orXIRLatwEODzu3TCRnEJUxcG1RjdH6WVH8LxLkewJ3E_Fm7j2UCSoJ7y3f6A23b-70CeiV3Lh/pub?start=false&loop=false&delayms=3000'
-#
-# testing_unit:
-#   <<: *default
-#   tags: ['testing']
-#   text: 'Unit Testing'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vRQtvbeBB1KFdG2O7qqhgy112nirr42EUC1-zyQy8wiucRJQz3cRLqo6dwi8gBaGid_-EAgZN1q3mbf/pub?start=false&loop=false&delayms=3000'
+testing_intro:
+  <<: *default
+  tags: ['testing']
+  text: 'Software Testing'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vQCykMh0wOkbNohLHdsra9OttbGaberD5kR6EivUs1IQ70uKWRIJGJyWi7eWOfV1WmLUtAgoNVs111f/pub?start=false&loop=false&delayms=3000'
+
+testing_bugs:
+  <<: *default
+  tags: ['testing']
+  text: 'Software Bugs'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vSDGWEfJPnixD4y327D7BLc6Iyre_oON65Fi041S-rvhK8eZg-3wxQQea10GjZkaRmSj5BR0lA7Lwij/pub?start=false&loop=false&delayms=3000'
+
+testing_unit:
+  <<: *default
+  tags: ['testing']
+  text: 'Unit Testing'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vT6cokBI3rwCMSABvuZOzAQw0gnAi3R4tTFsdVbRqwd8oUB2TwT5lEmwJaZMe74ihVwqtoS4dV68hBQ/pub?start=false&loop=false&delayms=3000'
 
 assertions:
   <<: *default
