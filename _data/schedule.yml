@@ -1969,6 +1969,12 @@ weeks:
 
               - file: 'slides'
                 name: 'testing_unit'
+                type: 'bump'
+
+              - text: 'Unit Testing'
+                icon: 'code'
+                type: ['bump']
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/UnitTesting'
 
           - <<: *assignments
             items:
@@ -1987,7 +1993,6 @@ weeks:
               - text: 'Official Evaluations'
                 date: 2022-05-18
                 icon: 'evals'
-
 
       - date: 2022-05-06
         sections:
