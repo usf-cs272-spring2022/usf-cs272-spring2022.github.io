@@ -1973,7 +1973,6 @@ weeks:
 
               - text: 'Unit Testing'
                 icon: 'code'
-                type: ['bump']
                 link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/UnitTesting'
 
           - <<: *assignments
