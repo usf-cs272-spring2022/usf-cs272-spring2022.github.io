@@ -307,9 +307,9 @@ sqldemo:
   link: '/guides/sql/sql-demo-intro.html'
   tags: ['sql']
 
-# jdbc:
-#   <<: *default
-#   text: 'Java Database Connectivity (JDBC)'
-#   link: 'https://docs.google.com/presentation/d/e/2PACX-1vSEkLasouigfY7GgAHETx__MXNHd5t4y3YwxODFRVykQ0n7fOf3ZCGJNyhDkFv8fOzMebX6zDPlqgzg/pub?start=false&loop=false&delayms=3000'
-#   tube: 'https://drive.google.com/file/d/1bgEAcSx7OhRRziOo8MsiP_DjcrOrhClG/view?usp=sharing'
-#   tags: ['jdbc']
+jdbc:
+  <<: *default
+  text: 'Java Database Connectivity (JDBC)'
+  link: 'https://docs.google.com/presentation/d/e/2PACX-1vT7nGgdwQx2Vqj6vSAgEi3CTK2dEQmbq_Xf6dcnc4UWVPuzwwZg5_bWz3n2P5L3stqddAzY5BtAE2e4/pub?start=false&loop=false&delayms=3000'
+  tube: 'https://drive.google.com/file/d/1bgEAcSx7OhRRziOo8MsiP_DjcrOrhClG/view?usp=sharing'
+  tags: ['jdbc']
