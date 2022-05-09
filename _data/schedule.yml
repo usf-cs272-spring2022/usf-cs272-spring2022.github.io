@@ -2030,8 +2030,33 @@ weeks:
         sections:
           - <<: *lectures
             items:
-              - text: 'JDBC'
-                type: [*pending]
+              - file: 'slides'
+                name: 'jdbc'
+
+              - text: 'Faculty Contact Server'
+                icon: 'code'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/JDBC'
+                type: 'bump'
+
+              - text: '– Introduction'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/tree/main/JDBC/src/main/resources'
+                tube: 'https://drive.google.com/file/d/1Q8jyBIsugwjbzk-JGJJZT5QF4EvAs-xN/view?usp=sharing'
+
+              - text: '– DatabaseConnector.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/JDBC/src/main/java/edu/usfca/cs272/DatabaseConnector.java'
+                tube: 'https://drive.google.com/file/d/1nJ17EatO7ZeureUORtqDLfTaw6MXyIZj/view?usp=sharing'
+
+              - text: '– FacultyServer.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/JDBC/src/main/java/edu/usfca/cs272/FacultyServer.java'
+                tube: 'https://drive.google.com/file/d/1yqeeCTD2j3qKz6Q_7sWn94SYkAV18_lt/view?usp=sharing'
+
+              - text: '– FacultyServlet.java'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs272-spring2022/lectures/blob/main/JDBC/src/main/java/edu/usfca/cs272/FacultyServlet.java'
+                tube: 'https://drive.google.com/file/d/1J-buaf3BIVp4QYYm6u8M6-fzN_tXT3as/view?usp=sharing'
 
           - <<: *deadlines
             items:
