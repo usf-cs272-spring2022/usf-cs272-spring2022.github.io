@@ -2063,12 +2063,27 @@ weeks:
               - file: 'projects'
                 name: 'project4t'
 
+              - text: 'Review Requests'
+                link: '/guides/projects/final-review.html#deadlines'
+                icon: 'project'
+                type: ['has-text-usf-plum']
+                date: 2022-05-10
+
       - date: 2022-05-12
         sections:
           - <<: *lectures
             items:
-              - text: 'Conclusion'
-                type: [*pending]
+              - text: 'Search Engine'
+                link: '/guides/projects/project-4b.html'
+                icon: 'project'
+
+              - text: 'Search Engine Demo'
+                icon: 'code'
+
+              - text: 'Course Recap'
+                icon: 'slides'
+                save: true
+                type: 'bump'
 
           - <<: *deadlines
             items:
@@ -2091,11 +2106,23 @@ weeks:
                 icon: 'date'
                 type: [*pending]
 
+              - text: 'CS Picnic'
+                icon: 'picnic'
+                type: [*pending]
+
           - label: 'End of Semester Deadlines'
             dates: true
             items:
+              - text: 'Project Cutoff'
+                link: '/guides/projects/final-review.html#deadlines'
+                icon: 'project'
+                type: ['has-text-usf-plum']
+                date: 2022-05-13
+                show: true
+
               - file: 'participation'
                 name: 'cs_event'
+                type: 'bump'
 
               - file: 'participation'
                 name: 'piazza_reply'
@@ -2110,6 +2137,7 @@ weeks:
                 date: 2022-05-18
                 show: true
                 icon: 'evals'
+                type: 'bump'
 
   - text: 'Finals'
     days:
@@ -2120,6 +2148,7 @@ weeks:
             items:
               - text: 'Final Code Reviews'
                 icon: 'project'
+                link: '/guides/projects/final-review.html'
 
       - date: ''
         sections:

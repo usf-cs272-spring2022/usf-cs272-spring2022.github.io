@@ -107,3 +107,7 @@ easter:
 linkedin:
   label: 'Linkedin'
   class: 'fab fa-linkedin'
+
+picnic:
+  label: 'CS Picnic'
+  class: 'far fa-kite'
