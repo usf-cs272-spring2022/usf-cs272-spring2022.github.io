@@ -2113,13 +2113,6 @@ weeks:
           - label: 'End of Semester Deadlines'
             dates: true
             items:
-              - text: 'Review Cutoff'
-                link: '/guides/projects/final-review.html#deadlines'
-                icon: 'project'
-                type: ['has-text-usf-plum']
-                date: 2022-05-13
-                show: true
-
               - file: 'participation'
                 name: 'cs_event'
                 type: 'bump'
@@ -2133,10 +2126,17 @@ weeks:
               - file: 'participation'
                 name: 'final_survey'
 
-              - text: 'Project Cutoff'
+              - text: 'Review Cutoff'
                 link: '/guides/projects/final-review.html#deadlines'
                 icon: 'project'
                 type: ['has-text-usf-plum', 'bump']
+                date: 2022-05-13
+                show: true
+
+              - text: 'Project Cutoff'
+                link: '/guides/projects/final-review.html#deadlines'
+                icon: 'project'
+                type: ['has-text-usf-plum']
                 date: 2022-05-15
                 show: true
 
