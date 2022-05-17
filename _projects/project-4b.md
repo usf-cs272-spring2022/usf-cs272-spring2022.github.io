@@ -210,7 +210,7 @@ The following are a few examples (non-comprehensive) to illustrate the usage of 
 Consider the following example:
 
 ```
--html "https://usf-cs272-spring2022.github.io/project-web/input/simple/" -limit 15 -threads 3 -server 8080
+-html "https://usf-cs272-spring2022.github.io/project-web/input/simple/" -max 15 -threads 3 -server 8080
 ```
 
 The above arguments behave the same as [project {{ page.project | minus: 1 }}](project-{{ page.project | minus: 1 }}.html), except it will also start up a web server on port `8080` for the user to interface with the search engine. No file output will be generated in this example.
